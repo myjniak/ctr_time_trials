@@ -1,169 +1,143 @@
+import argparse
+from datetime import datetime
+from time import sleep
+from lib.ctr_time_trials import CtrTimeTrials
+from lib.excel_operations import ExcelOperations
+from lib.json_operations import JsonOperations
+from lib.google_drive_interactions import GoogleDriveInteractions
+from lib.ranking_creator import RankingCreator
+from confidential.variables import *
 import sys
-import requests
-import json
-import csv
-from datetime import timedelta
 
 
-def convert_json_to_csv(file_path="user_times.json"):
-    with open(file_path, "r") as f:
-        data = json.load(f)
-    with open("rekordy.csv", mode='w+', newline='') as f:
-        file_writer = csv.writer(f,
-                                 delimiter=',',
-                                 quotechar='"',
-                                 quoting=csv.QUOTE_MINIMAL)
-        file_writer.writerow(list(load_track_list().values()))
-        for user, track_times in data.items():
-            times = track_times.values()
-            file_writer.writerow([user] + list(times))
+POINT_SYSTEM = [10, 8, 6, 5, 4, 3, 2, 1]
+LEAGUE_POINTS_MINIMUM = 20
+MINIMUM_PLAYER_COUNT_IN_LEAGUE = 5
+SHEET_IDS_FILE_PATH = "sheet_ids.json"
+TIMES_FROM_WEBPAGE_JSON_FILE_PATH = "dynamic_jsons/manual_times_from_webpage.json"
+LEAGUE_NAMES = ["Nitro Tier", "Platinum Tier", "Gold Tier", "Sapphire Tier", "Wumpa Tier", "Armadillo Tier"]
+FILE_PATHS = {
+    "cheat_threshold_json": "config/cheat_thresholds.json",
+    "track_ids": "config/tracks.txt",
+    "user_platform_json": "config/user_config.json",
+    "time_trials_json": "user_times.json",
+    "page_id_cache_json": "page_id_cache.json",
+    "csv_output": "output/time_trial_ranking",
+    "xlsx_output": "output/time_trial_ranking"
+}
+GOOGLE_DRIVE_CREDENTIALS_PATH = "confidential/credentials.json"
+GOOGLE_DRIVE_TOKEN_PATH = "confidential/token.pickle"
+OUTPUT_EXCEL_FILE_PATH = "output/time_trial_ranking.xlsx"
+INPUT_EXCEL_FILE_PATH = "output/times_from_webpage.xlsx"
+INPUT_TEMPLATE_EXCEL_FILE_PATH = "config/CTR TT INPUT template.xlsx"
+PLATFORMS = ['psn', 'xbl', 'switch']
+GAMER_SEARCH_BAN_TIME = 800
+PAGE_SEARCH_UNTIL_BORED_TIME = 5
+SLEEP_BETWEEN_ITERATIONS = 300
 
 
-def load_track_list():
-    with open("tracks.txt", 'r') as f:
-        track_list = f.read().splitlines()
-    track_info = dict()
-    for track in track_list:
-        track_id, name = track.split(maxsplit=1)
-        track_info[track_id] = name
-    return track_info
+def establish_player_list_to_do(gamer_list, do_everyone=None):
+    gamers = []
+    if do_everyone:
+        gamers = gamer_list
+    elif do_everyone is None:
+        print("Dej nicki, których time triale chcesz sciagnac. Jak skonczysz wpisywac"
+              " nicki, kliknij Enter dwa razy. Wpisz nicki poprawnie, bo bede szukal w nieskonczonosc!\n"
+              "Wpisz 'all' zeby zaaktualizowac wszystkich graczy w bazie config/user_config.json.")
+        while True:
+            gamer = input("Dej nick: ")
+            if not gamer:
+                break
+            elif gamer == "all":
+                gamers = gamer_list
+                break
+            elif gamer in gamer_list:
+                gamers.append(gamer)
+            else:
+                print(f"Nie ma takiego gracza w bazie! Tu masz do wyboru:\n{gamer_list}")
+    return gamers
 
 
-def get_url(track_id, page):
-    return f"https://my.callofduty.com/api/papi-client/leaderboards/v2/title/" \
-           f"ctr/platform/psn/time/alltime/type/1" \
-           f"/mode/{track_id}/page/{page}"
+def operacje_na_google_drive(serwis, just_do_it=False):
+    auto_upload = ''
+    if not just_do_it:
+        auto_upload = input("Chcesz auto-upload?")
+    if auto_upload in ['y', 'yes', 'tak', 'ok'] or just_do_it:
+
+        print("Wysylanie pliku...")
+        serwis.upload_file(OUTPUT_EXCEL_FILE_PATH, RANKING_FILE_ID)
+        print("Sciagam sheet IDs...")
+        sheet_ids = serwis.download_sheet_ids(RANKING_FILE_ID)
+        JsonOperations.save_json(sheet_ids, SHEET_IDS_FILE_PATH)
+        print("Resetuje arkusz do inputu...")
+        serwis.upload_file(INPUT_TEMPLATE_EXCEL_FILE_PATH, RANKING_INPUT_FILE_ID)
+        print("Resetuje uprawnienia arkuszu do inputu...")
+        serwis.protect_first_column(RANKING_INPUT_FILE_ID, MASTER_EMAIL)
 
 
-def get_json_from_url(url):
-    response = requests.get(url, timeout=10)
-    return response.json()
-
-
-def get_time_trials_from_url(url):
-    response = get_json_from_url(url)
-    entries = response["data"]["entries"]
-    time_trial_data = dict()
-    for entry in entries:
-        time_trial_data[entry["username"]] = entry["values"]["time"]
-    return time_trial_data
-
-
-def load_cache_data():
-    with open("page_id_cache.json", "r") as f:
-        try:
-            data = json.load(f)
-        except json.JSONDecodeError:
-            data = {}
-    return data
-
-
-def load_page_id_where_user_was_found(username, track_id):
-    data = load_cache_data()
-    try:
-        return data[username][track_id]
-    except KeyError:
-        for other_username, track_ids in data.items():
-            page_list = []
-            if track_id in track_ids.keys():
-                page_list.append(int(data[other_username][track_id]))
-        if page_list:
-            return int(sum(page_list)/len(page_list))
-        else:
-            return 1
-
-
-def save_page_where_user_was_found(username, track_id, page_id):
-    data = load_cache_data()
-    data.setdefault(username, {})[track_id] = page_id
-    with open("page_id_cache.json", "w") as f:
-        json.dump(data, f, indent=4, sort_keys=True)
-
-
-def save_user_time(username, track_name, user_time):
-    with open("user_times.json", "r") as f:
-        try:
-            data = json.load(f)
-        except json.JSONDecodeError:
-            data = {}
-    data.setdefault(username, {})[track_name] = user_time
-    with open("user_times.json", "w") as f:
-        json.dump(data, f, indent=4, sort_keys=True)
-
-
-def get_username_time(username, track_id, init_page=7, time_trials={}):
-    page = init_page
-    left = (page - 1) * 20 + 1
-    right = page * 20
-    if username in time_trials:
-        return time_trials[username]
+def main(do_everyone=None, upload=None, loop=None):
     while True:
-        sys.stdout.write(f"\rSzukam w przedziale miejsc {left}-{right}             ")
-        sys.stdout.flush()
-        url = get_url(track_id, page)
-        time_trials = {**time_trials, **get_time_trials_from_url(url)}
-        if username in time_trials:
-            sys.stdout.write("\r                                               ")
-            sys.stdout.flush()
-            save_page_where_user_was_found(username, track_id, page)
-            return time_trials[username]
-        old_page = page
-        page = evaluate_next_page_id(page, init_page)
-        if page > old_page:
-            right += 20
+        serwis = GoogleDriveInteractions(GOOGLE_DRIVE_CREDENTIALS_PATH,
+                                         GOOGLE_DRIVE_TOKEN_PATH,
+                                         GOOGLE_SHEETS_API_KEY)
+        serwis.download_file(INPUT_EXCEL_FILE_PATH, RANKING_INPUT_FILE_ID)
+        zapisywaczka_do_excela = ExcelOperations(POINT_SYSTEM, LEAGUE_NAMES, **FILE_PATHS)
+        nowe_czasy = \
+            zapisywaczka_do_excela.convert_xlsx_to_json(INPUT_EXCEL_FILE_PATH, TIMES_FROM_WEBPAGE_JSON_FILE_PATH)
+        if nowe_czasy:
+            current_datetime = datetime.now().strftime("%I:%M%p %B %d, %Y")
+            sciagaczka_time_triali = CtrTimeTrials(cookie=ACTIVISION_COOKIE,
+                                                   gamer_search_ban_time=GAMER_SEARCH_BAN_TIME,
+                                                   page_search_until_bored_time=PAGE_SEARCH_UNTIL_BORED_TIME,
+                                                   platforms=PLATFORMS,
+                                                   **FILE_PATHS)
+            gamers = establish_player_list_to_do(sciagaczka_time_triali.player_list, do_everyone=do_everyone)
+            sciagaczka_time_triali.get_usernames_times(gamers)
+            JsonOperations().apply_json_to_json("config/manual_user_times.json", FILE_PATHS["time_trials_json"])
+            JsonOperations.save_json(sciagaczka_time_triali.changes, "new_records.json")
+
+            zapisywaczka_do_excela.load_time_trial_info(**FILE_PATHS)
+            zapisywaczka_do_excela.convert_xlsx_to_json(INPUT_EXCEL_FILE_PATH, TIMES_FROM_WEBPAGE_JSON_FILE_PATH)
+            JsonOperations().apply_json_to_json(TIMES_FROM_WEBPAGE_JSON_FILE_PATH, FILE_PATHS["time_trials_json"])
+
+            rankingowaczka = RankingCreator(FILE_PATHS["time_trials_json"],
+                                            league_names=LEAGUE_NAMES,
+                                            track_list=sciagaczka_time_triali.track_list,
+                                            minimum_player_count_in_league=MINIMUM_PLAYER_COUNT_IN_LEAGUE,
+                                            league_points_minimum=LEAGUE_POINTS_MINIMUM,
+                                            point_system=POINT_SYSTEM)
+            rankingowaczka.give_out_points_and_medals_for_all_leagues()
+            rankingowaczka.calc_total_time()
+
+            zapisywaczka_do_excela.load_time_trial_info(**FILE_PATHS)
+            zapisywaczka_do_excela.convert_user_times_json_to_csvs(LEAGUE_POINTS_MINIMUM, current_datetime)
+            zapisywaczka_do_excela.convert_csvs_to_xlsx(OUTPUT_EXCEL_FILE_PATH, LEAGUE_NAMES)
+            operacje_na_google_drive(serwis, just_do_it=upload)
         else:
-            left -= 20
+            print("nie ma nowych czasow")
+
+        if not loop:
+            break
+        print("Pospie troche...")
+        sleep(SLEEP_BETWEEN_ITERATIONS)
 
 
-def evaluate_next_page_id(page_id, init_page):
-    delta = page_id - init_page
-    if delta > 0:
-        if init_page - delta >= 1:
-            return init_page - delta
-        else:
-            return page_id + 1
-    else:
-        return init_page - delta + 1
+def every_gamer_should_be_checked(everyone, noone):
+    if everyone:
+        return True
+    elif noone:
+        return False
+    return None
 
 
-def convert_time_to_pretty_time(time_in_seconds):
-    hh_mm_ss_msmsms = str(timedelta(seconds=time_in_seconds))
-    for i, char in enumerate(hh_mm_ss_msmsms):
-        if char == "0" or char == ":":
-            continue
-        else:
-            return hh_mm_ss_msmsms[i:]
-
-
-def get_usernames_times(usernames):
-    tracks = load_track_list()
-    users_times = dict()
-    for track_id, track_name in tracks.items():
-        all_user_times = dict()
-        for username in usernames:
-            last_time_found_page_id = load_page_id_where_user_was_found(username, track_id)
-            print(f"Szukam rekordu {username} na trasie {track_name}...")
-            user_time = get_username_time(username,
-                                          track_id,
-                                          init_page=last_time_found_page_id,
-                                          time_trials=all_user_times)
-            #blad w API - dodaje sekunde do wszystkiego
-            user_time -= 1
-            pretty_user_time = convert_time_to_pretty_time(user_time)
-            print(f"\rCzas: {pretty_user_time}                       \n")
-            save_user_time(username, track_name, user_time)
-            users_times.setdefault(username, {})[track_name] = pretty_user_time
-    return users_times
-
-
-print("Dej nicki, których time triale chcesz sciagnac. Jak skonczysz wpisywac"
-      " nicki, kliknij Enter dwa razy. Wpisz nicki poprawnie, bo bede szukal w nieskonczonosc!")
-gamers = []
-while True:
-    gamer = input("Dej nick: ")
-    if not gamer:
-        break
-    gamers.append(gamer)
-#get_usernames_times(["myjniak", "mati1212", "Wajsia"])
-get_usernames_times(gamers)
-convert_json_to_csv()
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--none", help="Nie sciagaj niczego, obrob tylko excela", action="store_true")
+    parser.add_argument("--all", help="Sciagnij czasy wszystkich graczy z user_config.json", action="store_true")
+    parser.add_argument("-u", help="Wyslij excela na koniec", action="store_true")
+    parser.add_argument("--loop", help="Napierdalaj w kolko do usranej smierci", action="store_true")
+    parser.add_argument("-l", help="Loguj tylko do pliku, żeby Traceback wszedł", action="store_true")
+    args = parser.parse_args()
+    if args.l:
+        sys.stdout = open("logs/logs.txt", "w")
+    main(every_gamer_should_be_checked(args.all, args.none), args.u, args.loop)

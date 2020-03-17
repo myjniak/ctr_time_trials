@@ -29,10 +29,11 @@
 51	Out of Time
 57	Assembly Lane
 63	Hyper Spaceway
-37	Retro Stadium
 77	Twilight Tour
 79	Prehistoric Playground
 81  Spyro Circuit
 59  Nina's Nightmare
 85  Koala Carnival
 87  Gingerbread Joyride
+89  Megamix Mania
+91  Drive-Thru Danger
