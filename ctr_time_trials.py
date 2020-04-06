@@ -68,9 +68,11 @@ def operacje_na_google_drive(serwis, just_do_it=False, sheet_ids_file_path=SHEET
         serwis.upload_file(OUTPUT_EXCEL_FILE_PATH, RANKING_FILE_ID)
         print("Sciagam sheet IDs...")
         sheet_ids = serwis.download_sheet_ids(RANKING_FILE_ID)
+        print(sheet_ids)
         JsonOperations.save_json(sheet_ids, sheet_ids_file_path)
         print("Resetuje arkusz do inputu...")
-        serwis.upload_file(INPUT_TEMPLATE_EXCEL_FILE_PATH, RANKING_INPUT_FILE_ID)
+        serwis.clear_cell_range(RANKING_INPUT_FILE_ID, "B1:Z50")
+        serwis.clear_cell_range(RANKING_INPUT_FILE_ID, "A1")
         print("Resetuje uprawnienia arkuszu do inputu...")
         serwis.protect_first_column(RANKING_INPUT_FILE_ID, MASTER_EMAIL)
 
@@ -83,10 +85,8 @@ def main(do_everyone=None, upload=None, loop=None, logging_to_file=False, sheet_
                                          GOOGLE_DRIVE_TOKEN_PATH,
                                          GOOGLE_SHEETS_API_KEY)
         serwis.download_file(INPUT_EXCEL_FILE_PATH, RANKING_INPUT_FILE_ID)
-        zapisywaczka_do_excela = ExcelOperations(POINT_SYSTEM, LEAGUE_NAMES, **FILE_PATHS)
-        nowe_czasy = \
-            zapisywaczka_do_excela.convert_xlsx_to_json(INPUT_EXCEL_FILE_PATH, TIMES_FROM_WEBPAGE_JSON_FILE_PATH)
-        if nowe_czasy:
+
+        if serwis.get_cell_value(RANKING_INPUT_FILE_ID, "A1"):
             current_datetime = datetime.now().strftime("%I:%M%p %B %d, %Y")
             sciagaczka_time_triali = CtrTimeTrials(cookie=ACTIVISION_COOKIE,
                                                    gamer_search_ban_time=GAMER_SEARCH_BAN_TIME,
@@ -98,7 +98,7 @@ def main(do_everyone=None, upload=None, loop=None, logging_to_file=False, sheet_
             JsonOperations().apply_json_to_json("config/manual_user_times.json", FILE_PATHS["time_trials_json"])
             JsonOperations.save_json(sciagaczka_time_triali.changes, "new_records.json")
 
-            zapisywaczka_do_excela.load_time_trial_info(**FILE_PATHS)
+            zapisywaczka_do_excela = ExcelOperations(POINT_SYSTEM, LEAGUE_NAMES, **FILE_PATHS)
             zapisywaczka_do_excela.convert_xlsx_to_json(INPUT_EXCEL_FILE_PATH, TIMES_FROM_WEBPAGE_JSON_FILE_PATH)
             JsonOperations().apply_json_to_json(TIMES_FROM_WEBPAGE_JSON_FILE_PATH, FILE_PATHS["time_trials_json"])
 
@@ -134,7 +134,7 @@ def every_gamer_should_be_checked(everyone, noone):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--sheetidpath", help="Sciazka do zapisania jsona z ID sheetow")
+    parser.add_argument("--sheetidpath", default=SHEET_IDS_FILE_PATH, help="Sciazka do zapisania jsona z ID sheetow")
     parser.add_argument("--none", help="Nie sciagaj niczego, obrob tylko excela", action="store_true")
     parser.add_argument("--all", help="Sciagnij czasy wszystkich graczy z user_config.json", action="store_true")
     parser.add_argument("-u", help="Wyslij excela na koniec", action="store_true")

@@ -89,7 +89,8 @@ class GoogleDriveInteractions:
                             "range": {
                                 "sheetId": first_sheet_id,
                                 "startColumnIndex": 0,
-                                "endColumnIndex": 1
+                                "endColumnIndex": 1,
+                                "startRowIndex": 1
                             },
                             "description": "Protecting track names",
                             "editors": {
@@ -102,5 +103,18 @@ class GoogleDriveInteractions:
         }
         request = self.sheets_service.spreadsheets().batchUpdate(spreadsheetId=remote_file_id,
                                                                  body=json_post)
+        response = request.execute()
+        log(response)
+
+    def get_cell_value(self, remote_file_id, cell):
+        content = requests.get(f"https://sheets.googleapis.com/v4/spreadsheets/{remote_file_id}"
+                               f"/values/{cell}"
+                               f"?key={self.key}").json()
+        if "values" in content:
+            return content["values"][0][0]
+
+    def clear_cell_range(self, remote_file_id, cell_range):
+        request = self.sheets_service.spreadsheets().values().clear(spreadsheetId=remote_file_id,
+                                                                    range=cell_range)
         response = request.execute()
         log(response)

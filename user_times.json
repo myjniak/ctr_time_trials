@@ -3726,13 +3726,13 @@
     "Maties_Gamer": {
         "league": 1,
         "medals": {
-            "bronze": 1,
-            "gold": 1,
+            "bronze": 2,
+            "gold": 2,
             "silver": 2
         },
-        "total_points": 97,
+        "total_points": 103,
         "total_points_in_upper_league": 0,
-        "total_time": "1:08:42.235",
+        "total_time": "1:08:40.831",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -3777,9 +3777,9 @@
                 "time": "1:53.879"
             },
             "Crash Cove": {
-                "medal": null,
+                "medal": "bronze",
                 "place": 426,
-                "points": 5,
+                "points": 6,
                 "time": "1:18.746"
             },
             "Deep Sea Driving": {
@@ -3819,10 +3819,10 @@
                 "time": "2:05.726"
             },
             "Hyper Spaceway": {
-                "medal": "bronze",
+                "medal": "gold",
                 "place": 612,
-                "points": 5,
-                "time": "1:47.404"
+                "points": 10,
+                "time": "1:46.00"
             },
             "Inferno Island": {
                 "medal": null,
@@ -5298,10 +5298,10 @@
         "league": 1,
         "medals": {
             "bronze": 0,
-            "gold": 27,
-            "silver": 10
+            "gold": 26,
+            "silver": 11
         },
-        "total_points": 350,
+        "total_points": 348,
         "total_points_in_upper_league": 0,
         "total_time": "1:06:55.115",
         "tracks": {
@@ -5390,9 +5390,9 @@
                 "time": "2:05.325"
             },
             "Hyper Spaceway": {
-                "medal": "gold",
+                "medal": "silver",
                 "place": 369,
-                "points": 10,
+                "points": 8,
                 "time": "1:46.773"
             },
             "Inferno Island": {
@@ -6905,11 +6905,11 @@
     "Wajsia": {
         "league": 1,
         "medals": {
-            "bronze": 8,
+            "bronze": 7,
             "gold": 1,
             "silver": 3
         },
-        "total_points": 136,
+        "total_points": 135,
         "total_points_in_upper_league": 0,
         "total_time": "1:08:42.239",
         "tracks": {
@@ -7000,7 +7000,7 @@
             "Hyper Spaceway": {
                 "medal": "bronze",
                 "place": 549,
-                "points": 6,
+                "points": 5,
                 "time": "1:47.272"
             },
             "Inferno Island": {
@@ -9020,13 +9020,13 @@
     "myjniak": {
         "league": 1,
         "medals": {
-            "bronze": 9,
+            "bronze": 8,
             "gold": 2,
             "silver": 6
         },
-        "total_points": 192,
+        "total_points": 190,
         "total_points_in_upper_league": 0,
-        "total_time": "1:08:06.970",
+        "total_time": "1:08:07.281",
         "tracks": {
             "Android Alley": {
                 "medal": "gold",
@@ -9073,8 +9073,8 @@
             "Crash Cove": {
                 "medal": "bronze",
                 "place": 389,
-                "points": 6,
-                "time": "1:18.679"
+                "points": 4,
+                "time": "1:18.99"
             },
             "Deep Sea Driving": {
                 "medal": null,
@@ -10665,11 +10665,11 @@
     "silVersilVa89PL": {
         "league": 1,
         "medals": {
-            "bronze": 6,
+            "bronze": 7,
             "gold": 0,
-            "silver": 3
+            "silver": 2
         },
-        "total_points": 175,
+        "total_points": 174,
         "total_points_in_upper_league": 0,
         "total_time": "1:08:09.401",
         "tracks": {
@@ -10718,7 +10718,7 @@
             "Crash Cove": {
                 "medal": null,
                 "place": 473,
-                "points": 4,
+                "points": 5,
                 "time": "1:18.812"
             },
             "Deep Sea Driving": {
@@ -10758,9 +10758,9 @@
                 "time": "2:10.264"
             },
             "Hyper Spaceway": {
-                "medal": "silver",
+                "medal": "bronze",
                 "place": 377,
-                "points": 8,
+                "points": 6,
                 "time": "1:46.775"
             },
             "Inferno Island": {
