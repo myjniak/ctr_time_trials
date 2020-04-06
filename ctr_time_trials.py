@@ -134,7 +134,7 @@ def every_gamer_should_be_checked(everyone, noone):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--sheetidpath", help="Sciazka do zapisania jsona z ID sheetow", action="store_true")
+    parser.add_argument("--sheetidpath", help="Sciazka do zapisania jsona z ID sheetow")
     parser.add_argument("--none", help="Nie sciagaj niczego, obrob tylko excela", action="store_true")
     parser.add_argument("--all", help="Sciagnij czasy wszystkich graczy z user_config.json", action="store_true")
     parser.add_argument("-u", help="Wyslij excela na koniec", action="store_true")
