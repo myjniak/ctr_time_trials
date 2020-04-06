@@ -93,7 +93,7 @@ class ExcelOperations:
                             cell_format.text_wrap = True
                             cell_format.set_font_size(13)
                         elif r == track_count + 6:
-                            cell_format.set_font_size(16)
+                            cell_format.set_font_size(13)
                         elif r == track_count + 8:
                             cell_format.set_font_size(16)
                         elif track_count + 9 <= r < track_count + 9 + len(self.point_system) and c == 1:
