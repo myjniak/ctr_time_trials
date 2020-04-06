@@ -3726,11 +3726,11 @@
     "Maties_Gamer": {
         "league": 1,
         "medals": {
-            "bronze": 2,
+            "bronze": 1,
             "gold": 2,
             "silver": 2
         },
-        "total_points": 103,
+        "total_points": 102,
         "total_points_in_upper_league": 0,
         "total_time": "1:08:40.831",
         "tracks": {
@@ -3779,7 +3779,7 @@
             "Crash Cove": {
                 "medal": "bronze",
                 "place": 426,
-                "points": 6,
+                "points": 5,
                 "time": "1:18.746"
             },
             "Deep Sea Driving": {
@@ -9020,13 +9020,13 @@
     "myjniak": {
         "league": 1,
         "medals": {
-            "bronze": 8,
+            "bronze": 9,
             "gold": 2,
             "silver": 6
         },
-        "total_points": 190,
+        "total_points": 192,
         "total_points_in_upper_league": 0,
-        "total_time": "1:08:07.281",
+        "total_time": "1:08:07.031",
         "tracks": {
             "Android Alley": {
                 "medal": "gold",
@@ -9073,8 +9073,8 @@
             "Crash Cove": {
                 "medal": "bronze",
                 "place": 389,
-                "points": 4,
-                "time": "1:18.99"
+                "points": 6,
+                "time": "1:18.74"
             },
             "Deep Sea Driving": {
                 "medal": null,
@@ -10669,7 +10669,7 @@
             "gold": 0,
             "silver": 2
         },
-        "total_points": 174,
+        "total_points": 173,
         "total_points_in_upper_league": 0,
         "total_time": "1:08:09.401",
         "tracks": {
@@ -10718,7 +10718,7 @@
             "Crash Cove": {
                 "medal": null,
                 "place": 473,
-                "points": 5,
+                "points": 4,
                 "time": "1:18.812"
             },
             "Deep Sea Driving": {

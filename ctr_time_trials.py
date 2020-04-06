@@ -6,6 +6,7 @@ from lib.excel_operations import ExcelOperations
 from lib.json_operations import JsonOperations
 from lib.google_drive_interactions import GoogleDriveInteractions
 from lib.ranking_creator import RankingCreator
+from lib.logger import log
 from confidential.variables import *
 import sys
 
@@ -41,9 +42,9 @@ def establish_player_list_to_do(gamer_list, do_everyone=None):
     if do_everyone:
         gamers = gamer_list
     elif do_everyone is None:
-        print("Dej nicki, których time triale chcesz sciagnac. Jak skonczysz wpisywac"
-              " nicki, kliknij Enter dwa razy. Wpisz nicki poprawnie, bo bede szukal w nieskonczonosc!\n"
-              "Wpisz 'all' zeby zaaktualizowac wszystkich graczy w bazie config/user_config.json.")
+        log("Dej nicki, których time triale chcesz sciagnac. Jak skonczysz wpisywac"
+            " nicki, kliknij Enter dwa razy. Wpisz nicki poprawnie, bo bede szukal w nieskonczonosc!\n"
+            "Wpisz 'all' zeby zaaktualizowac wszystkich graczy w bazie config/user_config.json.")
         while True:
             gamer = input("Dej nick: ")
             if not gamer:
@@ -54,7 +55,7 @@ def establish_player_list_to_do(gamer_list, do_everyone=None):
             elif gamer in gamer_list:
                 gamers.append(gamer)
             else:
-                print(f"Nie ma takiego gracza w bazie! Tu masz do wyboru:\n{gamer_list}")
+                log(f"Nie ma takiego gracza w bazie! Tu masz do wyboru:\n{gamer_list}")
     return gamers
 
 
@@ -64,16 +65,16 @@ def operacje_na_google_drive(serwis, just_do_it=False, sheet_ids_file_path=SHEET
         auto_upload = input("Chcesz auto-upload?")
     if auto_upload in ['y', 'yes', 'tak', 'ok'] or just_do_it:
 
-        print("Wysylanie pliku...")
+        log("Wysylanie pliku...")
         serwis.upload_file(OUTPUT_EXCEL_FILE_PATH, RANKING_FILE_ID)
-        print("Sciagam sheet IDs...")
+        log("Sciagam sheet IDs...")
         sheet_ids = serwis.download_sheet_ids(RANKING_FILE_ID)
-        print(sheet_ids)
+        log(sheet_ids)
         JsonOperations.save_json(sheet_ids, sheet_ids_file_path)
-        print("Resetuje arkusz do inputu...")
+        log("Resetuje arkusz do inputu...")
         serwis.clear_cell_range(RANKING_INPUT_FILE_ID, "B1:Z50")
         serwis.clear_cell_range(RANKING_INPUT_FILE_ID, "A1")
-        print("Resetuje uprawnienia arkuszu do inputu...")
+        log("Resetuje uprawnienia arkuszu do inputu...")
         serwis.protect_first_column(RANKING_INPUT_FILE_ID, MASTER_EMAIL)
 
 
@@ -116,11 +117,11 @@ def main(do_everyone=None, upload=None, loop=None, logging_to_file=False, sheet_
             zapisywaczka_do_excela.convert_csvs_to_xlsx(OUTPUT_EXCEL_FILE_PATH, LEAGUE_NAMES)
             operacje_na_google_drive(serwis, just_do_it=upload, sheet_ids_file_path=sheet_ids_file_path)
         else:
-            print("nie ma nowych czasow")
+            log("Nie zaznaczono krzyzyka w A1")
 
         if not loop:
-            return open('logs/logs.txt', 'r').readlines()
-        print("Pospie troche...")
+            break
+        log("Pospie troche...")
         sleep(SLEEP_BETWEEN_ITERATIONS)
 
 
