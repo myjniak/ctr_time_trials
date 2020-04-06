@@ -58,7 +58,7 @@ def establish_player_list_to_do(gamer_list, do_everyone=None):
     return gamers
 
 
-def operacje_na_google_drive(serwis, just_do_it=False):
+def operacje_na_google_drive(serwis, just_do_it=False, sheet_ids_file_path=SHEET_IDS_FILE_PATH):
     auto_upload = ''
     if not just_do_it:
         auto_upload = input("Chcesz auto-upload?")
@@ -68,14 +68,16 @@ def operacje_na_google_drive(serwis, just_do_it=False):
         serwis.upload_file(OUTPUT_EXCEL_FILE_PATH, RANKING_FILE_ID)
         print("Sciagam sheet IDs...")
         sheet_ids = serwis.download_sheet_ids(RANKING_FILE_ID)
-        JsonOperations.save_json(sheet_ids, SHEET_IDS_FILE_PATH)
+        JsonOperations.save_json(sheet_ids, sheet_ids_file_path)
         print("Resetuje arkusz do inputu...")
         serwis.upload_file(INPUT_TEMPLATE_EXCEL_FILE_PATH, RANKING_INPUT_FILE_ID)
         print("Resetuje uprawnienia arkuszu do inputu...")
         serwis.protect_first_column(RANKING_INPUT_FILE_ID, MASTER_EMAIL)
 
 
-def main(do_everyone=None, upload=None, loop=None):
+def main(do_everyone=None, upload=None, loop=None, logging_to_file=False, sheet_ids_file_path=SHEET_IDS_FILE_PATH):
+    if logging_to_file:
+        sys.stdout = open("logs/logs.txt", "w")
     while True:
         serwis = GoogleDriveInteractions(GOOGLE_DRIVE_CREDENTIALS_PATH,
                                          GOOGLE_DRIVE_TOKEN_PATH,
@@ -112,12 +114,12 @@ def main(do_everyone=None, upload=None, loop=None):
             zapisywaczka_do_excela.load_time_trial_info(**FILE_PATHS)
             zapisywaczka_do_excela.convert_user_times_json_to_csvs(LEAGUE_POINTS_MINIMUM, current_datetime)
             zapisywaczka_do_excela.convert_csvs_to_xlsx(OUTPUT_EXCEL_FILE_PATH, LEAGUE_NAMES)
-            operacje_na_google_drive(serwis, just_do_it=upload)
+            operacje_na_google_drive(serwis, just_do_it=upload, sheet_ids_file_path=sheet_ids_file_path)
         else:
             print("nie ma nowych czasow")
 
         if not loop:
-            break
+            return open('logs/logs.txt', 'r').readlines()
         print("Pospie troche...")
         sleep(SLEEP_BETWEEN_ITERATIONS)
 

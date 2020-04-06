@@ -8,3 +8,4 @@ google-auth-oauthlib==0.4.1
 googleapis-common-protos==1.51.0
 pandas==1.0.3
 xlrd==1.2.0
+flask=1.1.2
