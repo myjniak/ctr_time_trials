@@ -70,32 +70,32 @@ class ExcelOperations:
                                 cell_format.set_bg_color('red')
                             else:
                                 cell_format.set_bg_color('orange')
-                            cell_format.set_font_size(13)
+                            cell_format.set_font_size(11)
                         if c == 0:
                             cell_format.set_bg_color('green')
-                            cell_format.set_font_size(15)
+                            cell_format.set_font_size(13)
                         if r == track_count + 1:
                             cell_format.set_bg_color(GOLD)
-                            cell_format.set_font_size(18)
+                            cell_format.set_font_size(16)
                         elif r == track_count + 2:
                             cell_format.set_bg_color(SILVER)
-                            cell_format.set_font_size(18)
+                            cell_format.set_font_size(16)
                         elif r == track_count + 3:
                             cell_format.set_bg_color(BRONZE)
-                            cell_format.set_font_size(18)
+                            cell_format.set_font_size(16)
                         elif r == track_count + 4:
                             cell_format.set_bg_color('F5F5F5')
                             cell_format.set_font_color('red')
-                            cell_format.set_font_size(22)
+                            cell_format.set_font_size(20)
                         elif r == track_count + 5:
                             cell_format.set_font_color('red')
                             cell_format.set_bg_color('F5F5F5')
                             cell_format.text_wrap = True
                             cell_format.set_font_size(13)
                         elif r == track_count + 6:
-                            cell_format.set_font_size(18)
+                            cell_format.set_font_size(16)
                         elif r == track_count + 8:
-                            cell_format.set_font_size(18)
+                            cell_format.set_font_size(16)
                         elif track_count + 9 <= r < track_count + 9 + len(self.point_system) and c == 1:
                             if len(COLOR_PRIZES) > r - (track_count + 9):
                                 cell_format.set_bg_color(COLOR_PRIZES[r - (track_count + 9)])
@@ -104,7 +104,7 @@ class ExcelOperations:
                         elif r == track_count + 17 and c == 1:
                             cell_format.set_font_color('DADADA')
                         if r >= track_count + 8 and c == 1:
-                            cell_format.set_font_size(15)
+                            cell_format.set_font_size(13)
                         try:
                             cell_format.set_align('center')
                             cell_format.set_align('vcenter')
