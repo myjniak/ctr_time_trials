@@ -85,9 +85,9 @@ def main(do_everyone=None, upload=None, loop=None, logging_to_file=False, sheet_
         serwis = GoogleDriveInteractions(GOOGLE_DRIVE_CREDENTIALS_PATH,
                                          GOOGLE_DRIVE_TOKEN_PATH,
                                          GOOGLE_SHEETS_API_KEY)
-        serwis.download_file(INPUT_EXCEL_FILE_PATH, RANKING_INPUT_FILE_ID)
 
         if serwis.get_cell_value(RANKING_INPUT_FILE_ID, "A1"):
+            serwis.download_file(INPUT_EXCEL_FILE_PATH, RANKING_INPUT_FILE_ID)
             current_datetime = datetime.now().strftime("%I:%M%p %B %d, %Y")
             sciagaczka_time_triali = CtrTimeTrials(cookie=ACTIVISION_COOKIE,
                                                    gamer_search_ban_time=GAMER_SEARCH_BAN_TIME,
@@ -118,6 +118,7 @@ def main(do_everyone=None, upload=None, loop=None, logging_to_file=False, sheet_
             operacje_na_google_drive(serwis, just_do_it=upload, sheet_ids_file_path=sheet_ids_file_path)
         else:
             log("Nie zaznaczono krzyzyka w A1")
+        log("ROBOTA SKONCZONA")
 
         if not loop:
             break
