@@ -1647,11 +1647,11 @@
     "JanneAhonen69": {
         "league": 1,
         "medals": {
-            "bronze": 6,
+            "bronze": 8,
             "gold": 1,
-            "silver": 6
+            "silver": 4
         },
-        "total_points": 158,
+        "total_points": 153,
         "total_points_in_upper_league": 0,
         "total_time": "1:11:44.340",
         "tracks": {
@@ -1700,7 +1700,7 @@
             "Crash Cove": {
                 "medal": null,
                 "place": 185,
-                "points": 2,
+                "points": 3,
                 "time": "1:18.87"
             },
             "Deep Sea Driving": {
@@ -1735,7 +1735,7 @@
             "Gingerbread Joyride": {
                 "medal": null,
                 "place": 76,
-                "points": 1,
+                "points": 0,
                 "time": "1:52.97"
             },
             "Hot Air Skyway": {
@@ -1828,9 +1828,9 @@
                 "time": "2:20.70"
             },
             "Roo's Tubes": {
-                "medal": "silver",
+                "medal": "bronze",
                 "place": 143,
-                "points": 8,
+                "points": 6,
                 "time": "1:14.54"
             },
             "Sewer Speedway": {
@@ -1864,15 +1864,15 @@
                 "time": "1:27.15"
             },
             "Tiny Arena": {
-                "medal": "silver",
+                "medal": "bronze",
                 "place": 62,
-                "points": 8,
+                "points": 6,
                 "time": "2:54.47"
             },
             "Tiny Temple": {
                 "medal": null,
                 "place": 93,
-                "points": 4,
+                "points": 3,
                 "time": "1:38.49"
             },
             "Turbo Track": {
@@ -2091,11 +2091,11 @@
     "Kideu98": {
         "league": 1,
         "medals": {
-            "bronze": 4,
+            "bronze": 3,
             "gold": 1,
             "silver": 3
         },
-        "total_points": 99,
+        "total_points": 95,
         "total_points_in_upper_league": 0,
         "total_time": "1:08:39.737",
         "tracks": {
@@ -2174,7 +2174,7 @@
             "Gingerbread Joyride": {
                 "medal": "bronze",
                 "place": 337,
-                "points": 5,
+                "points": 4,
                 "time": "1:52.245"
             },
             "Hot Air Skyway": {
@@ -2264,7 +2264,7 @@
             "Roo's Tubes": {
                 "medal": "bronze",
                 "place": 705,
-                "points": 4,
+                "points": 3,
                 "time": "1:15.304"
             },
             "Sewer Speedway": {
@@ -2300,13 +2300,13 @@
             "Tiny Arena": {
                 "medal": null,
                 "place": 660,
-                "points": 2,
+                "points": 1,
                 "time": "2:58.375"
             },
             "Tiny Temple": {
                 "medal": "bronze",
                 "place": 278,
-                "points": 6,
+                "points": 5,
                 "time": "1:38.164"
             },
             "Turbo Track": {
@@ -3737,10 +3737,10 @@
         "league": 1,
         "medals": {
             "bronze": 5,
-            "gold": 5,
-            "silver": 1
+            "gold": 4,
+            "silver": 2
         },
-        "total_points": 168,
+        "total_points": 163,
         "total_points_in_upper_league": 0,
         "total_time": "1:11:43.357",
         "tracks": {
@@ -3789,7 +3789,7 @@
             "Crash Cove": {
                 "medal": "bronze",
                 "place": 426,
-                "points": 3,
+                "points": 4,
                 "time": "1:18.74"
             },
             "Deep Sea Driving": {
@@ -3824,7 +3824,7 @@
             "Gingerbread Joyride": {
                 "medal": null,
                 "place": 929,
-                "points": 4,
+                "points": 3,
                 "time": "1:52.57"
             },
             "Hot Air Skyway": {
@@ -3917,9 +3917,9 @@
                 "time": "2:21.07"
             },
             "Roo's Tubes": {
-                "medal": "gold",
+                "medal": "silver",
                 "place": 516,
-                "points": 10,
+                "points": 8,
                 "time": "1:14.50"
             },
             "Sewer Speedway": {
@@ -3943,7 +3943,7 @@
             "Thunder Struck": {
                 "medal": null,
                 "place": 11187,
-                "points": 4,
+                "points": 3,
                 "time": "1:53.78"
             },
             "Tiger Temple": {
@@ -3955,13 +3955,13 @@
             "Tiny Arena": {
                 "medal": null,
                 "place": 718,
-                "points": 3,
+                "points": 2,
                 "time": "2:58.37"
             },
             "Tiny Temple": {
                 "medal": null,
                 "place": 849,
-                "points": 1,
+                "points": 0,
                 "time": "1:38.66"
             },
             "Turbo Track": {
@@ -3987,7 +3987,7 @@
         },
         "total_points": 56,
         "total_points_in_upper_league": 0,
-        "total_time": "1:33:48.850",
+        "total_time": "1:31:49.430",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -5319,9 +5319,9 @@
         "medals": {
             "bronze": 2,
             "gold": 22,
-            "silver": 14
+            "silver": 13
         },
-        "total_points": 349,
+        "total_points": 346,
         "total_points_in_upper_league": 0,
         "total_time": "1:10:40.513",
         "tracks": {
@@ -5500,7 +5500,7 @@
             "Roo's Tubes": {
                 "medal": "bronze",
                 "place": 566,
-                "points": 6,
+                "points": 5,
                 "time": "1:14.805"
             },
             "Sewer Speedway": {
@@ -5540,9 +5540,9 @@
                 "time": "2:52.838"
             },
             "Tiny Temple": {
-                "medal": "silver",
+                "medal": "bronze",
                 "place": 239,
-                "points": 8,
+                "points": 6,
                 "time": "1:37.998"
             },
             "Turbo Track": {
@@ -6939,7 +6939,7 @@
             "gold": 1,
             "silver": 1
         },
-        "total_points": 109,
+        "total_points": 106,
         "total_points_in_upper_league": 0,
         "total_time": "1:08:42.239",
         "tracks": {
@@ -7108,7 +7108,7 @@
             "Roo's Tubes": {
                 "medal": "bronze",
                 "place": 644,
-                "points": 5,
+                "points": 4,
                 "time": "1:15.039"
             },
             "Sewer Speedway": {
@@ -7144,13 +7144,13 @@
             "Tiny Arena": {
                 "medal": null,
                 "place": 586,
-                "points": 4,
+                "points": 3,
                 "time": "2:57.478"
             },
             "Tiny Temple": {
                 "medal": "bronze",
                 "place": 402,
-                "points": 3,
+                "points": 2,
                 "time": "1:38.498"
             },
             "Turbo Track": {
@@ -7174,7 +7174,7 @@
             "gold": 2,
             "silver": 3
         },
-        "total_points": 155,
+        "total_points": 150,
         "total_points_in_upper_league": 0,
         "total_time": "1:12:06.593",
         "tracks": {
@@ -7258,7 +7258,7 @@
             "Gingerbread Joyride": {
                 "medal": null,
                 "place": 117,
-                "points": 3,
+                "points": 2,
                 "time": "1:52.87"
             },
             "Hot Air Skyway": {
@@ -7353,7 +7353,7 @@
             "Roo's Tubes": {
                 "medal": null,
                 "place": 168,
-                "points": 3,
+                "points": 2,
                 "time": "1:15.44"
             },
             "Sewer Speedway": {
@@ -7377,7 +7377,7 @@
             "Thunder Struck": {
                 "medal": null,
                 "place": 2351,
-                "points": 2,
+                "points": 1,
                 "time": "1:56.916"
             },
             "Tiger Temple": {
@@ -7389,13 +7389,13 @@
             "Tiny Arena": {
                 "medal": null,
                 "place": 200,
-                "points": 1,
+                "points": 0,
                 "time": "2:58.61"
             },
             "Tiny Temple": {
                 "medal": null,
                 "place": 81,
-                "points": 5,
+                "points": 4,
                 "time": "1:38.43"
             },
             "Turbo Track": {
@@ -8360,7 +8360,7 @@
             "silver": 12
         },
         "total_points": 294,
-        "total_points_in_upper_league": 14,
+        "total_points_in_upper_league": 13,
         "total_time": "1:09:49.832",
         "tracks": {
             "Android Alley": {
@@ -8826,10 +8826,10 @@
         "league": 1,
         "medals": {
             "bronze": 1,
-            "gold": 5,
-            "silver": 5
+            "gold": 7,
+            "silver": 6
         },
-        "total_points": 168,
+        "total_points": 204,
         "total_points_in_upper_league": 0,
         "total_time": "1:11:52.486",
         "tracks": {
@@ -8861,7 +8861,7 @@
                 "medal": null,
                 "place": 1662,
                 "points": 4,
-                "time": "1:53.94"
+                "time": "1:53.940"
             },
             "Coco Park": {
                 "medal": "bronze",
@@ -8913,8 +8913,8 @@
             "Gingerbread Joyride": {
                 "medal": null,
                 "place": 991,
-                "points": 0,
-                "time": "1:53.91"
+                "points": 5,
+                "time": "1:52.010"
             },
             "Hot Air Skyway": {
                 "medal": null,
@@ -8926,7 +8926,7 @@
                 "medal": null,
                 "place": 1232,
                 "points": 1,
-                "time": "1:48.308"
+                "time": "1:47.800"
             },
             "Inferno Island": {
                 "medal": null,
@@ -9006,10 +9006,10 @@
                 "time": "2:21.776"
             },
             "Roo's Tubes": {
-                "medal": null,
+                "medal": "gold",
                 "place": 845,
-                "points": 0,
-                "time": "1:15.608"
+                "points": 10,
+                "time": "1:14.470"
             },
             "Sewer Speedway": {
                 "medal": "silver",
@@ -9032,8 +9032,8 @@
             "Thunder Struck": {
                 "medal": null,
                 "place": 11413,
-                "points": 1,
-                "time": "1:56.985"
+                "points": 4,
+                "time": "1:53.210"
             },
             "Tiger Temple": {
                 "medal": "gold",
@@ -9042,16 +9042,16 @@
                 "time": "1:25.785"
             },
             "Tiny Arena": {
-                "medal": null,
+                "medal": "silver",
                 "place": 692,
-                "points": 0,
-                "time": "2:58.713"
+                "points": 8,
+                "time": "2:53.240"
             },
             "Tiny Temple": {
-                "medal": null,
+                "medal": "gold",
                 "place": 941,
-                "points": 0,
-                "time": "1:39.400"
+                "points": 10,
+                "time": "1:37.760"
             },
             "Turbo Track": {
                 "medal": "gold",
@@ -9070,13 +9070,13 @@
     "myjniak": {
         "league": 1,
         "medals": {
-            "bronze": 5,
-            "gold": 2,
-            "silver": 4
+            "bronze": 4,
+            "gold": 1,
+            "silver": 5
         },
-        "total_points": 148,
+        "total_points": 141,
         "total_points_in_upper_league": 0,
-        "total_time": "1:08:07.001",
+        "total_time": "1:08:07.171",
         "tracks": {
             "Android Alley": {
                 "medal": "gold",
@@ -9123,8 +9123,8 @@
             "Crash Cove": {
                 "medal": "bronze",
                 "place": 389,
-                "points": 4,
-                "time": "1:18.71"
+                "points": 2,
+                "time": "1:18.880"
             },
             "Deep Sea Driving": {
                 "medal": null,
@@ -9243,7 +9243,7 @@
             "Roo's Tubes": {
                 "medal": null,
                 "place": 770,
-                "points": 2,
+                "points": 1,
                 "time": "1:15.441"
             },
             "Sewer Speedway": {
@@ -9267,7 +9267,7 @@
             "Thunder Struck": {
                 "medal": null,
                 "place": 11064,
-                "points": 3,
+                "points": 2,
                 "time": "1:55.249"
             },
             "Tiger Temple": {
@@ -9279,13 +9279,13 @@
             "Tiny Arena": {
                 "medal": "bronze",
                 "place": 382,
-                "points": 6,
+                "points": 5,
                 "time": "2:55.009"
             },
             "Tiny Temple": {
-                "medal": "gold",
+                "medal": "silver",
                 "place": 203,
-                "points": 10,
+                "points": 8,
                 "time": "1:37.932"
             },
             "Turbo Track": {
@@ -10719,7 +10719,7 @@
             "gold": 0,
             "silver": 2
         },
-        "total_points": 161,
+        "total_points": 157,
         "total_points_in_upper_league": 0,
         "total_time": "1:11:50.228",
         "tracks": {
@@ -10803,7 +10803,7 @@
             "Gingerbread Joyride": {
                 "medal": null,
                 "place": 531,
-                "points": 2,
+                "points": 1,
                 "time": "1:52.94"
             },
             "Hot Air Skyway": {
@@ -10898,7 +10898,7 @@
             "Roo's Tubes": {
                 "medal": null,
                 "place": 999999,
-                "points": 1,
+                "points": 0,
                 "time": "1:15.50"
             },
             "Sewer Speedway": {
@@ -10934,13 +10934,13 @@
             "Tiny Arena": {
                 "medal": null,
                 "place": 600,
-                "points": 5,
+                "points": 4,
                 "time": "2:56.51"
             },
             "Tiny Temple": {
                 "medal": null,
                 "place": 414,
-                "points": 2,
+                "points": 1,
                 "time": "1:38.500"
             },
             "Turbo Track": {
