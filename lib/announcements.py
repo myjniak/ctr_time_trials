@@ -1,4 +1,4 @@
-from .logger import log
+import logging
 
 
 class Announcements:
@@ -27,7 +27,7 @@ class Announcements:
                 except KeyError:
                     continue
                 if grades[m_new] > grades[m_old]:
-                    log(f"{player} gets {m_new.upper()} medal on {track}!",
+                    logging.info(f"{player} gets {m_new.upper()} medal on {track}!",
                         filename=f"{self.new_tts[player]['league']}.txt")
 
     def log_league_transfers(self):
@@ -36,9 +36,9 @@ class Announcements:
             l_old = self.old_tts[player]['league']
             l_new = player_info['league']
             if l_new > l_old:
-                log(f"{player} entered the {self.league_names[l_new - 1]}", filename=f"{l_new}.txt")
+                logging.info(f"{player} entered the {self.league_names[l_new - 1]}", filename=f"{l_new}.txt")
             elif l_new < l_old:
-                log(f"{player} HAS ASCENDED TO {self.league_names[l_new - 1]}!", filename=f"{l_new}.txt")
+                logging.info(f"{player} HAS ASCENDED TO {self.league_names[l_new - 1]}!", filename=f"{l_new}.txt")
 
     @staticmethod
     def get_leagues_with_transfers(new_tts, old_tts):

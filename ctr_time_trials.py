@@ -1,4 +1,7 @@
 import argparse
+import logging
+import sys
+import os
 from datetime import datetime
 from time import sleep
 from lib.ctr_time_trials import CtrTimeTrials
@@ -6,11 +9,10 @@ from lib.excel_operations import ExcelOperations
 from lib.json_operations import JsonOperations
 from lib.google_drive_interactions import GoogleDriveInteractions
 from lib.ranking_creator import RankingCreator
-from lib.logger import log
 from confidential.variables import *
-import sys
 
 
+LOGS_PATH = 'logs/'
 POINT_SYSTEM = [10, 8, 6, 5, 4, 3, 2, 1]
 LEAGUE_POINTS_MINIMUM = 20
 MINIMUM_PLAYER_COUNT_IN_LEAGUE = 5
@@ -42,7 +44,7 @@ def establish_player_list_to_do(gamer_list, do_everyone=None):
     if do_everyone:
         gamers = gamer_list
     elif do_everyone is None:
-        log("Dej nicki, których time triale chcesz sciagnac. Jak skonczysz wpisywac"
+        logging.info("Dej nicki, których time triale chcesz sciagnac. Jak skonczysz wpisywac"
             " nicki, kliknij Enter dwa razy. Wpisz nicki poprawnie, bo bede szukal w nieskonczonosc!\n"
             "Wpisz 'all' zeby zaaktualizowac wszystkich graczy w bazie config/user_config.json.")
         while True:
@@ -55,8 +57,21 @@ def establish_player_list_to_do(gamer_list, do_everyone=None):
             elif gamer in gamer_list:
                 gamers.append(gamer)
             else:
-                log(f"Nie ma takiego gracza w bazie! Tu masz do wyboru:\n{gamer_list}")
+                logging.info(f"Nie ma takiego gracza w bazie! Tu masz do wyboru:\n{gamer_list}")
     return gamers
+
+
+def przytnij_logi_i_ogloszenia(logs_msg_count=10000, announcements_msg_count=10):
+    file_list = os.listdir(LOGS_PATH)
+    for f in file_list:
+        if f.endswith('txt') and not f.startswith("logs"):
+            msg_count = announcements_msg_count
+        else:
+            msg_count = logs_msg_count
+        with open(LOGS_PATH + f, 'r') as log:
+            data = log.read().splitlines(True)
+        with open(LOGS_PATH + f, 'w') as log:
+            log.writelines(data[-msg_count:])
 
 
 def operacje_na_google_drive(serwis, just_do_it=False, sheet_ids_file_path=SHEET_IDS_FILE_PATH):
@@ -65,64 +80,71 @@ def operacje_na_google_drive(serwis, just_do_it=False, sheet_ids_file_path=SHEET
         auto_upload = input("Chcesz auto-upload?")
     if auto_upload in ['y', 'yes', 'tak', 'ok'] or just_do_it:
 
-        log("Wysylanie pliku...")
+        logging.info("Wysylanie pliku...")
         serwis.upload_file(OUTPUT_EXCEL_FILE_PATH, RANKING_FILE_ID)
-        log("Sciagam sheet IDs...")
+        logging.info("Sciagam sheet IDs...")
         sheet_ids = serwis.download_sheet_ids(RANKING_FILE_ID)
-        log(sheet_ids)
+        logging.info(sheet_ids)
         JsonOperations.save_json(sheet_ids, sheet_ids_file_path)
-        log("Resetuje arkusz do inputu...")
+        logging.info("Resetuje arkusz do inputu...")
         serwis.clear_cell_range(RANKING_INPUT_FILE_ID, "B1:Z50")
         serwis.clear_cell_range(RANKING_INPUT_FILE_ID, "A1")
-        log("Resetuje uprawnienia arkuszu do inputu...")
+        logging.info("Resetuje uprawnienia arkuszu do inputu...")
         serwis.protect_first_column(RANKING_INPUT_FILE_ID, MASTER_EMAIL)
 
 
-def main(do_everyone=None, upload=None, loop=None, logging_to_file=False, sheet_ids_file_path=SHEET_IDS_FILE_PATH):
-    if logging_to_file:
-        sys.stdout = open("logs/logs.txt", "w")
+def main(upload=None, loop=None, sheet_ids_file_path=SHEET_IDS_FILE_PATH):
+    logging.basicConfig(filename=f"{LOGS_PATH}logs.txt", level=logging.INFO)
     serwis = GoogleDriveInteractions(GOOGLE_DRIVE_CREDENTIALS_PATH,
                                      GOOGLE_DRIVE_TOKEN_PATH,
                                      GOOGLE_SHEETS_API_KEY)
+    sciagaczka_time_triali = CtrTimeTrials(cookie=ACTIVISION_COOKIE,
+                                           gamer_search_ban_time=GAMER_SEARCH_BAN_TIME,
+                                           page_search_until_bored_time=PAGE_SEARCH_UNTIL_BORED_TIME,
+                                           platforms=PLATFORMS,
+                                           **FILE_PATHS)
+    zapisywaczka_do_excela = ExcelOperations(POINT_SYSTEM, LEAGUE_NAMES, **FILE_PATHS)
+    rankingowaczka = RankingCreator(FILE_PATHS["time_trials_json"],
+                                    league_names=LEAGUE_NAMES,
+                                    track_list=sciagaczka_time_triali.track_list,
+                                    minimum_player_count_in_league=MINIMUM_PLAYER_COUNT_IN_LEAGUE,
+                                    league_points_minimum=LEAGUE_POINTS_MINIMUM,
+                                    point_system=POINT_SYSTEM)
+
     while True:
-
         if serwis.get_cell_value(RANKING_INPUT_FILE_ID, "A1"):
+            przytnij_logi_i_ogloszenia()
+
+            # Sciagnij inputowy eksel, zapisz go w postaci JSON i zaaplikuj do user_times.json
             serwis.download_file(INPUT_EXCEL_FILE_PATH, RANKING_INPUT_FILE_ID)
-            current_datetime = datetime.now().strftime("%I:%M%p %B %d, %Y")
-            sciagaczka_time_triali = CtrTimeTrials(cookie=ACTIVISION_COOKIE,
-                                                   gamer_search_ban_time=GAMER_SEARCH_BAN_TIME,
-                                                   page_search_until_bored_time=PAGE_SEARCH_UNTIL_BORED_TIME,
-                                                   platforms=PLATFORMS,
-                                                   **FILE_PATHS)
-            gamers = establish_player_list_to_do(sciagaczka_time_triali.player_list, do_everyone=do_everyone)
-            sciagaczka_time_triali.get_usernames_times(gamers)
-            JsonOperations().apply_json_to_json("config/manual_user_times.json", FILE_PATHS["time_trials_json"])
-            JsonOperations.save_json(sciagaczka_time_triali.changes, "new_records.json")
-
-            zapisywaczka_do_excela = ExcelOperations(POINT_SYSTEM, LEAGUE_NAMES, **FILE_PATHS)
             zapisywaczka_do_excela.convert_xlsx_to_json(INPUT_EXCEL_FILE_PATH, TIMES_FROM_WEBPAGE_JSON_FILE_PATH)
-            JsonOperations().apply_json_to_json(TIMES_FROM_WEBPAGE_JSON_FILE_PATH, FILE_PATHS["time_trials_json"])
+            JsonOperations.apply_json_to_json(TIMES_FROM_WEBPAGE_JSON_FILE_PATH, FILE_PATHS["time_trials_json"])
 
-            rankingowaczka = RankingCreator(FILE_PATHS["time_trials_json"],
-                                            league_names=LEAGUE_NAMES,
-                                            track_list=sciagaczka_time_triali.track_list,
-                                            minimum_player_count_in_league=MINIMUM_PLAYER_COUNT_IN_LEAGUE,
-                                            league_points_minimum=LEAGUE_POINTS_MINIMUM,
-                                            point_system=POINT_SYSTEM)
+            # gamers = establish_player_list_to_do(sciagaczka_time_triali.player_list, do_everyone=do_everyone)
+            # sciagaczka_time_triali.get_usernames_times(gamers)
+            # JsonOperations.apply_json_to_json("config/manual_user_times.json", FILE_PATHS["time_trials_json"])
+            # JsonOperations.save_json(sciagaczka_time_triali.changes, "new_records.json")
+
+            # Zarankinguj w user_times.json
+            rankingowaczka.refresh()
             rankingowaczka.give_out_points_and_medals_for_all_leagues()
             rankingowaczka.calc_total_time()
 
-            zapisywaczka_do_excela.load_time_trial_info(**FILE_PATHS)
+            # Zapisz do excela
+            zapisywaczka_do_excela.refresh()
+            current_datetime = datetime.now().strftime("%I:%M%p %B %d, %Y")
             zapisywaczka_do_excela.convert_user_times_json_to_csvs(LEAGUE_POINTS_MINIMUM, current_datetime)
             zapisywaczka_do_excela.convert_csvs_to_xlsx(OUTPUT_EXCEL_FILE_PATH, LEAGUE_NAMES)
+
+            # Wrzuc na google drive
             operacje_na_google_drive(serwis, just_do_it=upload, sheet_ids_file_path=sheet_ids_file_path)
-            log("ROBOTA SKONCZONA")
+            logging.info("ROBOTA SKONCZONA")
         else:
-            log("Nie zaznaczono krzyzyka w A1")
+            logging.info("Nie zaznaczono krzyzyka w A1")
 
         if not loop:
             break
-        log("Pospie troche...")
+        logging.info("Pospie troche...")
         sleep(SLEEP_BETWEEN_ITERATIONS)
 
 
@@ -141,6 +163,5 @@ if __name__ == "__main__":
     parser.add_argument("--all", help="Sciagnij czasy wszystkich graczy z user_config.json", action="store_true")
     parser.add_argument("-u", help="Wyslij excela na koniec", action="store_true")
     parser.add_argument("--loop", help="Napierdalaj w kolko do usranej smierci", action="store_true")
-    parser.add_argument("-l", help="Loguj tylko do pliku, żeby Traceback wszedł", action="store_true")
     args = parser.parse_args()
-    main(every_gamer_should_be_checked(args.all, args.none), args.u, args.loop, args.l, args.sheetidpath)
+    main(args.u, args.loop, args.sheetidpath)

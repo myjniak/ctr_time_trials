@@ -13,6 +13,10 @@ class RankingCreator:
         self.point_system = point_system
         self.league_points_minimum = league_points_minimum
         self.minimum_player_count_in_league = minimum_player_count_in_league
+        self.time_trials = None
+        self.refresh()
+
+    def refresh(self):
         self.time_trials = JsonOperations.load_json(self.time_trials_file)
 
     def calc_total_time(self):

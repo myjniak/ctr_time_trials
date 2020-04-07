@@ -28,9 +28,10 @@ class JsonOperations:
             track_info[track_id] = name
         return track_info
 
-    def apply_json_to_json(self, json_source, json_target):
-        source = self.load_json(json_source)
-        target = self.load_json(json_target)
+    @classmethod
+    def apply_json_to_json(cls, json_source, json_target):
+        source = cls.load_json(json_source)
+        target = cls.load_json(json_target)
         for player, player_info in source.items():
             if 'tracks' in player_info:
                 for track in player_info['tracks']:
@@ -39,4 +40,4 @@ class JsonOperations:
                     if player in target and input_time_is_valid:
                         target[player].setdefault('tracks', {}).setdefault(track, {})["time"] =\
                             source[player]['tracks'][track]["time"]
-        self.save_json(target, json_target)
+        cls.save_json(target, json_target)

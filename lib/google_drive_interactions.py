@@ -2,7 +2,7 @@ from __future__ import print_function
 import pickle
 import os.path
 import requests
-from .logger import log
+import logging
 from googleapiclient.http import MediaFileUpload, MediaIoBaseDownload
 from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
@@ -14,11 +14,11 @@ SCOPES = ['https://www.googleapis.com/auth/drive']
 
 class GoogleDriveInteractions:
     def __init__(self, cred_path, token_path, api_key):
-        log("Setting up google drive service...")
+        logging.info("Setting up google drive service...")
         self.service = self.get_google_drive_service(cred_path, token_path)
         self.sheets_service = self.get_google_sheets_service(cred_path, token_path)
         self.key = api_key
-        log("Done")
+        logging.info("Done")
 
     @staticmethod
     def auth_setup(cred_path, token_path):
@@ -104,7 +104,7 @@ class GoogleDriveInteractions:
         request = self.sheets_service.spreadsheets().batchUpdate(spreadsheetId=remote_file_id,
                                                                  body=json_post)
         response = request.execute()
-        log(response)
+        logging.info(response)
 
     def get_cell_value(self, remote_file_id, cell):
         content = requests.get(f"https://sheets.googleapis.com/v4/spreadsheets/{remote_file_id}"
@@ -117,4 +117,4 @@ class GoogleDriveInteractions:
         request = self.sheets_service.spreadsheets().values().clear(spreadsheetId=remote_file_id,
                                                                     range=cell_range)
         response = request.execute()
-        log(response)
+        logging.info(response)

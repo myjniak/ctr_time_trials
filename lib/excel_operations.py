@@ -21,11 +21,12 @@ class ExcelOperations:
         self.time_trials = None
         self.track_list = None
         self.league_count = None
-        self.load_time_trial_info(**file_paths)
+        self.file_paths = file_paths
+        self.refresh()
 
-    def load_time_trial_info(self, **file_paths):
-        self.time_trials = JsonOperations.load_json(file_paths["time_trials_json"])
-        self.track_list = list(JsonOperations.load_track_id_json(file_paths["track_ids"]).values())
+    def refresh(self):
+        self.time_trials = JsonOperations.load_json(self.file_paths["time_trials_json"])
+        self.track_list = list(JsonOperations.load_track_id_json(self.file_paths["track_ids"]).values())
         self.league_count = max([player_info["league"] for player_info in self.time_trials.values()])
 
     def convert_csvs_to_xlsx(self, name="time_trial_ranking.xlsx", worksheet_names=[1, 2, 3, 4, 5, 6]):

@@ -1,8 +1,8 @@
+import logging
 import sys
 import requests
 from json import JSONDecodeError, dumps
 from time import time, sleep
-from .logger import log
 from .json_operations import JsonOperations
 from .time_conversion import TimeConversion
 
@@ -22,6 +22,7 @@ class CtrTimeTrials:
         self.page_id_cache = None
         self.user_platform = None
         self.cheat_thresholds = None
+        self.file_paths = None
         self.load_all_jsons(**kwargs)
         self.player_list = [player for player in self.user_platform.keys()
                             if self.user_platform[player] in self.platforms]
@@ -29,14 +30,18 @@ class CtrTimeTrials:
         self.changes = {}
 
     def load_all_jsons(self, **file_paths):
-        self.time_trials_file = file_paths["time_trials_json"]
+        self.file_paths = file_paths
+        self.refresh()
+
+    def refresh(self):
+        self.time_trials_file = self.file_paths["time_trials_json"]
         self.time_trials = JsonOperations.load_json(self.time_trials_file)
-        self.tracks_by_ids = JsonOperations.load_track_id_json(file_paths["track_ids"])
+        self.tracks_by_ids = JsonOperations.load_track_id_json(self.file_paths["track_ids"])
         self.track_list = list(self.tracks_by_ids.values())
-        self.page_id_cache_file = file_paths["page_id_cache_json"]
+        self.page_id_cache_file = self.file_paths["page_id_cache_json"]
         self.page_id_cache = JsonOperations.load_json(self.page_id_cache_file)
-        self.user_platform = JsonOperations.load_json(file_paths["user_platform_json"])
-        self.cheat_thresholds = JsonOperations.load_json(file_paths["cheat_threshold_json"])
+        self.user_platform = JsonOperations.load_json(self.file_paths["user_platform_json"])
+        self.cheat_thresholds = JsonOperations.load_json(self.file_paths["cheat_threshold_json"])
 
     @staticmethod
     def get_url_by_gamer(track_id, gamer, platform):
@@ -56,10 +61,10 @@ class CtrTimeTrials:
                 response = requests.get(url, headers={'Cookie': f"ACT_SSO_COOKIE={self.cookie}"}).json()
                 break
             except JSONDecodeError as err:
-                log(f"Ups, cos zlego sie wydarzylo:\n"
+                logging.info(f"Ups, cos zlego sie wydarzylo:\n"
                     f"{str(err)}")
             except requests.exceptions.ConnectionError as err:
-                log(f"Ups, cos zlego sie wydarzylo:\n"
+                logging.info(f"Ups, cos zlego sie wydarzylo:\n"
                     f"{str(err)}")
         else:
             raise ConnectionError("Cos sie z API rozjebalo na amen :(")
@@ -73,7 +78,7 @@ class CtrTimeTrials:
                     if response['data']['message'] == "Not permitted: rate limit exceeded":
                         return {}
                     if response['data']['message'] == "Not permitted: user not found":
-                        print("User not permitted? WTF?")
+                        logging.info("User not permitted? WTF?")
                         raise KeyError()
                     if response['data']['message'] == "No entries for user":
                         return {player: {"time": 0, "rank": 999999, "page": 0}}
@@ -81,8 +86,8 @@ class CtrTimeTrials:
                 page = response["data"]["page"]
                 break
             except KeyError:
-                log(f"Bad json structure!!!\n {dumps(response, indent=4)}")
-                print("Sleeping 10secs...")
+                logging.info(f"Bad json structure!!!\n {dumps(response, indent=4)}")
+                logging.info("Sleeping 10secs...")
                 sleep(10)
         else:
             raise KeyError(f"Bad json structure!!!\n {dumps(response, indent=4)}")
@@ -135,7 +140,7 @@ class CtrTimeTrials:
         while True:
             if self.ban_timestamp:
                 time_until_search_by_gamer_ban_ends = self.gamer_search_ban_time - (time() - self.ban_timestamp)
-                log(f"Czas do konca bana na szukanie po graczu: {time_until_search_by_gamer_ban_ends}")
+                logging.info(f"Czas do konca bana na szukanie po graczu: {time_until_search_by_gamer_ban_ends}")
             else:
                 time_until_search_by_gamer_ban_ends = 0
             time_passed_searching_by_page = time() - timer_start
@@ -151,7 +156,7 @@ class CtrTimeTrials:
             time_trials = {**time_trials, **new_time_trials}
             if not new_time_trials:
                 self.ban_timestamp = time()
-                log("\nAPI mowi ze chce spac, musimy jakis czas recznie zgadywac strone z rekordem...")
+                logging.info("\nAPI mowi ze chce spac, musimy jakis czas recznie zgadywac strone z rekordem...")
             if username in time_trials:
                 sys.stdout.write("\r                                               ")
                 sys.stdout.flush()
@@ -169,10 +174,10 @@ class CtrTimeTrials:
         if platform == 'switch':
             url = self.get_url_by_page(track_id, page, platform)
         elif time_until_ban_ends <= 0:
-            log("Checking time by gamer")
+            logging.info("Checking time by gamer")
             url = self.get_url_by_gamer(track_id, username, platform)
         else:
-            log(f"Time until ban ends: {time_until_ban_ends}")
+            logging.info(f"Time until ban ends: {time_until_ban_ends}")
         new_time_trials = self.get_time_trials_from_url(url, username)
         return new_time_trials
 
@@ -181,10 +186,10 @@ class CtrTimeTrials:
         if platform == 'switch' or time_passed_searching_by_page < self.page_search_until_bored_time:
             url = self.get_url_by_page(track_id, page, platform)
         elif time_until_ban_ends <= 0:
-            log("OK, I'm bored, checking by gamer!")
+            logging.info("OK, I'm bored, checking by gamer!")
             url = self.get_url_by_gamer(track_id, username, platform)
         else:
-            log(f"Time until ban ends: {time_until_ban_ends}")
+            logging.info(f"Time until ban ends: {time_until_ban_ends}")
         new_time_trials = self.get_time_trials_from_url(url, username)
         return new_time_trials
 
@@ -208,7 +213,7 @@ class CtrTimeTrials:
         users_times = dict()
         for track_id, track_name in tracks.items():
             for username in usernames:
-                log(f"Szukam rekordu {username} na trasie {track_name}...")
+                logging.info(f"Szukam rekordu {username} na trasie {track_name}...")
                 user_record = self.get_username_time(username, track_id)
                 # blad w API - dodaje sekunde do wszystkiego
                 user_record["time"] -= 1
@@ -216,14 +221,14 @@ class CtrTimeTrials:
                 place = user_record["rank"]
 
                 if user_record["time"] <= 0:
-                    log("NO ENTRY")
+                    logging.info("NO ENTRY")
                     pretty_user_time = "NO TIME"
                     place = 999999
                 elif user_record["time"] < thresholds[track_name]:
-                    log("CHEATER!")
+                    logging.info("CHEATER!")
                     pretty_user_time = "CHEATER"
                     place = 999999
-                log(f"\rCzas: {pretty_user_time} Pozycja: {place}                      \n")
+                logging.info(f"\rCzas: {pretty_user_time} Pozycja: {place}                      \n")
                 self.save_user_time(username, track_name, pretty_user_time, place)
                 users_times.setdefault(username, {})[track_name] = pretty_user_time
         return users_times
