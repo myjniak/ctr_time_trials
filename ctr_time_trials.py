@@ -34,7 +34,7 @@ INPUT_TEMPLATE_EXCEL_FILE_PATH = "config/CTR TT INPUT template.xlsx"
 PLATFORMS = ['psn', 'xbl', 'switch']
 GAMER_SEARCH_BAN_TIME = 800
 PAGE_SEARCH_UNTIL_BORED_TIME = 5
-SLEEP_BETWEEN_ITERATIONS = 300
+SLEEP_BETWEEN_ITERATIONS = 5
 
 
 def establish_player_list_to_do(gamer_list, do_everyone=None):
@@ -81,10 +81,10 @@ def operacje_na_google_drive(serwis, just_do_it=False, sheet_ids_file_path=SHEET
 def main(do_everyone=None, upload=None, loop=None, logging_to_file=False, sheet_ids_file_path=SHEET_IDS_FILE_PATH):
     if logging_to_file:
         sys.stdout = open("logs/logs.txt", "w")
+    serwis = GoogleDriveInteractions(GOOGLE_DRIVE_CREDENTIALS_PATH,
+                                     GOOGLE_DRIVE_TOKEN_PATH,
+                                     GOOGLE_SHEETS_API_KEY)
     while True:
-        serwis = GoogleDriveInteractions(GOOGLE_DRIVE_CREDENTIALS_PATH,
-                                         GOOGLE_DRIVE_TOKEN_PATH,
-                                         GOOGLE_SHEETS_API_KEY)
 
         if serwis.get_cell_value(RANKING_INPUT_FILE_ID, "A1"):
             serwis.download_file(INPUT_EXCEL_FILE_PATH, RANKING_INPUT_FILE_ID)
@@ -116,9 +116,9 @@ def main(do_everyone=None, upload=None, loop=None, logging_to_file=False, sheet_
             zapisywaczka_do_excela.convert_user_times_json_to_csvs(LEAGUE_POINTS_MINIMUM, current_datetime)
             zapisywaczka_do_excela.convert_csvs_to_xlsx(OUTPUT_EXCEL_FILE_PATH, LEAGUE_NAMES)
             operacje_na_google_drive(serwis, just_do_it=upload, sheet_ids_file_path=sheet_ids_file_path)
+            log("ROBOTA SKONCZONA")
         else:
             log("Nie zaznaczono krzyzyka w A1")
-        log("ROBOTA SKONCZONA")
 
         if not loop:
             break
