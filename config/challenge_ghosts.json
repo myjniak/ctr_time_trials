@@ -1,70 +1,4 @@
 {
-  "silVersilVa89PL": {
-    "tracks": {
-      "Turbo Track": {
-        "time": "1:31.55"
-      },
-      "Roo's Tubes": {
-        "time": "1:15.50"
-      },
-      "Tiger Temple": {
-        "time": "1:28.48"
-      },
-      "Papu's Pyramid": {
-        "time": "1:26.75"
-      },
-      "Dingo Canyon": {
-        "time": "1:29.32"
-      },
-      "N.Gin Labs": {
-        "time": "2:12.00"
-      },
-      "Thunder Struck": {
-        "time": "1:51.94"
-      }
-    }
-  },
-  "Xerdzio": {
-    "tracks": {
-      "N.Gin Labs": {
-        "time": "2:13.76"
-      }
-    }
-  },
-  "Jakub_Luk": {
-    "tracks": {
-      "N.Gin Labs": {
-        "time": "2:16.40"
-      }
-    }
-  },
-  "Viarus_PL": {
-    "tracks": {
-      "N.Gin Labs": {
-        "time": "2:15.30"
-      }
-    }
-  },
-  "kubalok25": {
-    "tracks": {
-      "N.Gin Labs": {
-        "time": "2:15.46"
-      },
-      "Thunder Struck": {
-        "time": "1:55.78"
-      }
-    }
-  },
-  "ZenQMeister": {
-    "tracks": {
-      "Thunder Struck": {
-        "time": "2:35.22"
-      },
-      "Tiger Temple": {
-        "time": "1:39.86"
-      }
-    }
-  },
   "N. Tropy": {
     "tracks": {
       "Crash Cove": {
@@ -177,6 +111,12 @@
       },
       "Gingerbread Joyride": {
         "time": "2:28.48"
+      },
+      "Megamix Mania": {
+        "time": "2:33.08"
+      },
+      "Drive-Thru Danger": {
+        "time": "2:50.10"
       }
     }
   },
@@ -292,6 +232,12 @@
       },
       "Gingerbread Joyride": {
         "time": "2:03.89"
+      },
+      "Megamix Mania": {
+        "time": "2:17.34"
+      },
+      "Drive-Thru Danger": {
+        "time": "2:20.16"
       }
     }
   },
@@ -407,6 +353,133 @@
       },
       "Gingerbread Joyride": {
         "time": "1:59.69"
+      },
+      "Megamix Mania": {
+        "time": "2:11.43"
+      },
+      "Drive-Thru Danger": {
+        "time": "2:11.83"
+      }
+    }
+  },
+  "Beenox": {
+    "tracks": {
+      "Crash Cove": {
+        "time": "1:19.74"
+      },
+      "Roo's Tubes": {
+        "time": "1:16.87"
+      },
+      "Mystery Caves": {
+        "time": "2:00.62"
+      },
+      "Sewer Speedway": {
+        "time": "1:47.57"
+      },
+      "Coco Park": {
+        "time": "1:18.27"
+      },
+      "Tiger Temple": {
+        "time": "1:30.35"
+      },
+      "Dingo Canyon": {
+        "time": "1:31.49"
+      },
+      "Papu's Pyramid": {
+        "time": "1:30.52"
+      },
+      "Blizzard Bluff": {
+        "time": "1:14.07"
+      },
+      "Dragon Mines": {
+        "time": "1:19.17"
+      },
+      "Tiny Arena": {
+        "time": "3:09.32"
+      },
+      "Polar Pass": {
+        "time": "2:09.99"
+      },
+      "Cortex Castle": {
+        "time": "1:57.44"
+      },
+      "N.Gin Labs": {
+        "time": "2:16.24"
+      },
+      "Hot Air Skyway": {
+        "time": "2:13.49"
+      },
+      "Oxide Station": {
+        "time": "2:48.40"
+      },
+      "Turbo Track": {
+        "time": "1:33.52"
+      },
+      "Slide Coliseum": {
+        "time": "1:40.96"
+      },
+      "Inferno Island": {
+        "time": "1:35.93"
+      },
+      "Jungle Boogie": {
+        "time": "1:16.11"
+      },
+      "Clockwork Wumpa": {
+        "time": "1:55.71"
+      },
+      "Android Alley": {
+        "time": "2:34.68"
+      },
+      "Electron Avenue": {
+        "time": "3:08.89"
+      },
+      "Deep Sea Driving": {
+        "time": "1:42.17"
+      },
+      "Thunder Struck": {
+        "time": "2:05.59"
+      },
+      "Tiny Temple": {
+        "time": "1:40.23"
+      },
+      "Meteor Gorge": {
+        "time": "1:24.78"
+      },
+      "Barin Ruins": {
+        "time": "1:44.07"
+      },
+      "Out of Time": {
+        "time": "1:54.61"
+      },
+      "Assembly Lane": {
+        "time": "2:28.38"
+      },
+      "Hyper Spaceway": {
+        "time": "1:48.64"
+      },
+      "Twilight Tour": {
+        "time": "2:14.80"
+      },
+      "Prehistoric Playground": {
+        "time": "2:22.78"
+      },
+      "Spyro Circuit": {
+        "time": "2:12.66"
+      },
+      "Nina's Nightmare": {
+        "time": "1:50.28"
+      },
+      "Koala Carnival": {
+        "time": "1:39.96"
+      },
+      "Gingerbread Joyride": {
+        "time": "1:54.51"
+      },
+      "Megamix Mania": {
+        "time": "2:04.28"
+      },
+      "Drive-Thru Danger": {
+        "time": "1:50.85"
       }
     }
   }

@@ -131,8 +131,8 @@ def main(upload=None, loop=None, sheet_ids_file_path=SHEET_IDS_FILE_PATH):
 
             # gamers = establish_player_list_to_do(sciagaczka_time_triali.player_list, do_everyone=do_everyone)
             # sciagaczka_time_triali.get_usernames_times(gamers)
-            # JsonOperations.apply_json_to_json("config/manual_user_times.json", FILE_PATHS["time_trials_json"])
-            # JsonOperations.save_json(sciagaczka_time_triali.changes, "new_records.json")
+            JsonOperations.apply_json_to_json("config/challenge_ghosts.json", FILE_PATHS["time_trials_json"])
+            JsonOperations.save_json(sciagaczka_time_triali.changes, "new_records.json")
 
             # Zarankinguj w user_times.json
             rankingowaczka.refresh()
