@@ -94,6 +94,12 @@ def operacje_na_google_drive(serwis, just_do_it=False, sheet_ids_file_path=SHEET
         serwis.protect_first_column(RANKING_INPUT_FILE_ID, MASTER_EMAIL)
 
 
+def zrob_dict_nowych_playerow(sciagaczka):
+    for player in sciagaczka.player_list:
+        if player not in sciagaczka.time_trials:
+            sciagaczka.time_trials[player] = dict()
+
+
 def main(upload=None, loop=None, sheet_ids_file_path=SHEET_IDS_FILE_PATH):
     Announcements.logs_path = LOGS_PATH
     logging.basicConfig(filename=f"{LOGS_PATH}logs.txt", level=logging.INFO)
@@ -116,6 +122,7 @@ def main(upload=None, loop=None, sheet_ids_file_path=SHEET_IDS_FILE_PATH):
     while True:
         if serwis.get_cell_value(RANKING_INPUT_FILE_ID, "A1"):
             przytnij_logi_i_ogloszenia()
+            zrob_dict_nowych_playerow(sciagaczka_time_triali)
 
             # Sciagnij inputowy eksel, zapisz go w postaci JSON i zaaplikuj do user_times.json
             serwis.download_file(INPUT_EXCEL_FILE_PATH, RANKING_INPUT_FILE_ID)
