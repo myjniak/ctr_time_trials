@@ -5,3 +5,4 @@
 *.pickle
 credentials.json
 variables.py
+logs.txt
