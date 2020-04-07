@@ -35,9 +35,16 @@ class JsonOperations:
         for player, player_info in source.items():
             if 'tracks' in player_info:
                 for track in player_info['tracks']:
-                    input_time_is_valid = \
-                        TimeConversion.str_to_float(source[player]['tracks'][track]["time"], value_on_error=300) != 300
-                    if player in target and input_time_is_valid:
-                        target[player].setdefault('tracks', {}).setdefault(track, {})["time"] =\
-                            source[player]['tracks'][track]["time"]
+                    input_time_as_float = \
+                        TimeConversion.str_to_float(source[player]['tracks'][track]["time"], value_on_error=300)
+                    for registered_player in target:
+                        if player.lower() == registered_player.lower():
+                            exact_player_name = registered_player
+                            break
+                    else:
+                        break
+                    if input_time_as_float != 300:
+                        pretty_input_time = TimeConversion.float_to_str(input_time_as_float)
+                        target[exact_player_name].setdefault('tracks', {}).setdefault(track, {})["time"] =\
+                            pretty_input_time
         cls.save_json(target, json_target)

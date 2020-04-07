@@ -1,15 +1,19 @@
-from datetime import datetime, timedelta
+import re
+from datetime import timedelta
 
 
 class TimeConversion:
 
     @staticmethod
     def str_to_float(time_record, value_on_error=300):
-        try:
-            x = datetime.strptime(time_record, '%M:%S.%f')
-        except ValueError:
+        pattern = re.compile("(\d+)\D+(\d+)\D+(\d+)")
+        regex_match = pattern.match(time_record)
+        if regex_match is None:
             return value_on_error
-        return x.minute * 60 + x.second + x.microsecond / 1000000
+        else:
+            minutes, seconds, miliseconds = regex_match.groups()
+            minutes = str(int(minutes))
+            return minutes + ":" + seconds + "." + miliseconds
 
     @staticmethod
     def float_to_str(time_in_seconds):
