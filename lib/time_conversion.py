@@ -12,8 +12,7 @@ class TimeConversion:
             return value_on_error
         else:
             minutes, seconds, miliseconds = regex_match.groups()
-            minutes = str(int(minutes))
-            return minutes + ":" + seconds + "." + miliseconds
+            return 60*float(minutes) + float(seconds) + float(miliseconds)/10**len(miliseconds)
 
     @staticmethod
     def float_to_str(time_in_seconds):
