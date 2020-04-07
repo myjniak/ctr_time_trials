@@ -67,7 +67,7 @@ class ExcelOperations:
                             cell_format.set_pattern(1)
                             cell_format.set_bg_color('white')
                         if r == 0:
-                            if players[c-1] in ["N. Tropy", "Oxide", "Velo"]:
+                            if players[c-1] in ["N. Tropy", "Oxide", "Velo", "Beenox"]:
                                 cell_format.set_bg_color('red')
                             else:
                                 cell_format.set_bg_color('orange')

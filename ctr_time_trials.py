@@ -98,6 +98,7 @@ def zrob_dict_nowych_playerow(sciagaczka):
     for player in sciagaczka.player_list:
         if player not in sciagaczka.time_trials:
             sciagaczka.time_trials[player] = dict()
+            JsonOperations.save_json(sciagaczka.time_trials, FILE_PATHS["time_trials_json"])
 
 
 def main(upload=None, loop=None, sheet_ids_file_path=SHEET_IDS_FILE_PATH):
