@@ -1,5 +1,4 @@
 import re
-from datetime import timedelta
 
 
 class TimeConversion:
@@ -15,10 +14,12 @@ class TimeConversion:
             return 60*float(minutes) + float(seconds) + float(miliseconds)/10**len(miliseconds)
 
     @staticmethod
-    def float_to_str(time_in_seconds):
-        hh_mm_ss_msmsms = str(timedelta(seconds=time_in_seconds))[:-3]
-        for i, char in enumerate(hh_mm_ss_msmsms):
-            if char == "0" or char == ":":
-                continue
-            else:
-                return hh_mm_ss_msmsms[i:]
+    def float_to_str(time_in_seconds, decimals=3):
+        minutes = int(time_in_seconds/60)
+        seconds = int(time_in_seconds) - minutes*60
+        seconds_as_str = ('0' if seconds <= 9 else '') + str(seconds)
+        miliseconds = int(time_in_seconds*1000) - (minutes*60 + seconds)*1000
+        ms_len = len(str(miliseconds))
+        zeros_to_add = decimals - ms_len
+        miliseconds_as_str = zeros_to_add*'0' + str(miliseconds)
+        return str(minutes) + ":" + seconds_as_str + "." + miliseconds_as_str
