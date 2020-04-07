@@ -90,9 +90,9 @@ class RankingCreator:
             }
         for track in self.track_list:
             for player in players:
-                if track in data[player]['tracks']:
-                    data[player]['tracks'][track]['points'] = 0
-                    data[player]['tracks'][track].setdefault('medal', None)
+                data[player].setdefault('tracks', {}).setdefault(track, {})
+                data[player]['tracks'][track]['points'] = 0
+                data[player]['tracks'][track].setdefault('medal', None)
             players_competing = [player for player in players if track in data[player]['tracks']]
             players_sorted = \
                 sorted(players_competing,
