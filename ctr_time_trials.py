@@ -1,6 +1,5 @@
 import argparse
 import logging
-import sys
 import os
 from datetime import datetime
 from time import sleep
@@ -9,6 +8,7 @@ from lib.excel_operations import ExcelOperations
 from lib.json_operations import JsonOperations
 from lib.google_drive_interactions import GoogleDriveInteractions
 from lib.ranking_creator import RankingCreator
+from lib.announcements import Announcements
 from confidential.variables import *
 
 
@@ -94,6 +94,7 @@ def operacje_na_google_drive(serwis, just_do_it=False, sheet_ids_file_path=SHEET
 
 
 def main(upload=None, loop=None, sheet_ids_file_path=SHEET_IDS_FILE_PATH):
+    Announcements.logs_path = LOGS_PATH
     logging.basicConfig(filename=f"{LOGS_PATH}logs.txt", level=logging.INFO)
     serwis = GoogleDriveInteractions(GOOGLE_DRIVE_CREDENTIALS_PATH,
                                      GOOGLE_DRIVE_TOKEN_PATH,

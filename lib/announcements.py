@@ -2,6 +2,7 @@ import logging
 
 
 class Announcements:
+    logs_path = 'logs/'
 
     def __init__(self, new_tts, old_tts, league_names, track_list):
         self.new_tts = new_tts
@@ -36,9 +37,15 @@ class Announcements:
             l_old = self.old_tts[player]['league']
             l_new = player_info['league']
             if l_new > l_old:
-                logging.info(f"{player} entered the {self.league_names[l_new - 1]}", filename=f"{l_new}.txt")
+                self.log(f"{player} entered the {self.league_names[l_new - 1]}", filename=f"{l_new}.txt")
             elif l_new < l_old:
-                logging.info(f"{player} HAS ASCENDED TO {self.league_names[l_new - 1]}!", filename=f"{l_new}.txt")
+                self.log(f"{player} HAS ASCENDED TO {self.league_names[l_new - 1]}!", filename=f"{l_new}.txt")
+
+    @classmethod
+    def log(cls, msg, filename):
+        logging.info(msg)
+        with open(cls.logs_path + filename, "a+") as f:
+            f.write(f"\n{str(msg)}")
 
     @staticmethod
     def get_leagues_with_transfers(new_tts, old_tts):
