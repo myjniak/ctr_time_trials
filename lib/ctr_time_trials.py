@@ -26,6 +26,7 @@ class CtrTimeTrials:
         self.load_all_jsons(**kwargs)
         self.player_list = [player for player in self.user_platform.keys()
                             if self.user_platform[player] in self.platforms]
+        self.initialize_players_json_structure()
         self.ban_timestamp = 0
         self.changes = {}
 
@@ -42,6 +43,21 @@ class CtrTimeTrials:
         self.page_id_cache = JsonOperations.load_json(self.page_id_cache_file)
         self.user_platform = JsonOperations.load_json(self.file_paths["user_platform_json"])
         self.cheat_thresholds = JsonOperations.load_json(self.file_paths["cheat_threshold_json"])
+
+    def initialize_players_json_structure(self):
+        for player in [*self.player_list, "N. Tropy", "Oxide", "Velo", "Beenox"]:
+            self.time_trials.setdefault(player, {})
+            self.time_trials[player].setdefault('tracks', {})
+            self.time_trials[player].setdefault('medals', {})
+            self.time_trials[player].setdefault('league', 0)
+            self.time_trials[player].setdefault('total_points', 0)
+            self.time_trials[player].setdefault('total_points_in_upper_league', 0)
+            for track in self.track_list:
+                self.time_trials[player].setdefault('tracks', {}).setdefault(track, {})
+                self.time_trials[player]['tracks'][track]['points'] = 0
+                self.time_trials[player]['tracks'][track].setdefault('time', "NO TIME")
+                self.time_trials[player]['tracks'][track].setdefault('medal', None)
+        JsonOperations.save_json(self.time_trials, self.time_trials_file)
 
     @staticmethod
     def get_url_by_gamer(track_id, gamer, platform):
