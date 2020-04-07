@@ -1,7 +1,7 @@
 import argparse
 import logging
 import os
-from datetime import datetime
+from datetime import datetime, timedelta
 from time import sleep
 from lib.ctr_time_trials import CtrTimeTrials
 from lib.excel_operations import ExcelOperations
@@ -37,6 +37,7 @@ PLATFORMS = ['psn', 'xbl', 'switch']
 GAMER_SEARCH_BAN_TIME = 800
 PAGE_SEARCH_UNTIL_BORED_TIME = 5
 SLEEP_BETWEEN_ITERATIONS = 5
+TIME_ZONE_DIFF = 7
 
 
 def establish_player_list_to_do(gamer_list, do_everyone=None):
@@ -133,7 +134,7 @@ def main(upload=None, loop=None, sheet_ids_file_path=SHEET_IDS_FILE_PATH):
 
             # Zapisz do excela
             zapisywaczka_do_excela.refresh()
-            current_datetime = datetime.now().strftime("%I:%M%p %B %d, %Y")
+            current_datetime = (datetime.now() + timedelta(hours=TIME_ZONE_DIFF)).strftime("%I:%M%p %B %d, %Y")
             zapisywaczka_do_excela.convert_user_times_json_to_csvs(LEAGUE_POINTS_MINIMUM, current_datetime)
             zapisywaczka_do_excela.convert_csvs_to_xlsx(OUTPUT_EXCEL_FILE_PATH, LEAGUE_NAMES)
 
