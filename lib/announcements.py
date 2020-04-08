@@ -23,10 +23,11 @@ class Announcements:
         for player in players:
             for track in self.track_list:
                 try:
-                    m_old = self.old_tts[player]['tracks'][track]['medal']
                     m_new = self.new_tts[player]['tracks'][track]['medal']
                 except KeyError:
                     continue
+                self.old_tts[player]['tracks'][track].setdefault('medal', None)
+                m_old = self.old_tts[player]['tracks'][track]['medal']
                 if grades[m_new] > grades[m_old]:
                     self.log(f"{player} gets {m_new.upper()} medal on {track}!",
                              filename=f"{self.new_tts[player]['league']}.txt")
