@@ -78,10 +78,10 @@ class CtrTimeTrials:
                 break
             except JSONDecodeError as err:
                 logging.info(f"Ups, cos zlego sie wydarzylo:\n"
-                    f"{str(err)}")
+                             f"{str(err)}")
             except requests.exceptions.ConnectionError as err:
                 logging.info(f"Ups, cos zlego sie wydarzylo:\n"
-                    f"{str(err)}")
+                             f"{str(err)}")
         else:
             raise ConnectionError("Cos sie z API rozjebalo na amen :(")
         return response

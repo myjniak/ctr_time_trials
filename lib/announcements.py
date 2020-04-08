@@ -28,8 +28,8 @@ class Announcements:
                 except KeyError:
                     continue
                 if grades[m_new] > grades[m_old]:
-                    logging.info(f"{player} gets {m_new.upper()} medal on {track}!",
-                        filename=f"{self.new_tts[player]['league']}.txt")
+                    self.log(f"{player} gets {m_new.upper()} medal on {track}!",
+                             filename=f"{self.new_tts[player]['league']}.txt")
 
     def log_league_transfers(self):
         for player, player_info in self.new_tts.items():
