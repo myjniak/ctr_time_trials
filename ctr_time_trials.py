@@ -126,7 +126,9 @@ def main_loop(serwis, sciagaczka_time_triali, zapisywaczka_do_excela, rankingowa
             # Sciagnij inputowy eksel, zapisz go w postaci JSON i zaaplikuj do user_times.json
             serwis.download_file(INPUT_EXCEL_FILE_PATH, RANKING_INPUT_FILE_ID)
             zapisywaczka_do_excela.convert_xlsx_to_json(INPUT_EXCEL_FILE_PATH, TIMES_FROM_WEBPAGE_JSON_FILE_PATH)
-            JsonOperations.apply_json_to_json(TIMES_FROM_WEBPAGE_JSON_FILE_PATH, FILE_PATHS["time_trials_json"])
+            JsonOperations.apply_json_to_json(TIMES_FROM_WEBPAGE_JSON_FILE_PATH,
+                                              FILE_PATHS["time_trials_json"],
+                                              verbose=True)
 
             # gamers = establish_player_list_to_do(sciagaczka_time_triali.player_list, do_everyone=do_everyone)
             # sciagaczka_time_triali.get_usernames_times(gamers)
@@ -149,7 +151,7 @@ def main_loop(serwis, sciagaczka_time_triali, zapisywaczka_do_excela, rankingowa
                 operacje_na_google_drive(serwis, sheet_ids_file_path=sheet_ids_file_path)
             logging.info("ROBOTA SKONCZONA")
         else:
-            logging.info("Nie zaznaczono krzyzyka w A1")
+            logging.info("heartbeat")
 
         if not loop:
             break
