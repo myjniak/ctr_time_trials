@@ -1,5 +1,6 @@
 import argparse
 import logging
+import traceback
 import os
 from datetime import datetime, timedelta
 from time import sleep
@@ -46,8 +47,8 @@ def establish_player_list_to_do(gamer_list, do_everyone=None):
         gamers = gamer_list
     elif do_everyone is None:
         logging.info("Dej nicki, których time triale chcesz sciagnac. Jak skonczysz wpisywac"
-            " nicki, kliknij Enter dwa razy. Wpisz nicki poprawnie, bo bede szukal w nieskonczonosc!\n"
-            "Wpisz 'all' zeby zaaktualizowac wszystkich graczy w bazie config/user_config.json.")
+                     " nicki, kliknij Enter dwa razy. Wpisz nicki poprawnie, bo bede szukal w nieskonczonosc!\n"
+                     "Wpisz 'all' zeby zaaktualizowac wszystkich graczy w bazie config/user_config.json.")
         while True:
             gamer = input("Dej nick: ")
             if not gamer:
@@ -75,23 +76,18 @@ def przytnij_logi_i_ogloszenia(logs_msg_count=10000, announcements_msg_count=10)
             log.writelines(data[-msg_count:])
 
 
-def operacje_na_google_drive(serwis, just_do_it=False, sheet_ids_file_path=SHEET_IDS_FILE_PATH):
-    auto_upload = ''
-    if not just_do_it:
-        auto_upload = input("Chcesz auto-upload?")
-    if auto_upload in ['y', 'yes', 'tak', 'ok'] or just_do_it:
-
-        logging.info("Wysylanie pliku...")
-        serwis.upload_file(OUTPUT_EXCEL_FILE_PATH, RANKING_FILE_ID)
-        logging.info("Sciagam sheet IDs...")
-        sheet_ids = serwis.download_sheet_ids(RANKING_FILE_ID)
-        logging.info(sheet_ids)
-        JsonOperations.save_json(sheet_ids, sheet_ids_file_path)
-        logging.info("Resetuje arkusz do inputu...")
-        serwis.clear_cell_range(RANKING_INPUT_FILE_ID, "B1:Z50")
-        serwis.clear_cell_range(RANKING_INPUT_FILE_ID, "A1")
-        logging.info("Resetuje uprawnienia arkuszu do inputu...")
-        serwis.protect_first_column(RANKING_INPUT_FILE_ID, MASTER_EMAIL)
+def operacje_na_google_drive(serwis, sheet_ids_file_path=SHEET_IDS_FILE_PATH):
+    logging.info("Wysylanie pliku...")
+    serwis.upload_file(OUTPUT_EXCEL_FILE_PATH, RANKING_FILE_ID)
+    logging.info("Sciagam sheet IDs...")
+    sheet_ids = serwis.download_sheet_ids(RANKING_FILE_ID)
+    logging.info(sheet_ids)
+    JsonOperations.save_json(sheet_ids, sheet_ids_file_path)
+    logging.info("Resetuje arkusz do inputu...")
+    serwis.clear_cell_range(RANKING_INPUT_FILE_ID, "B1:Z50")
+    serwis.clear_cell_range(RANKING_INPUT_FILE_ID, "A1")
+    logging.info("Resetuje uprawnienia arkuszu do inputu...")
+    serwis.protect_first_column(RANKING_INPUT_FILE_ID, MASTER_EMAIL)
 
 
 def main(upload=None, loop=None, sheet_ids_file_path=SHEET_IDS_FILE_PATH):
@@ -112,7 +108,17 @@ def main(upload=None, loop=None, sheet_ids_file_path=SHEET_IDS_FILE_PATH):
                                     minimum_player_count_in_league=MINIMUM_PLAYER_COUNT_IN_LEAGUE,
                                     league_points_minimum=LEAGUE_POINTS_MINIMUM,
                                     point_system=POINT_SYSTEM)
+    try:
+        main_loop(serwis, sciagaczka_time_triali, zapisywaczka_do_excela, rankingowaczka,
+                  loop, upload, sheet_ids_file_path)
+    except Exception:
+        formatted_lines = traceback.format_exc().splitlines()
+        for line in formatted_lines:
+            logging.error(line)
 
+
+def main_loop(serwis, sciagaczka_time_triali, zapisywaczka_do_excela, rankingowaczka,
+              loop, upload, sheet_ids_file_path):
     while True:
         if serwis.get_cell_value(RANKING_INPUT_FILE_ID, "A1"):
             przytnij_logi_i_ogloszenia()
@@ -139,14 +145,14 @@ def main(upload=None, loop=None, sheet_ids_file_path=SHEET_IDS_FILE_PATH):
             zapisywaczka_do_excela.convert_csvs_to_xlsx(OUTPUT_EXCEL_FILE_PATH, LEAGUE_NAMES)
 
             # Wrzuc na google drive
-            operacje_na_google_drive(serwis, just_do_it=upload, sheet_ids_file_path=sheet_ids_file_path)
+            if upload:
+                operacje_na_google_drive(serwis, sheet_ids_file_path=sheet_ids_file_path)
             logging.info("ROBOTA SKONCZONA")
         else:
             logging.info("Nie zaznaczono krzyzyka w A1")
 
         if not loop:
             break
-        logging.info("Pospie troche...")
         sleep(SLEEP_BETWEEN_ITERATIONS)
 
 
