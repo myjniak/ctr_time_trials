@@ -31,6 +31,7 @@ class JsonOperations:
 
     @classmethod
     def apply_json_to_json(cls, json_source, json_target, verbose=False):
+        logging.info(f"Applying {json_source}...")
         source = cls.load_json(json_source)
         target = cls.load_json(json_target)
         for player, player_info in source.items():

@@ -93,7 +93,7 @@ class RankingCreator:
                 data[player].setdefault('tracks', {}).setdefault(track, {})
                 data[player]['tracks'][track]['points'] = 0
                 data[player]['tracks'][track].setdefault('time', "NO TIME")
-                data[player]['tracks'][track].setdefault('medal', None)
+                data[player]['tracks'][track]['medal'] = None
             players_competing = [player for player in players if track in data[player]['tracks']]
             players_sorted = \
                 sorted(players_competing,

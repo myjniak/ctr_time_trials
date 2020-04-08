@@ -52,6 +52,7 @@ class GoogleDriveInteractions:
         return service
 
     def download_file(self, local_file_path, remote_file_id):
+        logging.info(f"Downloading to {local_file_path}")
         request = self.service.files().export_media(
             fileId=remote_file_id,
             mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")

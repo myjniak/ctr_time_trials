@@ -64,6 +64,7 @@ def establish_player_list_to_do(gamer_list, do_everyone=None):
 
 
 def przytnij_logi_i_ogloszenia(logs_msg_count=10000, announcements_msg_count=10):
+    logging.info("Przycinam logi")
     file_list = os.listdir(LOGS_PATH)
     for f in file_list:
         if f.endswith('txt') and not f.startswith("logs"):
@@ -131,7 +132,7 @@ def main_loop(serwis, sciagaczka_time_triali, zapisywaczka_do_excela, rankingowa
                                               verbose=True)
 
             # gamers = establish_player_list_to_do(sciagaczka_time_triali.player_list, do_everyone=do_everyone)
-            # sciagaczka_time_triali.get_usernames_times(gamers)
+            # sciagaczka_time_triali.get_usernames_times(gamers))
             JsonOperations.apply_json_to_json("config/challenge_ghosts.json", FILE_PATHS["time_trials_json"])
             JsonOperations.save_json(sciagaczka_time_triali.changes, "new_records.json")
 
