@@ -1,4 +1,4 @@
-import logging
+from . import LOGGER
 
 
 class Announcements:
@@ -29,7 +29,7 @@ class Announcements:
                 self.old_tts[player]['tracks'][track].setdefault('medal', None)
                 m_old = self.old_tts[player]['tracks'][track]['medal']
                 if grades[m_new] > grades[m_old]:
-                    logging.info(f"{player}: from {m_old} to {m_new}")
+                    LOGGER.info(f"{player}: from {m_old} to {m_new}")
                     self.log(f"{player} gets {m_new.upper()} medal on {track}!",
                              filename=f"{self.new_tts[player]['league']}.txt")
 
@@ -45,7 +45,7 @@ class Announcements:
 
     @classmethod
     def log(cls, msg, filename):
-        logging.info(msg)
+        LOGGER.info(msg)
         with open(cls.logs_path + filename, "a+") as f:
             f.write(f"\n{str(msg)}")
 

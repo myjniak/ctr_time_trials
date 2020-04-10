@@ -4,7 +4,7 @@ import traceback
 import os
 from datetime import datetime, timedelta
 from time import sleep
-from lib.ctr_time_trials import CtrTimeTrials
+from lib.ctr_time_trials_downloader import CtrTimeTrialsDownloader
 from lib.database import Database
 from lib.excel_operations import ExcelOperations
 from lib.json_operations import JsonOperations
@@ -40,6 +40,12 @@ GAMER_SEARCH_BAN_TIME = 800
 PAGE_SEARCH_UNTIL_BORED_TIME = 5
 SLEEP_BETWEEN_ITERATIONS = 5
 TIME_ZONE_DIFF = 7
+logging.basicConfig(filename=f"{LOGS_PATH}logs.txt",
+                    level=logging.WARNING,
+                    format='%(asctime)s %(levelname)-8s %(message)s',
+                    datefmt='%Y-%m-%d %H:%M:%S')
+LOGGER = logging.getLogger(__name__)
+LOGGER.setLevel(LOGGER.DEBUG)
 
 
 def establish_player_list_to_do(gamer_list, do_everyone=None):
@@ -47,7 +53,7 @@ def establish_player_list_to_do(gamer_list, do_everyone=None):
     if do_everyone:
         gamers = gamer_list
     elif do_everyone is None:
-        logging.info("Dej nicki, których time triale chcesz sciagnac. Jak skonczysz wpisywac"
+        LOGGER.info("Dej nicki, których time triale chcesz sciagnac. Jak skonczysz wpisywac"
                      " nicki, kliknij Enter dwa razy. Wpisz nicki poprawnie, bo bede szukal w nieskonczonosc!\n"
                      "Wpisz 'all' zeby zaaktualizowac wszystkich graczy w bazie config/user_list.json.")
         while True:
@@ -60,12 +66,12 @@ def establish_player_list_to_do(gamer_list, do_everyone=None):
             elif gamer in gamer_list:
                 gamers.append(gamer)
             else:
-                logging.info(f"Nie ma takiego gracza w bazie! Tu masz do wyboru:\n{gamer_list}")
+                LOGGER.info(f"Nie ma takiego gracza w bazie! Tu masz do wyboru:\n{gamer_list}")
     return gamers
 
 
 def przytnij_logi_i_ogloszenia(logs_msg_count=10000, announcements_msg_count=10):
-    logging.info("Przycinam logi")
+    LOGGER.info("Przycinam logi")
     file_list = os.listdir(LOGS_PATH)
     for f in file_list:
         if f.endswith('txt') and not f.startswith("logs"):
@@ -79,21 +85,20 @@ def przytnij_logi_i_ogloszenia(logs_msg_count=10000, announcements_msg_count=10)
 
 
 def operacje_na_google_drive(serwis, sheet_ids_file_path=SHEET_IDS_FILE_PATH):
-    logging.info("Wysylanie pliku...")
+    LOGGER.info("Wysylanie pliku...")
     serwis.upload_file(OUTPUT_EXCEL_FILE_PATH, RANKING_FILE_ID)
-    logging.info("Sciagam sheet IDs...")
+    LOGGER.info("Sciagam sheet IDs...")
     sheet_ids = serwis.download_sheet_ids(RANKING_FILE_ID)
-    logging.info(sheet_ids)
+    LOGGER.info(sheet_ids)
     JsonOperations.save_json(sheet_ids, sheet_ids_file_path)
-    logging.info("Resetuje arkusz do inputu...")
+    LOGGER.info("Resetuje arkusz do inputu...")
     serwis.clear_cell_range(RANKING_INPUT_FILE_ID, "B1:Z50")
     serwis.clear_cell_range(RANKING_INPUT_FILE_ID, "A1")
-    logging.info("Resetuje uprawnienia arkuszu do inputu...")
+    LOGGER.info("Resetuje uprawnienia arkuszu do inputu...")
     serwis.protect_first_column(RANKING_INPUT_FILE_ID, MASTER_EMAIL)
 
 
 def main(upload=None, loop=None, sheet_ids_file_path=SHEET_IDS_FILE_PATH):
-    logging.basicConfig(filename=f"{LOGS_PATH}logs.txt", level=logging.INFO)
     Announcements.logs_path = LOGS_PATH
     Database.platforms = PLATFORMS
     Database.file_paths = FILE_PATHS
@@ -102,9 +107,9 @@ def main(upload=None, loop=None, sheet_ids_file_path=SHEET_IDS_FILE_PATH):
     serwis = GoogleDriveInteractions(GOOGLE_DRIVE_CREDENTIALS_PATH,
                                      GOOGLE_DRIVE_TOKEN_PATH,
                                      GOOGLE_SHEETS_API_KEY)
-    # sciagaczka_time_triali = CtrTimeTrials(cookie=ACTIVISION_COOKIE,
-    #                                        gamer_search_ban_time=GAMER_SEARCH_BAN_TIME,
-    #                                        page_search_until_bored_time=PAGE_SEARCH_UNTIL_BORED_TIME)
+    # sciagaczka_time_triali = CtrTimeTrialsDownloader(cookie=ACTIVISION_COOKIE,
+    #                                                  gamer_search_ban_time=GAMER_SEARCH_BAN_TIME,
+    #                                                  page_search_until_bored_time=PAGE_SEARCH_UNTIL_BORED_TIME)
     zapisywaczka_do_excela = ExcelOperations(POINT_SYSTEM, LEAGUE_NAMES)
     rankingowaczka = RankingCreator(league_names=LEAGUE_NAMES,
                                     minimum_player_count_in_league=MINIMUM_PLAYER_COUNT_IN_LEAGUE,
@@ -116,7 +121,7 @@ def main(upload=None, loop=None, sheet_ids_file_path=SHEET_IDS_FILE_PATH):
     except Exception:
         formatted_lines = traceback.format_exc().splitlines()
         for line in formatted_lines:
-            logging.error(line)
+            LOGGER.error(line)
 
 
 def main_loop(serwis, zapisywaczka_do_excela, rankingowaczka,
@@ -146,16 +151,16 @@ def main_loop(serwis, zapisywaczka_do_excela, rankingowaczka,
 
             # Zapisz do excela
             Database.load()
-            current_datetime = (datetime.now() + timedelta(hours=TIME_ZONE_DIFF)).strftime("%I:%M%p %B %d, %Y")
+            current_datetime = (datetime.now() + timedelta(hours=TIME_ZONE_DIFF)).strftime("%d.%m.%Y %H:%M")
             zapisywaczka_do_excela.convert_user_times_json_to_csvs(LEAGUE_POINTS_MINIMUM, current_datetime)
             zapisywaczka_do_excela.convert_csvs_to_xlsx(OUTPUT_EXCEL_FILE_PATH, LEAGUE_NAMES)
 
             # Wrzuc na google drive
             if upload:
                 operacje_na_google_drive(serwis, sheet_ids_file_path=sheet_ids_file_path)
-            logging.info("ROBOTA SKONCZONA")
+            LOGGER.info("ROBOTA SKONCZONA")
         else:
-            logging.info("heartbeat")
+            LOGGER.info("heartbeat")
 
         if not loop:
             break

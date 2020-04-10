@@ -2,11 +2,11 @@ from __future__ import print_function
 import pickle
 import os.path
 import requests
-import logging
 from googleapiclient.http import MediaFileUpload, MediaIoBaseDownload
 from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
+from . import LOGGER
 
 # If modifying these scopes, delete the file token.pickle.
 SCOPES = ['https://www.googleapis.com/auth/drive']
@@ -14,11 +14,11 @@ SCOPES = ['https://www.googleapis.com/auth/drive']
 
 class GoogleDriveInteractions:
     def __init__(self, cred_path, token_path, api_key):
-        logging.info("Setting up google drive service...")
+        LOGGER.info("Setting up google drive service...")
         self.service = self.get_google_drive_service(cred_path, token_path)
         self.sheets_service = self.get_google_sheets_service(cred_path, token_path)
         self.key = api_key
-        logging.info("Done")
+        LOGGER.info("Done")
 
     @staticmethod
     def auth_setup(cred_path, token_path):
@@ -52,7 +52,7 @@ class GoogleDriveInteractions:
         return service
 
     def download_file(self, local_file_path, remote_file_id):
-        logging.info(f"Downloading to {local_file_path}")
+        LOGGER.info(f"Downloading to {local_file_path}")
         request = self.service.files().export_media(
             fileId=remote_file_id,
             mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
@@ -105,7 +105,7 @@ class GoogleDriveInteractions:
         request = self.sheets_service.spreadsheets().batchUpdate(spreadsheetId=remote_file_id,
                                                                  body=json_post)
         response = request.execute()
-        logging.info(response)
+        LOGGER.info(response)
 
     def get_cell_value(self, remote_file_id, cell):
         content = requests.get(f"https://sheets.googleapis.com/v4/spreadsheets/{remote_file_id}"
@@ -118,4 +118,4 @@ class GoogleDriveInteractions:
         request = self.sheets_service.spreadsheets().values().clear(spreadsheetId=remote_file_id,
                                                                     range=cell_range)
         response = request.execute()
-        logging.info(response)
+        LOGGER.info(response)

@@ -1,6 +1,6 @@
 import json
-import logging
 from .time_conversion import TimeConversion
+from . import LOGGER
 
 
 class JsonOperations:
@@ -31,7 +31,7 @@ class JsonOperations:
 
     @classmethod
     def apply_json_to_json(cls, json_source, json_target, verbose=False):
-        logging.info(f"Applying {json_source}...")
+        LOGGER.info(f"Applying {json_source}...")
         source = cls.load_json(json_source)
         target = cls.load_json(json_target)
         for player, player_info in source.items():
@@ -50,5 +50,5 @@ class JsonOperations:
                         target[exact_player_name].setdefault('tracks', {}).setdefault(track, {})["time"] =\
                             pretty_input_time
                         if verbose:
-                            logging.info(f"{exact_player_name}: {track}: {pretty_input_time}")
+                            LOGGER.info(f"{exact_player_name}: {track}: {pretty_input_time}")
         cls.save_json(target, json_target)
