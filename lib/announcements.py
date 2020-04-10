@@ -60,4 +60,6 @@ class Announcements:
                 leagues_with_transfers.append(l_new)
                 leagues_with_transfers.append(l_old)
         leagues_with_transfers = list(set(leagues_with_transfers))
+        if leagues_with_transfers:
+            LOGGER.debug(f"Leagues with transfers: {leagues_with_transfers}")
         return leagues_with_transfers

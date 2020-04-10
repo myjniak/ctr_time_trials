@@ -44,6 +44,7 @@ class JsonOperations:
                             exact_player_name = registered_player
                             break
                     else:
+                        LOGGER.warning(f"Bullshit PLAYER input: {player}")
                         break
                     if input_time_as_float != 300:
                         pretty_input_time = TimeConversion.float_to_str(input_time_as_float)
@@ -51,4 +52,6 @@ class JsonOperations:
                             pretty_input_time
                         if verbose:
                             LOGGER.info(f"{exact_player_name}: {track}: {pretty_input_time}")
+                    else:
+                        LOGGER.warning(f"Bullshit TIME input: {source[player]['tracks'][track]['time']}")
         cls.save_json(target, json_target)

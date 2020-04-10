@@ -4,7 +4,6 @@ import traceback
 import os
 from datetime import datetime, timedelta
 from time import sleep
-from lib.ctr_time_trials_downloader import CtrTimeTrialsDownloader
 from lib.database import Database
 from lib.excel_operations import ExcelOperations
 from lib.json_operations import JsonOperations
@@ -25,8 +24,8 @@ FILE_PATHS = {
     "cheat_threshold_json": "config/cheat_thresholds.json",
     "track_ids": "config/tracks.txt",
     "user_platform_json": "config/user_list.json",
-    "time_trials_json": "user_times.json",
-    "page_id_cache_json": "page_id_cache.json",
+    "time_trials_json": "dynamic_jsons/user_times.json",
+    "page_id_cache_json": "dynamic_jsons/page_id_cache.json",
     "csv_output": "output/time_trial_ranking",
     "xlsx_output": "output/time_trial_ranking"
 }
@@ -45,7 +44,7 @@ logging.basicConfig(filename=f"{LOGS_PATH}logs.txt",
                     format='%(asctime)s %(levelname)-8s %(message)s',
                     datefmt='%Y-%m-%d %H:%M:%S')
 LOGGER = logging.getLogger(__name__)
-LOGGER.setLevel(LOGGER.DEBUG)
+LOGGER.setLevel(logging.DEBUG)
 
 
 def establish_player_list_to_do(gamer_list, do_everyone=None):
@@ -53,9 +52,9 @@ def establish_player_list_to_do(gamer_list, do_everyone=None):
     if do_everyone:
         gamers = gamer_list
     elif do_everyone is None:
-        LOGGER.info("Dej nicki, których time triale chcesz sciagnac. Jak skonczysz wpisywac"
-                     " nicki, kliknij Enter dwa razy. Wpisz nicki poprawnie, bo bede szukal w nieskonczonosc!\n"
-                     "Wpisz 'all' zeby zaaktualizowac wszystkich graczy w bazie config/user_list.json.")
+        print("Dej nicki, których time triale chcesz sciagnac. Jak skonczysz wpisywac"
+              " nicki, kliknij Enter dwa razy. Wpisz nicki poprawnie, bo bede szukal w nieskonczonosc!\n"
+              "Wpisz 'all' zeby zaaktualizowac wszystkich graczy w bazie config/user_list.json.")
         while True:
             gamer = input("Dej nick: ")
             if not gamer:
@@ -66,12 +65,12 @@ def establish_player_list_to_do(gamer_list, do_everyone=None):
             elif gamer in gamer_list:
                 gamers.append(gamer)
             else:
-                LOGGER.info(f"Nie ma takiego gracza w bazie! Tu masz do wyboru:\n{gamer_list}")
+                print(f"Nie ma takiego gracza w bazie! Tu masz do wyboru:\n{gamer_list}")
     return gamers
 
 
 def przytnij_logi_i_ogloszenia(logs_msg_count=10000, announcements_msg_count=10):
-    LOGGER.info("Przycinam logi")
+    LOGGER.debug("Przycinam logi")
     file_list = os.listdir(LOGS_PATH)
     for f in file_list:
         if f.endswith('txt') and not f.startswith("logs"):
@@ -87,14 +86,15 @@ def przytnij_logi_i_ogloszenia(logs_msg_count=10000, announcements_msg_count=10)
 def operacje_na_google_drive(serwis, sheet_ids_file_path=SHEET_IDS_FILE_PATH):
     LOGGER.info("Wysylanie pliku...")
     serwis.upload_file(OUTPUT_EXCEL_FILE_PATH, RANKING_FILE_ID)
-    LOGGER.info("Sciagam sheet IDs...")
+    LOGGER.debug("Sciagam sheet IDs...")
     sheet_ids = serwis.download_sheet_ids(RANKING_FILE_ID)
-    LOGGER.info(sheet_ids)
+    LOGGER.debug(sheet_ids)
     JsonOperations.save_json(sheet_ids, sheet_ids_file_path)
-    LOGGER.info("Resetuje arkusz do inputu...")
+    LOGGER.debug("Resetuje arkusz do inputu...")
     serwis.clear_cell_range(RANKING_INPUT_FILE_ID, "B1:Z50")
+    LOGGER.debug("Resetuje A1...")
     serwis.clear_cell_range(RANKING_INPUT_FILE_ID, "A1")
-    LOGGER.info("Resetuje uprawnienia arkuszu do inputu...")
+    LOGGER.debug("Resetuje uprawnienia arkuszu do inputu...")
     serwis.protect_first_column(RANKING_INPUT_FILE_ID, MASTER_EMAIL)
 
 
@@ -131,7 +131,6 @@ def main_loop(serwis, zapisywaczka_do_excela, rankingowaczka,
             przytnij_logi_i_ogloszenia()
             Database.initialize_players_json_structure()
 
-
             # Sciagnij inputowy eksel, zapisz go w postaci JSON i zaaplikuj do user_times.json
             serwis.download_file(INPUT_EXCEL_FILE_PATH, RANKING_INPUT_FILE_ID)
             zapisywaczka_do_excela.convert_xlsx_to_json(INPUT_EXCEL_FILE_PATH, TIMES_FROM_WEBPAGE_JSON_FILE_PATH)
@@ -142,7 +141,7 @@ def main_loop(serwis, zapisywaczka_do_excela, rankingowaczka,
             # gamers = establish_player_list_to_do(sciagaczka_time_triali.player_list, do_everyone=do_everyone)
             # sciagaczka_time_triali.get_usernames_times(gamers))
             JsonOperations.apply_json_to_json("config/challenge_ghosts.json", FILE_PATHS["time_trials_json"])
-            #JsonOperations.save_json(sciagaczka_time_triali.changes, "new_records.json")
+            # JsonOperations.save_json(sciagaczka_time_triali.changes, "dynamic_jsons/new_records.json")
 
             # Zarankinguj w user_times.json
             Database.load()
@@ -160,7 +159,7 @@ def main_loop(serwis, zapisywaczka_do_excela, rankingowaczka,
                 operacje_na_google_drive(serwis, sheet_ids_file_path=sheet_ids_file_path)
             LOGGER.info("ROBOTA SKONCZONA")
         else:
-            LOGGER.info("heartbeat")
+            LOGGER.debug("heartbeat")
 
         if not loop:
             break

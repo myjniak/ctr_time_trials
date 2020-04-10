@@ -39,11 +39,11 @@ class CtrTimeTrialsDownloader(Database):
                 response = requests.get(url, headers={'Cookie': f"ACT_SSO_COOKIE={self.cookie}"}).json()
                 break
             except JSONDecodeError as err:
-                LOGGER.info(f"Ups, cos zlego sie wydarzylo:\n"
-                             f"{str(err)}")
+                LOGGER.warning(f"Ups, cos zlego sie wydarzylo:\n"
+                               f"{str(err)}")
             except requests.exceptions.ConnectionError as err:
-                LOGGER.info(f"Ups, cos zlego sie wydarzylo:\n"
-                             f"{str(err)}")
+                LOGGER.warning(f"Ups, cos zlego sie wydarzylo:\n"
+                               f"{str(err)}")
         else:
             raise ConnectionError("Cos sie z API rozjebalo na amen :(")
         return response
@@ -56,7 +56,7 @@ class CtrTimeTrialsDownloader(Database):
                     if response['data']['message'] == "Not permitted: rate limit exceeded":
                         return {}
                     if response['data']['message'] == "Not permitted: user not found":
-                        LOGGER.info("User not permitted? WTF?")
+                        LOGGER.error("User not permitted? WTF?")
                         raise KeyError()
                     if response['data']['message'] == "No entries for user":
                         return {player: {"time": 0, "rank": 999999, "page": 0}}
@@ -64,7 +64,7 @@ class CtrTimeTrialsDownloader(Database):
                 page = response["data"]["page"]
                 break
             except KeyError:
-                LOGGER.info(f"Bad json structure!!!\n {dumps(response, indent=4)}")
+                LOGGER.error(f"Bad json structure!!!\n {dumps(response, indent=4)}")
                 LOGGER.info("Sleeping 10secs...")
                 sleep(10)
         else:
@@ -118,7 +118,7 @@ class CtrTimeTrialsDownloader(Database):
         while True:
             if self.ban_timestamp:
                 time_until_search_by_gamer_ban_ends = self.gamer_search_ban_time - (time() - self.ban_timestamp)
-                LOGGER.info(f"Czas do konca bana na szukanie po graczu: {time_until_search_by_gamer_ban_ends}")
+                LOGGER.info(f"Time until player search ban ends: {time_until_search_by_gamer_ban_ends}")
             else:
                 time_until_search_by_gamer_ban_ends = 0
             time_passed_searching_by_page = time() - timer_start
@@ -134,7 +134,7 @@ class CtrTimeTrialsDownloader(Database):
             time_trials = {**time_trials, **new_time_trials}
             if not new_time_trials:
                 self.ban_timestamp = time()
-                LOGGER.info("\nAPI mowi ze chce spac, musimy jakis czas recznie zgadywac strone z rekordem...")
+                LOGGER.info("\nAPI wants to sleep, we'll have to seach manually...")
             if username in time_trials:
                 sys.stdout.write("\r                                               ")
                 sys.stdout.flush()
@@ -152,7 +152,7 @@ class CtrTimeTrialsDownloader(Database):
         if platform == 'switch':
             url = self.get_url_by_page(track_id, page, platform)
         elif time_until_ban_ends <= 0:
-            LOGGER.info("Checking time by gamer")
+            LOGGER.debug("Checking time by gamer")
             url = self.get_url_by_gamer(track_id, username, platform)
         else:
             LOGGER.info(f"Time until ban ends: {time_until_ban_ends}")
@@ -206,7 +206,7 @@ class CtrTimeTrialsDownloader(Database):
                     LOGGER.info("CHEATER!")
                     pretty_user_time = "CHEATER"
                     place = 999999
-                LOGGER.info(f"\rCzas: {pretty_user_time} Pozycja: {place}                      \n")
+                LOGGER.debug(f"\rCzas: {pretty_user_time} Pozycja: {place}                      \n")
                 self.save_user_time(username, track_name, pretty_user_time, place)
                 users_times.setdefault(username, {})[track_name] = pretty_user_time
         return users_times
