@@ -4,6 +4,7 @@ import json
 from pandas import read_excel
 from xlsxwriter.workbook import Workbook
 from .json_operations import JsonOperations
+from .database import Database
 
 
 GOLD = "FFD700"
@@ -12,26 +13,19 @@ BRONZE = "A46628"
 COLOR_PRIZES = [GOLD, SILVER, BRONZE, 'FFFFFF', 'FFFFFF', 'FFFFFF', 'FFFFFF', 'F3FFF2']
 
 
-class ExcelOperations:
+class ExcelOperations(Database):
 
-    def __init__(self, point_system, league_names, **file_paths):
+    def __init__(self, point_system, league_names):
         self.point_system = point_system
         self.league_names = league_names
-        self.csv_name = file_paths["csv_output"]
-        self.time_trials = None
-        self.track_list = None
-        self.league_count = None
-        self.file_paths = file_paths
-        self.refresh()
+        self.csv_name = self.file_paths["csv_output"]
 
-    def refresh(self):
-        self.time_trials = JsonOperations.load_json(self.file_paths["time_trials_json"])
-        self.track_list = list(JsonOperations.load_track_id_json(self.file_paths["track_ids"]).values())
-        self.league_count = max([player_info["league"] for player_info in self.time_trials.values()])
+    def get_league_count(self):
+        return max([player_info["league"] for player_info in self.time_trials.values()])
 
     def convert_csvs_to_xlsx(self, name="time_trial_ranking.xlsx", worksheet_names=[1, 2, 3, 4, 5, 6]):
         workbook = Workbook(name)
-        for league in range(1, self.league_count + 1):
+        for league in range(1, self.get_league_count() + 1):
             worksheet_name = worksheet_names[league-1]
             for csvfile in glob.glob(self.csv_name + str(league) + ".csv"):
                 self.make_time_trial_worksheet(workbook, csvfile, worksheet_name=worksheet_name)
@@ -122,13 +116,12 @@ class ExcelOperations:
         worksheet.freeze_panes(1, 1)
 
     def convert_user_times_json_to_csvs(self, minimum_points=1, cur_datetime=''):
-        for league in range(1, self.league_count + 1):
+        for league in range(1, self.get_league_count() + 1):
             self.convert_user_times_json_to_league_csv(league, minimum_points, cur_datetime)
 
     def write_all_players_times(self, dict_writer, players):
         for track in self.track_list:
-            track_times = {player: self.time_trials[player]['tracks'][track]["time"] for player in players
-                           if track in self.time_trials[player]['tracks']}
+            track_times = {player: self.time_trials[player]['tracks'][track]['time'] for player in players}
             track_times[' '] = track
             dict_writer.writerow(track_times)
 

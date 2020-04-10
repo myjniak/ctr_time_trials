@@ -2,22 +2,16 @@ from copy import deepcopy
 from .json_operations import JsonOperations
 from .time_conversion import TimeConversion
 from .announcements import Announcements
+from .database import Database
 
 
-class RankingCreator:
-    def __init__(self, time_trials_file, league_names, track_list,
-                 minimum_player_count_in_league, league_points_minimum, point_system):
-        self.time_trials_file = time_trials_file
+class RankingCreator(Database):
+    def __init__(self, league_names, minimum_player_count_in_league, league_points_minimum, point_system):
         self.league_names = league_names
-        self.track_list = track_list
         self.point_system = point_system
         self.league_points_minimum = league_points_minimum
         self.minimum_player_count_in_league = minimum_player_count_in_league
-        self.time_trials = None
-        self.refresh()
-
-    def refresh(self):
-        self.time_trials = JsonOperations.load_json(self.time_trials_file)
+        self.time_trials_file = self.file_paths["time_trials_json"]
 
     def calc_total_time(self):
         for player, player_info in self.time_trials.items():
@@ -97,11 +91,11 @@ class RankingCreator:
             players_competing = [player for player in players if track in data[player]['tracks']]
             players_sorted = \
                 sorted(players_competing,
-                       key=lambda player: TimeConversion.str_to_float(data[player]['tracks'][track]["time"]))
+                       key=lambda player: TimeConversion.str_to_float(data[player]['tracks'][track]['time']))
             if len(players_sorted) > len(self.point_system):
                 players_sorted = players_sorted[:len(self.point_system)]
             for i, player in enumerate(players_sorted):
-                data[player]['tracks'][track]["points"] = self.point_system[i]
+                data[player]['tracks'][track]['points'] = self.point_system[i]
                 data[player]['total_points'] += self.point_system[i]
                 if give_medals:
                     if i == 0:

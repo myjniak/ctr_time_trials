@@ -38,7 +38,7 @@ class JsonOperations:
             if 'tracks' in player_info:
                 for track in player_info['tracks']:
                     input_time_as_float = \
-                        TimeConversion.str_to_float(source[player]['tracks'][track]["time"], value_on_error=300)
+                        TimeConversion.str_to_float(source[player]['tracks'][track]['time'], value_on_error=300)
                     for registered_player in target:
                         if player.lower() == registered_player.lower():
                             exact_player_name = registered_player

@@ -5,59 +5,21 @@ from json import JSONDecodeError, dumps
 from time import time, sleep
 from .json_operations import JsonOperations
 from .time_conversion import TimeConversion
+from .database import Database
 
 
-class CtrTimeTrials:
+class CtrTimeTrials(Database):
 
     def __init__(self, **kwargs):
         self.gamer_search_ban_time = kwargs['gamer_search_ban_time']
         self.page_search_until_bored_time = kwargs['page_search_until_bored_time']
-        self.platforms = kwargs['platforms']
         self.cookie = kwargs['cookie']
-        self.time_trials_file = None
-        self.time_trials = None
-        self.tracks_by_ids = None
-        self.track_list = None
-        self.page_id_cache_file = None
-        self.page_id_cache = None
-        self.user_platform = None
-        self.cheat_thresholds = None
-        self.file_paths = None
-        self.load_all_jsons(**kwargs)
-        self.player_list = [player for player in self.user_platform.keys()
-                            if self.user_platform[player] in self.platforms]
-        self.initialize_players_json_structure()
-        self.ban_timestamp = 0
-        self.changes = {}
-
-    def load_all_jsons(self, **file_paths):
-        self.file_paths = file_paths
-        self.refresh()
-
-    def refresh(self):
         self.time_trials_file = self.file_paths["time_trials_json"]
-        self.time_trials = JsonOperations.load_json(self.time_trials_file)
-        self.tracks_by_ids = JsonOperations.load_track_id_json(self.file_paths["track_ids"])
-        self.track_list = list(self.tracks_by_ids.values())
         self.page_id_cache_file = self.file_paths["page_id_cache_json"]
         self.page_id_cache = JsonOperations.load_json(self.page_id_cache_file)
-        self.user_platform = JsonOperations.load_json(self.file_paths["user_platform_json"])
-        self.cheat_thresholds = JsonOperations.load_json(self.file_paths["cheat_threshold_json"])
-
-    def initialize_players_json_structure(self):
-        for player in [*self.player_list, "N. Tropy", "Oxide", "Velo", "Beenox"]:
-            self.time_trials.setdefault(player, {})
-            self.time_trials[player].setdefault('tracks', {})
-            self.time_trials[player].setdefault('medals', {})
-            self.time_trials[player].setdefault('league', 0)
-            self.time_trials[player].setdefault('total_points', 0)
-            self.time_trials[player].setdefault('total_points_in_upper_league', 0)
-            for track in self.track_list:
-                self.time_trials[player].setdefault('tracks', {}).setdefault(track, {})
-                self.time_trials[player]['tracks'][track]['points'] = 0
-                self.time_trials[player]['tracks'][track].setdefault('time', "NO TIME")
-                self.time_trials[player]['tracks'][track].setdefault('medal', None)
-        JsonOperations.save_json(self.time_trials, self.time_trials_file)
+        self.cheat_thresholds = None
+        self.ban_timestamp = 0
+        self.changes = {}
 
     @staticmethod
     def get_url_by_gamer(track_id, gamer, platform):
@@ -150,7 +112,7 @@ class CtrTimeTrials:
         page = init_page
         left = (page - 1) * 20 + 1
         right = page * 20
-        platform = self.user_platform[username]
+        platform = self.user_dict[username]
         time_trials = dict()
         timer_start = time()
         while True:
