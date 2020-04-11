@@ -2,8 +2,8 @@ import sys
 import requests
 from json import JSONDecodeError, dumps
 from time import time, sleep
-from .json_operations import JsonOperations
-from .time_conversion import TimeConversion
+from lib.simple_objects.jsoner import Jsoner
+from lib.simple_objects.time_conversion import TimeConversion
 from .database import Database
 from . import LOGGER
 
@@ -14,9 +14,7 @@ class CtrTimeTrialsDownloader(Database):
         self.gamer_search_ban_time = kwargs['gamer_search_ban_time']
         self.page_search_until_bored_time = kwargs['page_search_until_bored_time']
         self.cookie = kwargs['cookie']
-        self.time_trials_file = self.file_paths["time_trials_json"]
-        self.page_id_cache_file = self.file_paths["page_id_cache_json"]
-        self.page_id_cache = JsonOperations.load_json(self.page_id_cache_file)
+        self.page_id_cache = Jsoner(self.file_paths["page_id_cache_json"])
         self.cheat_thresholds = None
         self.ban_timestamp = 0
         self.changes = {}
@@ -77,7 +75,7 @@ class CtrTimeTrialsDownloader(Database):
         return time_trial_data
 
     def load_page_id_where_user_was_found(self, username, track_id):
-        data = self.page_id_cache
+        data = self.page_id_cache.json
         data.setdefault(username, dict())
         if track_id in data[username]:
             return data[username][track_id]
@@ -94,18 +92,18 @@ class CtrTimeTrialsDownloader(Database):
     def save_page_where_user_was_found(self, username, track_id, page_id):
         if page_id == 0:
             return
-        self.page_id_cache.setdefault(username, {})[track_id] = page_id
-        JsonOperations.save_json(self.page_id_cache, self.page_id_cache_file)
+        self.page_id_cache.json.setdefault(username, {})[track_id] = page_id
+        self.page_id_cache.save()
 
     def save_user_time(self, username, track_name, user_time, place):
         data = self.time_trials
-        data.setdefault(username, {}).setdefault('tracks', {}).setdefault(track_name, {}).setdefault("time", "0")
-        if user_time not in [data[username]['tracks'][track_name]["time"], "CHEATER", "NO TIME"]:
+        data.json.setdefault(username, {}).setdefault('tracks', {}).setdefault(track_name, {}).setdefault("time", "0")
+        if user_time not in [data.json.[username]['tracks'][track_name]["time"], "CHEATER", "NO TIME"]:
             self.changes.setdefault(username, {}).setdefault('tracks', {}).setdefault(track_name, {})
             self.changes[username]['tracks'][track_name]["time"] = user_time
-        data[username]['tracks'][track_name]["time"] = user_time
-        data[username]['tracks'][track_name]["place"] = place
-        JsonOperations.save_json(data, self.time_trials_file)
+        data.json[username]['tracks'][track_name]["time"] = user_time
+        data.json[username]['tracks'][track_name]["place"] = place
+        data.save()
 
     def get_username_time(self, username, track_id):
         init_page = self.load_page_id_where_user_was_found(username, track_id)
@@ -124,7 +122,7 @@ class CtrTimeTrialsDownloader(Database):
             time_passed_searching_by_page = time() - timer_start
             sys.stdout.write(f"\rSzukam w przedziale miejsc {left}-{right}             ")
             sys.stdout.flush()
-            if track_id in self.page_id_cache[username]:
+            if track_id in self.page_id_cache.json[username]:
                 new_time_trials = self.get_time_trial_with_cache(track_id, username, page, platform,
                                                                  time_passed_searching_by_page,
                                                                  time_until_search_by_gamer_ban_ends)
@@ -182,20 +180,18 @@ class CtrTimeTrialsDownloader(Database):
         else:
             return init_page - delta + 1
 
-    def get_usernames_times(self, usernames, tracks_by_ids=None):
-        if not tracks_by_ids:
-            tracks = self.tracks_by_ids
-        else:
-            tracks = tracks_by_ids
+    def get_usernames_times(self, usernames, tracks_info=None):
+        if not tracks_info:
+            tracks_info = self.tracks_info
         thresholds = self.cheat_thresholds
         users_times = dict()
-        for track_id, track_name in tracks.items():
+        for track_name, track_id in tracks_info.items():
             for username in usernames:
                 LOGGER.info(f"Szukam rekordu {username} na trasie {track_name}...")
                 user_record = self.get_username_time(username, track_id)
                 # blad w API - dodaje sekunde do wszystkiego
                 user_record["time"] -= 1
-                pretty_user_time = TimeConversion.float_to_str(user_record["time"])
+                pretty_user_time = TimeConversion(user_record["time"]).as_str
                 place = user_record["rank"]
 
                 if user_record["time"] <= 0:

@@ -6,7 +6,7 @@ from googleapiclient.http import MediaFileUpload, MediaIoBaseDownload
 from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
-from . import LOGGER
+from lib import LOGGER
 
 # If modifying these scopes, delete the file token.pickle.
 SCOPES = ['https://www.googleapis.com/auth/drive']
@@ -71,6 +71,11 @@ class GoogleDriveInteractions:
                                     fileId=remote_file_id,
                                     fields='id').execute()
 
+    @staticmethod
+    def execute_request(request):
+        response = request.execute()
+        LOGGER.info(response)
+
     def download_sheet_ids(self, remote_file_id):
         content = requests.get(f"https://sheets.googleapis.com/v4/spreadsheets/{remote_file_id}"
                                f"?fields=sheets(properties)"
@@ -79,33 +84,10 @@ class GoogleDriveInteractions:
                          for sheet_info in content.json()['sheets']}
         return sheet_id_dict
 
-    def protect_first_column(self, remote_file_id, master_email):
-        sheet_id_dict = self.download_sheet_ids(remote_file_id)
-        first_sheet_id = list(sheet_id_dict.values())[0]
-        json_post = {
-            "requests": [
-                {
-                    "addProtectedRange": {
-                        "protectedRange": {
-                            "range": {
-                                "sheetId": first_sheet_id,
-                                "startColumnIndex": 0,
-                                "endColumnIndex": 1,
-                                "startRowIndex": 1
-                            },
-                            "description": "Protecting track names",
-                            "editors": {
-                                "users": [master_email]
-                            }
-                        }
-                    }
-                }
-            ]
-        }
+    def batch_update(self, remote_file_id, body):
         request = self.sheets_service.spreadsheets().batchUpdate(spreadsheetId=remote_file_id,
-                                                                 body=json_post)
-        response = request.execute()
-        LOGGER.info(response)
+                                                                 body=body)
+        self.execute_request(request)
 
     def get_cell_value(self, remote_file_id, cell):
         content = requests.get(f"https://sheets.googleapis.com/v4/spreadsheets/{remote_file_id}"
@@ -117,5 +99,29 @@ class GoogleDriveInteractions:
     def clear_cell_range(self, remote_file_id, cell_range):
         request = self.sheets_service.spreadsheets().values().clear(spreadsheetId=remote_file_id,
                                                                     range=cell_range)
-        response = request.execute()
-        LOGGER.info(response)
+        self.execute_request(request)
+
+    def update_sheet_formatting(self, remote_file_id, formatting_request):
+        body = {
+            "requests": formatting_request
+        }
+        self.batch_update(remote_file_id, body)
+
+    def update_sheet(self, remote_file_id, sheet_name, csv_content, formatting=None):
+        body = {
+            'values': csv_content
+        }
+        request = self.sheets_service.spreadsheets().values().update(spreadsheetId=remote_file_id,
+                                                                     range=sheet_name,
+                                                                     valueInputOption="RAW",
+                                                                     body=body)
+        self.execute_request(request)
+        if formatting:
+            self.update_sheet_formatting(remote_file_id, formatting)
+
+    def get_range_value(self, remote_file_id, cell_range):
+        content = requests.get(f"https://sheets.googleapis.com/v4/spreadsheets/{remote_file_id}"
+                               f"/values/{cell_range}"
+                               f"?key={self.key}")
+        LOGGER.debug(content)
+        return content.json()["values"]

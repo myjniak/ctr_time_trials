@@ -2,32 +2,33 @@ import argparse
 import logging
 import traceback
 import os
-from datetime import datetime, timedelta
 from time import sleep
+from lib.google.google_requests import GoogleRequests
+from lib.worksheet_preparator import WorksheetPreparator
 from lib.database import Database
-from lib.excel_operations import ExcelOperations
-from lib.json_operations import JsonOperations
-from lib.google_drive_interactions import GoogleDriveInteractions
+from lib.simple_objects.jsoner import Jsoner
+from lib.xlsx_operations import XlsxOperations
 from lib.ranking_creator import RankingCreator
 from lib.announcements import Announcements
 from confidential.variables import *
 
 
 LOGS_PATH = 'logs/'
+BOTS_LIST = ["N. Tropy", "Oxide", "Velo", "Beenox"]
 POINT_SYSTEM = [10, 8, 6, 5, 4, 3, 2, 1]
 LEAGUE_POINTS_MINIMUM = 20
 MINIMUM_PLAYER_COUNT_IN_LEAGUE = 5
-SHEET_IDS_FILE_PATH = "sheet_ids.json"
+SHEET_IDS_FILE_PATH = "config/sheet_ids.json"
 TIMES_FROM_WEBPAGE_JSON_FILE_PATH = "dynamic_jsons/manual_times_from_webpage.json"
 LEAGUE_NAMES = ["Nitro Tier", "Platinum Tier", "Gold Tier", "Sapphire Tier", "Wumpa Tier", "Armadillo Tier"]
 FILE_PATHS = {
     "cheat_threshold_json": "config/cheat_thresholds.json",
-    "track_ids": "config/tracks.txt",
+    "track_ids": "config/tracks.json",
     "user_platform_json": "config/user_list.json",
     "time_trials_json": "dynamic_jsons/user_times.json",
     "page_id_cache_json": "dynamic_jsons/page_id_cache.json",
-    "csv_output": "output/time_trial_ranking",
-    "xlsx_output": "output/time_trial_ranking"
+    "csv_path": "output/time_trial_ranking",
+    "xlsx_path": "output/time_trial_ranking"
 }
 GOOGLE_DRIVE_CREDENTIALS_PATH = "confidential/credentials.json"
 GOOGLE_DRIVE_TOKEN_PATH = "confidential/token.pickle"
@@ -47,26 +48,17 @@ LOGGER = logging.getLogger(__name__)
 LOGGER.setLevel(logging.DEBUG)
 
 
-def establish_player_list_to_do(gamer_list, do_everyone=None):
-    gamers = []
-    if do_everyone:
-        gamers = gamer_list
-    elif do_everyone is None:
-        print("Dej nicki, których time triale chcesz sciagnac. Jak skonczysz wpisywac"
-              " nicki, kliknij Enter dwa razy. Wpisz nicki poprawnie, bo bede szukal w nieskonczonosc!\n"
-              "Wpisz 'all' zeby zaaktualizowac wszystkich graczy w bazie config/user_list.json.")
-        while True:
-            gamer = input("Dej nick: ")
-            if not gamer:
-                break
-            elif gamer == "all":
-                gamers = gamer_list
-                break
-            elif gamer in gamer_list:
-                gamers.append(gamer)
-            else:
-                print(f"Nie ma takiego gracza w bazie! Tu masz do wyboru:\n{gamer_list}")
-    return gamers
+def prepare_database():
+    Announcements.logs_path = LOGS_PATH
+    Database.platforms = PLATFORMS
+    Database.file_paths = FILE_PATHS
+    Database.bots_list = BOTS_LIST
+    Database.point_system = POINT_SYSTEM
+    Database.league_names = LEAGUE_NAMES
+    Database.league_points_minimum = LEAGUE_POINTS_MINIMUM
+    Database.time_zone_diff = TIME_ZONE_DIFF
+    Database.load()
+    Database.initialize_players_json_structure()
 
 
 def przytnij_logi_i_ogloszenia(logs_msg_count=10000, announcements_msg_count=10):
@@ -83,13 +75,7 @@ def przytnij_logi_i_ogloszenia(logs_msg_count=10000, announcements_msg_count=10)
             log.writelines(data[-msg_count:])
 
 
-def operacje_na_google_drive(serwis, sheet_ids_file_path=SHEET_IDS_FILE_PATH):
-    LOGGER.info("Wysylanie pliku...")
-    serwis.upload_file(OUTPUT_EXCEL_FILE_PATH, RANKING_FILE_ID)
-    LOGGER.debug("Sciagam sheet IDs...")
-    sheet_ids = serwis.download_sheet_ids(RANKING_FILE_ID)
-    LOGGER.debug(sheet_ids)
-    JsonOperations.save_json(sheet_ids, sheet_ids_file_path)
+def reset_input_sheet(serwis):
     LOGGER.debug("Resetuje arkusz do inputu...")
     serwis.clear_cell_range(RANKING_INPUT_FILE_ID, "B1:Z50")
     LOGGER.debug("Resetuje A1...")
@@ -98,88 +84,83 @@ def operacje_na_google_drive(serwis, sheet_ids_file_path=SHEET_IDS_FILE_PATH):
     serwis.protect_first_column(RANKING_INPUT_FILE_ID, MASTER_EMAIL)
 
 
-def main(upload=None, loop=None, sheet_ids_file_path=SHEET_IDS_FILE_PATH):
-    Announcements.logs_path = LOGS_PATH
-    Database.platforms = PLATFORMS
-    Database.file_paths = FILE_PATHS
-    Database.load()
-    Database.initialize_players_json_structure()
-    serwis = GoogleDriveInteractions(GOOGLE_DRIVE_CREDENTIALS_PATH,
-                                     GOOGLE_DRIVE_TOKEN_PATH,
-                                     GOOGLE_SHEETS_API_KEY)
-    # sciagaczka_time_triali = CtrTimeTrialsDownloader(cookie=ACTIVISION_COOKIE,
-    #                                                  gamer_search_ban_time=GAMER_SEARCH_BAN_TIME,
-    #                                                  page_search_until_bored_time=PAGE_SEARCH_UNTIL_BORED_TIME)
-    zapisywaczka_do_excela = ExcelOperations(POINT_SYSTEM, LEAGUE_NAMES)
-    rankingowaczka = RankingCreator(league_names=LEAGUE_NAMES,
-                                    minimum_player_count_in_league=MINIMUM_PLAYER_COUNT_IN_LEAGUE,
-                                    league_points_minimum=LEAGUE_POINTS_MINIMUM,
-                                    point_system=POINT_SYSTEM)
+def main(upload=None, static=None):
+    prepare_database()
+    serwis = GoogleRequests(GOOGLE_DRIVE_CREDENTIALS_PATH,
+                            GOOGLE_DRIVE_TOKEN_PATH,
+                            GOOGLE_SHEETS_API_KEY)
+    rankingowaczka = RankingCreator(minimum_player_count_in_league=MINIMUM_PLAYER_COUNT_IN_LEAGUE)
     try:
-        main_loop(serwis, zapisywaczka_do_excela, rankingowaczka,
-                  loop, upload, sheet_ids_file_path)
-    except Exception:
+        main_loop(serwis, rankingowaczka, upload, static=static)
+    except:
         formatted_lines = traceback.format_exc().splitlines()
         for line in formatted_lines:
             LOGGER.error(line)
 
 
-def main_loop(serwis, zapisywaczka_do_excela, rankingowaczka,
-              loop, upload, sheet_ids_file_path):
+def main_loop(serwis, rankingowaczka, upload, static=False):
     while True:
-        if serwis.get_cell_value(RANKING_INPUT_FILE_ID, "A1"):
+        if static or serwis.get_cell_value(RANKING_INPUT_FILE_ID, "A1"):
             przytnij_logi_i_ogloszenia()
-            Database.initialize_players_json_structure()
 
-            # Sciagnij inputowy eksel, zapisz go w postaci JSON i zaaplikuj do user_times.json
-            serwis.download_file(INPUT_EXCEL_FILE_PATH, RANKING_INPUT_FILE_ID)
-            zapisywaczka_do_excela.convert_xlsx_to_json(INPUT_EXCEL_FILE_PATH, TIMES_FROM_WEBPAGE_JSON_FILE_PATH)
-            JsonOperations.apply_json_to_json(TIMES_FROM_WEBPAGE_JSON_FILE_PATH,
-                                              FILE_PATHS["time_trials_json"],
-                                              verbose=True)
-
-            # gamers = establish_player_list_to_do(sciagaczka_time_triali.player_list, do_everyone=do_everyone)
-            # sciagaczka_time_triali.get_usernames_times(gamers))
-            JsonOperations.apply_json_to_json("config/challenge_ghosts.json", FILE_PATHS["time_trials_json"])
-            # JsonOperations.save_json(sciagaczka_time_triali.changes, "dynamic_jsons/new_records.json")
+            if not static:
+                # Sciagnij inputowy eksel, zapisz go w postaci JSON i zaaplikuj do user_times.json
+                input_as_csv = serwis.get_range_value(RANKING_INPUT_FILE_ID, "A1:Z50")
+                Jsoner(input_as_csv).save(TIMES_FROM_WEBPAGE_JSON_FILE_PATH)
+                Database.time_trials.apply_json_to_self(TIMES_FROM_WEBPAGE_JSON_FILE_PATH, verbose=True)
+            Database.time_trials.apply_json_to_self("config/challenge_ghosts.json")
 
             # Zarankinguj w user_times.json
-            Database.load()
+            Database.initialize_players_json_structure()
             rankingowaczka.give_out_points_and_medals_for_all_leagues()
             rankingowaczka.calc_total_time()
 
+            Database.time_trials.save()
+
             # Zapisz do excela
-            Database.load()
-            current_datetime = (datetime.now() + timedelta(hours=TIME_ZONE_DIFF)).strftime("%d.%m.%Y %H:%M")
-            zapisywaczka_do_excela.convert_user_times_json_to_csvs(LEAGUE_POINTS_MINIMUM, current_datetime)
-            zapisywaczka_do_excela.convert_csvs_to_xlsx(OUTPUT_EXCEL_FILE_PATH, LEAGUE_NAMES)
+            worksheet_dict = WorksheetPreparator.prepare_worksheet_content_for_all_leagues()
+            XlsxOperations.update_ranking(worksheet_dict, OUTPUT_EXCEL_FILE_PATH)
 
             # Wrzuc na google drive
             if upload:
-                operacje_na_google_drive(serwis, sheet_ids_file_path=sheet_ids_file_path)
+                serwis.update_ranking(RANKING_FILE_ID, worksheet_dict, Jsoner(SHEET_IDS_FILE_PATH).json)
             LOGGER.info("ROBOTA SKONCZONA")
+
+            if not static:
+                reset_input_sheet(serwis)
         else:
             LOGGER.debug("heartbeat")
 
-        if not loop:
+        if static:
             break
         sleep(SLEEP_BETWEEN_ITERATIONS)
 
 
-def every_gamer_should_be_checked(everyone, noone):
-    if everyone:
-        return True
-    elif noone:
-        return False
-    return None
-
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--sheetidpath", default=SHEET_IDS_FILE_PATH, help="Sciazka do zapisania jsona z ID sheetow")
-    parser.add_argument("--none", help="Nie sciagaj niczego, obrob tylko excela", action="store_true")
-    parser.add_argument("--all", help="Sciagnij czasy wszystkich graczy z user_list.json", action="store_true")
     parser.add_argument("-u", help="Wyslij excela na koniec", action="store_true")
-    parser.add_argument("--loop", help="Napierdalaj w kolko do usranej smierci", action="store_true")
+    parser.add_argument("--static", help="Wygeneruj tylko excela testowo", action="store_true")
     args = parser.parse_args()
-    main(args.u, args.loop, args.sheetidpath)
+    main(args.u, args.static)
+
+
+# def establish_player_list_to_do(gamer_list, do_everyone=None):
+#     gamers = []
+#     if do_everyone:
+#         gamers = gamer_list
+#     elif do_everyone is None:
+#         print("Dej nicki, których time triale chcesz sciagnac. Jak skonczysz wpisywac"
+#               " nicki, kliknij Enter dwa razy. Wpisz nicki poprawnie, bo bede szukal w nieskonczonosc!\n"
+#               "Wpisz 'all' zeby zaaktualizowac wszystkich graczy w bazie config/user_list.json.")
+#         while True:
+#             gamer = input("Dej nick: ")
+#             if not gamer:
+#                 break
+#             elif gamer == "all":
+#                 gamers = gamer_list
+#                 break
+#             elif gamer in gamer_list:
+#                 gamers.append(gamer)
+#             else:
+#                 print(f"Nie ma takiego gracza w bazie! Tu masz do wyboru:\n{gamer_list}")
+#     return gamers

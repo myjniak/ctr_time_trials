@@ -1,48 +1,33 @@
 from copy import deepcopy
-from .json_operations import JsonOperations
-from .time_conversion import TimeConversion
+from lib.simple_objects.time_conversion import TimeConversion
 from .announcements import Announcements
 from .database import Database
 
 
 class RankingCreator(Database):
-    def __init__(self, league_names, minimum_player_count_in_league, league_points_minimum, point_system):
-        self.league_names = league_names
-        self.point_system = point_system
-        self.league_points_minimum = league_points_minimum
+    def __init__(self, minimum_player_count_in_league):
         self.minimum_player_count_in_league = minimum_player_count_in_league
-        self.time_trials_file = self.file_paths["time_trials_json"]
 
     def calc_total_time(self):
-        for player, player_info in self.time_trials.items():
+        for player, player_info in self.time_trials.json.items():
             total_time = 0
             for track in player_info['tracks']:
-                track_time = TimeConversion.str_to_float(player_info['tracks'][track]['time'])
+                track_time = TimeConversion(player_info['tracks'][track]['time']).as_float
                 total_time += track_time
-            player_info['total_time'] = TimeConversion.float_to_str(total_time)
-        JsonOperations.save_json(self.time_trials, self.time_trials_file)
-
-    def reset_points_medals_and_leagues(self):
-        for player_info in self.time_trials.values():
-            player_info['medals'] = {
-                'gold': 0,
-                'silver': 0,
-                'bronze': 0
-            }
-            player_info['total_points_in_upper_league'] = 0
-            player_info['total_points'] = 0
-            player_info['league'] = 1
+            player_info['total_time'] = TimeConversion(total_time).as_str
+        self.time_trials.save()
 
     def give_out_points_and_medals_for_all_leagues(self):
-        old_time_trials = deepcopy(self.time_trials)
-        self.reset_points_medals_and_leagues()
+        new_time_trials = self.time_trials.json
+        old_time_trials = deepcopy(new_time_trials)
+        self._reset_points_medals_and_leagues()
         league = 1
         next_league_should_be_created = True
         while next_league_should_be_created:
-            self.give_out_points_and_medals_for_league(league, False)
+            self._give_out_points_and_medals_for_league(league, False)
             next_league_should_be_created = False
             disqualified_counter = 0
-            for player_info in self.time_trials.values():
+            for player_info in new_time_trials.values():
                 if player_info['total_points'] < self.league_points_minimum:
                     disqualified_counter += 1
                     if disqualified_counter >= self.minimum_player_count_in_league:
@@ -56,24 +41,35 @@ class RankingCreator(Database):
                     player_info['total_points_in_upper_league'] = player_info['total_points']
                     player_info['total_points'] = 0
             if not next_league_should_be_created:
-                for player_info in self.time_trials.values():
+                for player_info in new_time_trials.values():
                     if player_info['league'] == league + 1:
                         player_info['league'] -= 1
-            self.give_out_points_and_medals_for_league(league)
+            self._give_out_points_and_medals_for_league(league)
             league += 1
-        self.do_announcements(old_time_trials)
-        JsonOperations.save_json(self.time_trials, self.time_trials_file)
+        self._do_announcements(old_time_trials)
+        self.time_trials.save()
 
-    def do_announcements(self, old_time_trials):
-        announcer = Announcements(self.time_trials,
+    def _reset_points_medals_and_leagues(self):
+        for player_info in self.time_trials.json.values():
+            player_info['medals'] = {
+                'gold': 0,
+                'silver': 0,
+                'bronze': 0
+            }
+            player_info['total_points_in_upper_league'] = 0
+            player_info['total_points'] = 0
+            player_info['league'] = 1
+
+    def _do_announcements(self, old_time_trials):
+        announcer = Announcements(self.time_trials.json,
                                   old_time_trials,
                                   self.league_names,
                                   self.track_list)
         announcer.log_league_transfers()
         announcer.log_medals()
 
-    def give_out_points_and_medals_for_league(self, league, give_medals=True):
-        data = self.time_trials
+    def _give_out_points_and_medals_for_league(self, league, give_medals=True):
+        data = self.time_trials.json
         players = [player for player in data.keys() if data[player]["league"] == league]
         for player in players:
             data[player]["total_points"] = 0
@@ -88,10 +84,11 @@ class RankingCreator(Database):
                 data[player]['tracks'][track]['points'] = 0
                 data[player]['tracks'][track].setdefault('time', "NO TIME")
                 data[player]['tracks'][track]['medal'] = None
-            players_competing = [player for player in players if track in data[player]['tracks']]
+            players_filtered = list(filter(
+                lambda player: TimeConversion(data[player]['tracks'][track]['time']).as_float < 300, players))
             players_sorted = \
-                sorted(players_competing,
-                       key=lambda player: TimeConversion.str_to_float(data[player]['tracks'][track]['time']))
+                sorted(players_filtered,
+                       key=lambda player: TimeConversion(data[player]['tracks'][track]['time']).as_float)
             if len(players_sorted) > len(self.point_system):
                 players_sorted = players_sorted[:len(self.point_system)]
             for i, player in enumerate(players_sorted):
@@ -107,4 +104,4 @@ class RankingCreator(Database):
                     elif i == 2:
                         data[player]['medals']['bronze'] += 1
                         data[player]['tracks'][track]['medal'] = 'bronze'
-        JsonOperations.save_json(data, self.time_trials_file)
+        self.time_trials.save()

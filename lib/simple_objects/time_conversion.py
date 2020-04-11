@@ -3,6 +3,24 @@ import re
 
 class TimeConversion:
 
+    def __init__(self, time_record, value_on_error=300, decimals=3):
+        self.value_on_error = value_on_error
+        self.decimals = decimals
+        if isinstance(time_record, int) or isinstance(time_record, float):
+            self.number_as_float = float(time_record)
+            self.number_as_str = self.float_to_str(time_record)
+        else:
+            self.number_as_float = self.str_to_float(time_record)
+            self.number_as_str = self.float_to_str(self.as_float)
+
+    @property
+    def as_float(self):
+        return self.number_as_float
+
+    @property
+    def as_str(self):
+        return self.number_as_str
+
     @staticmethod
     def str_to_float(time_record, value_on_error=300):
         pattern = re.compile("(\d+)\D+(\d+)\D+(\d+)")

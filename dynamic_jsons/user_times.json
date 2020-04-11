@@ -2,12 +2,12 @@
     "BastianDNG": {
         "league": 4,
         "medals": {
-            "bronze": 9,
+            "bronze": 7,
             "gold": 7,
             "silver": 5
         },
-        "total_points": 228,
-        "total_points_in_upper_league": 17,
+        "total_points": 216,
+        "total_points_in_upper_league": 7,
         "total_time": "89:51.806",
         "tracks": {
             "Android Alley": {
@@ -77,8 +77,8 @@
                 "time": "1:30.893"
             },
             "Drive-Thru Danger": {
-                "medal": "bronze",
-                "points": 6,
+                "medal": null,
+                "points": 0,
                 "time": "NO TIME"
             },
             "Electron Avenue": {
@@ -124,8 +124,8 @@
                 "time": "1:46.906"
             },
             "Megamix Mania": {
-                "medal": "bronze",
-                "points": 6,
+                "medal": null,
+                "points": 0,
                 "time": "NO TIME"
             },
             "Meteor Gorge": {
@@ -457,10 +457,10 @@
         "medals": {
             "bronze": 1,
             "gold": 3,
-            "silver": 4
+            "silver": 2
         },
-        "total_points": 110,
-        "total_points_in_upper_league": 17,
+        "total_points": 94,
+        "total_points_in_upper_league": 11,
         "total_time": "87:37.250",
         "tracks": {
             "Android Alley": {
@@ -530,8 +530,8 @@
                 "time": "1:33.226"
             },
             "Drive-Thru Danger": {
-                "medal": "silver",
-                "points": 8,
+                "medal": null,
+                "points": 0,
                 "time": "NO TIME"
             },
             "Electron Avenue": {
@@ -577,8 +577,8 @@
                 "time": "1:47.776"
             },
             "Megamix Mania": {
-                "medal": "silver",
-                "points": 8,
+                "medal": null,
+                "points": 0,
                 "time": "NO TIME"
             },
             "Meteor Gorge": {
@@ -702,9 +702,9 @@
         "medals": {
             "bronze": 1,
             "gold": 0,
-            "silver": 2
+            "silver": 0
         },
-        "total_points": 85,
+        "total_points": 69,
         "total_points_in_upper_league": 0,
         "total_time": "89:54.368",
         "tracks": {
@@ -775,8 +775,8 @@
                 "time": "1:25.086"
             },
             "Drive-Thru Danger": {
-                "medal": "silver",
-                "points": 8,
+                "medal": null,
+                "points": 0,
                 "time": "NO TIME"
             },
             "Electron Avenue": {
@@ -822,8 +822,8 @@
                 "time": "1:40.269"
             },
             "Megamix Mania": {
-                "medal": "silver",
-                "points": 8,
+                "medal": null,
+                "points": 0,
                 "time": "NO TIME"
             },
             "Meteor Gorge": {
@@ -945,12 +945,12 @@
     "Gracki92": {
         "league": 3,
         "medals": {
-            "bronze": 2,
+            "bronze": 0,
             "gold": 1,
             "silver": 1
         },
-        "total_points": 58,
-        "total_points_in_upper_league": 4,
+        "total_points": 46,
+        "total_points_in_upper_league": 2,
         "total_time": "88:46.233",
         "tracks": {
             "Android Alley": {
@@ -1020,8 +1020,8 @@
                 "time": "1:34.529"
             },
             "Drive-Thru Danger": {
-                "medal": "bronze",
-                "points": 6,
+                "medal": null,
+                "points": 0,
                 "time": "NO TIME"
             },
             "Electron Avenue": {
@@ -1067,8 +1067,8 @@
                 "time": "1:43.774"
             },
             "Megamix Mania": {
-                "medal": "bronze",
-                "points": 6,
+                "medal": null,
+                "points": 0,
                 "time": "NO TIME"
             },
             "Meteor Gorge": {
@@ -1194,7 +1194,7 @@
             "gold": 1,
             "silver": 0
         },
-        "total_points": 48,
+        "total_points": 38,
         "total_points_in_upper_league": 0,
         "total_time": "89:25.633",
         "tracks": {
@@ -1266,7 +1266,7 @@
             },
             "Drive-Thru Danger": {
                 "medal": null,
-                "points": 5,
+                "points": 0,
                 "time": "NO TIME"
             },
             "Electron Avenue": {
@@ -1313,7 +1313,7 @@
             },
             "Megamix Mania": {
                 "medal": null,
-                "points": 5,
+                "points": 0,
                 "time": "NO TIME"
             },
             "Meteor Gorge": {
@@ -1439,7 +1439,7 @@
             "gold": 2,
             "silver": 3
         },
-        "total_points": 77,
+        "total_points": 69,
         "total_points_in_upper_league": 9,
         "total_time": "88:24.375",
         "tracks": {
@@ -1511,7 +1511,7 @@
             },
             "Drive-Thru Danger": {
                 "medal": null,
-                "points": 4,
+                "points": 0,
                 "time": "NO TIME"
             },
             "Electron Avenue": {
@@ -1558,7 +1558,7 @@
             },
             "Megamix Mania": {
                 "medal": null,
-                "points": 4,
+                "points": 0,
                 "time": "NO TIME"
             },
             "Meteor Gorge": {
@@ -1680,11 +1680,11 @@
     "Jakub_Luk": {
         "league": 2,
         "medals": {
-            "bronze": 5,
+            "bronze": 3,
             "gold": 6,
             "silver": 6
         },
-        "total_points": 204,
+        "total_points": 192,
         "total_points_in_upper_league": 1,
         "total_time": "81:50.135",
         "tracks": {
@@ -1755,8 +1755,8 @@
                 "time": "1:27.857"
             },
             "Drive-Thru Danger": {
-                "medal": "bronze",
-                "points": 6,
+                "medal": null,
+                "points": 0,
                 "time": "NO TIME"
             },
             "Electron Avenue": {
@@ -1802,8 +1802,8 @@
                 "time": "1:38.736"
             },
             "Megamix Mania": {
-                "medal": "bronze",
-                "points": 6,
+                "medal": null,
+                "points": 0,
                 "time": "NO TIME"
             },
             "Meteor Gorge": {
@@ -2174,8 +2174,8 @@
             "gold": 0,
             "silver": 0
         },
-        "total_points": 10,
-        "total_points_in_upper_league": 10,
+        "total_points": 0,
+        "total_points_in_upper_league": 0,
         "total_time": "114:26.499",
         "tracks": {
             "Android Alley": {
@@ -2246,7 +2246,7 @@
             },
             "Drive-Thru Danger": {
                 "medal": null,
-                "points": 5,
+                "points": 0,
                 "time": "NO TIME"
             },
             "Electron Avenue": {
@@ -2291,7 +2291,7 @@
             },
             "Megamix Mania": {
                 "medal": null,
-                "points": 5,
+                "points": 0,
                 "time": "NO TIME"
             },
             "Meteor Gorge": {
@@ -2413,7 +2413,7 @@
             "gold": 1,
             "silver": 2
         },
-        "total_points": 86,
+        "total_points": 84,
         "total_points_in_upper_league": 0,
         "total_time": "78:39.737",
         "tracks": {
@@ -2485,7 +2485,7 @@
             },
             "Drive-Thru Danger": {
                 "medal": null,
-                "points": 1,
+                "points": 0,
                 "time": "NO TIME"
             },
             "Electron Avenue": {
@@ -2532,7 +2532,7 @@
             },
             "Megamix Mania": {
                 "medal": null,
-                "points": 1,
+                "points": 0,
                 "time": "NO TIME"
             },
             "Meteor Gorge": {
@@ -2658,7 +2658,7 @@
             "gold": 0,
             "silver": 0
         },
-        "total_points": 43,
+        "total_points": 37,
         "total_points_in_upper_league": 0,
         "total_time": "92:46.906",
         "tracks": {
@@ -2730,7 +2730,7 @@
             },
             "Drive-Thru Danger": {
                 "medal": null,
-                "points": 3,
+                "points": 0,
                 "time": "NO TIME"
             },
             "Electron Avenue": {
@@ -2777,7 +2777,7 @@
             },
             "Megamix Mania": {
                 "medal": null,
-                "points": 3,
+                "points": 0,
                 "time": "NO TIME"
             },
             "Meteor Gorge": {
@@ -2903,7 +2903,7 @@
             "gold": 0,
             "silver": 2
         },
-        "total_points": 48,
+        "total_points": 44,
         "total_points_in_upper_league": 0,
         "total_time": "89:52.113",
         "tracks": {
@@ -2975,7 +2975,7 @@
             },
             "Drive-Thru Danger": {
                 "medal": null,
-                "points": 2,
+                "points": 0,
                 "time": "NO TIME"
             },
             "Electron Avenue": {
@@ -3022,7 +3022,7 @@
             },
             "Megamix Mania": {
                 "medal": null,
-                "points": 2,
+                "points": 0,
                 "time": "NO TIME"
             },
             "Meteor Gorge": {
@@ -3148,7 +3148,7 @@
             "gold": 2,
             "silver": 2
         },
-        "total_points": 175,
+        "total_points": 165,
         "total_points_in_upper_league": 0,
         "total_time": "81:51.925",
         "tracks": {
@@ -3220,7 +3220,7 @@
             },
             "Drive-Thru Danger": {
                 "medal": null,
-                "points": 5,
+                "points": 0,
                 "time": "NO TIME"
             },
             "Electron Avenue": {
@@ -3267,7 +3267,7 @@
             },
             "Megamix Mania": {
                 "medal": null,
-                "points": 5,
+                "points": 0,
                 "time": "NO TIME"
             },
             "Meteor Gorge": {
@@ -3393,7 +3393,7 @@
             "gold": 7,
             "silver": 1
         },
-        "total_points": 162,
+        "total_points": 154,
         "total_points_in_upper_league": 14,
         "total_time": "101:12.200",
         "tracks": {
@@ -3465,7 +3465,7 @@
             },
             "Drive-Thru Danger": {
                 "medal": null,
-                "points": 4,
+                "points": 0,
                 "time": "NO TIME"
             },
             "Electron Avenue": {
@@ -3512,7 +3512,7 @@
             },
             "Megamix Mania": {
                 "medal": null,
-                "points": 4,
+                "points": 0,
                 "time": "NO TIME"
             },
             "Meteor Gorge": {
@@ -3638,7 +3638,7 @@
             "gold": 5,
             "silver": 5
         },
-        "total_points": 183,
+        "total_points": 177,
         "total_points_in_upper_league": 5,
         "total_time": "94:48.263",
         "tracks": {
@@ -3710,7 +3710,7 @@
             },
             "Drive-Thru Danger": {
                 "medal": null,
-                "points": 3,
+                "points": 0,
                 "time": "NO TIME"
             },
             "Electron Avenue": {
@@ -3757,7 +3757,7 @@
             },
             "Megamix Mania": {
                 "medal": null,
-                "points": 3,
+                "points": 0,
                 "time": "NO TIME"
             },
             "Meteor Gorge": {
@@ -3883,8 +3883,8 @@
             "gold": 0,
             "silver": 0
         },
-        "total_points": 4,
-        "total_points_in_upper_league": 4,
+        "total_points": 0,
+        "total_points_in_upper_league": 0,
         "total_time": "195:00.000",
         "tracks": {
             "Android Alley": {
@@ -3944,7 +3944,7 @@
             },
             "Drive-Thru Danger": {
                 "medal": null,
-                "points": 2,
+                "points": 0,
                 "time": "NO TIME"
             },
             "Electron Avenue": {
@@ -3984,7 +3984,7 @@
             },
             "Megamix Mania": {
                 "medal": null,
-                "points": 2,
+                "points": 0,
                 "time": "NO TIME"
             },
             "Meteor Gorge": {
@@ -4091,7 +4091,7 @@
             "gold": 3,
             "silver": 0
         },
-        "total_points": 65,
+        "total_points": 57,
         "total_points_in_upper_league": 1,
         "total_time": "90:13.738",
         "tracks": {
@@ -4163,7 +4163,7 @@
             },
             "Drive-Thru Danger": {
                 "medal": null,
-                "points": 4,
+                "points": 0,
                 "time": "NO TIME"
             },
             "Electron Avenue": {
@@ -4210,7 +4210,7 @@
             },
             "Megamix Mania": {
                 "medal": null,
-                "points": 4,
+                "points": 0,
                 "time": "NO TIME"
             },
             "Meteor Gorge": {
@@ -4789,7 +4789,7 @@
             "gold": 0,
             "silver": 2
         },
-        "total_points": 28,
+        "total_points": 26,
         "total_points_in_upper_league": 2,
         "total_time": "92:06.594",
         "tracks": {
@@ -4861,7 +4861,7 @@
             },
             "Drive-Thru Danger": {
                 "medal": null,
-                "points": 1,
+                "points": 0,
                 "time": "NO TIME"
             },
             "Electron Avenue": {
@@ -4908,7 +4908,7 @@
             },
             "Megamix Mania": {
                 "medal": null,
-                "points": 1,
+                "points": 0,
                 "time": "NO TIME"
             },
             "Meteor Gorge": {
@@ -5034,7 +5034,7 @@
             "gold": 1,
             "silver": 0
         },
-        "total_points": 58,
+        "total_points": 52,
         "total_points_in_upper_league": 0,
         "total_time": "84:01.727",
         "tracks": {
@@ -5106,7 +5106,7 @@
             },
             "Drive-Thru Danger": {
                 "medal": null,
-                "points": 3,
+                "points": 0,
                 "time": "NO TIME"
             },
             "Electron Avenue": {
@@ -5153,7 +5153,7 @@
             },
             "Megamix Mania": {
                 "medal": null,
-                "points": 3,
+                "points": 0,
                 "time": "NO TIME"
             },
             "Meteor Gorge": {
@@ -5732,7 +5732,7 @@
             "gold": 0,
             "silver": 1
         },
-        "total_points": 39,
+        "total_points": 35,
         "total_points_in_upper_league": 0,
         "total_time": "102:51.304",
         "tracks": {
@@ -5804,7 +5804,7 @@
             },
             "Drive-Thru Danger": {
                 "medal": null,
-                "points": 2,
+                "points": 0,
                 "time": "NO TIME"
             },
             "Electron Avenue": {
@@ -5851,7 +5851,7 @@
             },
             "Megamix Mania": {
                 "medal": null,
-                "points": 2,
+                "points": 0,
                 "time": "NO TIME"
             },
             "Meteor Gorge": {
@@ -6467,7 +6467,7 @@
             "gold": 2,
             "silver": 5
         },
-        "total_points": 145,
+        "total_points": 143,
         "total_points_in_upper_league": 3,
         "total_time": "96:15.632",
         "tracks": {
@@ -6539,7 +6539,7 @@
             },
             "Drive-Thru Danger": {
                 "medal": null,
-                "points": 1,
+                "points": 0,
                 "time": "NO TIME"
             },
             "Electron Avenue": {
@@ -6586,7 +6586,7 @@
             },
             "Megamix Mania": {
                 "medal": null,
-                "points": 1,
+                "points": 0,
                 "time": "NO TIME"
             },
             "Meteor Gorge": {
@@ -7165,7 +7165,7 @@
             "gold": 4,
             "silver": 6
         },
-        "total_points": 191,
+        "total_points": 189,
         "total_points_in_upper_league": 2,
         "total_time": "80:46.332",
         "tracks": {
@@ -7237,7 +7237,7 @@
             },
             "Drive-Thru Danger": {
                 "medal": null,
-                "points": 1,
+                "points": 0,
                 "time": "NO TIME"
             },
             "Electron Avenue": {
@@ -7284,7 +7284,7 @@
             },
             "Megamix Mania": {
                 "medal": null,
-                "points": 1,
+                "points": 0,
                 "time": "NO TIME"
             },
             "Meteor Gorge": {

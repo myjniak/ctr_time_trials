@@ -1,4 +1,4 @@
-from .json_operations import JsonOperations
+from lib.simple_objects.jsoner import Jsoner
 
 
 class Database:
@@ -6,34 +6,41 @@ class Database:
     file_paths = str()
     platforms = str()
     time_trials = dict()
-    tracks_by_ids = dict()
+    tracks_info = dict()
     track_list = dict()
     user_dict = dict()
     cheat_thresholds = dict()
     player_list = list()
+    point_system = list()
+    league_names = list()
+    league_count = int()
+    league_points_minimum = int()
+    time_zone_diff = int()
+    bots_list = list()
     
     @classmethod
     def load(cls):
-        cls.time_trials = JsonOperations.load_json(cls.file_paths["time_trials_json"])
-        cls.tracks_by_ids = JsonOperations.load_track_id_json(cls.file_paths["track_ids"])
-        cls.track_list = list(cls.tracks_by_ids.values())
-        cls.user_dict = JsonOperations.load_json(cls.file_paths["user_platform_json"])
-        cls.cheat_thresholds = JsonOperations.load_json(cls.file_paths["cheat_threshold_json"])
+        cls.time_trials = Jsoner(cls.file_paths["time_trials_json"])
+        cls.tracks_info = Jsoner(cls.file_paths["track_ids"]).json
+        cls.track_list = list(cls.tracks_info.keys())
+        cls.user_dict = Jsoner(cls.file_paths["user_platform_json"]).json
+        cls.cheat_thresholds = Jsoner(cls.file_paths["cheat_threshold_json"]).json
         cls.player_list = [player for player in cls.user_dict.keys()
                            if cls.user_dict[player] in cls.platforms]
+        cls.league_count = max([player_info["league"] for player_info in cls.time_trials.json.values()])
 
     @classmethod
     def initialize_players_json_structure(cls):
-        for player in [*cls.player_list, "N. Tropy", "Oxide", "Velo", "Beenox"]:
-            cls.time_trials.setdefault(player, {})
-            cls.time_trials[player].setdefault('tracks', {})
-            cls.time_trials[player].setdefault('medals', {})
-            cls.time_trials[player].setdefault('league', 0)
-            cls.time_trials[player].setdefault('total_points', 0)
-            cls.time_trials[player].setdefault('total_points_in_upper_league', 0)
+        data = cls.time_trials.json
+        for player in [*cls.player_list, *cls.bots_list]:
+            data.setdefault(player, {})
+            data[player].setdefault('tracks', {})
+            data[player].setdefault('medals', {})
+            data[player].setdefault('league', 0)
+            data[player].setdefault('total_points', 0)
+            data[player].setdefault('total_points_in_upper_league', 0)
             for track in cls.track_list:
-                cls.time_trials[player].setdefault('tracks', {}).setdefault(track, {})
-                cls.time_trials[player]['tracks'][track]['points'] = 0
-                cls.time_trials[player]['tracks'][track].setdefault('time', "NO TIME")
-                cls.time_trials[player]['tracks'][track].setdefault('medal', None)
-        JsonOperations.save_json(cls.time_trials, cls.file_paths["time_trials_json"])
+                data[player].setdefault('tracks', {}).setdefault(track, {})
+                data[player]['tracks'][track]['points'] = 0
+                data[player]['tracks'][track].setdefault('time', "NO TIME")
+                data[player]['tracks'][track].setdefault('medal', None)
