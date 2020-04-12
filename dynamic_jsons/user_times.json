@@ -1929,7 +1929,7 @@
             "gold": 2,
             "silver": 4
         },
-        "total_points": 164,
+        "total_points": 163,
         "total_points_in_upper_league": 0,
         "total_time": "71:28.780",
         "tracks": {
@@ -2150,7 +2150,7 @@
             "Tiny Temple": {
                 "medal": null,
                 "place": 93,
-                "points": 4,
+                "points": 3,
                 "time": "1:38.290"
             },
             "Turbo Track": {
@@ -2413,7 +2413,7 @@
             "gold": 1,
             "silver": 2
         },
-        "total_points": 84,
+        "total_points": 83,
         "total_points_in_upper_league": 0,
         "total_time": "78:39.737",
         "tracks": {
@@ -2634,7 +2634,7 @@
             "Tiny Temple": {
                 "medal": null,
                 "place": 278,
-                "points": 5,
+                "points": 4,
                 "time": "1:38.164"
             },
             "Turbo Track": {
@@ -4334,11 +4334,11 @@
         "medals": {
             "bronze": 6,
             "gold": 0,
-            "silver": 6
+            "silver": 7
         },
-        "total_points": 167,
+        "total_points": 175,
         "total_points_in_upper_league": 0,
-        "total_time": "71:34.904",
+        "total_time": "71:32.337",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -4359,10 +4359,10 @@
                 "time": "1:42.70"
             },
             "Blizzard Bluff": {
-                "medal": null,
+                "medal": "silver",
                 "place": 454,
-                "points": 5,
-                "time": "1:10.337"
+                "points": 8,
+                "time": "1:09.230"
             },
             "Clockwork Wumpa": {
                 "medal": null,
@@ -4504,7 +4504,7 @@
                 "medal": null,
                 "place": 1135,
                 "points": 4,
-                "time": "2:00.61"
+                "time": "1:59.780"
             },
             "Prehistoric Playground": {
                 "medal": null,
@@ -4557,8 +4557,8 @@
             "Tiny Temple": {
                 "medal": null,
                 "place": 849,
-                "points": 0,
-                "time": "1:38.66"
+                "points": 5,
+                "time": "1:38.030"
             },
             "Turbo Track": {
                 "medal": "bronze",
@@ -5973,11 +5973,11 @@
     "Rc_FIVE": {
         "league": 1,
         "medals": {
-            "bronze": 2,
+            "bronze": 3,
             "gold": 29,
-            "silver": 8
+            "silver": 7
         },
-        "total_points": 366,
+        "total_points": 364,
         "total_points_in_upper_league": 0,
         "total_time": "70:31.990",
         "tracks": {
@@ -6000,9 +6000,9 @@
                 "time": "1:41.168"
             },
             "Blizzard Bluff": {
-                "medal": "silver",
+                "medal": "bronze",
                 "place": 215,
-                "points": 8,
+                "points": 6,
                 "time": "1:09.503"
             },
             "Clockwork Wumpa": {
@@ -7655,7 +7655,7 @@
             "gold": 0,
             "silver": 4
         },
-        "total_points": 120,
+        "total_points": 119,
         "total_points_in_upper_league": 0,
         "total_time": "78:09.778",
         "tracks": {
@@ -7876,7 +7876,7 @@
             "Tiny Temple": {
                 "medal": null,
                 "place": 402,
-                "points": 3,
+                "points": 2,
                 "time": "1:38.290"
             },
             "Turbo Track": {
@@ -8108,7 +8108,7 @@
             "gold": 2,
             "silver": 2
         },
-        "total_points": 134,
+        "total_points": 133,
         "total_points_in_upper_league": 0,
         "total_time": "71:58.160",
         "tracks": {
@@ -8329,7 +8329,7 @@
             "Tiny Temple": {
                 "medal": null,
                 "place": 81,
-                "points": 2,
+                "points": 1,
                 "time": "1:38.43"
             },
             "Turbo Track": {
@@ -11987,11 +11987,11 @@
     "silVersilVa89PL": {
         "league": 1,
         "medals": {
-            "bronze": 6,
+            "bronze": 5,
             "gold": 1,
             "silver": 1
         },
-        "total_points": 151,
+        "total_points": 149,
         "total_points_in_upper_league": 0,
         "total_time": "71:43.820",
         "tracks": {
@@ -12014,9 +12014,9 @@
                 "time": "1:42.101"
             },
             "Blizzard Bluff": {
-                "medal": "bronze",
+                "medal": null,
                 "place": 332,
-                "points": 6,
+                "points": 5,
                 "time": "1:09.902"
             },
             "Clockwork Wumpa": {
@@ -12212,7 +12212,7 @@
             "Tiny Temple": {
                 "medal": null,
                 "place": 414,
-                "points": 1,
+                "points": 0,
                 "time": "1:38.500"
             },
             "Turbo Track": {
