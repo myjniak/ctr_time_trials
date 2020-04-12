@@ -23,6 +23,8 @@ def try_request_until_success(func):
                                f"{str(err)}")
             except requests.exceptions.ConnectionError:
                 LOGGER.warning(f"Oops, we have a connection error")
+            except requests.exceptions.Timeout:
+                LOGGER.warning(f"Oops, we have a timeout error")
     return wrapper
 
 
@@ -88,13 +90,13 @@ class GoogleDriveInteractions:
     @staticmethod
     def execute_request(request):
         response = request.execute()
-        LOGGER.info(response)
+        LOGGER.debug(response)
 
     @try_request_until_success
     def download_sheet_ids(self, remote_file_id):
         content = requests.get(f"https://sheets.googleapis.com/v4/spreadsheets/{remote_file_id}"
                                f"?fields=sheets(properties)"
-                               f"&key={self.key}")
+                               f"&key={self.key}", timeout=5)
         sheet_id_dict = {sheet_info["properties"]["title"]: sheet_info["properties"]["sheetId"]
                          for sheet_info in content.json()['sheets']}
         return sheet_id_dict
@@ -108,7 +110,7 @@ class GoogleDriveInteractions:
     def get_cell_value(self, remote_file_id, cell):
         content = requests.get(f"https://sheets.googleapis.com/v4/spreadsheets/{remote_file_id}"
                                f"/values/{cell}"
-                               f"?key={self.key}").json()
+                               f"?key={self.key}", timeout=5).json()
         if "values" in content:
             return content["values"][0][0]
 
@@ -139,6 +141,6 @@ class GoogleDriveInteractions:
     def get_range_value(self, remote_file_id, cell_range):
         content = requests.get(f"https://sheets.googleapis.com/v4/spreadsheets/{remote_file_id}"
                                f"/values/{cell_range}"
-                               f"?key={self.key}")
+                               f"?key={self.key}", timeout=5)
         LOGGER.debug(content)
         return content.json()["values"]
