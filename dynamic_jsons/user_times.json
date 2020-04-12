@@ -1929,9 +1929,9 @@
             "gold": 2,
             "silver": 4
         },
-        "total_points": 163,
+        "total_points": 162,
         "total_points_in_upper_league": 0,
-        "total_time": "71:28.780",
+        "total_time": "71:28.580",
         "tracks": {
             "Android Alley": {
                 "medal": "bronze",
@@ -1978,7 +1978,7 @@
             "Crash Cove": {
                 "medal": null,
                 "place": 185,
-                "points": 2,
+                "points": 3,
                 "time": "1:18.87"
             },
             "Deep Sea Driving": {
@@ -1990,7 +1990,7 @@
             "Dingo Canyon": {
                 "medal": null,
                 "place": 700,
-                "points": 3,
+                "points": 2,
                 "time": "1:28.650"
             },
             "Dragon Mines": {
@@ -2031,7 +2031,7 @@
             "Inferno Island": {
                 "medal": null,
                 "place": 263,
-                "points": 2,
+                "points": 1,
                 "time": "1:33.090"
             },
             "Jungle Boogie": {
@@ -2133,7 +2133,7 @@
                 "medal": "silver",
                 "place": 2174,
                 "points": 8,
-                "time": "1:50.540"
+                "time": "1:50.340"
             },
             "Tiger Temple": {
                 "medal": "bronze",
@@ -4332,11 +4332,11 @@
     "Maties_Gamer": {
         "league": 1,
         "medals": {
-            "bronze": 6,
+            "bronze": 5,
             "gold": 0,
             "silver": 7
         },
-        "total_points": 175,
+        "total_points": 173,
         "total_points_in_upper_league": 0,
         "total_time": "71:32.337",
         "tracks": {
@@ -4385,7 +4385,7 @@
             "Crash Cove": {
                 "medal": null,
                 "place": 426,
-                "points": 3,
+                "points": 4,
                 "time": "1:18.74"
             },
             "Deep Sea Driving": {
@@ -4397,7 +4397,7 @@
             "Dingo Canyon": {
                 "medal": null,
                 "place": 1653,
-                "points": 5,
+                "points": 4,
                 "time": "1:28.256"
             },
             "Dragon Mines": {
@@ -4436,9 +4436,9 @@
                 "time": "1:46.000"
             },
             "Inferno Island": {
-                "medal": "bronze",
+                "medal": null,
                 "place": 822,
-                "points": 6,
+                "points": 5,
                 "time": "1:32.920"
             },
             "Jungle Boogie": {
@@ -4491,7 +4491,7 @@
             "Oxide Station": {
                 "medal": null,
                 "place": 720,
-                "points": 3,
+                "points": 2,
                 "time": "2:41.29"
             },
             "Papu's Pyramid": {
@@ -7166,7 +7166,7 @@
             "silver": 6
         },
         "total_points": 189,
-        "total_points_in_upper_league": 2,
+        "total_points_in_upper_league": 1,
         "total_time": "80:46.332",
         "tracks": {
             "Android Alley": {
@@ -7651,11 +7651,11 @@
     "Wajsia": {
         "league": 1,
         "medals": {
-            "bronze": 7,
+            "bronze": 6,
             "gold": 0,
             "silver": 4
         },
-        "total_points": 119,
+        "total_points": 115,
         "total_points_in_upper_league": 0,
         "total_time": "78:09.778",
         "tracks": {
@@ -7714,9 +7714,9 @@
                 "time": "1:41.700"
             },
             "Dingo Canyon": {
-                "medal": "bronze",
+                "medal": null,
                 "place": 1608,
-                "points": 6,
+                "points": 5,
                 "time": "1:27.688"
             },
             "Dragon Mines": {
@@ -7745,7 +7745,7 @@
             "Hot Air Skyway": {
                 "medal": null,
                 "place": 1345,
-                "points": 2,
+                "points": 1,
                 "time": "2:10.360"
             },
             "Hyper Spaceway": {
@@ -7757,7 +7757,7 @@
             "Inferno Island": {
                 "medal": null,
                 "place": 401,
-                "points": 5,
+                "points": 4,
                 "time": "1:32.950"
             },
             "Jungle Boogie": {
@@ -7822,7 +7822,7 @@
             "Polar Pass": {
                 "medal": null,
                 "place": 343,
-                "points": 3,
+                "points": 2,
                 "time": "2:01.120"
             },
             "Prehistoric Playground": {
@@ -8104,13 +8104,13 @@
     "Xerdzio": {
         "league": 1,
         "medals": {
-            "bronze": 2,
+            "bronze": 3,
             "gold": 2,
             "silver": 2
         },
-        "total_points": 133,
+        "total_points": 140,
         "total_points_in_upper_league": 0,
-        "total_time": "71:58.160",
+        "total_time": "71:47.920",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -8157,19 +8157,19 @@
             "Crash Cove": {
                 "medal": null,
                 "place": 151,
-                "points": 4,
+                "points": 5,
                 "time": "1:18.71"
             },
             "Deep Sea Driving": {
                 "medal": null,
                 "place": 100,
-                "points": 1,
-                "time": "1:40.76"
+                "points": 3,
+                "time": "1:39.190"
             },
             "Dingo Canyon": {
                 "medal": null,
                 "place": 341,
-                "points": 4,
+                "points": 3,
                 "time": "1:28.52"
             },
             "Dragon Mines": {
@@ -8186,8 +8186,8 @@
             "Electron Avenue": {
                 "medal": null,
                 "place": 192,
-                "points": 2,
-                "time": "3:03.23"
+                "points": 3,
+                "time": "3:00.070"
             },
             "Gingerbread Joyride": {
                 "medal": null,
@@ -8198,8 +8198,8 @@
             "Hot Air Skyway": {
                 "medal": null,
                 "place": 165,
-                "points": 0,
-                "time": "2:11.61"
+                "points": 2,
+                "time": "2:09.990"
             },
             "Hyper Spaceway": {
                 "medal": null,
@@ -8210,7 +8210,7 @@
             "Inferno Island": {
                 "medal": null,
                 "place": 100,
-                "points": 3,
+                "points": 2,
                 "time": "1:33.05"
             },
             "Jungle Boogie": {
@@ -8246,7 +8246,7 @@
                 "medal": null,
                 "place": 999999,
                 "points": 3,
-                "time": "2:11.830"
+                "time": "2:10.830"
             },
             "Nina's Nightmare": {
                 "medal": null,
@@ -8275,8 +8275,8 @@
             "Polar Pass": {
                 "medal": null,
                 "place": 101,
-                "points": 1,
-                "time": "2:02.57"
+                "points": 3,
+                "time": "1:59.980"
             },
             "Prehistoric Playground": {
                 "medal": "gold",
@@ -8339,10 +8339,10 @@
                 "time": "1:33.19"
             },
             "Twilight Tour": {
-                "medal": null,
+                "medal": "bronze",
                 "place": 82,
-                "points": 5,
-                "time": "2:11.76"
+                "points": 6,
+                "time": "2:11.460"
             }
         }
     },
@@ -9542,7 +9542,7 @@
             "silver": 12
         },
         "total_points": 270,
-        "total_points_in_upper_league": 11,
+        "total_points_in_upper_league": 9,
         "total_time": "79:49.832",
         "tracks": {
             "Android Alley": {
@@ -10027,11 +10027,11 @@
     "mati1212": {
         "league": 1,
         "medals": {
-            "bronze": 3,
+            "bronze": 2,
             "gold": 4,
             "silver": 7
         },
-        "total_points": 177,
+        "total_points": 172,
         "total_points_in_upper_league": 0,
         "total_time": "71:38.051",
         "tracks": {
@@ -10086,7 +10086,7 @@
             "Deep Sea Driving": {
                 "medal": null,
                 "place": 376,
-                "points": 3,
+                "points": 2,
                 "time": "1:39.267"
             },
             "Dingo Canyon": {
@@ -10109,7 +10109,7 @@
             "Electron Avenue": {
                 "medal": null,
                 "place": 734,
-                "points": 3,
+                "points": 2,
                 "time": "3:02.384"
             },
             "Gingerbread Joyride": {
@@ -10121,7 +10121,7 @@
             "Hot Air Skyway": {
                 "medal": null,
                 "place": 674,
-                "points": 1,
+                "points": 0,
                 "time": "2:10.498"
             },
             "Hyper Spaceway": {
@@ -10133,7 +10133,7 @@
             "Inferno Island": {
                 "medal": null,
                 "place": 392,
-                "points": 1,
+                "points": 0,
                 "time": "1:33.194"
             },
             "Jungle Boogie": {
@@ -10262,9 +10262,9 @@
                 "time": "1:29.824"
             },
             "Twilight Tour": {
-                "medal": "bronze",
+                "medal": null,
                 "place": 360,
-                "points": 6,
+                "points": 5,
                 "time": "2:11.633"
             }
         }
@@ -10276,9 +10276,9 @@
             "gold": 0,
             "silver": 5
         },
-        "total_points": 156,
+        "total_points": 151,
         "total_points_in_upper_league": 0,
-        "total_time": "71:46.779",
+        "total_time": "71:46.989",
         "tracks": {
             "Android Alley": {
                 "medal": "silver",
@@ -10325,8 +10325,8 @@
             "Crash Cove": {
                 "medal": null,
                 "place": 389,
-                "points": 5,
-                "time": "1:18.670"
+                "points": 2,
+                "time": "1:18.880"
             },
             "Deep Sea Driving": {
                 "medal": null,
@@ -10337,7 +10337,7 @@
             "Dingo Canyon": {
                 "medal": null,
                 "place": 2268,
-                "points": 2,
+                "points": 1,
                 "time": "1:28.750"
             },
             "Dragon Mines": {
@@ -10378,7 +10378,7 @@
             "Inferno Island": {
                 "medal": null,
                 "place": 314,
-                "points": 4,
+                "points": 3,
                 "time": "1:33.020"
             },
             "Jungle Boogie": {
@@ -11987,13 +11987,13 @@
     "silVersilVa89PL": {
         "league": 1,
         "medals": {
-            "bronze": 5,
+            "bronze": 7,
             "gold": 1,
             "silver": 1
         },
-        "total_points": 149,
+        "total_points": 159,
         "total_points_in_upper_league": 0,
-        "total_time": "71:43.820",
+        "total_time": "71:41.610",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -12046,14 +12046,14 @@
             "Deep Sea Driving": {
                 "medal": null,
                 "place": 573,
-                "points": 2,
+                "points": 1,
                 "time": "1:40.568"
             },
             "Dingo Canyon": {
-                "medal": null,
+                "medal": "bronze",
                 "place": 999999,
-                "points": 1,
-                "time": "1:29.190"
+                "points": 6,
+                "time": "1:27.650"
             },
             "Dragon Mines": {
                 "medal": null,
@@ -12091,10 +12091,10 @@
                 "time": "1:46.775"
             },
             "Inferno Island": {
-                "medal": null,
+                "medal": "bronze",
                 "place": 394,
-                "points": 0,
-                "time": "1:33.195"
+                "points": 6,
+                "time": "1:32.860"
             },
             "Jungle Boogie": {
                 "medal": "gold",
@@ -12146,8 +12146,8 @@
             "Oxide Station": {
                 "medal": null,
                 "place": 401,
-                "points": 2,
-                "time": "2:41.495"
+                "points": 3,
+                "time": "2:41.160"
             },
             "Papu's Pyramid": {
                 "medal": null,
@@ -12158,7 +12158,7 @@
             "Polar Pass": {
                 "medal": null,
                 "place": 606,
-                "points": 2,
+                "points": 1,
                 "time": "2:02.35"
             },
             "Prehistoric Playground": {

@@ -1,11 +1,36 @@
 {
-    "MAties_gamer": {
+    "Dejwidgakure": {
         "tracks": {
-            "Polar Pass": {
-                "time": "1:59.780"
+            "Crash Cove": {
+                "time": "2:00.00"
             },
-            "Tiny Temple": {
-                "time": "1:38.030"
+            "Mystery Caves": {
+                "time": "test nowego gracza"
+            },
+            "Sewer Speedway": {
+                "time": "wpisz x jak skonczysz"
+            }
+        }
+    },
+    "Xerdzio": {
+        "tracks": {
+            "Deep Sea Driving": {
+                "time": "1:39.19"
+            },
+            "Electron Avenue": {
+                "time": "3:00.07"
+            },
+            "Hot Air Skyway": {
+                "time": "2:09.99"
+            },
+            "N.Gin Labs": {
+                "time": "2:10.83"
+            },
+            "Polar Pass": {
+                "time": "1:59.98"
+            },
+            "Twilight Tour": {
+                "time": "2:11.46"
             }
         }
     }
