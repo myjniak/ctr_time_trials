@@ -107,6 +107,7 @@ def main_loop(serwis, rankingowaczka, upload, static=False):
                 # Sciagnij inputowy eksel, zapisz go w postaci JSON i zaaplikuj do user_times.json
                 input_as_csv = serwis.get_range_value(RANKING_INPUT_FILE_ID, "A1:Z50")
                 Jsoner(input_as_csv).save(TIMES_FROM_WEBPAGE_JSON_FILE_PATH)
+                reset_input_sheet(serwis)
                 Database.time_trials.apply_json_to_self(TIMES_FROM_WEBPAGE_JSON_FILE_PATH, verbose=True)
             Database.time_trials.apply_json_to_self("config/challenge_ghosts.json")
 
@@ -125,9 +126,6 @@ def main_loop(serwis, rankingowaczka, upload, static=False):
             if upload:
                 serwis.update_ranking(RANKING_FILE_ID, worksheet_dict, Jsoner(SHEET_IDS_FILE_PATH).json)
             LOGGER.info("ROBOTA SKONCZONA")
-
-            if not static:
-                reset_input_sheet(serwis)
         else:
             LOGGER.debug("heartbeat")
 
