@@ -2,6 +2,7 @@ from __future__ import print_function
 import pickle
 import os.path
 import requests
+from json import JSONDecodeError
 from googleapiclient.http import MediaFileUpload, MediaIoBaseDownload
 from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
@@ -10,6 +11,19 @@ from lib import LOGGER
 
 # If modifying these scopes, delete the file token.pickle.
 SCOPES = ['https://www.googleapis.com/auth/drive']
+
+
+def try_request_until_success(func):
+    def wrapper(*args, **kwargs):
+        while True:
+            try:
+                return func(*args, **kwargs)
+            except JSONDecodeError as err:
+                LOGGER.warning(f"Oops, sth bad happenned:\n"
+                               f"{str(err)}")
+            except requests.exceptions.ConnectionError:
+                LOGGER.warning(f"Oops, we have a connection error")
+    return wrapper
 
 
 class GoogleDriveInteractions:
@@ -76,6 +90,7 @@ class GoogleDriveInteractions:
         response = request.execute()
         LOGGER.info(response)
 
+    @try_request_until_success
     def download_sheet_ids(self, remote_file_id):
         content = requests.get(f"https://sheets.googleapis.com/v4/spreadsheets/{remote_file_id}"
                                f"?fields=sheets(properties)"
@@ -89,6 +104,7 @@ class GoogleDriveInteractions:
                                                                  body=body)
         self.execute_request(request)
 
+    @try_request_until_success
     def get_cell_value(self, remote_file_id, cell):
         content = requests.get(f"https://sheets.googleapis.com/v4/spreadsheets/{remote_file_id}"
                                f"/values/{cell}"
@@ -119,6 +135,7 @@ class GoogleDriveInteractions:
         if formatting:
             self.update_sheet_formatting(remote_file_id, formatting)
 
+    @try_request_until_success
     def get_range_value(self, remote_file_id, cell_range):
         content = requests.get(f"https://sheets.googleapis.com/v4/spreadsheets/{remote_file_id}"
                                f"/values/{cell_range}"
