@@ -80,8 +80,6 @@ def reset_input_sheet(serwis):
     serwis.clear_cell_range(RANKING_INPUT_FILE_ID, "B1:Z50")
     LOGGER.debug("Resetuje A1...")
     serwis.clear_cell_range(RANKING_INPUT_FILE_ID, "A1")
-    LOGGER.debug("Resetuje uprawnienia arkuszu do inputu...")
-    serwis.protect_first_column(RANKING_INPUT_FILE_ID, MASTER_EMAIL)
 
 
 def main(upload=None, static=None):
