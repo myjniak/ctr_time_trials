@@ -2,6 +2,7 @@ from __future__ import print_function
 import pickle
 import os.path
 import requests
+import socket
 from json import JSONDecodeError
 from httplib2 import ServerNotFoundError
 from googleapiclient.http import MediaFileUpload, MediaIoBaseDownload
@@ -12,6 +13,7 @@ from lib import LOGGER
 
 # If modifying these scopes, delete the file token.pickle.
 SCOPES = ['https://www.googleapis.com/auth/drive']
+socket.setdefaulttimeout(5)
 
 
 def try_request_until_success(func):
@@ -27,6 +29,8 @@ def try_request_until_success(func):
                 LOGGER.warning(f"Oops, we have a connection error")
             except ServerNotFoundError:
                 LOGGER.warning(f"Oops, it's a httplib2 connection error")
+            except socket.timeout:
+                LOGGER.warning(f"Oops, it's a socket timeout")
     return wrapper
 
 
@@ -59,11 +63,13 @@ class GoogleDriveInteractions:
 
         return creds
 
+    @try_request_until_success
     def get_google_drive_service(self, cred_path, token_path):
         credentials = self.auth_setup(cred_path=cred_path, token_path=token_path)
         service = build('drive', 'v3', credentials=credentials)
         return service
 
+    @try_request_until_success
     def get_google_sheets_service(self, cred_path, token_path):
         credentials = self.auth_setup(cred_path=cred_path, token_path=token_path)
         service = build('sheets', 'v4', credentials=credentials)
