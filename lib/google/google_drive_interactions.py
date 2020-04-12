@@ -21,10 +21,10 @@ def try_request_until_success(func):
             except JSONDecodeError as err:
                 LOGGER.warning(f"Oops, sth bad happenned:\n"
                                f"{str(err)}")
+            except requests.exceptions.ConnectTimeout:
+                LOGGER.warning(f"Oops, we have a timeout error")
             except requests.exceptions.ConnectionError:
                 LOGGER.warning(f"Oops, we have a connection error")
-            except requests.exceptions.Timeout:
-                LOGGER.warning(f"Oops, we have a timeout error")
     return wrapper
 
 
