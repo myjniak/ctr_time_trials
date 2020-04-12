@@ -76,7 +76,7 @@ class WorksheetPreparator(Database):
         return [CellFormat(font_size, BLACK, GREEN),
                 CellFormat(font_size, place_font_color, place_bg_color),
                 *[CellFormat()]*2,
-                CellFormat(font_size, BLACK, 'BADBAD')]
+                CellFormat(font_size-2, BLACK, 'BADBAD')]
 
     @classmethod
     def _evaluate_formatting_for_legend_and_announcements(cls):
