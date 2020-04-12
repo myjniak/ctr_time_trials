@@ -3,6 +3,7 @@ import pickle
 import os.path
 import requests
 from json import JSONDecodeError
+from httplib2 import ServerNotFoundError
 from googleapiclient.http import MediaFileUpload, MediaIoBaseDownload
 from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
@@ -19,12 +20,13 @@ def try_request_until_success(func):
             try:
                 return func(*args, **kwargs)
             except JSONDecodeError as err:
-                LOGGER.warning(f"Oops, sth bad happenned:\n"
-                               f"{str(err)}")
+                LOGGER.warning(f"Oops, sth bad happenned:\n{str(err)}")
             except requests.exceptions.ConnectTimeout:
                 LOGGER.warning(f"Oops, we have a timeout error")
             except requests.exceptions.ConnectionError:
                 LOGGER.warning(f"Oops, we have a connection error")
+            except ServerNotFoundError:
+                LOGGER.warning(f"Oops, it's a httplib2 connection error")
     return wrapper
 
 
@@ -88,6 +90,7 @@ class GoogleDriveInteractions:
                                     fields='id').execute()
 
     @staticmethod
+    @try_request_until_success
     def execute_request(request):
         response = request.execute()
         LOGGER.debug(response)
@@ -101,6 +104,7 @@ class GoogleDriveInteractions:
                          for sheet_info in content.json()['sheets']}
         return sheet_id_dict
 
+    @try_request_until_success
     def batch_update(self, remote_file_id, body):
         request = self.sheets_service.spreadsheets().batchUpdate(spreadsheetId=remote_file_id,
                                                                  body=body)
