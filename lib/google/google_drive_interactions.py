@@ -24,7 +24,9 @@ def try_request_until_success(func):
             except JSONDecodeError as err:
                 LOGGER.warning(f"Oops, sth bad happenned:\n{str(err)}")
             except requests.exceptions.ConnectTimeout:
-                LOGGER.warning(f"Oops, we have a timeout error")
+                LOGGER.warning(f"Oops, we have a request connect timeout error")
+            except requests.exceptions.ReadTimeout:
+                LOGGER.warning(f"Oops, we have a request read timeout error")
             except requests.exceptions.ConnectionError:
                 LOGGER.warning(f"Oops, we have a connection error")
             except ServerNotFoundError:
