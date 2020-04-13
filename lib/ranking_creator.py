@@ -22,17 +22,25 @@ class RankingCreator(Database):
         new_time_trials = self.time_trials.json
         old_time_trials = deepcopy(new_time_trials)
         self._reset_points_medals_and_leagues()
-        league = 1
+        league = 0
         next_league_should_be_created = True
         while next_league_should_be_created:
-            self._give_out_points_and_medals_for_league(league, False)
+            league += 1
+            players = [player for player in new_time_trials.keys() if new_time_trials[player]["league"] == league]
+            self._give_out_points_and_medals_for_league(players, False)
+
             next_league_should_be_created = False
             disqualified_counter = 0
-            for player_info in new_time_trials.values():
+            player_infos_to_reset = list()
+            for player in players:
+                player_info = new_time_trials[player]
                 if player_info['total_points'] < self.league_points_minimum:
                     disqualified_counter += 1
                     if disqualified_counter >= self.minimum_player_count_in_league:
                         next_league_should_be_created = True
+                    player_infos_to_reset.append(player_info)
+            if next_league_should_be_created and len(player_infos_to_reset) < len(players):
+                for player_info in player_infos_to_reset:
                     player_info['league'] += 1
                     player_info['medals'] = {
                         'gold': 0,
@@ -41,15 +49,11 @@ class RankingCreator(Database):
                     }
                     player_info['total_points_in_upper_league'] = player_info['total_points']
                     player_info['total_points'] = 0
-            if not next_league_should_be_created:
-                for player_info in new_time_trials.values():
-                    if player_info['league'] == league + 1:
-                        player_info['league'] -= 1
-            self._give_out_points_and_medals_for_league(league)
-            league += 1
-        if Database.league_count != league - 1:
-            LOGGER.info(f"LEAGUE COUNT CHANGED TO {league - 1}!")
-            Database.league_count = league - 1
+            self._give_out_points_and_medals_for_league(players)
+
+        if Database.league_count != league:
+            LOGGER.info(f"LEAGUE COUNT CHANGED TO {league}!")
+            Database.league_count = league
         self._do_announcements(old_time_trials)
         self.time_trials.save()
 
@@ -72,9 +76,8 @@ class RankingCreator(Database):
         announcer.log_league_transfers()
         announcer.log_medals()
 
-    def _give_out_points_and_medals_for_league(self, league, give_medals=True):
+    def _give_out_points_and_medals_for_league(self, players, give_medals=True):
         data = self.time_trials.json
-        players = [player for player in data.keys() if data[player]["league"] == league]
         for player in players:
             data[player]["total_points"] = 0
             data[player]['medals'] = {

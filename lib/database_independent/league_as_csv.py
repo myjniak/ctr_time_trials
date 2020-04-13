@@ -73,8 +73,7 @@ class LeagueAsCsv:
         else:
             upper_league_name = self.league_names[self.league - 2]
             row_name = f"Total Points In {upper_league_name} ({self.league_points_minimum}p to advance)"
-            points_in_upper_league = \
-                [data[player]['total_points_in_upper_league'] for player in players]
+            points_in_upper_league = [data[player]['total_points_in_upper_league'] for player in players]
             self.content.append([row_name] + points_in_upper_league)
 
     def _write_all_players_total_time(self, data, players):
