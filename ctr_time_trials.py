@@ -100,6 +100,8 @@ def main_loop(serwis, rankingowaczka, upload, static=False):
     while True:
         if static or serwis.get_cell_value(RANKING_INPUT_FILE_ID, "A1"):
             przytnij_logi_i_ogloszenia()
+            Database.load()
+            Database.initialize_players_json_structure()
 
             if not static:
                 # Sciagnij inputowy eksel, zapisz go w postaci JSON i zaaplikuj do user_times.json
@@ -110,7 +112,6 @@ def main_loop(serwis, rankingowaczka, upload, static=False):
             Database.time_trials.apply_json_to_self("config/challenge_ghosts.json")
 
             # Zarankinguj w user_times.json
-            Database.initialize_players_json_structure()
             rankingowaczka.give_out_points_and_medals_for_all_leagues()
             rankingowaczka.calc_total_time()
 
