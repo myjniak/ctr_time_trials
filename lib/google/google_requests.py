@@ -1,4 +1,3 @@
-from xlsxwriter import utility
 from .google_drive_interactions import GoogleDriveInteractions
 from .google_sheets_request_preparator import GoogleSheetsRequestPreparator
 from . import LOGGER
@@ -12,15 +11,30 @@ class GoogleRequests(GoogleDriveInteractions, GoogleSheetsRequestPreparator):
     def update_ranking(self, remote_file_id, sheets_raw, sheet_ids):
         for sheet in sheets_raw:
             sheet_name = sheet.league_name
-            if sheet.content[1:] == sheet.old_content[1:] and sheet.content[0][1:] == sheet.old_content[0][1:]:
+
+            if sheet.old_content and \
+               sheet.content[1:] == sheet.old_content[1:] and \
+               sheet.content[0][1:] == sheet.old_content[0][1:]:
                 LOGGER.info(f"No changes in {sheet_name}, skipping")
                 continue
             LOGGER.info(f"Updating {sheet_name}")
             csv_content = sheet.content
             sheet_id = sheet_ids[sheet_name]
             formatting_request = self.prepare_sheet_formatting_request(sheet_id, sheet.formatting)
-            range_to_clear = self.get_range_to_clear(csv_content)
-            self.update_sheet(remote_file_id, sheet_name, csv_content, formatting_request, range_to_clear)
+            start_column = len(csv_content[0])
+            end_column = start_column + 10
+            start_row = 0
+            end_row = len(csv_content)
+            range_to_clear = self.numeric_range_to_letter_range(start_row, end_row, start_column, end_column)
+            range_to_clear = "'" + sheet_name + "'!" + range_to_clear
+            clear_formatting_request = \
+                [self.generate_request_for_clear_range(sheet_id, start_row, end_row, start_column, end_column)]
+            self.update_sheet(remote_file_id,
+                              sheet_name,
+                              csv_content,
+                              formatting_request,
+                              clear_formatting_request,
+                              range_to_clear)
 
     def update_sheet_ids(self, remote_file_id, sheets_raw, sheet_ids):
         for sheet in sheets_raw:
@@ -31,18 +45,10 @@ class GoogleRequests(GoogleDriveInteractions, GoogleSheetsRequestPreparator):
         for sheet_name in sheet_ids:
             new_sheet_name_list = [sheet.league_name for sheet in sheets_raw]
             if sheet_name not in new_sheet_name_list:
-                LOGGER.info(f"Escessive sheet_id detected! Deleting {sheet_name}...")
-                self.delete_sheet(sheet_ids[sheet_name])
+                LOGGER.info(f"Excessive sheet_id detected! Deleting {sheet_name}...")
+                self.delete_sheet(remote_file_id, sheet_ids[sheet_name])
                 sheet_ids = self.download_sheet_ids(remote_file_id)
         return sheet_ids
-
-    @staticmethod
-    def get_range_to_clear(csv_content):
-        last_col = utility.xl_col_to_name(len(csv_content[0]))
-        last_col_plus_10 = utility.xl_col_to_name(len(csv_content[0]) + 10)
-        last_row = len(csv_content)
-        range_to_clear = last_col + "1:" + last_col_plus_10 + last_row
-        return range_to_clear
 
     def get_sheet_id(self, remote_file_id, sheet_name):
         sheet_id_dict = self.download_sheet_ids(remote_file_id)

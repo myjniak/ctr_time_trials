@@ -17,7 +17,7 @@ class LeagueAsCsv:
         self.league_name = self.league_names[league - 1]
         self.content = list()
         self._convert_user_times_json_to_league_csv(league_as_json)
-        self.old_content = deepcopy(self.content)
+        self.old_content = list()
 
     def __str__(self):
         return str(self.content)

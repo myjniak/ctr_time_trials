@@ -30,13 +30,17 @@ class Database:
         cls.player_list = [player for player in cls.user_dict.keys()
                            if cls.user_dict[player] in cls.platforms]
         cls.league_count = max([player_info["league"] for player_info in cls.time_trials.json.values()])
-        cls.create_non_existing_sheet_objects()
 
     @classmethod
     def refresh_csvs_content(cls):
-        cls.create_non_existing_sheet_objects()
         for sheet in cls.sheets_raw:
             sheet(cls.time_trials.json)
+        cls.delete_empty_sheet_objects()
+        cls.create_non_existing_sheet_objects()
+
+    @classmethod
+    def delete_empty_sheet_objects(cls):
+        cls.sheets_raw = list(filter(lambda sheet: len(sheet.content[0]) > 1, cls.sheets_raw))
 
     @classmethod
     def create_non_existing_sheet_objects(cls):
@@ -67,3 +71,6 @@ class Database:
                 data[player]['tracks'][track]['points'] = 0
                 data[player]['tracks'][track].setdefault('time', "NO TIME")
                 data[player]['tracks'][track].setdefault('medal', None)
+        for player in list(data.keys()):
+            if player not in [*cls.player_list, *cls.bots_list]:
+                del data[player]

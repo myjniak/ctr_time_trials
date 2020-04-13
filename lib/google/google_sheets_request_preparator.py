@@ -1,6 +1,20 @@
+from xlsxwriter import utility
 
 
 class GoogleSheetsRequestPreparator:
+
+    @staticmethod
+    def numeric_range_to_letter_range(start_row, end_row, start_column, end_column):
+        start_col = utility.xl_col_to_name(start_column)
+        end_col = utility.xl_col_to_name(end_column)
+        return start_col + str(start_row + 1) + ":" + end_col + str(end_row + 1)
+
+    @staticmethod
+    def letter_range_to_numeric_range(letter_range):
+        start_cell, end_cell = letter_range.split(":")
+        start_row, start_column = utility.xl_cell_to_rowcol(start_cell)
+        end_row, end_column = utility.xl_cell_to_rowcol(end_cell)
+        return start_row, end_row, start_column, end_column
 
     @classmethod
     def prepare_sheet_formatting_request(cls, sheet_id, formatting_matrix):
@@ -11,8 +25,46 @@ class GoogleSheetsRequestPreparator:
         row_count = len(formatting_matrix)
         format_requests.append(cls.generate_request_for_column_sizes(sheet_id, 0, 0, 200))
         format_requests.append(cls.generate_request_for_column_sizes(sheet_id, 1, 100, 137))
-        format_requests.append(cls.generate_request_for_cell_merge(sheet_id, row_count - 8, row_count, 4, 6))
+        format_requests.append(cls.generate_request_for_cell_merge(sheet_id, row_count - 10, row_count - 1, 4, 6))
+        format_requests.append(cls.generate_request_for_all_cells(sheet_id))
         return format_requests
+
+    @staticmethod
+    def generate_request_for_clear_range(sheet_id, start_row, end_row, start_column, end_column):
+        template = {
+            "repeatCell": {
+                "range": {
+                    "sheetId": sheet_id,
+                    "startRowIndex": start_row,
+                    "endRowIndex": end_row + 1,
+                    "startColumnIndex": start_column,
+                    "endColumnIndex": end_column + 1
+                },
+                "cell": {
+                },
+                "fields": "userEnteredFormat(backgroundColor, textFormat(bold, fontSize, foregroundColor))"
+            }
+        }
+        return template
+
+    @staticmethod
+    def generate_request_for_all_cells(sheet_id):
+        template = {
+            "repeatCell": {
+                "range": {
+                    "sheetId": sheet_id,
+                    "startColumnIndex": 0,
+                    "endColumnIndex": 100
+                },
+                "cell": {
+                    "userEnteredFormat": {
+                        "horizontalAlignment": "CENTER",
+                    }
+                },
+                "fields": "userEnteredFormat(horizontalAlignment)"
+            },
+        }
+        return template
 
     @staticmethod
     def generate_request_for_cell_merge(sheet_id, start_row, end_row, start_column, end_column):

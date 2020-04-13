@@ -9,7 +9,7 @@ from googleapiclient.http import MediaFileUpload, MediaIoBaseDownload
 from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
-from lib import LOGGER
+from . import LOGGER
 
 # If modifying these scopes, delete the file token.pickle.
 SCOPES = ['https://www.googleapis.com/auth/drive']
@@ -137,7 +137,8 @@ class GoogleDriveInteractions:
         }
         self.batch_update(remote_file_id, body)
 
-    def update_sheet(self, remote_file_id, sheet_name, csv_content, formatting=None, cell_range_to_clear=None):
+    def update_sheet(self, remote_file_id, sheet_name, csv_content, formatting=None, clear_formatting=None,
+                     cell_range_to_clear=None):
         body = {
             'values': csv_content
         }
@@ -148,6 +149,8 @@ class GoogleDriveInteractions:
         self.execute_request(request)
         if formatting:
             self.update_sheet_formatting(remote_file_id, formatting)
+        if clear_formatting:
+            self.update_sheet_formatting(remote_file_id, clear_formatting)
         if cell_range_to_clear:
             self.clear_cell_range(remote_file_id, cell_range_to_clear)
 

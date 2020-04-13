@@ -137,13 +137,14 @@ def main_loop(serwis, rankingowaczka):
             rankingowaczka.give_out_points_and_medals_for_all_leagues()
             rankingowaczka.calc_total_time()
 
-            # Zapisz update do jsona
+            # Zapisz update do jsona i do raw data pod excele
             Database.time_trials.save()
+            Database.refresh_csvs_content()
 
             # Dodaj nowe sheet id jak pojawily sie nowe
             new_sheet_ids = serwis.update_sheet_ids(RANKING_FILE_ID, Database.sheets_raw, sheet_ids.json)
             if new_sheet_ids != sheet_ids.json:
-                sheet_ids.json = new_sheet_ids
+                sheet_ids.json_as_variable = new_sheet_ids
                 sheet_ids.save()
 
             # Wrzuc na google drive
