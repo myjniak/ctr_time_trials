@@ -2,8 +2,8 @@ import sys
 import requests
 from json import JSONDecodeError, dumps
 from time import time, sleep
-from lib.simple_objects.jsoner import Jsoner
-from lib.simple_objects.time_conversion import TimeConversion
+from .database_independent.jsoner import Jsoner
+from .database_independent.time_conversion import TimeConversion
 from .database import Database
 from . import LOGGER
 

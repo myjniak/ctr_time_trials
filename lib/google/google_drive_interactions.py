@@ -137,7 +137,7 @@ class GoogleDriveInteractions:
         }
         self.batch_update(remote_file_id, body)
 
-    def update_sheet(self, remote_file_id, sheet_name, csv_content, formatting=None):
+    def update_sheet(self, remote_file_id, sheet_name, csv_content, formatting=None, cell_range_to_clear=None):
         body = {
             'values': csv_content
         }
@@ -148,6 +148,8 @@ class GoogleDriveInteractions:
         self.execute_request(request)
         if formatting:
             self.update_sheet_formatting(remote_file_id, formatting)
+        if cell_range_to_clear:
+            self.clear_cell_range(remote_file_id, cell_range_to_clear)
 
     @try_request_until_success
     def get_range_value(self, remote_file_id, cell_range):
@@ -156,3 +158,33 @@ class GoogleDriveInteractions:
                                f"?key={self.key}", timeout=5)
         LOGGER.debug(content)
         return content.json()["values"]
+
+    def add_sheet(self, remote_file_id, sheet_name):
+        body = {
+            "requests": [
+              {
+                "addSheet": {
+                  "properties": {
+                    "title": sheet_name,
+                    "gridProperties": {
+                        "frozenRowCount": 1,
+                        "frozenColumnCount": 1
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        self.batch_update(remote_file_id, body)
+
+    def delete_sheet(self, remote_file_id, sheet_id):
+        body = {
+            "requests": [
+              {
+                "deleteSheet": {
+                  "sheetId": sheet_id
+                }
+              }
+            ]
+          }
+        self.batch_update(remote_file_id, body)

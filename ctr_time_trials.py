@@ -4,10 +4,9 @@ import traceback
 import os
 from time import sleep
 from lib.google.google_requests import GoogleRequests
-from lib.worksheet_preparator import WorksheetPreparator
+from lib.leagues_as_xlsx import LeaguesAsXlsx
 from lib.database import Database
-from lib.simple_objects.jsoner import Jsoner
-from lib.xlsx_operations import XlsxOperations
+from lib.database_independent.jsoner import Jsoner
 from lib.ranking_creator import RankingCreator
 from lib.announcements import Announcements
 from confidential.variables import *
@@ -28,11 +27,10 @@ FILE_PATHS = {
     "time_trials_json": "dynamic_jsons/user_times.json",
     "page_id_cache_json": "dynamic_jsons/page_id_cache.json",
     "csv_path": "output/time_trial_ranking",
-    "xlsx_path": "output/time_trial_ranking"
+    "xlsx_path": "output/time_trial_ranking.xlsx"
 }
 GOOGLE_DRIVE_CREDENTIALS_PATH = "confidential/credentials.json"
 GOOGLE_DRIVE_TOKEN_PATH = "confidential/token.pickle"
-OUTPUT_EXCEL_FILE_PATH = "output/time_trial_ranking.xlsx"
 INPUT_EXCEL_FILE_PATH = "output/times_from_webpage.xlsx"
 INPUT_TEMPLATE_EXCEL_FILE_PATH = "config/CTR TT INPUT template.xlsx"
 PLATFORMS = ['psn', 'xbl', 'switch']
@@ -57,8 +55,6 @@ def prepare_database():
     Database.league_names = LEAGUE_NAMES
     Database.league_points_minimum = LEAGUE_POINTS_MINIMUM
     Database.time_zone_diff = TIME_ZONE_DIFF
-    Database.load()
-    Database.initialize_players_json_structure()
 
 
 def przytnij_logi_i_ogloszenia(logs_msg_count=10000, announcements_msg_count=10):
@@ -82,63 +78,88 @@ def reset_input_sheet(serwis):
     serwis.clear_cell_range(RANKING_INPUT_FILE_ID, "A1")
 
 
-def main(upload=None, static=None):
+def main(static=None):
     prepare_database()
-    serwis = GoogleRequests(GOOGLE_DRIVE_CREDENTIALS_PATH,
-                            GOOGLE_DRIVE_TOKEN_PATH,
-                            GOOGLE_SHEETS_API_KEY)
     rankingowaczka = RankingCreator(minimum_player_count_in_league=MINIMUM_PLAYER_COUNT_IN_LEAGUE)
     try:
-        main_loop(serwis, rankingowaczka, upload, static=static)
+        if static:
+            main_loop_static(rankingowaczka)
+        else:
+            serwis = GoogleRequests(GOOGLE_DRIVE_CREDENTIALS_PATH,
+                                    GOOGLE_DRIVE_TOKEN_PATH,
+                                    GOOGLE_SHEETS_API_KEY)
+            main_loop(serwis, rankingowaczka)
     except:
         formatted_lines = traceback.format_exc().splitlines()
         for line in formatted_lines:
             LOGGER.error(line)
 
 
-def main_loop(serwis, rankingowaczka, upload, static=False):
+def main_loop_static(rankingowaczka):
+    przytnij_logi_i_ogloszenia()
+    Database.reload()
+    Database.initialize_players_json_structure()
+    Database.time_trials.apply_json_to_self("config/challenge_ghosts.json")
+
+    # Zarankinguj w user_times.json
+    rankingowaczka.give_out_points_and_medals_for_all_leagues()
+    rankingowaczka.calc_total_time()
+
+    # Zapisz update do jsona i excela
+    Database.refresh_csvs_content()
+    Database.time_trials.save()
+    LeaguesAsXlsx.save()
+
+    LOGGER.info("ROBOTA SKONCZONA")
+
+
+def main_loop(serwis, rankingowaczka):
+    sheet_ids = Jsoner(SHEET_IDS_FILE_PATH)
+
     while True:
-        if static or serwis.get_cell_value(RANKING_INPUT_FILE_ID, "A1"):
+        if serwis.get_cell_value(RANKING_INPUT_FILE_ID, "A1"):
             przytnij_logi_i_ogloszenia()
-            Database.load()
+            Database.reload()
             Database.initialize_players_json_structure()
 
-            if not static:
-                # Sciagnij inputowy eksel, zapisz go w postaci JSON i zaaplikuj do user_times.json
-                input_as_csv = serwis.get_range_value(RANKING_INPUT_FILE_ID, "A1:Z50")
-                Jsoner(input_as_csv).save(TIMES_FROM_WEBPAGE_JSON_FILE_PATH)
-                reset_input_sheet(serwis)
-                Database.time_trials.apply_json_to_self(TIMES_FROM_WEBPAGE_JSON_FILE_PATH, verbose=True)
+            # Sciagnij inputowy eksel, zapisz go w postaci JSON i zaaplikuj do user_times.json
+            input_as_csv = serwis.get_range_value(RANKING_INPUT_FILE_ID, "A1:Z50")
+            Jsoner(input_as_csv).save(TIMES_FROM_WEBPAGE_JSON_FILE_PATH)
+            Database.time_trials.apply_json_to_self(TIMES_FROM_WEBPAGE_JSON_FILE_PATH, verbose=True)
+
+            # Wyczysc input na serwerze
+            reset_input_sheet(serwis)
+
+            # Zaaplikuj ponownie boty
             Database.time_trials.apply_json_to_self("config/challenge_ghosts.json")
 
-            # Zarankinguj w user_times.json
+            # Zarankinguj user_times.json
             rankingowaczka.give_out_points_and_medals_for_all_leagues()
             rankingowaczka.calc_total_time()
 
+            # Zapisz update do jsona
             Database.time_trials.save()
 
-            # Zapisz do excela
-            worksheet_dict = WorksheetPreparator.prepare_worksheet_content_for_all_leagues()
-            XlsxOperations.update_ranking(worksheet_dict, OUTPUT_EXCEL_FILE_PATH)
+            # Dodaj nowe sheet id jak pojawily sie nowe
+            new_sheet_ids = serwis.update_sheet_ids(RANKING_FILE_ID, Database.sheets_raw, sheet_ids.json)
+            if new_sheet_ids != sheet_ids.json:
+                sheet_ids.json = new_sheet_ids
+                sheet_ids.save()
 
             # Wrzuc na google drive
-            if upload:
-                serwis.update_ranking(RANKING_FILE_ID, worksheet_dict, Jsoner(SHEET_IDS_FILE_PATH).json)
+            serwis.update_ranking(RANKING_FILE_ID, Database.sheets_raw, sheet_ids.json)
+
             LOGGER.info("ROBOTA SKONCZONA")
         else:
             LOGGER.debug("heartbeat")
-
-        if static:
-            break
         sleep(SLEEP_BETWEEN_ITERATIONS)
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("-u", help="Wyslij excela na koniec", action="store_true")
     parser.add_argument("--static", help="Wygeneruj tylko excela testowo", action="store_true")
     args = parser.parse_args()
-    main(args.u, args.static)
+    main(args.static)
 
 
 # def establish_player_list_to_do(gamer_list, do_everyone=None):

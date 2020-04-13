@@ -3,16 +3,21 @@ from .database import Database
 from . import LOGGER
 
 
-class XlsxOperations(Database):
+class LeaguesAsXlsx(Database):
 
     @classmethod
-    def update_ranking(cls, worksheet_dict, workbook_name):
+    def save(cls, file_path=None):
         LOGGER.info("Preparing new xlsx file for local save")
-        workbook = Workbook(workbook_name)
-        for worksheet_name, league_csv_data in worksheet_dict.items():
+        if file_path is None:
+            file_path = cls.file_paths["xlsx_path"]
+        workbook = Workbook(file_path)
+        for sheet in cls.sheets_raw:
+            worksheet_name = sheet.league_name
+            csv_data = sheet.content
+            formatting = sheet.formatting
             cls.make_time_trial_worksheet(workbook,
-                                          league_csv_data['csv'],
-                                          league_csv_data['format'],
+                                          csv_data,
+                                          formatting,
                                           worksheet_name=worksheet_name)
         workbook.close()
 

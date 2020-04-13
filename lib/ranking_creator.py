@@ -1,7 +1,8 @@
 from copy import deepcopy
-from lib.simple_objects.time_conversion import TimeConversion
+from .database_independent.time_conversion import TimeConversion
 from .announcements import Announcements
 from .database import Database
+from . import LOGGER
 
 
 class RankingCreator(Database):
@@ -46,6 +47,9 @@ class RankingCreator(Database):
                         player_info['league'] -= 1
             self._give_out_points_and_medals_for_league(league)
             league += 1
+        if Database.league_count != league - 1:
+            LOGGER.info(f"LEAGUE COUNT CHANGED TO {league - 1}!")
+            Database.league_count = league - 1
         self._do_announcements(old_time_trials)
         self.time_trials.save()
 
