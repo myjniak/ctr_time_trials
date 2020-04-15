@@ -88,8 +88,8 @@ class GoogleDriveInteractions:
             while done is False:
                 status, done = downloader.next_chunk()
 
-    def upload_file(self, local_file_path, remote_file_id):
-        file_metadata = {'name': "CTR Time Trial Ranking Polska"}
+    def upload_file(self, local_file_path, remote_file_id, name="Time Trial Input"):
+        file_metadata = {'name': name}
         media = MediaFileUpload(local_file_path,
                                 mimetype="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
         self.service.files().update(body=file_metadata,
