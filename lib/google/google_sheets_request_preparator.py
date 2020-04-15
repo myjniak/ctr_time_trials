@@ -59,7 +59,7 @@ class GoogleSheetsRequestPreparator:
                 "cell": {
                     "userEnteredFormat": {
                         "horizontalAlignment": "CENTER",
-                        "verticalAlignment": "CENTER",
+                        "verticalAlignment": "MIDDLE",
                         "wrapStrategy": "WRAP"
                     }
                 },
