@@ -63,7 +63,7 @@ class GoogleSheetsRequestPreparator:
                         "wrapStrategy": "WRAP"
                     }
                 },
-                "fields": "userEnteredFormat(horizontalAlignment, verticalAlignment)"
+                "fields": "userEnteredFormat(horizontalAlignment, verticalAlignment, wrapStrategy)"
             },
         }
         return template
