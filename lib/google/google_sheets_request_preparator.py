@@ -24,7 +24,7 @@ class GoogleSheetsRequestPreparator:
                 format_requests.append(cls.generate_request_for_cell(sheet_id, row_index, col_index, cell_format))
         row_count = len(formatting_matrix)
         format_requests.append(cls.generate_request_for_column_sizes(sheet_id, 0, 0, 200))
-        format_requests.append(cls.generate_request_for_column_sizes(sheet_id, 1, 100, 137))
+        format_requests.append(cls.generate_request_for_column_sizes(sheet_id, 1, 100, 145))
         format_requests.append(cls.generate_request_for_cell_merge(sheet_id, row_count - 10, row_count - 1, 4, 6))
         format_requests.append(cls.generate_request_for_all_cells(sheet_id))
         return format_requests
@@ -59,6 +59,7 @@ class GoogleSheetsRequestPreparator:
                 "cell": {
                     "userEnteredFormat": {
                         "horizontalAlignment": "CENTER",
+                        "verticalAlignment": "CENTER"
                     }
                 },
                 "fields": "userEnteredFormat(horizontalAlignment)"

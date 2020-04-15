@@ -22,7 +22,7 @@ class GoogleRequests(GoogleDriveInteractions, GoogleSheetsRequestPreparator):
             sheet_id = sheet_ids[sheet_name]
             formatting_request = self.prepare_sheet_formatting_request(sheet_id, sheet.formatting)
             start_column = len(csv_content[0])
-            end_column = start_column + 10
+            end_column = start_column + 100
             start_row = 0
             end_row = len(csv_content)
             range_to_clear = self.numeric_range_to_letter_range(start_row, end_row, start_column, end_column)
