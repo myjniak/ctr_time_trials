@@ -191,3 +191,28 @@ class GoogleDriveInteractions:
             ]
           }
         self.batch_update(remote_file_id, body)
+
+    def protect_first_column(self, remote_file_id, master_email):
+        sheet_id_dict = self.download_sheet_ids(remote_file_id)
+        first_sheet_id = list(sheet_id_dict.values())[0]
+        body = {
+            "requests": [
+                {
+                    "addProtectedRange": {
+                        "protectedRange": {
+                            "range": {
+                                "sheetId": first_sheet_id,
+                                "startColumnIndex": 0,
+                                "endColumnIndex": 1,
+                                "startRowIndex": 1
+                            },
+                            "description": "Protecting track names",
+                            "editors": {
+                                "users": [master_email]
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+        self.batch_update(remote_file_id, body)
