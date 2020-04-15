@@ -66,7 +66,10 @@ class Jsoner:
                 continue
             if player:
                 for row in csv_content[1:]:
-                    track = row[0]
+                    if row:
+                        track = row[0]
+                    else:
+                        LOGGER.error("Someone added a row to the Input excel!!!")
                     if col < len(row) and row[col]:
                         output_json.setdefault(player, dict()).setdefault('tracks', dict()).\
                             setdefault(track, dict())
