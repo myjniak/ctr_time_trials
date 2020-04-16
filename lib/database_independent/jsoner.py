@@ -43,11 +43,13 @@ class Jsoner:
                 for track in player_info['tracks']:
                     input_time = TimeConversion(source[player]['tracks'][track]['time'])
                     for registered_player in target:
-                        if player.lower() == registered_player.lower():
+                        if player.lower().strip() == registered_player.lower():
                             exact_player_name = registered_player
                             break
                     else:
-                        LOGGER.warning(f"Bullshit PLAYER input: {player}")
+                        LOGGER.warning(f"Bullshit PLAYER input: '{player}'\n"
+                                       f"Available player list: {list(target.keys())}")
+                        LOGGER.debug(source)
                         break
                     if input_time.as_float != 300:
                         target[exact_player_name].setdefault('tracks', {}).setdefault(track, {})
@@ -56,6 +58,7 @@ class Jsoner:
                             LOGGER.info(f"{exact_player_name}: {track}: {input_time.as_str}")
                     else:
                         LOGGER.warning(f"Bullshit TIME input: {source[player]['tracks'][track]['time']}")
+                        LOGGER.debug(source)
 
     @classmethod
     def _convert_csv_to_json(cls, csv_content):
@@ -71,8 +74,7 @@ class Jsoner:
                     else:
                         LOGGER.error("Someone added a row / column to the Input excel!!!")
                     if col < len(row) and row[col]:
-                        output_json.setdefault(player, dict()).setdefault('tracks', dict()).\
-                            setdefault(track, dict())
+                        output_json.setdefault(player, dict()).setdefault('tracks', dict()).setdefault(track, dict())
                         output_json[player]['tracks'][track]['time'] = row[col]
         return output_json
 
