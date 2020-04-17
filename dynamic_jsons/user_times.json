@@ -7,7 +7,7 @@
             "silver": 5
         },
         "total_points": 188,
-        "total_points_in_upper_league": 7,
+        "total_points_in_upper_league": 6,
         "total_time": "89:51.806",
         "tracks": {
             "Android Alley": {
@@ -248,10 +248,10 @@
         "league": 2,
         "medals": {
             "bronze": 9,
-            "gold": 4,
-            "silver": 6
+            "gold": 3,
+            "silver": 7
         },
-        "total_points": 219,
+        "total_points": 217,
         "total_points_in_upper_league": 0,
         "total_time": "74:07.940",
         "tracks": {
@@ -376,8 +376,8 @@
                 "time": "1:50.280"
             },
             "Out of Time": {
-                "medal": "gold",
-                "points": 10,
+                "medal": "silver",
+                "points": 8,
                 "time": "1:54.610"
             },
             "Oxide Station": {
@@ -1157,7 +1157,7 @@
             "gold": 1,
             "silver": 1
         },
-        "total_points": 40,
+        "total_points": 39,
         "total_points_in_upper_league": 2,
         "total_time": "88:46.233",
         "tracks": {
@@ -1360,7 +1360,7 @@
             "Thunder Struck": {
                 "medal": null,
                 "place": 24884,
-                "points": 1,
+                "points": 0,
                 "time": "2:38.661"
             },
             "Tiger Temple": {
@@ -1889,12 +1889,12 @@
         "league": 2,
         "medals": {
             "bronze": 4,
-            "gold": 14,
+            "gold": 15,
             "silver": 13
         },
-        "total_points": 296,
-        "total_points_in_upper_league": 12,
-        "total_time": "73:44.504",
+        "total_points": 303,
+        "total_points_in_upper_league": 13,
+        "total_time": "73:34.019",
         "tracks": {
             "Android Alley": {
                 "medal": "silver",
@@ -2039,10 +2039,10 @@
                 "time": "1:49.710"
             },
             "Out of Time": {
-                "medal": null,
+                "medal": "gold",
                 "place": 3640,
-                "points": 3,
-                "time": "2:02.925"
+                "points": 10,
+                "time": "1:52.440"
             },
             "Oxide Station": {
                 "medal": "silver",
@@ -2133,11 +2133,11 @@
     "JanneAhonen69": {
         "league": 1,
         "medals": {
-            "bronze": 4,
-            "gold": 2,
-            "silver": 3
+            "bronze": 3,
+            "gold": 1,
+            "silver": 4
         },
-        "total_points": 142,
+        "total_points": 137,
         "total_points_in_upper_league": 0,
         "total_time": "71:27.250",
         "tracks": {
@@ -2198,7 +2198,7 @@
             "Dingo Canyon": {
                 "medal": null,
                 "place": 700,
-                "points": 2,
+                "points": 1,
                 "time": "1:28.650"
             },
             "Dragon Mines": {
@@ -2219,9 +2219,9 @@
                 "time": "2:59.440"
             },
             "Gingerbread Joyride": {
-                "medal": "bronze",
+                "medal": null,
                 "place": 76,
-                "points": 6,
+                "points": 5,
                 "time": "1:51.640"
             },
             "Hot Air Skyway": {
@@ -2268,7 +2268,7 @@
             "Mystery Caves": {
                 "medal": null,
                 "place": 95,
-                "points": 5,
+                "points": 4,
                 "time": "1:55.38"
             },
             "N.Gin Labs": {
@@ -2350,9 +2350,9 @@
                 "time": "1:27.15"
             },
             "Tiny Arena": {
-                "medal": "gold",
+                "medal": "silver",
                 "place": 62,
-                "points": 10,
+                "points": 8,
                 "time": "2:51.970"
             },
             "Tiny Temple": {
@@ -2618,12 +2618,12 @@
         "league": 1,
         "medals": {
             "bronze": 4,
-            "gold": 5,
-            "silver": 4
+            "gold": 4,
+            "silver": 5
         },
-        "total_points": 139,
+        "total_points": 136,
         "total_points_in_upper_league": 0,
-        "total_time": "71:44.430",
+        "total_time": "71:43.970",
         "tracks": {
             "Android Alley": {
                 "medal": "gold",
@@ -2674,10 +2674,10 @@
                 "time": "1:19.210"
             },
             "Deep Sea Driving": {
-                "medal": "bronze",
+                "medal": "silver",
                 "place": 191,
-                "points": 6,
-                "time": "1:37.390"
+                "points": 8,
+                "time": "1:36.930"
             },
             "Dingo Canyon": {
                 "medal": null,
@@ -2705,7 +2705,7 @@
             "Gingerbread Joyride": {
                 "medal": null,
                 "place": 337,
-                "points": 3,
+                "points": 2,
                 "time": "1:51.870"
             },
             "Hot Air Skyway": {
@@ -2727,9 +2727,9 @@
                 "time": "1:32.520"
             },
             "Jungle Boogie": {
-                "medal": "gold",
+                "medal": "silver",
                 "place": 221,
-                "points": 10,
+                "points": 8,
                 "time": "1:12.570"
             },
             "Koala Carnival": {
@@ -2792,9 +2792,9 @@
                 "time": "2:02.080"
             },
             "Prehistoric Playground": {
-                "medal": "silver",
+                "medal": "bronze",
                 "place": 446,
-                "points": 8,
+                "points": 6,
                 "time": "2:19.300"
             },
             "Roo's Tubes": {
@@ -3352,11 +3352,11 @@
     "Krisao_": {
         "league": 2,
         "medals": {
-            "bronze": 9,
+            "bronze": 8,
             "gold": 5,
             "silver": 8
         },
-        "total_points": 233,
+        "total_points": 232,
         "total_points_in_upper_league": 1,
         "total_time": "74:41.330",
         "tracks": {
@@ -3503,9 +3503,9 @@
                 "time": "1:49.810"
             },
             "Out of Time": {
-                "medal": "bronze",
+                "medal": null,
                 "place": 5033,
-                "points": 6,
+                "points": 5,
                 "time": "1:57.750"
             },
             "Oxide Station": {
@@ -4541,10 +4541,10 @@
         "league": 1,
         "medals": {
             "bronze": 7,
-            "gold": 1,
-            "silver": 8
+            "gold": 0,
+            "silver": 9
         },
-        "total_points": 206,
+        "total_points": 202,
         "total_points_in_upper_league": 0,
         "total_time": "71:15.801",
         "tracks": {
@@ -4605,7 +4605,7 @@
             "Dingo Canyon": {
                 "medal": null,
                 "place": 1653,
-                "points": 4,
+                "points": 3,
                 "time": "1:28.256"
             },
             "Dragon Mines": {
@@ -4675,7 +4675,7 @@
             "Mystery Caves": {
                 "medal": null,
                 "place": 324,
-                "points": 4,
+                "points": 3,
                 "time": "1:55.78"
             },
             "N.Gin Labs": {
@@ -4703,9 +4703,9 @@
                 "time": "2:41.29"
             },
             "Papu's Pyramid": {
-                "medal": "gold",
+                "medal": "silver",
                 "place": 1360,
-                "points": 10,
+                "points": 8,
                 "time": "1:22.910"
             },
             "Polar Pass": {
@@ -6181,13 +6181,13 @@
     "Rc_FIVE": {
         "league": 1,
         "medals": {
-            "bronze": 5,
-            "gold": 26,
-            "silver": 8
+            "bronze": 3,
+            "gold": 31,
+            "silver": 5
         },
-        "total_points": 354,
+        "total_points": 368,
         "total_points_in_upper_league": 0,
-        "total_time": "70:29.740",
+        "total_time": "70:25.878",
         "tracks": {
             "Android Alley": {
                 "medal": "silver",
@@ -6238,9 +6238,9 @@
                 "time": "1:17.97"
             },
             "Deep Sea Driving": {
-                "medal": "silver",
+                "medal": "bronze",
                 "place": 148,
-                "points": 8,
+                "points": 6,
                 "time": "1:37.329"
             },
             "Dingo Canyon": {
@@ -6291,10 +6291,10 @@
                 "time": "1:32.389"
             },
             "Jungle Boogie": {
-                "medal": "bronze",
+                "medal": "gold",
                 "place": 155,
-                "points": 6,
-                "time": "1:12.841"
+                "points": 10,
+                "time": "1:12.500"
             },
             "Koala Carnival": {
                 "medal": "silver",
@@ -6308,10 +6308,10 @@
                 "time": "2:01.41"
             },
             "Meteor Gorge": {
-                "medal": "silver",
+                "medal": "gold",
                 "place": 313,
-                "points": 8,
-                "time": "1:22.647"
+                "points": 10,
+                "time": "1:22.110"
             },
             "Mystery Caves": {
                 "medal": "bronze",
@@ -6344,22 +6344,22 @@
                 "time": "2:38.824"
             },
             "Papu's Pyramid": {
-                "medal": "silver",
+                "medal": "gold",
                 "place": 841,
-                "points": 8,
-                "time": "1:23.083"
+                "points": 10,
+                "time": "1:22.210"
             },
             "Polar Pass": {
-                "medal": "gold",
+                "medal": "silver",
                 "place": 247,
-                "points": 10,
+                "points": 8,
                 "time": "1:58.980"
             },
             "Prehistoric Playground": {
-                "medal": "bronze",
+                "medal": "gold",
                 "place": 152,
-                "points": 6,
-                "time": "2:19.405"
+                "points": 10,
+                "time": "2:18.700"
             },
             "Roo's Tubes": {
                 "medal": "gold",
@@ -6398,16 +6398,16 @@
                 "time": "1:25.917"
             },
             "Tiny Arena": {
-                "medal": "silver",
+                "medal": "gold",
                 "place": 217,
-                "points": 8,
-                "time": "2:52.838"
+                "points": 10,
+                "time": "2:51.770"
             },
             "Tiny Temple": {
-                "medal": "bronze",
+                "medal": "gold",
                 "place": 239,
-                "points": 6,
-                "time": "1:37.998"
+                "points": 10,
+                "time": "1:37.660"
             },
             "Turbo Track": {
                 "medal": "gold",
@@ -6920,9 +6920,9 @@
             "gold": 1,
             "silver": 1
         },
-        "total_points": 63,
+        "total_points": 68,
         "total_points_in_upper_league": 10,
-        "total_time": "83:36.610",
+        "total_time": "83:15.532",
         "tracks": {
             "Android Alley": {
                 "medal": "gold",
@@ -7011,7 +7011,7 @@
                 "medal": null,
                 "place": 29650,
                 "points": 0,
-                "time": "2:55.408"
+                "time": "2:47.660"
             },
             "Hyper Spaceway": {
                 "medal": null,
@@ -7123,8 +7123,8 @@
             "Thunder Struck": {
                 "medal": null,
                 "place": 37533,
-                "points": 0,
-                "time": "2:47.400"
+                "points": 5,
+                "time": "2:33.780"
             },
             "Tiger Temple": {
                 "medal": null,
@@ -7136,7 +7136,7 @@
                 "medal": null,
                 "place": 64237,
                 "points": 0,
-                "time": "3:26.570"
+                "time": "3:26.860"
             },
             "Tiny Temple": {
                 "medal": "bronze",
@@ -7165,7 +7165,7 @@
             "gold": 1,
             "silver": 1
         },
-        "total_points": 62,
+        "total_points": 61,
         "total_points_in_upper_league": 9,
         "total_time": "81:09.299",
         "tracks": {
@@ -7336,7 +7336,7 @@
             },
             "Thunder Struck": {
                 "medal": null,
-                "points": 2,
+                "points": 1,
                 "time": "2:37.220"
             },
             "Tiger Temple": {
@@ -7373,7 +7373,7 @@
             "gold": 2,
             "silver": 3
         },
-        "total_points": 153,
+        "total_points": 152,
         "total_points_in_upper_league": 0,
         "total_time": "80:46.332",
         "tracks": {
@@ -7522,7 +7522,7 @@
             "Out of Time": {
                 "medal": null,
                 "place": 1797,
-                "points": 5,
+                "points": 4,
                 "time": "1:59.686"
             },
             "Oxide Station": {
@@ -7618,7 +7618,7 @@
             "gold": 1,
             "silver": 0
         },
-        "total_points": 84,
+        "total_points": 83,
         "total_points_in_upper_league": 0,
         "total_time": "82:10.770",
         "tracks": {
@@ -7767,7 +7767,7 @@
             "Out of Time": {
                 "medal": null,
                 "place": 3463,
-                "points": 4,
+                "points": 3,
                 "time": "2:02.690"
             },
             "Oxide Station": {
@@ -7863,7 +7863,7 @@
             "gold": 0,
             "silver": 3
         },
-        "total_points": 100,
+        "total_points": 98,
         "total_points_in_upper_league": 0,
         "total_time": "78:09.778",
         "tracks": {
@@ -7924,7 +7924,7 @@
             "Dingo Canyon": {
                 "medal": null,
                 "place": 1608,
-                "points": 5,
+                "points": 4,
                 "time": "1:27.688"
             },
             "Dragon Mines": {
@@ -7947,7 +7947,7 @@
             "Gingerbread Joyride": {
                 "medal": null,
                 "place": 239,
-                "points": 5,
+                "points": 4,
                 "time": "1:51.778"
             },
             "Hot Air Skyway": {
@@ -8312,13 +8312,13 @@
     "Xerdzio": {
         "league": 1,
         "medals": {
-            "bronze": 3,
-            "gold": 2,
-            "silver": 2
+            "bronze": 2,
+            "gold": 0,
+            "silver": 5
         },
-        "total_points": 125,
+        "total_points": 122,
         "total_points_in_upper_league": 0,
-        "total_time": "71:47.920",
+        "total_time": "71:46.150",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -8377,7 +8377,7 @@
             "Dingo Canyon": {
                 "medal": null,
                 "place": 341,
-                "points": 3,
+                "points": 2,
                 "time": "1:28.52"
             },
             "Dragon Mines": {
@@ -8439,15 +8439,15 @@
                 "time": "2:02.65"
             },
             "Meteor Gorge": {
-                "medal": "gold",
+                "medal": "silver",
                 "place": 72,
-                "points": 10,
+                "points": 8,
                 "time": "1:22.61"
             },
             "Mystery Caves": {
                 "medal": null,
                 "place": 60,
-                "points": 2,
+                "points": 1,
                 "time": "1:56.31"
             },
             "N.Gin Labs": {
@@ -8465,8 +8465,8 @@
             "Out of Time": {
                 "medal": null,
                 "place": 1423,
-                "points": 3,
-                "time": "1:52.41"
+                "points": 4,
+                "time": "1:51.270"
             },
             "Oxide Station": {
                 "medal": null,
@@ -8487,9 +8487,9 @@
                 "time": "1:59.980"
             },
             "Prehistoric Playground": {
-                "medal": "gold",
+                "medal": "silver",
                 "place": 69,
-                "points": 10,
+                "points": 8,
                 "time": "2:18.93"
             },
             "Roo's Tubes": {
@@ -8547,10 +8547,10 @@
                 "time": "1:33.19"
             },
             "Twilight Tour": {
-                "medal": "bronze",
+                "medal": "silver",
                 "place": 82,
-                "points": 6,
-                "time": "2:11.460"
+                "points": 8,
+                "time": "2:10.830"
             }
         }
     },
@@ -8806,7 +8806,7 @@
             "gold": 1,
             "silver": 1
         },
-        "total_points": 56,
+        "total_points": 55,
         "total_points_in_upper_league": 1,
         "total_time": "87:39.075",
         "tracks": {
@@ -9009,7 +9009,7 @@
             "Thunder Struck": {
                 "medal": null,
                 "place": 999999,
-                "points": 4,
+                "points": 3,
                 "time": "2:35.22"
             },
             "Tiger Temple": {
@@ -9745,11 +9745,11 @@
     "kubalok25": {
         "league": 2,
         "medals": {
-            "bronze": 8,
+            "bronze": 9,
             "gold": 9,
-            "silver": 6
+            "silver": 5
         },
-        "total_points": 237,
+        "total_points": 235,
         "total_points_in_upper_league": 6,
         "total_time": "79:49.832",
         "tracks": {
@@ -9896,9 +9896,9 @@
                 "time": "1:50.344"
             },
             "Out of Time": {
-                "medal": "silver",
+                "medal": "bronze",
                 "place": 830,
-                "points": 8,
+                "points": 6,
                 "time": "1:55.517"
             },
             "Oxide Station": {
@@ -10236,10 +10236,10 @@
         "league": 1,
         "medals": {
             "bronze": 4,
-            "gold": 3,
-            "silver": 6
+            "gold": 2,
+            "silver": 7
         },
-        "total_points": 147,
+        "total_points": 144,
         "total_points_in_upper_league": 0,
         "total_time": "71:38.051",
         "tracks": {
@@ -10388,7 +10388,7 @@
             "Out of Time": {
                 "medal": null,
                 "place": 615,
-                "points": 1,
+                "points": 0,
                 "time": "1:53.74"
             },
             "Oxide Station": {
@@ -10458,9 +10458,9 @@
                 "time": "2:53.240"
             },
             "Tiny Temple": {
-                "medal": "gold",
+                "medal": "silver",
                 "place": 941,
-                "points": 10,
+                "points": 8,
                 "time": "1:37.760"
             },
             "Turbo Track": {
@@ -10480,13 +10480,13 @@
     "myjniak": {
         "league": 1,
         "medals": {
-            "bronze": 2,
-            "gold": 0,
-            "silver": 3
+            "bronze": 6,
+            "gold": 1,
+            "silver": 0
         },
-        "total_points": 140,
+        "total_points": 146,
         "total_points_in_upper_league": 0,
-        "total_time": "71:41.719",
+        "total_time": "71:37.359",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -10534,7 +10534,7 @@
                 "medal": null,
                 "place": 389,
                 "points": 5,
-                "time": "1:18.670"
+                "time": "1:18.690"
             },
             "Deep Sea Driving": {
                 "medal": null,
@@ -10543,10 +10543,10 @@
                 "time": "1:38.990"
             },
             "Dingo Canyon": {
-                "medal": null,
+                "medal": "bronze",
                 "place": 2268,
-                "points": 1,
-                "time": "1:28.750"
+                "points": 6,
+                "time": "1:27.650"
             },
             "Dragon Mines": {
                 "medal": null,
@@ -10568,7 +10568,7 @@
             "Gingerbread Joyride": {
                 "medal": null,
                 "place": 271,
-                "points": 2,
+                "points": 1,
                 "time": "1:51.880"
             },
             "Hot Air Skyway": {
@@ -10615,8 +10615,8 @@
             "Mystery Caves": {
                 "medal": null,
                 "place": 646,
-                "points": 1,
-                "time": "1:57.310"
+                "points": 5,
+                "time": "1:55.340"
             },
             "N.Gin Labs": {
                 "medal": "bronze",
@@ -10633,7 +10633,7 @@
             "Out of Time": {
                 "medal": null,
                 "place": 546,
-                "points": 2,
+                "points": 1,
                 "time": "1:52.570"
             },
             "Oxide Station": {
@@ -10643,16 +10643,16 @@
                 "time": "2:39.890"
             },
             "Papu's Pyramid": {
-                "medal": null,
+                "medal": "bronze",
                 "place": 1008,
-                "points": 5,
-                "time": "1:24.550"
+                "points": 6,
+                "time": "1:23.510"
             },
             "Polar Pass": {
-                "medal": "silver",
+                "medal": "gold",
                 "place": 350,
-                "points": 8,
-                "time": "1:59.120"
+                "points": 10,
+                "time": "1:58.850"
             },
             "Prehistoric Playground": {
                 "medal": null,
@@ -10703,9 +10703,9 @@
                 "time": "2:54.170"
             },
             "Tiny Temple": {
-                "medal": "silver",
+                "medal": "bronze",
                 "place": 203,
-                "points": 8,
+                "points": 6,
                 "time": "1:37.930"
             },
             "Turbo Track": {
@@ -10715,9 +10715,9 @@
                 "time": "1:33.050"
             },
             "Twilight Tour": {
-                "medal": "silver",
+                "medal": "bronze",
                 "place": 286,
-                "points": 8,
+                "points": 6,
                 "time": "2:11.060"
             }
         }
@@ -11709,7 +11709,7 @@
             "gold": 5,
             "silver": 4
         },
-        "total_points": 167,
+        "total_points": 166,
         "total_points_in_upper_league": 11,
         "total_time": "90:49.203",
         "tracks": {
@@ -11912,7 +11912,7 @@
             "Thunder Struck": {
                 "medal": null,
                 "place": 21775,
-                "points": 5,
+                "points": 4,
                 "time": "2:33.820"
             },
             "Tiger Temple": {
@@ -12197,11 +12197,11 @@
         "medals": {
             "bronze": 8,
             "gold": 0,
-            "silver": 2
+            "silver": 1
         },
-        "total_points": 148,
+        "total_points": 147,
         "total_points_in_upper_league": 0,
-        "total_time": "71:33.149",
+        "total_time": "71:32.609",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -12258,9 +12258,9 @@
                 "time": "1:40.568"
             },
             "Dingo Canyon": {
-                "medal": "bronze",
+                "medal": null,
                 "place": 999999,
-                "points": 6,
+                "points": 5,
                 "time": "1:27.650"
             },
             "Dragon Mines": {
@@ -12281,10 +12281,10 @@
                 "time": "2:59.880"
             },
             "Gingerbread Joyride": {
-                "medal": null,
+                "medal": "bronze",
                 "place": 531,
-                "points": 1,
-                "time": "1:51.980"
+                "points": 6,
+                "time": "1:51.440"
             },
             "Hot Air Skyway": {
                 "medal": null,
@@ -12305,9 +12305,9 @@
                 "time": "1:32.860"
             },
             "Jungle Boogie": {
-                "medal": "silver",
+                "medal": "bronze",
                 "place": 379,
-                "points": 8,
+                "points": 6,
                 "time": "1:12.840"
             },
             "Koala Carnival": {
@@ -12330,7 +12330,7 @@
             "Mystery Caves": {
                 "medal": null,
                 "place": 417,
-                "points": 3,
+                "points": 2,
                 "time": "1:56.08"
             },
             "N.Gin Labs": {
@@ -12348,7 +12348,7 @@
             "Out of Time": {
                 "medal": null,
                 "place": 629,
-                "points": 4,
+                "points": 3,
                 "time": "1:51.74"
             },
             "Oxide Station": {
@@ -12358,9 +12358,9 @@
                 "time": "2:41.160"
             },
             "Papu's Pyramid": {
-                "medal": "bronze",
+                "medal": null,
                 "place": 999999,
-                "points": 6,
+                "points": 5,
                 "time": "1:24.510"
             },
             "Polar Pass": {
