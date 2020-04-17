@@ -41,7 +41,6 @@ class Jsoner:
         for player, player_info in source.items():
             if 'tracks' in player_info:
                 for track in player_info['tracks']:
-                    input_time = TimeConversion(source[player]['tracks'][track]['time'])
                     for registered_player in target:
                         if player.lower().strip() == registered_player.lower():
                             exact_player_name = registered_player
@@ -51,11 +50,15 @@ class Jsoner:
                                        f"Available player list: {list(target.keys())}")
                         LOGGER.debug(source)
                         break
+                    input_time = TimeConversion(source[player]['tracks'][track]['time'])
+                    current_time = TimeConversion(target[exact_player_name]['tracks'][track]['time'])
                     if input_time.as_float != 300:
+                        if verbose:
+                            LOGGER.info(f"{exact_player_name}: {track}: new time:{input_time.as_str}")
+                            if input_time.as_float > current_time.as_float:
+                                LOGGER.warn(f"Worse time input detected: {current_time.as_str} -> {input_time.as_str}")
                         target[exact_player_name].setdefault('tracks', {}).setdefault(track, {})
                         target[exact_player_name]['tracks'][track]['time'] = input_time.as_str
-                        if verbose:
-                            LOGGER.info(f"{exact_player_name}: {track}: {input_time.as_str}")
                     else:
                         LOGGER.warning(f"Bullshit TIME input: {source[player]['tracks'][track]['time']}")
                         LOGGER.debug(source)

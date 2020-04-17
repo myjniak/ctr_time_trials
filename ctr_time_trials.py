@@ -2,7 +2,7 @@ import argparse
 import logging
 import traceback
 import os
-from time import sleep
+from time import sleep, time
 from lib.google.google_requests import GoogleRequests
 from lib.leagues_as_xlsx import LeaguesAsXlsx
 from lib.database import Database
@@ -18,6 +18,7 @@ POINT_SYSTEM = [10, 8, 6, 5, 4, 3, 2, 1]
 LEAGUE_POINTS_MINIMUM = 20
 MINIMUM_PLAYER_COUNT_IN_LEAGUE = 5
 SHEET_IDS_FILE_PATH = "config/sheet_ids.json"
+LOG_RESET_INTERVAL = 10000
 TIMES_FROM_WEBPAGE_JSON_FILE_PATH = "dynamic_jsons/manual_times_from_webpage.json"
 LEAGUE_NAMES = ["Nitro Tier", "Platinum Tier", "Gold Tier", "Sapphire Tier", "Wumpa Tier", "Armadillo Tier"]
 FILE_PATHS = {
@@ -57,7 +58,7 @@ def prepare_database():
     Database.time_zone_diff = TIME_ZONE_DIFF
 
 
-def przytnij_logi_i_ogloszenia(logs_msg_count=10000, announcements_msg_count=10):
+def przytnij_logi_i_ogloszenia(logs_msg_count=50000, announcements_msg_count=10):
     LOGGER.debug("Przycinam logi")
     file_list = os.listdir(LOGS_PATH)
     for f in file_list:
@@ -117,10 +118,9 @@ def main_loop_static(rankingowaczka):
 
 def main_loop(serwis, rankingowaczka):
     sheet_ids = Jsoner(SHEET_IDS_FILE_PATH)
-
+    last_log_reset_time = time()
     while True:
         if serwis.get_cell_value(RANKING_INPUT_FILE_ID, "A1"):
-            przytnij_logi_i_ogloszenia()
             Database.reload()
             Database.initialize_players_json_structure()
 
@@ -155,7 +155,11 @@ def main_loop(serwis, rankingowaczka):
             LOGGER.info("ROBOTA SKONCZONA")
         else:
             LOGGER.debug("heartbeat")
-        sleep(SLEEP_BETWEEN_ITERATIONS)
+        if time() - last_log_reset_time > LOG_RESET_INTERVAL:
+            przytnij_logi_i_ogloszenia()
+            last_log_reset_time = time()
+        else:
+            sleep(SLEEP_BETWEEN_ITERATIONS)
 
 
 if __name__ == "__main__":
