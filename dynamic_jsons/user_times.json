@@ -2621,9 +2621,9 @@
             "gold": 4,
             "silver": 5
         },
-        "total_points": 136,
+        "total_points": 137,
         "total_points_in_upper_league": 0,
-        "total_time": "71:43.970",
+        "total_time": "71:42.570",
         "tracks": {
             "Android Alley": {
                 "medal": "gold",
@@ -2788,8 +2788,8 @@
             "Polar Pass": {
                 "medal": null,
                 "place": 1583,
-                "points": 1,
-                "time": "2:02.080"
+                "points": 2,
+                "time": "2:00.680"
             },
             "Prehistoric Playground": {
                 "medal": "bronze",
@@ -7863,7 +7863,7 @@
             "gold": 0,
             "silver": 3
         },
-        "total_points": 98,
+        "total_points": 97,
         "total_points_in_upper_league": 0,
         "total_time": "78:09.778",
         "tracks": {
@@ -8030,7 +8030,7 @@
             "Polar Pass": {
                 "medal": null,
                 "place": 343,
-                "points": 2,
+                "points": 1,
                 "time": "2:01.120"
             },
             "Prehistoric Playground": {
