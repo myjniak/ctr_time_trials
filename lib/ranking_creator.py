@@ -49,6 +49,7 @@ class RankingCreator(Database):
                     }
                     player_info['total_points_in_upper_league'] = player_info['total_points']
                     player_info['total_points'] = 0
+            players = [player for player in new_time_trials.keys() if new_time_trials[player]["league"] == league]
             self._give_out_points_and_medals_for_league(players)
 
         if Database.league_count != league:
@@ -76,9 +77,9 @@ class RankingCreator(Database):
         announcer.log_league_transfers()
         announcer.log_medals()
 
-    def _give_out_points_and_medals_for_league(self, players, give_medals=True):
+    def _give_out_points_and_medals_for_league(self, players_in_league, give_medals=True):
         data = self.time_trials.json
-        for player in players:
+        for player in players_in_league:
             data[player]["total_points"] = 0
             data[player]['medals'] = {
                 'gold': 0,
@@ -86,13 +87,13 @@ class RankingCreator(Database):
                 'bronze': 0
             }
         for track in self.track_list:
-            for player in players:
+            for player in players_in_league:
                 data[player].setdefault('tracks', {}).setdefault(track, {})
                 data[player]['tracks'][track]['points'] = 0
                 data[player]['tracks'][track].setdefault('time', "NO TIME")
                 data[player]['tracks'][track]['medal'] = None
             players_filtered = list(filter(
-                lambda player: TimeConversion(data[player]['tracks'][track]['time']).as_float < 300, players))
+                lambda player: TimeConversion(data[player]['tracks'][track]['time']).as_float < 300, players_in_league))
             players_sorted = \
                 sorted(players_filtered,
                        key=lambda player: TimeConversion(data[player]['tracks'][track]['time']).as_float)

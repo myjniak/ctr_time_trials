@@ -82,20 +82,22 @@ def reset_input_sheet(serwis):
 
 
 def main(static=None):
-    prepare_database()
-    rankingowaczka = RankingCreator(minimum_player_count_in_league=MINIMUM_PLAYER_COUNT_IN_LEAGUE)
-    try:
-        if static:
-            main_loop_static(rankingowaczka)
-        else:
-            serwis = GoogleRequests(GOOGLE_DRIVE_CREDENTIALS_PATH,
-                                    GOOGLE_DRIVE_TOKEN_PATH,
-                                    GOOGLE_SHEETS_API_KEY)
-            main_loop(serwis, rankingowaczka)
-    except:
-        formatted_lines = traceback.format_exc().splitlines()
-        for line in formatted_lines:
-            LOGGER.error(line)
+    for i in range(3):
+        prepare_database()
+        rankingowaczka = RankingCreator(minimum_player_count_in_league=MINIMUM_PLAYER_COUNT_IN_LEAGUE)
+        try:
+            if static:
+                main_loop_static(rankingowaczka)
+            else:
+                serwis = GoogleRequests(GOOGLE_DRIVE_CREDENTIALS_PATH,
+                                        GOOGLE_DRIVE_TOKEN_PATH,
+                                        GOOGLE_SHEETS_API_KEY)
+                main_loop(serwis, rankingowaczka)
+        except:
+            formatted_lines = traceback.format_exc().splitlines()
+            for line in formatted_lines:
+                LOGGER.error(line)
+    LOGGER.error("FATAL ERROR - CRASHED 3 TIMES")
 
 
 def main_loop_static(rankingowaczka):

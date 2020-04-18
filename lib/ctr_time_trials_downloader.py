@@ -98,7 +98,7 @@ class CtrTimeTrialsDownloader(Database):
     def save_user_time(self, username, track_name, user_time, place):
         data = self.time_trials
         data.json.setdefault(username, {}).setdefault('tracks', {}).setdefault(track_name, {}).setdefault("time", "0")
-        if user_time not in [data.json.[username]['tracks'][track_name]["time"], "CHEATER", "NO TIME"]:
+        if user_time not in [data.json[username]['tracks'][track_name]["time"], "CHEATER", "NO TIME"]:
             self.changes.setdefault(username, {}).setdefault('tracks', {}).setdefault(track_name, {})
             self.changes[username]['tracks'][track_name]["time"] = user_time
         data.json[username]['tracks'][track_name]["time"] = user_time
