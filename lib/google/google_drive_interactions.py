@@ -77,6 +77,7 @@ class GoogleDriveInteractions:
         service = build('sheets', 'v4', credentials=credentials)
         return service
 
+    @try_request_until_success
     def download_file(self, local_file_path, remote_file_id):
         LOGGER.info(f"Downloading to {local_file_path}")
         request = self.service.files().export_media(
@@ -88,6 +89,7 @@ class GoogleDriveInteractions:
             while done is False:
                 status, done = downloader.next_chunk()
 
+    @try_request_until_success
     def upload_file(self, local_file_path, remote_file_id, name="Time Trial Input"):
         file_metadata = {'name': name}
         media = MediaFileUpload(local_file_path,
