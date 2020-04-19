@@ -7,16 +7,19 @@ from lib.google.google_requests import GoogleRequests
 from lib.leagues_as_xlsx import LeaguesAsXlsx
 from lib.database import Database
 from lib.database_independent.jsoner import Jsoner
-from lib.ranking_creator import RankingCreator
-from lib.announcements import Announcements
+from lib.ranking_creator.dynamic_ranking_creator import DynamicRankingCreator
+from lib.ranking_creator.frozen_ranking_creator import FrozenRankingCreator
+from lib.database_independent.announcements import Announcements
 from confidential.variables import *
 
 
+FREEZE_LEAGUES = False
+USER_TIMES_SNAPSHOT_FILE_PATH = "dynamic_jsons/GP1_start.json"
 LOGS_PATH = 'logs/'
 BOTS_LIST = ["N. Tropy", "Oxide", "Velo", "Beenox"]
 POINT_SYSTEM = [10, 8, 6, 5, 4, 3, 2, 1]
 LEAGUE_POINTS_MINIMUM = 20
-MINIMUM_PLAYER_COUNT_IN_LEAGUE = 5
+LEAGUE_PLAYERS_MINIMUM = 5
 SHEET_IDS_FILE_PATH = "config/sheet_ids.json"
 LOG_RESET_INTERVAL = 10000
 TIMES_FROM_WEBPAGE_JSON_FILE_PATH = "dynamic_jsons/manual_times_from_webpage.json"
@@ -56,6 +59,8 @@ def prepare_database():
     Database.league_names = LEAGUE_NAMES
     Database.league_points_minimum = LEAGUE_POINTS_MINIMUM
     Database.time_zone_diff = TIME_ZONE_DIFF
+    Database.freeze_leagues = FREEZE_LEAGUES
+    Database.league_players_minimum = LEAGUE_PLAYERS_MINIMUM
 
 
 def przytnij_logi_i_ogloszenia(logs_msg_count=50000, announcements_msg_count=10):
@@ -81,13 +86,17 @@ def reset_input_sheet(serwis):
     # serwis.clear_cell_range(RANKING_INPUT_FILE_ID, "A1")
 
 
-def main(static=None):
+def main(static=None, frozen=None):
     for i in range(3):
         prepare_database()
-        rankingowaczka = RankingCreator(minimum_player_count_in_league=MINIMUM_PLAYER_COUNT_IN_LEAGUE)
+        if frozen:
+            rankingowaczka = FrozenRankingCreator()
+        else:
+            rankingowaczka = DynamicRankingCreator()
         try:
             if static:
                 main_loop_static(rankingowaczka)
+                break
             else:
                 serwis = GoogleRequests(GOOGLE_DRIVE_CREDENTIALS_PATH,
                                         GOOGLE_DRIVE_TOKEN_PATH,
@@ -97,7 +106,8 @@ def main(static=None):
             formatted_lines = traceback.format_exc().splitlines()
             for line in formatted_lines:
                 LOGGER.error(line)
-    LOGGER.error("FATAL ERROR - CRASHED 3 TIMES")
+    else:
+        LOGGER.error("FATAL ERROR - CRASHED 3 TIMES")
 
 
 def main_loop_static(rankingowaczka):
@@ -167,8 +177,9 @@ def main_loop(serwis, rankingowaczka):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--static", help="Wygeneruj tylko excela testowo", action="store_true")
+    parser.add_argument("--frozen", help="Nie rob transferow miedzy ligami", action="store_true")
     args = parser.parse_args()
-    main(args.static)
+    main(args.static, args.frozen)
 
 
 # def establish_player_list_to_do(gamer_list, do_everyone=None):

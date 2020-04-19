@@ -1,4 +1,4 @@
-from . import LOGGER
+from lib import LOGGER
 
 
 class Announcements:

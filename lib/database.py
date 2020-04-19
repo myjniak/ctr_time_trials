@@ -16,9 +16,11 @@ class Database:
     league_names = list()
     league_count = int()
     league_points_minimum = int()
+    league_players_minimum = int()
     time_zone_diff = int()
     bots_list = list()
     sheets_raw = list()
+    freeze_leagues = bool()
     
     @classmethod
     def reload(cls):
