@@ -20,22 +20,15 @@ class RankingCreator(Database):
         for player in players:
             cls.time_trials.json[player]['league'] += 1
             cls.time_trials.json[player]['total_points_in_upper_league'] = cls.time_trials.json[player]['total_points']
-        cls._reset(players, ["medals",
-                             "total_points_in_upper_league",
-                             "total_points"])
-
-    @classmethod
-    def __disqualify_filter(cls, player):
-        return cls.time_trials.json[player]['total_points'] < cls.league_points_minimum
-
-    @classmethod
-    def _get_players_to_reset(cls, players):
-        players_to_reset = list(filter(cls.__disqualify_filter, players))
-        return players_to_reset
+        cls._reset(players, ["medals", "total_points"])
 
     @classmethod
     def _get_players_in_league(cls, league):
         return [player for player in cls.time_trials.json.keys() if cls.time_trials.json[player]["league"] == league]
+
+    @classmethod
+    def _get_players_in_leagues(cls, leagues):
+        return [player for player in cls.time_trials.json.keys() if cls.time_trials.json[player]["league"] in leagues]
 
     @classmethod
     def _reset(cls, players, things_to_reset):
