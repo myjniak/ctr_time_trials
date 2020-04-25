@@ -8,13 +8,17 @@ class GoogleRequests(GoogleDriveInteractions, GoogleSheetsRequestPreparator):
     def __init__(self, cred_path, token_path, api_key):
         super().__init__(cred_path=cred_path, token_path=token_path, api_key=api_key)
 
-    def update_ranking(self, remote_file_id, sheets_raw, sheet_ids):
+    def update_grand_prix(self, remote_file_id, csv_content):
+        LOGGER.info("Updating Grand Prix ranking")
+        self.update_sheet(remote_file_id, "Grand Prix 1", csv_content)
+
+    def update_leagues(self, remote_file_id, sheets_raw, sheet_ids):
         for sheet in sheets_raw:
             sheet_name = sheet.league_name
-
-            if sheet.old_content and \
-               sheet.content[1:] == sheet.old_content[1:] and \
-               sheet.content[0][1:] == sheet.old_content[0][1:]:
+            no_changes = sheet.old_content and \
+                         sheet.content[1:] == sheet.old_content[1:] and \
+                         sheet.content[0][1:] == sheet.old_content[0][1:]
+            if no_changes:
                 LOGGER.info(f"No changes in {sheet_name}, skipping")
                 continue
             LOGGER.info(f"Updating {sheet_name}")

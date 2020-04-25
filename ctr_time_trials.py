@@ -10,6 +10,9 @@ from lib.database_independent.jsoner import Jsoner
 from lib.ranking_creator.dynamic_ranking_creator import DynamicRankingCreator
 from lib.ranking_creator.frozen_ranking_creator import FrozenRankingCreator
 from lib.database_independent.announcements import Announcements
+from lib.grand_prix import GrandPrix
+from lib.database_independent.grand_prix_as_xlsx import GrandPrixAsXlsx
+from lib.database_independent.grand_prix_as_csv import GrandPrixAsCsv
 from confidential.variables import *
 
 
@@ -86,28 +89,32 @@ def reset_input_sheet(serwis):
     # serwis.clear_cell_range(RANKING_INPUT_FILE_ID, "A1")
 
 
-def main(static=None, frozen=None):
-    for i in range(3):
-        prepare_database()
-        if frozen:
-            rankingowaczka = FrozenRankingCreator()
-        else:
-            rankingowaczka = DynamicRankingCreator()
-        try:
-            if static:
-                main_loop_static(rankingowaczka)
-                break
-            else:
+def main(static=None, frozen=None, gp_start=None):
+    prepare_database()
+    if gp_start:
+        GrandPrix.gp_start()
+        return
+
+    if frozen:
+        rankingowaczka = FrozenRankingCreator()
+    else:
+        rankingowaczka = DynamicRankingCreator()
+    if static:
+        main_loop_static(rankingowaczka)
+    else:
+        for i in range(1):
+            try:
                 serwis = GoogleRequests(GOOGLE_DRIVE_CREDENTIALS_PATH,
                                         GOOGLE_DRIVE_TOKEN_PATH,
                                         GOOGLE_SHEETS_API_KEY)
                 main_loop(serwis, rankingowaczka)
-        except:
-            formatted_lines = traceback.format_exc().splitlines()
-            for line in formatted_lines:
-                LOGGER.error(line)
-    else:
-        LOGGER.error("FATAL ERROR - CRASHED 3 TIMES")
+            except:
+                formatted_lines = traceback.format_exc().splitlines()
+                for line in formatted_lines:
+                    LOGGER.error(line)
+                prepare_database()
+        else:
+            LOGGER.error("FATAL ERROR - CRASHED 3 TIMES")
 
 
 def main_loop_static(rankingowaczka):
@@ -124,6 +131,8 @@ def main_loop_static(rankingowaczka):
     Database.refresh_csvs_content()
     Database.time_trials.save()
     LeaguesAsXlsx.save()
+
+    GrandPrixAsXlsx(GrandPrix().ranking).save("output/grand_prix.xlsx")
 
     LOGGER.info("ROBOTA SKONCZONA")
 
@@ -161,8 +170,12 @@ def main_loop(serwis, rankingowaczka):
                 sheet_ids.json_as_variable = new_sheet_ids
                 sheet_ids.save()
 
+            grand_prix_ranking = GrandPrix().ranking
+
             # Wrzuc na google drive
-            serwis.update_ranking(RANKING_FILE_ID, Database.sheets_raw, sheet_ids.json)
+            serwis.update_leagues(RANKING_FILE_ID, Database.sheets_raw, sheet_ids.json)
+            serwis.update_grand_prix(GRAND_PRIX_FILE_ID, GrandPrixAsCsv(grand_prix_ranking).content)
+            Jsoner(grand_prix_ranking).save("dynamic_jsons/grand_prix_stats.json")
 
             LOGGER.info("ROBOTA SKONCZONA")
         else:
@@ -178,8 +191,9 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--static", help="Wygeneruj tylko excela testowo", action="store_true")
     parser.add_argument("--frozen", help="Nie rob transferow miedzy ligami", action="store_true")
+    parser.add_argument("--gp-start", help="Wystartuj Grand Prix - ustaw trasy w jsonie wpierw!", action="store_true")
     args = parser.parse_args()
-    main(args.static, args.frozen)
+    main(args.static, args.frozen, args.gp_start)
 
 
 # def establish_player_list_to_do(gamer_list, do_everyone=None):
