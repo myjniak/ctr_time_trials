@@ -85,9 +85,6 @@ def reset_input_sheet(serwis):
     LOGGER.debug("Resetuje arkusz do inputu...")
     serwis.upload_file("config/Time Trial Input.xlsx", RANKING_INPUT_FILE_ID)
     serwis.protect_first_column(RANKING_INPUT_FILE_ID, MASTER_EMAIL)
-    # serwis.clear_cell_range(RANKING_INPUT_FILE_ID, "B1:Z50")
-    # LOGGER.debug("Resetuje A1...")
-    # serwis.clear_cell_range(RANKING_INPUT_FILE_ID, "A1")
 
 
 def main(static=None, frozen=None, gp_start=None, gp=None):
