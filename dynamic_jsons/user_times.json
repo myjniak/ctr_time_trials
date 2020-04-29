@@ -1399,12 +1399,12 @@
         "league": 2,
         "medals": {
             "bronze": 10,
-            "gold": 2,
+            "gold": 3,
             "silver": 5
         },
-        "total_points": 213,
-        "total_points_in_upper_league": 3,
-        "total_time": "73:19.730",
+        "total_points": 220,
+        "total_points_in_upper_league": 5,
+        "total_time": "73:17.870",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -1552,9 +1552,9 @@
                 "time": "2:22.190"
             },
             "Roo's Tubes": {
-                "medal": null,
-                "points": 3,
-                "time": "1:16.690"
+                "medal": "gold",
+                "points": 10,
+                "time": "1:14.830"
             },
             "Sewer Speedway": {
                 "medal": null,
@@ -1610,7 +1610,7 @@
             "gold": 0,
             "silver": 0
         },
-        "total_points": 39,
+        "total_points": 38,
         "total_points_in_upper_league": 0,
         "total_time": "78:11.750",
         "tracks": {
@@ -1789,7 +1789,7 @@
             "Roo's Tubes": {
                 "medal": null,
                 "place": 12574,
-                "points": 4,
+                "points": 3,
                 "time": "1:16.670"
             },
             "Sewer Speedway": {
@@ -2096,11 +2096,11 @@
     "Jakub_Luk": {
         "league": 2,
         "medals": {
-            "bronze": 9,
+            "bronze": 10,
             "gold": 12,
-            "silver": 13
+            "silver": 12
         },
-        "total_points": 297,
+        "total_points": 295,
         "total_points_in_upper_league": 12,
         "total_time": "72:58.459",
         "tracks": {
@@ -2277,9 +2277,9 @@
                 "time": "2:20.770"
             },
             "Roo's Tubes": {
-                "medal": "silver",
+                "medal": "bronze",
                 "place": 2613,
-                "points": 8,
+                "points": 6,
                 "time": "1:15.600"
             },
             "Sewer Speedway": {
@@ -2341,13 +2341,13 @@
     "JanneAhonen69": {
         "league": 1,
         "medals": {
-            "bronze": 6,
+            "bronze": 7,
             "gold": 5,
-            "silver": 5
+            "silver": 6
         },
-        "total_points": 204,
+        "total_points": 212,
         "total_points_in_upper_league": 0,
-        "total_time": "71:01.116",
+        "total_time": "70:58.918",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -2395,7 +2395,7 @@
                 "medal": null,
                 "place": 185,
                 "points": 2,
-                "time": "1:18.87"
+                "time": "1:18.810"
             },
             "Deep Sea Driving": {
                 "medal": "gold",
@@ -2453,8 +2453,8 @@
             "Jungle Boogie": {
                 "medal": null,
                 "place": 190,
-                "points": 1,
-                "time": "1:13.64"
+                "points": 5,
+                "time": "1:13.070"
             },
             "Koala Carnival": {
                 "medal": null,
@@ -2495,13 +2495,13 @@
                 "medal": "gold",
                 "place": 187,
                 "points": 10,
-                "time": "1:49.270"
+                "time": "1:48.700"
             },
             "Oxide Station": {
-                "medal": null,
+                "medal": "silver",
                 "place": 40,
-                "points": 5,
-                "time": "2:38.990"
+                "points": 8,
+                "time": "2:38.320"
             },
             "Papu's Pyramid": {
                 "medal": null,
@@ -2540,10 +2540,10 @@
                 "time": "1:38.24"
             },
             "Spyro Circuit": {
-                "medal": null,
+                "medal": "bronze",
                 "place": 379,
-                "points": 5,
-                "time": "2:10.289"
+                "points": 6,
+                "time": "2:09.960"
             },
             "Thunder Struck": {
                 "medal": "silver",
@@ -3033,11 +3033,11 @@
     "Kideu98": {
         "league": 1,
         "medals": {
-            "bronze": 5,
+            "bronze": 6,
             "gold": 5,
-            "silver": 7
+            "silver": 6
         },
-        "total_points": 175,
+        "total_points": 173,
         "total_points_in_upper_league": 0,
         "total_time": "71:21.389",
         "tracks": {
@@ -3190,9 +3190,9 @@
                 "time": "1:54.170"
             },
             "Oxide Station": {
-                "medal": "silver",
+                "medal": "bronze",
                 "place": 230,
-                "points": 8,
+                "points": 6,
                 "time": "2:38.620"
             },
             "Papu's Pyramid": {
@@ -3772,7 +3772,7 @@
             "gold": 1,
             "silver": 3
         },
-        "total_points": 169,
+        "total_points": 168,
         "total_points_in_upper_league": 0,
         "total_time": "74:41.330",
         "tracks": {
@@ -3951,7 +3951,7 @@
             "Roo's Tubes": {
                 "medal": null,
                 "place": 2222,
-                "points": 5,
+                "points": 4,
                 "time": "1:16.470"
             },
             "Sewer Speedway": {
@@ -4956,11 +4956,11 @@
     "Maties_Gamer": {
         "league": 1,
         "medals": {
-            "bronze": 8,
+            "bronze": 6,
             "gold": 2,
             "silver": 4
         },
-        "total_points": 189,
+        "total_points": 186,
         "total_points_in_upper_league": 0,
         "total_time": "71:06.669",
         "tracks": {
@@ -5068,7 +5068,7 @@
             "Jungle Boogie": {
                 "medal": null,
                 "place": 657,
-                "points": 5,
+                "points": 4,
                 "time": "1:13.100"
             },
             "Koala Carnival": {
@@ -5113,9 +5113,9 @@
                 "time": "1:50.44"
             },
             "Oxide Station": {
-                "medal": "bronze",
+                "medal": null,
                 "place": 720,
-                "points": 6,
+                "points": 5,
                 "time": "2:38.790"
             },
             "Papu's Pyramid": {
@@ -5155,9 +5155,9 @@
                 "time": "1:35.46"
             },
             "Spyro Circuit": {
-                "medal": "bronze",
+                "medal": null,
                 "place": 868,
-                "points": 6,
+                "points": 5,
                 "time": "2:10.229"
             },
             "Thunder Struck": {
@@ -6357,7 +6357,7 @@
             "silver": 1
         },
         "total_points": 86,
-        "total_points_in_upper_league": 15,
+        "total_points_in_upper_league": 14,
         "total_time": "102:51.304",
         "tracks": {
             "Android Alley": {
@@ -6598,10 +6598,10 @@
         "league": 1,
         "medals": {
             "bronze": 5,
-            "gold": 24,
-            "silver": 10
+            "gold": 23,
+            "silver": 11
         },
-        "total_points": 350,
+        "total_points": 348,
         "total_points_in_upper_league": 0,
         "total_time": "70:22.165",
         "tracks": {
@@ -6772,9 +6772,9 @@
                 "time": "1:58.280"
             },
             "Prehistoric Playground": {
-                "medal": "gold",
+                "medal": "silver",
                 "place": 152,
-                "points": 10,
+                "points": 8,
                 "time": "2:18.700"
             },
             "Roo's Tubes": {
@@ -7337,7 +7337,7 @@
             "silver": 1
         },
         "total_points": 52,
-        "total_points_in_upper_league": 3,
+        "total_points_in_upper_league": 2,
         "total_time": "82:53.904",
         "tracks": {
             "Android Alley": {
@@ -8238,11 +8238,11 @@
     "VitzkyGG": {
         "league": 2,
         "medals": {
-            "bronze": 1,
+            "bronze": 0,
             "gold": 0,
             "silver": 0
         },
-        "total_points": 46,
+        "total_points": 45,
         "total_points_in_upper_league": 0,
         "total_time": "82:10.770",
         "tracks": {
@@ -8419,9 +8419,9 @@
                 "time": "2:26.048"
             },
             "Roo's Tubes": {
-                "medal": "bronze",
+                "medal": null,
                 "place": 1216,
-                "points": 6,
+                "points": 5,
                 "time": "1:16.043"
             },
             "Sewer Speedway": {
@@ -8487,7 +8487,7 @@
             "gold": 0,
             "silver": 2
         },
-        "total_points": 79,
+        "total_points": 78,
         "total_points_in_upper_league": 0,
         "total_time": "78:09.778",
         "tracks": {
@@ -8595,7 +8595,7 @@
             "Jungle Boogie": {
                 "medal": null,
                 "place": 294,
-                "points": 3,
+                "points": 2,
                 "time": "1:13.306"
             },
             "Koala Carnival": {
@@ -8937,12 +8937,12 @@
         "league": 1,
         "medals": {
             "bronze": 2,
-            "gold": 1,
-            "silver": 3
+            "gold": 2,
+            "silver": 2
         },
         "total_points": 139,
         "total_points_in_upper_league": 0,
-        "total_time": "71:32.639",
+        "total_time": "71:30.908",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -9031,7 +9031,7 @@
                 "medal": null,
                 "place": 165,
                 "points": 2,
-                "time": "2:09.990"
+                "time": "2:08.889"
             },
             "Hyper Spaceway": {
                 "medal": null,
@@ -9048,7 +9048,7 @@
             "Jungle Boogie": {
                 "medal": null,
                 "place": 137,
-                "points": 2,
+                "points": 1,
                 "time": "1:13.470"
             },
             "Koala Carnival": {
@@ -9095,7 +9095,7 @@
             "Oxide Station": {
                 "medal": null,
                 "place": 152,
-                "points": 3,
+                "points": 2,
                 "time": "2:40.820"
             },
             "Papu's Pyramid": {
@@ -9111,10 +9111,10 @@
                 "time": "1:59.980"
             },
             "Prehistoric Playground": {
-                "medal": "silver",
+                "medal": "gold",
                 "place": 69,
-                "points": 8,
-                "time": "2:18.93"
+                "points": 10,
+                "time": "2:18.300"
             },
             "Roo's Tubes": {
                 "medal": null,
@@ -10370,12 +10370,12 @@
         "league": 2,
         "medals": {
             "bronze": 4,
-            "gold": 23,
-            "silver": 10
+            "gold": 22,
+            "silver": 11
         },
-        "total_points": 344,
-        "total_points_in_upper_league": 26,
-        "total_time": "72:21.370",
+        "total_points": 342,
+        "total_points_in_upper_league": 25,
+        "total_time": "72:20.410",
         "tracks": {
             "Android Alley": {
                 "medal": "gold",
@@ -10393,7 +10393,7 @@
                 "medal": "gold",
                 "place": 800,
                 "points": 10,
-                "time": "1:43.330"
+                "time": "1:42.370"
             },
             "Blizzard Bluff": {
                 "medal": "gold",
@@ -10550,9 +10550,9 @@
                 "time": "2:21.400"
             },
             "Roo's Tubes": {
-                "medal": "gold",
+                "medal": "silver",
                 "place": 2981,
-                "points": 10,
+                "points": 8,
                 "time": "1:14.970"
             },
             "Sewer Speedway": {
@@ -10863,9 +10863,9 @@
             "gold": 1,
             "silver": 6
         },
-        "total_points": 126,
+        "total_points": 128,
         "total_points_in_upper_league": 0,
-        "total_time": "71:37.282",
+        "total_time": "71:35.477",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -11018,8 +11018,8 @@
             "Oxide Station": {
                 "medal": null,
                 "place": 350,
-                "points": 2,
-                "time": "2:41.095"
+                "points": 4,
+                "time": "2:39.290"
             },
             "Papu's Pyramid": {
                 "medal": null,
@@ -11108,7 +11108,7 @@
             "gold": 1,
             "silver": 1
         },
-        "total_points": 128,
+        "total_points": 126,
         "total_points_in_upper_league": 0,
         "total_time": "71:35.679",
         "tracks": {
@@ -11216,7 +11216,7 @@
             "Jungle Boogie": {
                 "medal": null,
                 "place": 267,
-                "points": 4,
+                "points": 3,
                 "time": "1:13.240"
             },
             "Koala Carnival": {
@@ -11263,7 +11263,7 @@
             "Oxide Station": {
                 "medal": null,
                 "place": 615,
-                "points": 4,
+                "points": 3,
                 "time": "2:39.890"
             },
             "Papu's Pyramid": {
