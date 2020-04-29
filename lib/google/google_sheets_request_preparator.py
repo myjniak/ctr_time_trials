@@ -25,8 +25,8 @@ class GoogleSheetsRequestPreparator:
         row_count = len(formatting_matrix)
         format_requests.append(cls.generate_request_for_column_sizes(sheet_id, 0, 0, 200))
         format_requests.append(cls.generate_request_for_column_sizes(sheet_id, 1, 100, 145))
-        format_requests.append(cls.generate_request_for_row_sizes(sheet_id, 0, 40, 20))
-        format_requests.append(cls.generate_request_for_row_sizes(sheet_id, 41, 60, 40))
+        format_requests.append(cls.generate_request_for_row_sizes(sheet_id, 0, 39, 25))
+        format_requests.append(cls.generate_request_for_row_sizes(sheet_id, 40, 60, 35))
         format_requests.append(cls.generate_request_for_cell_merge(sheet_id, row_count - 10, row_count - 1, 4, 6))
         format_requests.append(cls.generate_request_for_all_cells(sheet_id))
         return format_requests
