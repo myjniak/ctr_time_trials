@@ -1,756 +1,950 @@
 {
     "Dejwidgakure": {
         "old_total_points": 7,
-        "ranking": 0.0,
-        "total_places_improved": 6,
-        "total_points": 17,
-        "total_points_improved": 10,
-        "total_time_improved": 0.0,
+        "ranking": 6402.480000000001,
+        "total_places_improved": 9,
+        "total_points": 23,
+        "total_points_improved": 16,
+        "total_time_improved": 62.16000000000001,
         "tracks": {
             "Dragon Mines": {
-                "new_place": 15,
-                "old_place": 17,
+                "new_place": 16,
+                "old_place": 18,
                 "old_points": 1,
                 "place_improvement": 2,
                 "points": 4,
-                "time_improvement": 0.0
+                "time_improvement": 4.72999999999999
+            },
+            "Hot Air Skyway": {
+                "new_place": 15,
+                "old_place": 19,
+                "old_points": 0,
+                "place_improvement": 4,
+                "points": 7,
+                "time_improvement": 39.110000000000014
             },
             "Oxide Station": {
                 "new_place": 15,
-                "old_place": 16,
+                "old_place": 17,
                 "old_points": 2,
-                "place_improvement": 1,
+                "place_improvement": 2,
+                "points": 7,
+                "time_improvement": 14.75
+            },
+            "Papu's Pyramid": {
+                "new_place": 16,
+                "old_place": 16,
+                "old_points": 4,
+                "place_improvement": 0,
                 "points": 4,
                 "time_improvement": 0.0
             },
-            "Papu's Pyramid": {
-                "new_place": 14,
-                "old_place": 15,
-                "old_points": 4,
+            "Roo's Tubes": {
+                "new_place": 18,
+                "old_place": 19,
+                "old_points": 0,
                 "place_improvement": 1,
-                "points": 7,
+                "points": 1,
+                "time_improvement": 3.5700000000000074
+            }
+        }
+    },
+    "Greg": {
+        "old_total_points": 174,
+        "ranking": 0.0,
+        "total_places_improved": -3,
+        "total_points": 155,
+        "total_points_improved": -19,
+        "total_time_improved": 0.0,
+        "tracks": {
+            "Dragon Mines": {
+                "new_place": 8,
+                "old_place": 8,
+                "old_points": 56,
+                "place_improvement": 0,
+                "points": 56,
+                "time_improvement": 0.0
+            },
+            "Hot Air Skyway": {
+                "new_place": 10,
+                "old_place": 10,
+                "old_points": 37,
+                "place_improvement": 0,
+                "points": 37,
+                "time_improvement": 0.0
+            },
+            "Oxide Station": {
+                "new_place": 12,
+                "old_place": 12,
+                "old_points": 22,
+                "place_improvement": 0,
+                "points": 22,
+                "time_improvement": 0.0
+            },
+            "Papu's Pyramid": {
+                "new_place": 11,
+                "old_place": 10,
+                "old_points": 37,
+                "place_improvement": -1,
+                "points": 29,
                 "time_improvement": 0.0
             },
             "Roo's Tubes": {
-                "new_place": 16,
-                "old_place": 18,
-                "old_points": 0,
-                "place_improvement": 2,
-                "points": 2,
+                "new_place": 14,
+                "old_place": 12,
+                "old_points": 22,
+                "place_improvement": -2,
+                "points": 11,
                 "time_improvement": 0.0
             }
         }
     },
     "Gustlyk1": {
-        "old_total_points": 36,
-        "ranking": 0.0,
-        "total_places_improved": 5,
-        "total_points": 60,
-        "total_points_improved": 24,
-        "total_time_improved": 0.0,
+        "old_total_points": 47,
+        "ranking": 3971.920000000001,
+        "total_places_improved": 3,
+        "total_points": 61,
+        "total_points_improved": 14,
+        "total_time_improved": 30.320000000000007,
         "tracks": {
             "Dragon Mines": {
-                "new_place": 11,
-                "old_place": 13,
-                "old_points": 11,
-                "place_improvement": 2,
-                "points": 22,
-                "time_improvement": 0.0
-            },
-            "Oxide Station": {
-                "new_place": 13,
-                "old_place": 13,
+                "new_place": 14,
+                "old_place": 14,
                 "old_points": 11,
                 "place_improvement": 0,
                 "points": 11,
                 "time_improvement": 0.0
             },
-            "Papu's Pyramid": {
+            "Hot Air Skyway": {
                 "new_place": 13,
                 "old_place": 14,
-                "old_points": 7,
+                "old_points": 11,
                 "place_improvement": 1,
+                "points": 16,
+                "time_improvement": 5.340000000000003
+            },
+            "Oxide Station": {
+                "new_place": 14,
+                "old_place": 14,
+                "old_points": 11,
+                "place_improvement": 0,
                 "points": 11,
+                "time_improvement": 24.25
+            },
+            "Papu's Pyramid": {
+                "new_place": 15,
+                "old_place": 15,
+                "old_points": 7,
+                "place_improvement": 0,
+                "points": 7,
                 "time_improvement": 0.0
             },
             "Roo's Tubes": {
-                "new_place": 12,
-                "old_place": 14,
+                "new_place": 13,
+                "old_place": 15,
                 "old_points": 7,
                 "place_improvement": 2,
                 "points": 16,
-                "time_improvement": 0.0
+                "time_improvement": 0.730000000000004
             }
         }
     },
     "Jakub_Luk": {
-        "old_total_points": 97,
-        "ranking": -551.4,
-        "total_places_improved": -29,
-        "total_points": 0,
-        "total_points_improved": -97,
-        "total_time_improved": -551.4,
+        "old_total_points": 135,
+        "ranking": 627.5700000000027,
+        "total_places_improved": 1,
+        "total_points": 141,
+        "total_points_improved": 6,
+        "total_time_improved": 3.670000000000016,
         "tracks": {
             "Dragon Mines": {
-                "new_place": 18,
-                "old_place": 12,
+                "new_place": 13,
+                "old_place": 13,
                 "old_points": 16,
-                "place_improvement": -6,
-                "points": 0,
-                "time_improvement": -160.88
+                "place_improvement": 0,
+                "points": 16,
+                "time_improvement": 0.0
+            },
+            "Hot Air Skyway": {
+                "new_place": 12,
+                "old_place": 12,
+                "old_points": 22,
+                "place_improvement": 0,
+                "points": 22,
+                "time_improvement": 0.0
             },
             "Oxide Station": {
-                "new_place": 18,
+                "new_place": 11,
                 "old_place": 11,
-                "old_points": 22,
-                "place_improvement": -7,
-                "points": 0,
-                "time_improvement": -75.86999999999998
+                "old_points": 29,
+                "place_improvement": 0,
+                "points": 29,
+                "time_improvement": 0.0
             },
             "Papu's Pyramid": {
-                "new_place": 18,
-                "old_place": 11,
+                "new_place": 10,
+                "old_place": 12,
                 "old_points": 22,
-                "place_improvement": -7,
-                "points": 0,
-                "time_improvement": -150.29000000000002
+                "place_improvement": 2,
+                "points": 37,
+                "time_improvement": 3.6000000000000085
             },
             "Roo's Tubes": {
-                "new_place": 18,
+                "new_place": 10,
                 "old_place": 9,
-                "old_points": 37,
-                "place_improvement": -9,
-                "points": 0,
-                "time_improvement": -164.36
+                "old_points": 46,
+                "place_improvement": -1,
+                "points": 37,
+                "time_improvement": 0.07000000000000739
             }
         }
     },
     "JanneAhonen69": {
-        "old_total_points": 361,
-        "ranking": 0.0,
+        "old_total_points": 508,
+        "ranking": 1211.1399999999996,
         "total_places_improved": 1,
-        "total_points": 372,
+        "total_points": 519,
         "total_points_improved": 11,
-        "total_time_improved": 0.0,
+        "total_time_improved": 2.1099999999999994,
         "tracks": {
             "Dragon Mines": {
-                "new_place": 6,
-                "old_place": 7,
-                "old_points": 56,
-                "place_improvement": 1,
-                "points": 67,
-                "time_improvement": 0.0
-            },
-            "Oxide Station": {
                 "new_place": 2,
-                "old_place": 2,
-                "old_points": 121,
-                "place_improvement": 0,
-                "points": 121,
-                "time_improvement": 0.0
+                "old_place": 7,
+                "old_points": 67,
+                "place_improvement": 5,
+                "points": 137,
+                "time_improvement": 2.1099999999999994
             },
-            "Papu's Pyramid": {
-                "new_place": 4,
-                "old_place": 4,
+            "Hot Air Skyway": {
+                "new_place": 5,
+                "old_place": 5,
                 "old_points": 92,
                 "place_improvement": 0,
                 "points": 92,
                 "time_improvement": 0.0
             },
-            "Roo's Tubes": {
+            "Oxide Station": {
                 "new_place": 4,
+                "old_place": 2,
+                "old_points": 137,
+                "place_improvement": -2,
+                "points": 106,
+                "time_improvement": 0.0
+            },
+            "Papu's Pyramid": {
+                "new_place": 5,
                 "old_place": 4,
-                "old_points": 92,
-                "place_improvement": 0,
+                "old_points": 106,
+                "place_improvement": -1,
+                "points": 92,
+                "time_improvement": 0.0
+            },
+            "Roo's Tubes": {
+                "new_place": 5,
+                "old_place": 4,
+                "old_points": 106,
+                "place_improvement": -1,
                 "points": 92,
                 "time_improvement": 0.0
             }
         }
     },
     "Kideu98": {
-        "old_total_points": 222,
-        "ranking": 0.0,
-        "total_places_improved": 3,
-        "total_points": 256,
-        "total_points_improved": 34,
-        "total_time_improved": 0.0,
-        "tracks": {
-            "Dragon Mines": {
-                "new_place": 8,
-                "old_place": 9,
-                "old_points": 37,
-                "place_improvement": 1,
-                "points": 46,
-                "time_improvement": 0.0
-            },
-            "Oxide Station": {
-                "new_place": 3,
-                "old_place": 4,
-                "old_points": 92,
-                "place_improvement": 1,
-                "points": 106,
-                "time_improvement": 0.0
-            },
-            "Papu's Pyramid": {
-                "new_place": 9,
-                "old_place": 9,
-                "old_points": 37,
-                "place_improvement": 0,
-                "points": 37,
-                "time_improvement": 0.0
-            },
-            "Roo's Tubes": {
-                "new_place": 6,
-                "old_place": 7,
-                "old_points": 56,
-                "place_improvement": 1,
-                "points": 67,
-                "time_improvement": 0.0
-            }
-        }
-    },
-    "Krisao_": {
-        "old_total_points": 97,
-        "ranking": 0.0,
-        "total_places_improved": 4,
-        "total_points": 125,
-        "total_points_improved": 28,
-        "total_time_improved": 0.0,
+        "old_total_points": 377,
+        "ranking": 6184.499999999987,
+        "total_places_improved": 9,
+        "total_points": 495,
+        "total_points_improved": 118,
+        "total_time_improved": 5.699999999999989,
         "tracks": {
             "Dragon Mines": {
                 "new_place": 10,
-                "old_place": 11,
-                "old_points": 22,
-                "place_improvement": 1,
-                "points": 29,
-                "time_improvement": 0.0
-            },
-            "Oxide Station": {
-                "new_place": 9,
-                "old_place": 9,
+                "old_place": 10,
                 "old_points": 37,
                 "place_improvement": 0,
                 "points": 37,
                 "time_improvement": 0.0
             },
-            "Papu's Pyramid": {
-                "new_place": 11,
-                "old_place": 12,
-                "old_points": 16,
-                "place_improvement": 1,
-                "points": 22,
-                "time_improvement": 0.0
-            },
-            "Roo's Tubes": {
-                "new_place": 9,
-                "old_place": 11,
-                "old_points": 22,
-                "place_improvement": 2,
-                "points": 37,
-                "time_improvement": 0.0
-            }
-        }
-    },
-    "MEDYK-POLSKA": {
-        "old_total_points": 10,
-        "ranking": 77749.50399999999,
-        "total_places_improved": 29,
-        "total_points": 209,
-        "total_points_improved": 199,
-        "total_time_improved": 64.576,
-        "tracks": {
-            "Dragon Mines": {
-                "new_place": 14,
-                "old_place": 16,
-                "old_points": 2,
-                "place_improvement": 2,
-                "points": 7,
-                "time_improvement": 0.0
-            },
-            "Oxide Station": {
-                "new_place": 4,
-                "old_place": 14,
-                "old_points": 7,
-                "place_improvement": 10,
-                "points": 92,
-                "time_improvement": 41.367999999999995
-            },
-            "Papu's Pyramid": {
-                "new_place": 3,
-                "old_place": 18,
-                "old_points": 0,
-                "place_improvement": 15,
-                "points": 106,
-                "time_improvement": 23.208
-            },
-            "Roo's Tubes": {
-                "new_place": 15,
-                "old_place": 17,
-                "old_points": 1,
-                "place_improvement": 2,
-                "points": 4,
-                "time_improvement": 0.0
-            }
-        }
-    },
-    "Maties_Gamer": {
-        "old_total_points": 428,
-        "ranking": 0.0,
-        "total_places_improved": 0,
-        "total_points": 428,
-        "total_points_improved": 0,
-        "total_time_improved": 0.0,
-        "tracks": {
-            "Dragon Mines": {
+            "Hot Air Skyway": {
                 "new_place": 3,
                 "old_place": 3,
-                "old_points": 106,
-                "place_improvement": 0,
-                "points": 106,
-                "time_improvement": 0.0
-            },
-            "Oxide Station": {
-                "new_place": 5,
-                "old_place": 5,
-                "old_points": 79,
-                "place_improvement": 0,
-                "points": 79,
-                "time_improvement": 0.0
-            },
-            "Papu's Pyramid": {
-                "new_place": 1,
-                "old_place": 1,
-                "old_points": 137,
-                "place_improvement": 0,
-                "points": 137,
-                "time_improvement": 0.0
-            },
-            "Roo's Tubes": {
-                "new_place": 3,
-                "old_place": 3,
-                "old_points": 106,
-                "place_improvement": 0,
-                "points": 106,
-                "time_improvement": 0.0
-            }
-        }
-    },
-    "Rc_FIVE": {
-        "old_total_points": 532,
-        "ranking": 0.0,
-        "total_places_improved": 0,
-        "total_points": 532,
-        "total_points_improved": 0,
-        "total_time_improved": 0.0,
-        "tracks": {
-            "Dragon Mines": {
-                "new_place": 1,
-                "old_place": 1,
-                "old_points": 137,
-                "place_improvement": 0,
-                "points": 137,
-                "time_improvement": 0.0
-            },
-            "Oxide Station": {
-                "new_place": 1,
-                "old_place": 1,
-                "old_points": 137,
-                "place_improvement": 0,
-                "points": 137,
-                "time_improvement": 0.0
-            },
-            "Papu's Pyramid": {
-                "new_place": 2,
-                "old_place": 2,
                 "old_points": 121,
                 "place_improvement": 0,
                 "points": 121,
                 "time_improvement": 0.0
             },
+            "Oxide Station": {
+                "new_place": 2,
+                "old_place": 4,
+                "old_points": 106,
+                "place_improvement": 2,
+                "points": 137,
+                "time_improvement": 1.329999999999984
+            },
+            "Papu's Pyramid": {
+                "new_place": 3,
+                "old_place": 9,
+                "old_points": 46,
+                "place_improvement": 6,
+                "points": 121,
+                "time_improvement": 3.6700000000000017
+            },
             "Roo's Tubes": {
+                "new_place": 6,
+                "old_place": 7,
+                "old_points": 67,
+                "place_improvement": 1,
+                "points": 79,
+                "time_improvement": 0.7000000000000028
+            }
+        }
+    },
+    "Krisao_": {
+        "old_total_points": 129,
+        "ranking": 0.0,
+        "total_places_improved": -1,
+        "total_points": 124,
+        "total_points_improved": -5,
+        "total_time_improved": 0.0,
+        "tracks": {
+            "Dragon Mines": {
+                "new_place": 12,
+                "old_place": 12,
+                "old_points": 22,
+                "place_improvement": 0,
+                "points": 22,
+                "time_improvement": 0.0
+            },
+            "Hot Air Skyway": {
+                "new_place": 14,
+                "old_place": 13,
+                "old_points": 16,
+                "place_improvement": -1,
+                "points": 11,
+                "time_improvement": 0.0
+            },
+            "Oxide Station": {
+                "new_place": 9,
+                "old_place": 9,
+                "old_points": 46,
+                "place_improvement": 0,
+                "points": 46,
+                "time_improvement": 0.0
+            },
+            "Papu's Pyramid": {
+                "new_place": 13,
+                "old_place": 13,
+                "old_points": 16,
+                "place_improvement": 0,
+                "points": 16,
+                "time_improvement": 0.0
+            },
+            "Roo's Tubes": {
+                "new_place": 11,
+                "old_place": 11,
+                "old_points": 29,
+                "place_improvement": 0,
+                "points": 29,
+                "time_improvement": 0.0
+            }
+        }
+    },
+    "MEDYK-POLSKA": {
+        "old_total_points": 11,
+        "ranking": 0.0,
+        "total_places_improved": -4,
+        "total_points": 5,
+        "total_points_improved": -6,
+        "total_time_improved": 0.0,
+        "tracks": {
+            "Dragon Mines": {
+                "new_place": 18,
+                "old_place": 17,
+                "old_points": 2,
+                "place_improvement": -1,
+                "points": 1,
+                "time_improvement": 0.0
+            },
+            "Hot Air Skyway": {
+                "new_place": 19,
+                "old_place": 18,
+                "old_points": 1,
+                "place_improvement": -1,
+                "points": 0,
+                "time_improvement": 0.0
+            },
+            "Oxide Station": {
+                "new_place": 16,
+                "old_place": 15,
+                "old_points": 7,
+                "place_improvement": -1,
+                "points": 4,
+                "time_improvement": 0.0
+            },
+            "Papu's Pyramid": {
+                "new_place": 19,
+                "old_place": 19,
+                "old_points": 0,
+                "place_improvement": 0,
+                "points": 0,
+                "time_improvement": 0.0
+            },
+            "Roo's Tubes": {
+                "new_place": 19,
+                "old_place": 18,
+                "old_points": 1,
+                "place_improvement": -1,
+                "points": 0,
+                "time_improvement": 0.0
+            }
+        }
+    },
+    "Maties_Gamer": {
+        "old_total_points": 642,
+        "ranking": 1640.7600000000036,
+        "total_places_improved": 1,
+        "total_points": 656,
+        "total_points_improved": 14,
+        "total_time_improved": 2.260000000000005,
+        "tracks": {
+            "Dragon Mines": {
+                "new_place": 4,
+                "old_place": 3,
+                "old_points": 121,
+                "place_improvement": -1,
+                "points": 106,
+                "time_improvement": 0.0
+            },
+            "Hot Air Skyway": {
                 "new_place": 1,
                 "old_place": 1,
+                "old_points": 154,
+                "place_improvement": 0,
+                "points": 154,
+                "time_improvement": 0.0
+            },
+            "Oxide Station": {
+                "new_place": 3,
+                "old_place": 5,
+                "old_points": 92,
+                "place_improvement": 2,
+                "points": 121,
+                "time_improvement": 1.8000000000000114
+            },
+            "Papu's Pyramid": {
+                "new_place": 1,
+                "old_place": 1,
+                "old_points": 154,
+                "place_improvement": 0,
+                "points": 154,
+                "time_improvement": 0.0
+            },
+            "Roo's Tubes": {
+                "new_place": 3,
+                "old_place": 3,
+                "old_points": 121,
+                "place_improvement": 0,
+                "points": 121,
+                "time_improvement": 0.45999999999999375
+            }
+        }
+    },
+    "Rc_FIVE": {
+        "old_total_points": 736,
+        "ranking": 1188.116000000015,
+        "total_places_improved": -1,
+        "total_points": 719,
+        "total_points_improved": -17,
+        "total_time_improved": 1.8740000000000236,
+        "tracks": {
+            "Dragon Mines": {
+                "new_place": 1,
+                "old_place": 1,
+                "old_points": 154,
+                "place_improvement": 0,
+                "points": 154,
+                "time_improvement": 0.0
+            },
+            "Hot Air Skyway": {
+                "new_place": 2,
+                "old_place": 2,
                 "old_points": 137,
                 "place_improvement": 0,
+                "points": 137,
+                "time_improvement": 0.0
+            },
+            "Oxide Station": {
+                "new_place": 1,
+                "old_place": 1,
+                "old_points": 154,
+                "place_improvement": 0,
+                "points": 154,
+                "time_improvement": 1.8740000000000236
+            },
+            "Papu's Pyramid": {
+                "new_place": 2,
+                "old_place": 2,
+                "old_points": 137,
+                "place_improvement": 0,
+                "points": 137,
+                "time_improvement": 0.0
+            },
+            "Roo's Tubes": {
+                "new_place": 2,
+                "old_place": 1,
+                "old_points": 154,
+                "place_improvement": -1,
                 "points": 137,
                 "time_improvement": 0.0
             }
         }
     },
     "TyczekPL": {
-        "old_total_points": 4,
-        "ranking": 0.0,
-        "total_places_improved": 6,
-        "total_points": 14,
-        "total_points_improved": 10,
-        "total_time_improved": 0.0,
+        "old_total_points": 8,
+        "ranking": 238.95999999999862,
+        "total_places_improved": 4,
+        "total_points": 26,
+        "total_points_improved": 18,
+        "total_time_improved": 2.059999999999988,
         "tracks": {
             "Dragon Mines": {
-                "new_place": 16,
-                "old_place": 18,
+                "new_place": 19,
+                "old_place": 19,
                 "old_points": 0,
-                "place_improvement": 2,
+                "place_improvement": 0,
+                "points": 0,
+                "time_improvement": 0.0
+            },
+            "Hot Air Skyway": {
+                "new_place": 17,
+                "old_place": 16,
+                "old_points": 4,
+                "place_improvement": -1,
                 "points": 2,
                 "time_improvement": 0.0
             },
             "Oxide Station": {
-                "new_place": 17,
-                "old_place": 18,
+                "new_place": 19,
+                "old_place": 19,
                 "old_points": 0,
-                "place_improvement": 1,
-                "points": 1,
+                "place_improvement": 0,
+                "points": 0,
                 "time_improvement": 0.0
             },
             "Papu's Pyramid": {
-                "new_place": 15,
-                "old_place": 16,
+                "new_place": 17,
+                "old_place": 17,
                 "old_points": 2,
-                "place_improvement": 1,
-                "points": 4,
+                "place_improvement": 0,
+                "points": 2,
                 "time_improvement": 0.0
             },
             "Roo's Tubes": {
-                "new_place": 14,
-                "old_place": 16,
+                "new_place": 12,
+                "old_place": 17,
                 "old_points": 2,
-                "place_improvement": 2,
-                "points": 7,
-                "time_improvement": 0.0
+                "place_improvement": 5,
+                "points": 22,
+                "time_improvement": 2.059999999999988
             }
         }
     },
     "Xerdzio": {
-        "old_total_points": 226,
-        "ranking": 0.0,
-        "total_places_improved": 2,
-        "total_points": 248,
-        "total_points_improved": 22,
-        "total_time_improved": 0.0,
+        "old_total_points": 337,
+        "ranking": 1119.8600000000044,
+        "total_places_improved": 1,
+        "total_points": 351,
+        "total_points_improved": 14,
+        "total_time_improved": 2.660000000000011,
         "tracks": {
             "Dragon Mines": {
                 "new_place": 5,
                 "old_place": 6,
-                "old_points": 67,
+                "old_points": 79,
                 "place_improvement": 1,
-                "points": 79,
-                "time_improvement": 0.0
+                "points": 92,
+                "time_improvement": 0.9200000000000017
             },
-            "Oxide Station": {
-                "new_place": 8,
-                "old_place": 8,
-                "old_points": 46,
-                "place_improvement": 0,
-                "points": 46,
-                "time_improvement": 0.0
-            },
-            "Papu's Pyramid": {
-                "new_place": 6,
-                "old_place": 6,
+            "Hot Air Skyway": {
+                "new_place": 7,
+                "old_place": 7,
                 "old_points": 67,
                 "place_improvement": 0,
                 "points": 67,
                 "time_improvement": 0.0
             },
-            "Roo's Tubes": {
-                "new_place": 7,
+            "Oxide Station": {
+                "new_place": 6,
                 "old_place": 8,
-                "old_points": 46,
-                "place_improvement": 1,
-                "points": 56,
+                "old_points": 56,
+                "place_improvement": 2,
+                "points": 79,
+                "time_improvement": 1.740000000000009
+            },
+            "Papu's Pyramid": {
+                "new_place": 7,
+                "old_place": 6,
+                "old_points": 79,
+                "place_improvement": -1,
+                "points": 67,
+                "time_improvement": 0.0
+            },
+            "Roo's Tubes": {
+                "new_place": 9,
+                "old_place": 8,
+                "old_points": 56,
+                "place_improvement": -1,
+                "points": 46,
                 "time_improvement": 0.0
             }
         }
     },
     "kubalok25": {
-        "old_total_points": 143,
-        "ranking": 0.0,
-        "total_places_improved": 3,
-        "total_points": 168,
-        "total_points_improved": 25,
-        "total_time_improved": 0.0,
+        "old_total_points": 216,
+        "ranking": 452.1000000000015,
+        "total_places_improved": 2,
+        "total_points": 235,
+        "total_points_improved": 19,
+        "total_time_improved": 1.3700000000000045,
         "tracks": {
             "Dragon Mines": {
-                "new_place": 9,
-                "old_place": 10,
-                "old_points": 29,
-                "place_improvement": 1,
-                "points": 37,
-                "time_improvement": 0.0
-            },
-            "Oxide Station": {
-                "new_place": 10,
-                "old_place": 10,
+                "new_place": 11,
+                "old_place": 11,
                 "old_points": 29,
                 "place_improvement": 0,
                 "points": 29,
                 "time_improvement": 0.0
             },
-            "Papu's Pyramid": {
-                "new_place": 7,
-                "old_place": 7,
-                "old_points": 56,
-                "place_improvement": 0,
-                "points": 56,
-                "time_improvement": 0.0
-            },
-            "Roo's Tubes": {
-                "new_place": 8,
-                "old_place": 10,
-                "old_points": 29,
-                "place_improvement": 2,
-                "points": 46,
-                "time_improvement": 0.0
-            }
-        }
-    },
-    "mati1212": {
-        "old_total_points": 355,
-        "ranking": 0.0,
-        "total_places_improved": 0,
-        "total_points": 355,
-        "total_points_improved": 0,
-        "total_time_improved": 0.0,
-        "tracks": {
-            "Dragon Mines": {
-                "new_place": 2,
-                "old_place": 2,
-                "old_points": 121,
-                "place_improvement": 0,
-                "points": 121,
-                "time_improvement": 0.0
-            },
-            "Oxide Station": {
-                "new_place": 6,
-                "old_place": 6,
-                "old_points": 67,
-                "place_improvement": 0,
-                "points": 67,
-                "time_improvement": 0.0
-            },
-            "Papu's Pyramid": {
-                "new_place": 8,
-                "old_place": 8,
+            "Hot Air Skyway": {
+                "new_place": 9,
+                "old_place": 9,
                 "old_points": 46,
                 "place_improvement": 0,
                 "points": 46,
                 "time_improvement": 0.0
             },
-            "Roo's Tubes": {
-                "new_place": 2,
-                "old_place": 2,
-                "old_points": 121,
+            "Oxide Station": {
+                "new_place": 10,
+                "old_place": 10,
+                "old_points": 37,
                 "place_improvement": 0,
+                "points": 37,
+                "time_improvement": 0.0
+            },
+            "Papu's Pyramid": {
+                "new_place": 8,
+                "old_place": 7,
+                "old_points": 67,
+                "place_improvement": -1,
+                "points": 56,
+                "time_improvement": 0.0
+            },
+            "Roo's Tubes": {
+                "new_place": 7,
+                "old_place": 10,
+                "old_points": 37,
+                "place_improvement": 3,
+                "points": 67,
+                "time_improvement": 1.3700000000000045
+            }
+        }
+    },
+    "mati1212": {
+        "old_total_points": 465,
+        "ranking": 0.0,
+        "total_places_improved": -5,
+        "total_points": 396,
+        "total_points_improved": -69,
+        "total_time_improved": 0.0,
+        "tracks": {
+            "Dragon Mines": {
+                "new_place": 3,
+                "old_place": 2,
+                "old_points": 137,
+                "place_improvement": -1,
                 "points": 121,
+                "time_improvement": 0.0
+            },
+            "Hot Air Skyway": {
+                "new_place": 8,
+                "old_place": 8,
+                "old_points": 56,
+                "place_improvement": 0,
+                "points": 56,
+                "time_improvement": 0.0
+            },
+            "Oxide Station": {
+                "new_place": 7,
+                "old_place": 6,
+                "old_points": 79,
+                "place_improvement": -1,
+                "points": 67,
+                "time_improvement": 0.0
+            },
+            "Papu's Pyramid": {
+                "new_place": 9,
+                "old_place": 8,
+                "old_points": 56,
+                "place_improvement": -1,
+                "points": 46,
+                "time_improvement": 0.0
+            },
+            "Roo's Tubes": {
+                "new_place": 4,
+                "old_place": 2,
+                "old_points": 137,
+                "place_improvement": -2,
+                "points": 106,
                 "time_improvement": 0.0
             }
         }
     },
     "myjniak": {
-        "old_total_points": 371,
-        "ranking": -324.96000000000004,
-        "total_places_improved": -47,
-        "total_points": 19,
-        "total_points_improved": -352,
-        "total_time_improved": -324.96000000000004,
+        "old_total_points": 533,
+        "ranking": 913.4800000000004,
+        "total_places_improved": 0,
+        "total_points": 537,
+        "total_points_improved": 4,
+        "total_time_improved": 1.6400000000000006,
         "tracks": {
             "Dragon Mines": {
-                "new_place": 17,
+                "new_place": 6,
                 "old_place": 4,
-                "old_points": 92,
-                "place_improvement": -13,
-                "points": 1,
-                "time_improvement": -103.35000000000001
+                "old_points": 106,
+                "place_improvement": -2,
+                "points": 79,
+                "time_improvement": 0.0
+            },
+            "Hot Air Skyway": {
+                "new_place": 4,
+                "old_place": 4,
+                "old_points": 106,
+                "place_improvement": 0,
+                "points": 106,
+                "time_improvement": 0.0
             },
             "Oxide Station": {
-                "new_place": 12,
+                "new_place": 5,
                 "old_place": 3,
-                "old_points": 106,
-                "place_improvement": -9,
-                "points": 16,
-                "time_improvement": -20.28
+                "old_points": 121,
+                "place_improvement": -2,
+                "points": 92,
+                "time_improvement": 0.0
             },
             "Papu's Pyramid": {
-                "new_place": 17,
+                "new_place": 4,
                 "old_place": 3,
-                "old_points": 106,
-                "place_improvement": -14,
-                "points": 1,
-                "time_improvement": -96.57000000000001
+                "old_points": 121,
+                "place_improvement": -1,
+                "points": 106,
+                "time_improvement": 0.0
             },
             "Roo's Tubes": {
-                "new_place": 17,
+                "new_place": 1,
                 "old_place": 6,
-                "old_points": 67,
-                "place_improvement": -11,
-                "points": 1,
-                "time_improvement": -104.76
+                "old_points": 79,
+                "place_improvement": 5,
+                "points": 154,
+                "time_improvement": 1.6400000000000006
             }
         }
     },
     "peteer_parker": {
-        "old_total_points": 20,
+        "old_total_points": 22,
         "ranking": 0.0,
-        "total_places_improved": 6,
-        "total_points": 42,
-        "total_points_improved": 22,
+        "total_places_improved": -5,
+        "total_points": 10,
+        "total_points_improved": -12,
         "total_time_improved": 0.0,
         "tracks": {
             "Dragon Mines": {
-                "new_place": 13,
-                "old_place": 15,
+                "new_place": 17,
+                "old_place": 16,
                 "old_points": 4,
-                "place_improvement": 2,
-                "points": 11,
-                "time_improvement": 0.0
-            },
-            "Oxide Station": {
-                "new_place": 14,
-                "old_place": 15,
-                "old_points": 4,
-                "place_improvement": 1,
-                "points": 7,
-                "time_improvement": 0.0
-            },
-            "Papu's Pyramid": {
-                "new_place": 16,
-                "old_place": 17,
-                "old_points": 1,
-                "place_improvement": 1,
+                "place_improvement": -1,
                 "points": 2,
                 "time_improvement": 0.0
             },
+            "Hot Air Skyway": {
+                "new_place": 18,
+                "old_place": 17,
+                "old_points": 2,
+                "place_improvement": -1,
+                "points": 1,
+                "time_improvement": 0.0
+            },
+            "Oxide Station": {
+                "new_place": 17,
+                "old_place": 16,
+                "old_points": 4,
+                "place_improvement": -1,
+                "points": 2,
+                "time_improvement": 0.0
+            },
+            "Papu's Pyramid": {
+                "new_place": 18,
+                "old_place": 18,
+                "old_points": 1,
+                "place_improvement": 0,
+                "points": 1,
+                "time_improvement": 0.0
+            },
             "Roo's Tubes": {
-                "new_place": 11,
-                "old_place": 13,
+                "new_place": 16,
+                "old_place": 14,
                 "old_points": 11,
-                "place_improvement": 2,
-                "points": 22,
+                "place_improvement": -2,
+                "points": 4,
                 "time_improvement": 0.0
             }
         }
     },
     "platko90": {
-        "old_total_points": 23,
+        "old_total_points": 30,
         "ranking": 0.0,
-        "total_places_improved": 6,
-        "total_points": 45,
-        "total_points_improved": 22,
+        "total_places_improved": -2,
+        "total_points": 25,
+        "total_points_improved": -5,
         "total_time_improved": 0.0,
         "tracks": {
             "Dragon Mines": {
-                "new_place": 12,
-                "old_place": 14,
+                "new_place": 15,
+                "old_place": 15,
                 "old_points": 7,
-                "place_improvement": 2,
-                "points": 16,
+                "place_improvement": 0,
+                "points": 7,
+                "time_improvement": 0.0
+            },
+            "Hot Air Skyway": {
+                "new_place": 16,
+                "old_place": 15,
+                "old_points": 7,
+                "place_improvement": -1,
+                "points": 4,
                 "time_improvement": 0.0
             },
             "Oxide Station": {
-                "new_place": 16,
-                "old_place": 17,
+                "new_place": 18,
+                "old_place": 18,
                 "old_points": 1,
-                "place_improvement": 1,
-                "points": 2,
+                "place_improvement": 0,
+                "points": 1,
                 "time_improvement": 0.0
             },
             "Papu's Pyramid": {
-                "new_place": 12,
-                "old_place": 13,
+                "new_place": 14,
+                "old_place": 14,
                 "old_points": 11,
-                "place_improvement": 1,
-                "points": 16,
+                "place_improvement": 0,
+                "points": 11,
                 "time_improvement": 0.0
             },
             "Roo's Tubes": {
-                "new_place": 13,
-                "old_place": 15,
+                "new_place": 17,
+                "old_place": 16,
                 "old_points": 4,
-                "place_improvement": 2,
-                "points": 11,
+                "place_improvement": -1,
+                "points": 2,
                 "time_improvement": 0.0
             }
         }
     },
     "potbot0": {
-        "old_total_points": 107,
+        "old_total_points": 136,
         "ranking": 0.0,
-        "total_places_improved": 4,
-        "total_points": 136,
-        "total_points_improved": 29,
+        "total_places_improved": -3,
+        "total_points": 120,
+        "total_points_improved": -16,
         "total_time_improved": 0.0,
         "tracks": {
             "Dragon Mines": {
-                "new_place": 7,
-                "old_place": 8,
+                "new_place": 9,
+                "old_place": 9,
                 "old_points": 46,
-                "place_improvement": 1,
-                "points": 56,
+                "place_improvement": 0,
+                "points": 46,
                 "time_improvement": 0.0
             },
-            "Oxide Station": {
+            "Hot Air Skyway": {
                 "new_place": 11,
-                "old_place": 12,
-                "old_points": 16,
-                "place_improvement": 1,
-                "points": 22,
-                "time_improvement": 0.0
-            },
-            "Papu's Pyramid": {
-                "new_place": 10,
-                "old_place": 10,
+                "old_place": 11,
                 "old_points": 29,
                 "place_improvement": 0,
                 "points": 29,
                 "time_improvement": 0.0
             },
-            "Roo's Tubes": {
-                "new_place": 10,
-                "old_place": 12,
+            "Oxide Station": {
+                "new_place": 13,
+                "old_place": 13,
                 "old_points": 16,
-                "place_improvement": 2,
-                "points": 29,
+                "place_improvement": 0,
+                "points": 16,
+                "time_improvement": 0.0
+            },
+            "Papu's Pyramid": {
+                "new_place": 12,
+                "old_place": 11,
+                "old_points": 29,
+                "place_improvement": -1,
+                "points": 22,
+                "time_improvement": 0.0
+            },
+            "Roo's Tubes": {
+                "new_place": 15,
+                "old_place": 13,
+                "old_points": 16,
+                "place_improvement": -2,
+                "points": 7,
                 "time_improvement": 0.0
             }
         }
     },
     "silVersilVa89PL": {
-        "old_total_points": 293,
+        "old_total_points": 422,
         "ranking": 0.0,
-        "total_places_improved": 1,
-        "total_points": 306,
-        "total_points_improved": 13,
+        "total_places_improved": -7,
+        "total_points": 337,
+        "total_points_improved": -85,
         "total_time_improved": 0.0,
         "tracks": {
             "Dragon Mines": {
-                "new_place": 4,
+                "new_place": 7,
                 "old_place": 5,
+                "old_points": 92,
+                "place_improvement": -2,
+                "points": 67,
+                "time_improvement": 0.0
+            },
+            "Hot Air Skyway": {
+                "new_place": 6,
+                "old_place": 6,
                 "old_points": 79,
-                "place_improvement": 1,
-                "points": 92,
+                "place_improvement": 0,
+                "points": 79,
                 "time_improvement": 0.0
             },
             "Oxide Station": {
-                "new_place": 7,
+                "new_place": 8,
                 "old_place": 7,
-                "old_points": 56,
-                "place_improvement": 0,
+                "old_points": 67,
+                "place_improvement": -1,
                 "points": 56,
                 "time_improvement": 0.0
             },
             "Papu's Pyramid": {
-                "new_place": 5,
+                "new_place": 6,
                 "old_place": 5,
-                "old_points": 79,
-                "place_improvement": 0,
+                "old_points": 92,
+                "place_improvement": -1,
                 "points": 79,
                 "time_improvement": 0.0
             },
             "Roo's Tubes": {
-                "new_place": 5,
+                "new_place": 8,
                 "old_place": 5,
-                "old_points": 79,
-                "place_improvement": 0,
-                "points": 79,
+                "old_points": 92,
+                "place_improvement": -3,
+                "points": 56,
                 "time_improvement": 0.0
             }
         }
