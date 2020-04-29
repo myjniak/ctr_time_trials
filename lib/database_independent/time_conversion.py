@@ -29,7 +29,7 @@ class TimeConversion:
             return value_on_error
         else:
             minutes, seconds, miliseconds = regex_match.groups()
-            return 60*float(minutes) + float(seconds) + float(miliseconds)/10**len(miliseconds)
+            return 60*float(minutes) + float(seconds) + round(float(miliseconds)/10**len(miliseconds), 3)
 
     @staticmethod
     def float_to_str(time_in_seconds, decimals=3):
