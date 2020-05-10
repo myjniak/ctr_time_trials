@@ -1,8 +1,14 @@
 {
-    "Gustlyk1": {
+    "platko90": {
         "tracks": {
-            "Hot Air Skyway": {
-                "time": "2:16:97"
+            "Blizzard Bluff": {
+                "time": "1:24.51"
+            },
+            "Dragon Mines": {
+                "time": "1:28.52"
+            },
+            "Sewer Speedway": {
+                "time": "1:52.54"
             }
         }
     }
