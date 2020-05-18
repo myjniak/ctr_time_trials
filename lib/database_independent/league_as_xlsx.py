@@ -86,10 +86,10 @@ class LeagueAsXlsx(LeagueAsCsv):
         self.time_trials[player]['tracks'][track].setdefault('points', 0)
         pts = self.time_trials[player]['tracks'][track]['points']
         bg_color = WHITE
-        if pts in self.point_system:
+        if self.point_system[-1] <= pts <= self.point_system[0]:
             font_color = BLACK
             for i, points in enumerate(self.point_system):
-                if len(PLACE_COLORS) > i and pts == self.point_system[i]:
+                if len(PLACE_COLORS) > i and (self.point_system + [0])[i+1] < pts <= self.point_system[i]:
                     bg_color = PLACE_COLORS[i]
         else:
             font_color = 'DADADA'

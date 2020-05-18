@@ -66,24 +66,33 @@ class RankingCreator(Database):
                 data[player]['tracks'][track]['points'] = 0
                 data[player]['tracks'][track].setdefault('time', "NO TIME")
                 data[player]['tracks'][track]['medal'] = None
-            players_filtered = list(filter(
-                lambda player: TimeConversion(data[player]['tracks'][track]['time']).as_float < 300, players_in_league))
-            players_sorted = \
-                sorted(players_filtered,
-                       key=lambda player: TimeConversion(data[player]['tracks'][track]['time']).as_float)
+            players_times_dict = {player: TimeConversion(data[player]['tracks'][track]['time']).as_float
+                                  for player in players_in_league}
+            players_times_filtered = dict(filter(lambda item: item[1] < 300, players_times_dict.items()))
+            players_sorted = sorted(list(players_times_filtered.keys()), key=lambda player: players_times_dict[player])
             if len(players_sorted) > len(cls.point_system):
                 players_sorted = players_sorted[:len(cls.point_system)]
+            tie_count = 1
+            points_granted = 0
             for i, player in enumerate(players_sorted):
-                data[player]['tracks'][track]['points'] = cls.point_system[i]
-                data[player]['total_points'] += cls.point_system[i]
+                if tie_count > 1:
+                    tie_count -= 1
+                else:
+                    tie_count = len(list(filter(lambda p: players_times_dict[p] == players_times_dict[player],
+                                                players_sorted)))
+                    points_granted = sum(cls.point_system[i:i + tie_count])/tie_count
+                data[player]['tracks'][track]['points'] = points_granted
+                data[player]['total_points'] += points_granted
                 if give_medals:
-                    if i == 0:
+                    if points_granted > cls.point_system[1]:
                         data[player]['medals']['gold'] += 1
                         data[player]['tracks'][track]['medal'] = 'gold'
-                    elif i == 1:
+                    elif points_granted > cls.point_system[2]:
                         data[player]['medals']['silver'] += 1
                         data[player]['tracks'][track]['medal'] = 'silver'
-                    elif i == 2:
+                    elif points_granted > cls.point_system[3]:
                         data[player]['medals']['bronze'] += 1
                         data[player]['tracks'][track]['medal'] = 'bronze'
+            for i, player in enumerate(players_sorted):
+                data[player]['total_points'] = int(data[player]['total_points'])
         cls.time_trials.save()
