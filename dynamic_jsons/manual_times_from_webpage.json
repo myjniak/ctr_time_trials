@@ -1,8 +1,122 @@
 {
-    "platko90": {
+    "Xenom435": {
         "tracks": {
+            "Android Alley": {
+                "time": "2:40:62"
+            },
+            "Assembly Lane": {
+                "time": "2:36:85"
+            },
+            "Barin Ruins": {
+                "time": "1:47:77"
+            },
+            "Blizzard Bluff": {
+                "time": "1:21:44"
+            },
+            "Clockwork Wumpa": {
+                "time": "2:05:92"
+            },
             "Coco Park": {
-                "time": "1:19.87"
+                "time": "1:17:77"
+            },
+            "Cortex Castle": {
+                "time": "2:07:12"
+            },
+            "Crash Cove": {
+                "time": "1:19:71"
+            },
+            "Deep Sea Driving": {
+                "time": "1:48:24"
+            },
+            "Dingo Canyon": {
+                "time": "1:35:06"
+            },
+            "Dragon Mines": {
+                "time": "1:27:02"
+            },
+            "Drive-Thru Danger": {
+                "time": "2:08:19"
+            },
+            "Electron Avenue": {
+                "time": "3:15:33"
+            },
+            "Gingerbread Joyride": {
+                "time": "1:59:65"
+            },
+            "Hot Air Skyway": {
+                "time": "2:27:61"
+            },
+            "Hyper Spaceway": {
+                "time": "1:54:51"
+            },
+            "Inferno Island": {
+                "time": "1:35:76"
+            },
+            "Jungle Boogie": {
+                "time": "1:18:27"
+            },
+            "Koala Carnival": {
+                "time": "1:43:33"
+            },
+            "Megamix Mania": {
+                "time": "2:11:23"
+            },
+            "Meteor Gorge": {
+                "time": "1:29:72"
+            },
+            "Mystery Caves": {
+                "time": "1:59:45"
+            },
+            "N.Gin Labs": {
+                "time": "2:14:83"
+            },
+            "Nina's Nightmare": {
+                "time": "1:52:51"
+            },
+            "Out of Time": {
+                "time": "2:04:15"
+            },
+            "Oxide Station": {
+                "time": "3:09:32"
+            },
+            "Papu's Pyramid": {
+                "time": "1:38:60"
+            },
+            "Polar Pass": {
+                "time": "2:25:61"
+            },
+            "Prehistoric Playground": {
+                "time": "2:30:35"
+            },
+            "Roo's Tubes": {
+                "time": "1:16:57"
+            },
+            "Sewer Speedway": {
+                "time": "1:47:37"
+            },
+            "Slide Coliseum": {
+                "time": "1:50:87"
+            },
+            "Spyro Circuit": {
+                "time": "2:15:53"
+            },
+            "Thunder Struck": {
+                "time": "2:21:67"
+            },
+            "Tiger Temple": {
+                "time": "1:45:00"
+            },
+            "Tiny Arena": {
+                "time": "3:21:60"
+            },
+            "Tiny Temple": {
+                "time": "1:41:30"
+            },
+            "Turbo Track": {
+                "time": "1:44:80"
+            },
+            "Twilight Tour": {
+                "time": "2:19:34"
             }
         }
     }
