@@ -50,13 +50,13 @@ class GrandPrixAsXlsx(GrandPrixAsCsv):
 
     @staticmethod
     def row_bg_color(row):
-        if row == 0:
-            c = GOLD
-        elif row == 1:
-            c = SILVER
-        elif row == 2:
-            c = BRONZE
-        elif row % 2 == 0:
+        # if row == 0:
+        #     c = GOLD
+        # elif row == 1:
+        #     c = SILVER
+        # elif row == 2:
+        #     c = BRONZE
+        if row % 2 == 0:
             c = WHITE
         else:
             c = LIGHT_BLUE
