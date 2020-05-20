@@ -44,7 +44,7 @@ class GrandPrix(Database):
         points = self.ranking_json[player]["total_points"]
         points_improved = self.ranking_json[player]["total_points_improved"]
         time_improved = self.ranking_json[player]["total_time_improved"]
-        self.ranking_json[player]["ranking"] = (points + 5 * points_improved) * time_improved
+        self.ranking_json[player]["ranking"] = (100 + points + 5 * points_improved) * time_improved
 
     def get_time(self, player, track, from_snapshot=False):
         if from_snapshot:
