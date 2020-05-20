@@ -139,6 +139,7 @@ def main_loop_static(rankingowaczka, gp):
 def main_loop(serwis, rankingowaczka, gp):
     sheet_ids = Jsoner(SHEET_IDS_FILE_PATH)
     last_log_reset_time = time()
+    grand_prix = GrandPrix()
     while True:
         if serwis.get_cell_value(RANKING_INPUT_FILE_ID, "A1"):
             Database.reload()
@@ -173,7 +174,7 @@ def main_loop(serwis, rankingowaczka, gp):
             serwis.update_leagues(RANKING_FILE_ID, Database.sheets_raw, sheet_ids.json)
 
             if gp:
-                grand_prix_ranking = GrandPrix().ranking
+                grand_prix_ranking = grand_prix.ranking
                 serwis.update_grand_prix(GRAND_PRIX_FILE_ID, GrandPrixAsCsv(grand_prix_ranking).content)
                 Jsoner(grand_prix_ranking).save("dynamic_jsons/grand_prix_stats.json")
 
