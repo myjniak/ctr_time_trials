@@ -41,6 +41,8 @@ class GrandPrix(Database):
         return self.ranking_json
 
     def calc_final_ranking(self, player):
+        default_player_dict = {"total_points": 0, "total_points_improved": 0, "total_time_improved": 0}
+        self.ranking_json.setdefault(player, default_player_dict)
         points = self.ranking_json[player]["total_points"]
         points_improved = self.ranking_json[player]["total_points_improved"]
         time_improved = self.ranking_json[player]["total_time_improved"]
@@ -78,14 +80,14 @@ class GrandPrix(Database):
                 self.ranking_json[player].setdefault("old_total_points", 0)
                 self.ranking_json[player]["old_total_points"] += point_system[place]
         for player in players:
-            for track_stats in self.ranking_json[player]["tracks"].values():
-                points_improved = max(0, track_stats["points"] - track_stats["old_points"])
-                self.ranking_json[player].setdefault("total_points_improved", 0)
-                self.ranking_json[player]["total_points_improved"] += points_improved
-
-                places_improved = max(0, track_stats["place_improvement"])
-                self.ranking_json[player].setdefault("total_places_improved", 0)
-                self.ranking_json[player]["total_places_improved"] += places_improved
+            if self.settings['tracks']:
+                for track_stats in self.ranking_json[player]["tracks"].values():
+                    points_improved = max(0, track_stats["points"] - track_stats["old_points"])
+                    self.ranking_json[player].setdefault("total_points_improved", 0)
+                    self.ranking_json[player]["total_points_improved"] += points_improved
+                    places_improved = max(0, track_stats["place_improvement"])
+                    self.ranking_json[player].setdefault("total_places_improved", 0)
+                    self.ranking_json[player]["total_places_improved"] += places_improved
             self.calc_final_ranking(player)
 
     @staticmethod
