@@ -37,6 +37,7 @@ class GrandPrix(Database):
 
     @property
     def ranking(self):
+        self.ranking_json = dict()
         self.calc_gp_json()
         return self.ranking_json
 
