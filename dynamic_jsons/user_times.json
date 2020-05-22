@@ -704,7 +704,7 @@
             "gold": 2,
             "silver": 0
         },
-        "total_points": 60,
+        "total_points": 58,
         "total_points_in_upper_league": 0,
         "total_time": "79:47.639",
         "tracks": {
@@ -900,7 +900,7 @@
             },
             "Twilight Tour": {
                 "medal": null,
-                "points": 2.0,
+                "points": 0,
                 "time": "2:20.300"
             }
         }
@@ -1158,7 +1158,7 @@
             "silver": 6
         },
         "total_points": 152,
-        "total_points_in_upper_league": 13,
+        "total_points_in_upper_league": 11,
         "total_time": "88:46.234",
         "tracks": {
             "Android Alley": {
@@ -1402,8 +1402,8 @@
             "gold": 9,
             "silver": 13
         },
-        "total_points": 271,
-        "total_points_in_upper_league": 7,
+        "total_points": 270,
+        "total_points_in_upper_league": 6,
         "total_time": "72:37.949",
         "tracks": {
             "Android Alley": {
@@ -1598,7 +1598,7 @@
             },
             "Twilight Tour": {
                 "medal": null,
-                "points": 2.0,
+                "points": 1.0,
                 "time": "2:14.260"
             }
         }
@@ -1606,13 +1606,13 @@
     "Gustlyk1": {
         "league": 2,
         "medals": {
-            "bronze": 1,
+            "bronze": 2,
             "gold": 0,
             "silver": 1
         },
-        "total_points": 34,
+        "total_points": 39,
         "total_points_in_upper_league": 0,
-        "total_time": "76:49.750",
+        "total_time": "76:48.510",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -1841,10 +1841,10 @@
                 "time": "1:43.670"
             },
             "Twilight Tour": {
-                "medal": null,
+                "medal": "bronze",
                 "place": 20147,
-                "points": 1.0,
-                "time": "2:14.500"
+                "points": 6.0,
+                "time": "2:13.260"
             }
         }
     },
@@ -2101,8 +2101,8 @@
             "silver": 9
         },
         "total_points": 263,
-        "total_points_in_upper_league": 19,
-        "total_time": "72:44.830",
+        "total_points_in_upper_league": 16,
+        "total_time": "72:43.360",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -2334,18 +2334,18 @@
                 "medal": "silver",
                 "place": 4882,
                 "points": 8.0,
-                "time": "2:13.130"
+                "time": "2:11.660"
             }
         }
     },
     "JanneAhonen69": {
         "league": 1,
         "medals": {
-            "bronze": 7,
+            "bronze": 6,
             "gold": 2,
             "silver": 10
         },
-        "total_points": 215,
+        "total_points": 209,
         "total_points_in_upper_league": 0,
         "total_time": "70:45.538",
         "tracks": {
@@ -2382,7 +2382,7 @@
             "Coco Park": {
                 "medal": null,
                 "place": 271,
-                "points": 1.0,
+                "points": 0,
                 "time": "1:16.100"
             },
             "Cortex Castle": {
@@ -2394,7 +2394,7 @@
             "Crash Cove": {
                 "medal": null,
                 "place": 185,
-                "points": 5.0,
+                "points": 4.5,
                 "time": "1:18.570"
             },
             "Deep Sea Driving": {
@@ -2463,8 +2463,8 @@
                 "time": "1:38.730"
             },
             "Megamix Mania": {
-                "medal": "bronze",
-                "points": 6.0,
+                "medal": null,
+                "points": 5.0,
                 "time": "2:02.250"
             },
             "Meteor Gorge": {
@@ -2482,13 +2482,13 @@
             "N.Gin Labs": {
                 "medal": null,
                 "place": 2142,
-                "points": 5.0,
+                "points": 4.0,
                 "time": "2:09.860"
             },
             "Nina's Nightmare": {
                 "medal": null,
                 "place": 313,
-                "points": 4.5,
+                "points": 3.5,
                 "time": "1:47.670"
             },
             "Out of Time": {
@@ -2572,7 +2572,7 @@
             "Turbo Track": {
                 "medal": null,
                 "place": 121,
-                "points": 4.0,
+                "points": 3.0,
                 "time": "1:32.420"
             },
             "Twilight Tour": {
@@ -2830,8 +2830,8 @@
             "silver": 4
         },
         "total_points": 206,
-        "total_points_in_upper_league": 4,
-        "total_time": "73:01.280",
+        "total_points_in_upper_league": 2,
+        "total_time": "72:59.480",
         "tracks": {
             "Android Alley": {
                 "medal": "bronze",
@@ -3026,7 +3026,7 @@
             "Twilight Tour": {
                 "medal": "gold",
                 "points": 10.0,
-                "time": "2:12.690"
+                "time": "2:10.890"
             }
         }
     },
@@ -3242,10 +3242,10 @@
         "league": 1,
         "medals": {
             "bronze": 5,
-            "gold": 3,
+            "gold": 2,
             "silver": 6
         },
-        "total_points": 169,
+        "total_points": 161,
         "total_points_in_upper_league": 0,
         "total_time": "71:05.200",
         "tracks": {
@@ -3268,9 +3268,9 @@
                 "time": "1:42.360"
             },
             "Blizzard Bluff": {
-                "medal": "gold",
+                "medal": "silver",
                 "place": 86,
-                "points": 10.0,
+                "points": 8.0,
                 "time": "1:08.660"
             },
             "Clockwork Wumpa": {
@@ -3282,7 +3282,7 @@
             "Coco Park": {
                 "medal": null,
                 "place": 1555,
-                "points": 2.0,
+                "points": 1.0,
                 "time": "1:16.070"
             },
             "Cortex Castle": {
@@ -3363,8 +3363,8 @@
                 "time": "1:38.130"
             },
             "Megamix Mania": {
-                "medal": "silver",
-                "points": 8.0,
+                "medal": "bronze",
+                "points": 6.0,
                 "time": "2:01.980"
             },
             "Meteor Gorge": {
@@ -3388,13 +3388,13 @@
             "Nina's Nightmare": {
                 "medal": null,
                 "place": 1118,
-                "points": 4.5,
+                "points": 3.5,
                 "time": "1:47.670"
             },
             "Out of Time": {
                 "medal": null,
                 "place": 809,
-                "points": 4.0,
+                "points": 3.0,
                 "time": "1:51.070"
             },
             "Oxide Station": {
@@ -3476,9 +3476,9 @@
                 "time": "1:33.420"
             },
             "Twilight Tour": {
-                "medal": "bronze",
+                "medal": null,
                 "place": 525,
-                "points": 6.0,
+                "points": 5.0,
                 "time": "2:09.960"
             }
         }
@@ -3731,13 +3731,13 @@
     "Kranczuu": {
         "league": 3,
         "medals": {
-            "bronze": 1,
-            "gold": 1,
+            "bronze": 2,
+            "gold": 0,
             "silver": 0
         },
-        "total_points": 39,
+        "total_points": 35,
         "total_points_in_upper_league": 0,
-        "total_time": "83:50.970",
+        "total_time": "83:49.900",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -3966,10 +3966,10 @@
                 "time": "1:54.410"
             },
             "Twilight Tour": {
-                "medal": "gold",
+                "medal": "bronze",
                 "place": 20355,
-                "points": 10.0,
-                "time": "2:17.100"
+                "points": 6.0,
+                "time": "2:16.030"
             }
         }
     },
@@ -4468,11 +4468,11 @@
         "medals": {
             "bronze": 4,
             "gold": 4,
-            "silver": 1
+            "silver": 2
         },
-        "total_points": 118,
-        "total_points_in_upper_league": 19,
-        "total_time": "84:37.548",
+        "total_points": 124,
+        "total_points_in_upper_league": 21,
+        "total_time": "84:26.228",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -4701,10 +4701,10 @@
                 "time": "1:52.012"
             },
             "Twilight Tour": {
-                "medal": null,
+                "medal": "silver",
                 "place": 50948,
-                "points": 2.0,
-                "time": "2:29.450"
+                "points": 8.0,
+                "time": "2:18.130"
             }
         }
     },
@@ -5372,18 +5372,18 @@
     "Maties_Gamer": {
         "league": 1,
         "medals": {
-            "bronze": 8,
+            "bronze": 6,
             "gold": 1,
             "silver": 4
         },
-        "total_points": 184,
+        "total_points": 183,
         "total_points_in_upper_league": 0,
-        "total_time": "70:56.498",
+        "total_time": "70:55.968",
         "tracks": {
             "Android Alley": {
                 "medal": null,
                 "place": 654,
-                "points": 4.0,
+                "points": 3.5,
                 "time": "2:27.410"
             },
             "Assembly Lane": {
@@ -5413,8 +5413,8 @@
             "Coco Park": {
                 "medal": null,
                 "place": 3219,
-                "points": 0,
-                "time": "1:16.27"
+                "points": 5.0,
+                "time": "1:15.740"
             },
             "Cortex Castle": {
                 "medal": null,
@@ -5425,7 +5425,7 @@
             "Crash Cove": {
                 "medal": null,
                 "place": 426,
-                "points": 2.0,
+                "points": 3.0,
                 "time": "1:18.740"
             },
             "Deep Sea Driving": {
@@ -5484,7 +5484,7 @@
             "Jungle Boogie": {
                 "medal": null,
                 "place": 657,
-                "points": 4.0,
+                "points": 3.0,
                 "time": "1:13.100"
             },
             "Koala Carnival": {
@@ -5517,15 +5517,15 @@
                 "time": "2:10.46"
             },
             "Nina's Nightmare": {
-                "medal": "bronze",
+                "medal": null,
                 "place": 2035,
-                "points": 6.0,
+                "points": 5.0,
                 "time": "1:47.440"
             },
             "Out of Time": {
-                "medal": "bronze",
+                "medal": null,
                 "place": 340,
-                "points": 6.0,
+                "points": 5.0,
                 "time": "1:50.44"
             },
             "Oxide Station": {
@@ -5609,7 +5609,7 @@
             "Twilight Tour": {
                 "medal": null,
                 "place": 585,
-                "points": 5.0,
+                "points": 2.0,
                 "time": "2:10.759"
             }
         }
@@ -6074,7 +6074,7 @@
             "gold": 2,
             "silver": 1
         },
-        "total_points": 121,
+        "total_points": 120,
         "total_points_in_upper_league": 4,
         "total_time": "84:01.727",
         "tracks": {
@@ -6307,7 +6307,7 @@
             "Twilight Tour": {
                 "medal": null,
                 "place": 14446,
-                "points": 1.0,
+                "points": 0,
                 "time": "2:23.613"
             }
         }
@@ -6980,7 +6980,7 @@
             "gold": 3,
             "silver": 1
         },
-        "total_points": 71,
+        "total_points": 69,
         "total_points_in_upper_league": 4,
         "total_time": "102:51.304",
         "tracks": {
@@ -7213,7 +7213,7 @@
             "Twilight Tour": {
                 "medal": null,
                 "place": 9230,
-                "points": 3.0,
+                "points": 1.0,
                 "time": "2:19.640"
             }
         }
@@ -7222,12 +7222,12 @@
         "league": 1,
         "medals": {
             "bronze": 0,
-            "gold": 33,
-            "silver": 6
+            "gold": 34,
+            "silver": 5
         },
-        "total_points": 377,
+        "total_points": 379,
         "total_points_in_upper_league": 0,
-        "total_time": "70:01.137",
+        "total_time": "70:00.827",
         "tracks": {
             "Android Alley": {
                 "medal": "gold",
@@ -7248,10 +7248,10 @@
                 "time": "1:41.168"
             },
             "Blizzard Bluff": {
-                "medal": "silver",
+                "medal": "gold",
                 "place": 215,
-                "points": 8.0,
-                "time": "1:08.670"
+                "points": 10.0,
+                "time": "1:08.500"
             },
             "Clockwork Wumpa": {
                 "medal": "gold",
@@ -7459,18 +7459,18 @@
                 "medal": "gold",
                 "place": 167,
                 "points": 10.0,
-                "time": "2:09.430"
+                "time": "2:09.290"
             }
         }
     },
     "StefekPizza": {
         "league": 4,
         "medals": {
-            "bronze": 2,
+            "bronze": 3,
             "gold": 2,
-            "silver": 6
+            "silver": 5
         },
-        "total_points": 109,
+        "total_points": 107,
         "total_points_in_upper_league": 11,
         "total_time": "91:47.154",
         "tracks": {
@@ -7701,9 +7701,9 @@
                 "time": "1:53.315"
             },
             "Twilight Tour": {
-                "medal": "silver",
+                "medal": "bronze",
                 "place": 10331,
-                "points": 8.0,
+                "points": 6.0,
                 "time": "2:20.379"
             }
         }
@@ -7958,11 +7958,11 @@
         "medals": {
             "bronze": 1,
             "gold": 3,
-            "silver": 3
+            "silver": 4
         },
-        "total_points": 91,
+        "total_points": 99,
         "total_points_in_upper_league": 1,
-        "total_time": "79:59.763",
+        "total_time": "79:51.753",
         "tracks": {
             "Android Alley": {
                 "medal": "gold",
@@ -8191,10 +8191,10 @@
                 "time": "1:47.230"
             },
             "Twilight Tour": {
-                "medal": null,
+                "medal": "silver",
                 "place": 34877,
-                "points": 0,
-                "time": "2:23.940"
+                "points": 8.0,
+                "time": "2:15.930"
             }
         }
     },
@@ -8409,11 +8409,11 @@
     "Velo": {
         "league": 4,
         "medals": {
-            "bronze": 5,
+            "bronze": 4,
             "gold": 6,
             "silver": 7
         },
-        "total_points": 218,
+        "total_points": 217,
         "total_points_in_upper_league": 14,
         "total_time": "81:09.300",
         "tracks": {
@@ -8608,8 +8608,8 @@
                 "time": "1:47.640"
             },
             "Twilight Tour": {
-                "medal": "bronze",
-                "points": 6.0,
+                "medal": null,
+                "points": 5.0,
                 "time": "2:23.980"
             }
         }
@@ -8617,11 +8617,11 @@
     "Viarus_PL": {
         "league": 2,
         "medals": {
-            "bronze": 1,
+            "bronze": 0,
             "gold": 0,
             "silver": 1
         },
-        "total_points": 48,
+        "total_points": 47,
         "total_points_in_upper_league": 0,
         "total_time": "80:46.332",
         "tracks": {
@@ -8852,9 +8852,9 @@
                 "time": "1:37.130"
             },
             "Twilight Tour": {
-                "medal": "bronze",
+                "medal": null,
                 "place": 877,
-                "points": 6.0,
+                "points": 5.0,
                 "time": "2:13.334"
             }
         }
@@ -8866,7 +8866,7 @@
             "gold": 7,
             "silver": 12
         },
-        "total_points": 239,
+        "total_points": 237,
         "total_points_in_upper_league": 6,
         "total_time": "82:10.770",
         "tracks": {
@@ -9099,7 +9099,7 @@
             "Twilight Tour": {
                 "medal": null,
                 "place": 7169,
-                "points": 5.0,
+                "points": 3.0,
                 "time": "2:18.340"
             }
         }
@@ -9111,7 +9111,7 @@
             "gold": 0,
             "silver": 2
         },
-        "total_points": 65,
+        "total_points": 64,
         "total_points_in_upper_league": 0,
         "total_time": "78:09.778",
         "tracks": {
@@ -9260,7 +9260,7 @@
             "Out of Time": {
                 "medal": null,
                 "place": 655,
-                "points": 5.0,
+                "points": 4.0,
                 "time": "1:50.970"
             },
             "Oxide Station": {
@@ -9564,7 +9564,7 @@
             "gold": 3,
             "silver": 7
         },
-        "total_points": 165,
+        "total_points": 163,
         "total_points_in_upper_league": 2,
         "total_time": "78:29.990",
         "tracks": {
@@ -9760,7 +9760,7 @@
             },
             "Twilight Tour": {
                 "medal": null,
-                "points": 4.0,
+                "points": 2.0,
                 "time": "2:19.340"
             }
         }
@@ -9768,19 +9768,19 @@
     "Xerdzio": {
         "league": 1,
         "medals": {
-            "bronze": 2,
+            "bronze": 5,
             "gold": 1,
-            "silver": 1
+            "silver": 2
         },
-        "total_points": 123,
+        "total_points": 138,
         "total_points_in_upper_league": 0,
-        "total_time": "71:22.468",
+        "total_time": "71:15.700",
         "tracks": {
             "Android Alley": {
                 "medal": null,
                 "place": 67,
-                "points": 2.0,
-                "time": "2:28.61"
+                "points": 3.5,
+                "time": "2:27.410"
             },
             "Assembly Lane": {
                 "medal": null,
@@ -9809,7 +9809,7 @@
             "Coco Park": {
                 "medal": null,
                 "place": 71,
-                "points": 5.0,
+                "points": 4.0,
                 "time": "1:15.840"
             },
             "Cortex Castle": {
@@ -9821,8 +9821,8 @@
             "Crash Cove": {
                 "medal": null,
                 "place": 151,
-                "points": 3.0,
-                "time": "1:18.71"
+                "points": 4.5,
+                "time": "1:18.570"
             },
             "Deep Sea Driving": {
                 "medal": null,
@@ -9862,8 +9862,8 @@
             "Hot Air Skyway": {
                 "medal": null,
                 "place": 165,
-                "points": 2.0,
-                "time": "2:08.889"
+                "points": 3.0,
+                "time": "2:07.990"
             },
             "Hyper Spaceway": {
                 "medal": null,
@@ -9880,8 +9880,8 @@
             "Jungle Boogie": {
                 "medal": null,
                 "place": 137,
-                "points": 3.0,
-                "time": "1:13.230"
+                "points": 4.0,
+                "time": "1:12.900"
             },
             "Koala Carnival": {
                 "medal": "silver",
@@ -9890,9 +9890,9 @@
                 "time": "1:37.890"
             },
             "Megamix Mania": {
-                "medal": null,
-                "points": 4.0,
-                "time": "2:02.420"
+                "medal": "silver",
+                "points": 8.0,
+                "time": "2:01.820"
             },
             "Meteor Gorge": {
                 "medal": "bronze",
@@ -9907,22 +9907,22 @@
                 "time": "1:55.410"
             },
             "N.Gin Labs": {
-                "medal": null,
+                "medal": "bronze",
                 "place": 999999,
-                "points": 4.0,
-                "time": "2:09.919"
+                "points": 6.0,
+                "time": "2:09.690"
             },
             "Nina's Nightmare": {
-                "medal": null,
+                "medal": "bronze",
                 "place": 153,
-                "points": 3.0,
-                "time": "1:48.170"
+                "points": 6.0,
+                "time": "1:46.970"
             },
             "Out of Time": {
-                "medal": null,
+                "medal": "bronze",
                 "place": 1423,
-                "points": 3.0,
-                "time": "1:51.270"
+                "points": 6.0,
+                "time": "1:49.770"
             },
             "Oxide Station": {
                 "medal": null,
@@ -9934,7 +9934,7 @@
                 "medal": null,
                 "place": 329,
                 "points": 1.0,
-                "time": "1:24.210"
+                "time": "1:23.980"
             },
             "Polar Pass": {
                 "medal": null,
@@ -10006,7 +10006,7 @@
                 "medal": null,
                 "place": 82,
                 "points": 4.0,
-                "time": "2:10.830"
+                "time": "2:10.390"
             }
         }
     },
@@ -10262,7 +10262,7 @@
             "gold": 8,
             "silver": 3
         },
-        "total_points": 180,
+        "total_points": 179,
         "total_points_in_upper_league": 17,
         "total_time": "87:39.076",
         "tracks": {
@@ -10495,7 +10495,7 @@
             "Twilight Tour": {
                 "medal": null,
                 "place": 17061,
-                "points": 5.0,
+                "points": 4.0,
                 "time": "2:25.779"
             }
         }
@@ -10752,7 +10752,7 @@
             "gold": 1,
             "silver": 4
         },
-        "total_points": 113,
+        "total_points": 112,
         "total_points_in_upper_league": 4,
         "total_time": "85:34.920",
         "tracks": {
@@ -10948,7 +10948,7 @@
             },
             "Twilight Tour": {
                 "medal": null,
-                "points": 3.0,
+                "points": 2.0,
                 "time": "2:28.680"
             }
         }
@@ -10956,11 +10956,11 @@
     "dnsgpa": {
         "league": 3,
         "medals": {
-            "bronze": 1,
+            "bronze": 0,
             "gold": 0,
             "silver": 0
         },
-        "total_points": 39,
+        "total_points": 37,
         "total_points_in_upper_league": 0,
         "total_time": "83:04.220",
         "tracks": {
@@ -11191,9 +11191,9 @@
                 "time": "1:46.240"
             },
             "Twilight Tour": {
-                "medal": "bronze",
+                "medal": null,
                 "place": 42296,
-                "points": 6.0,
+                "points": 4.0,
                 "time": "2:18.070"
             }
         }
@@ -11205,8 +11205,8 @@
             "gold": 14,
             "silver": 7
         },
-        "total_points": 288,
-        "total_points_in_upper_league": 15,
+        "total_points": 287,
+        "total_points_in_upper_league": 13,
         "total_time": "72:18.980",
         "tracks": {
             "Android Alley": {
@@ -11438,7 +11438,7 @@
             "Twilight Tour": {
                 "medal": null,
                 "place": 1115,
-                "points": 5.0,
+                "points": 4.0,
                 "time": "2:13.630"
             }
         }
@@ -11691,13 +11691,13 @@
     "mati1212": {
         "league": 1,
         "medals": {
-            "bronze": 7,
+            "bronze": 8,
             "gold": 0,
             "silver": 4
         },
-        "total_points": 115,
+        "total_points": 119,
         "total_points_in_upper_league": 0,
-        "total_time": "71:30.668",
+        "total_time": "71:28.865",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -11814,7 +11814,7 @@
             },
             "Megamix Mania": {
                 "medal": null,
-                "points": 5.0,
+                "points": 4.0,
                 "time": "2:02.320"
             },
             "Meteor Gorge": {
@@ -11926,28 +11926,28 @@
                 "time": "1:29.824"
             },
             "Twilight Tour": {
-                "medal": null,
+                "medal": "bronze",
                 "place": 360,
-                "points": 1.0,
-                "time": "2:11.633"
+                "points": 6.0,
+                "time": "2:09.830"
             }
         }
     },
     "myjniak": {
         "league": 1,
         "medals": {
-            "bronze": 5,
+            "bronze": 4,
             "gold": 0,
             "silver": 3
         },
-        "total_points": 135,
+        "total_points": 129,
         "total_points_in_upper_league": 0,
-        "total_time": "71:18.449",
+        "total_time": "71:16.029",
         "tracks": {
             "Android Alley": {
                 "medal": null,
                 "place": 206,
-                "points": 3.0,
+                "points": 2.0,
                 "time": "2:27.540"
             },
             "Assembly Lane": {
@@ -11977,7 +11977,7 @@
             "Coco Park": {
                 "medal": null,
                 "place": 413,
-                "points": 3.5,
+                "points": 2.5,
                 "time": "1:15.940"
             },
             "Cortex Castle": {
@@ -11989,8 +11989,8 @@
             "Crash Cove": {
                 "medal": null,
                 "place": 389,
-                "points": 4.0,
-                "time": "1:18.650"
+                "points": 2.0,
+                "time": "1:18.760"
             },
             "Deep Sea Driving": {
                 "medal": null,
@@ -12075,9 +12075,9 @@
                 "time": "1:55.340"
             },
             "N.Gin Labs": {
-                "medal": "bronze",
+                "medal": null,
                 "place": 10765,
-                "points": 6.0,
+                "points": 5.0,
                 "time": "2:09.729"
             },
             "Nina's Nightmare": {
@@ -12167,14 +12167,14 @@
             "Turbo Track": {
                 "medal": null,
                 "place": 688,
-                "points": 3.0,
-                "time": "1:33.050"
+                "points": 4.0,
+                "time": "1:30.820"
             },
             "Twilight Tour": {
                 "medal": null,
                 "place": 286,
-                "points": 3.0,
-                "time": "2:11.060"
+                "points": 1.0,
+                "time": "2:10.760"
             }
         }
     },
@@ -12185,7 +12185,7 @@
             "gold": 6,
             "silver": 5
         },
-        "total_points": 177,
+        "total_points": 176,
         "total_points_in_upper_league": 12,
         "total_time": "97:42.324",
         "tracks": {
@@ -12418,7 +12418,7 @@
             "Twilight Tour": {
                 "medal": null,
                 "place": 20309,
-                "points": 4.0,
+                "points": 3.0,
                 "time": "2:28.017"
             }
         }
@@ -12672,12 +12672,12 @@
         "league": 3,
         "medals": {
             "bronze": 5,
-            "gold": 1,
+            "gold": 2,
             "silver": 0
         },
-        "total_points": 63,
+        "total_points": 73,
         "total_points_in_upper_league": 0,
-        "total_time": "83:10.770",
+        "total_time": "83:02.330",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -12906,10 +12906,10 @@
                 "time": "1:41.200"
             },
             "Twilight Tour": {
-                "medal": null,
+                "medal": "gold",
                 "place": 15317,
-                "points": 0,
-                "time": "2:24.310"
+                "points": 10.0,
+                "time": "2:15.870"
             }
         }
     },
@@ -12920,8 +12920,8 @@
             "gold": 1,
             "silver": 0
         },
-        "total_points": 63,
-        "total_points_in_upper_league": 10,
+        "total_points": 62,
+        "total_points_in_upper_league": 8,
         "total_time": "76:22.490",
         "tracks": {
             "Android Alley": {
@@ -13116,7 +13116,7 @@
             },
             "Twilight Tour": {
                 "medal": null,
-                "points": 3.0,
+                "points": 2.0,
                 "time": "2:14.030"
             }
         }
@@ -13128,7 +13128,7 @@
             "gold": 1,
             "silver": 1
         },
-        "total_points": 112,
+        "total_points": 111,
         "total_points_in_upper_league": 3,
         "total_time": "74:11.030",
         "tracks": {
@@ -13361,7 +13361,7 @@
             "Twilight Tour": {
                 "medal": null,
                 "place": 11535,
-                "points": 4.0,
+                "points": 3.0,
                 "time": "2:14.000"
             }
         }
@@ -13863,9 +13863,9 @@
             "gold": 0,
             "silver": 3
         },
-        "total_points": 132,
+        "total_points": 131,
         "total_points_in_upper_league": 0,
-        "total_time": "71:21.832",
+        "total_time": "71:20.832",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -13900,7 +13900,7 @@
             "Coco Park": {
                 "medal": null,
                 "place": 390,
-                "points": 3.5,
+                "points": 2.5,
                 "time": "1:15.940"
             },
             "Cortex Castle": {
@@ -13953,7 +13953,7 @@
             "Hot Air Skyway": {
                 "medal": null,
                 "place": 640,
-                "points": 3.0,
+                "points": 2.0,
                 "time": "2:08.160"
             },
             "Hyper Spaceway": {
@@ -14096,8 +14096,8 @@
             "Twilight Tour": {
                 "medal": null,
                 "place": 415,
-                "points": 2.0,
-                "time": "2:11.490"
+                "points": 3.0,
+                "time": "2:10.490"
             }
         }
     },
@@ -14351,9 +14351,9 @@
         "medals": {
             "bronze": 3,
             "gold": 3,
-            "silver": 5
+            "silver": 4
         },
-        "total_points": 127,
+        "total_points": 124,
         "total_points_in_upper_league": 0,
         "total_time": "89:16.999",
         "tracks": {
@@ -14584,9 +14584,9 @@
                 "time": "1:43.872"
             },
             "Twilight Tour": {
-                "medal": "silver",
+                "medal": null,
                 "place": 5437,
-                "points": 8.0,
+                "points": 5.0,
                 "time": "2:17.606"
             }
         }

@@ -1,170 +1,730 @@
 {
     "Dejwidgakure": {
-        "ranking": 0,
-        "total_points": 0,
+        "old_total_points": 62,
+        "ranking": 0.0,
+        "total_places_improved": 0,
+        "total_points": 50,
         "total_points_improved": 0,
-        "total_time_improved": 0
+        "total_time_improved": 0.0,
+        "tracks": {
+            "Turbo Track": {
+                "new_place": 18,
+                "old_place": 18,
+                "old_points": 46,
+                "place_improvement": 0,
+                "points": 46,
+                "time_improvement": 0.0
+            },
+            "Twilight Tour": {
+                "new_place": 25,
+                "old_place": 22,
+                "old_points": 16,
+                "place_improvement": -3,
+                "points": 4,
+                "time_improvement": 0.0
+            }
+        }
     },
     "Greg": {
-        "ranking": 0,
-        "total_points": 0,
+        "old_total_points": 303,
+        "ranking": 0.0,
+        "total_places_improved": 0,
+        "total_points": 270,
         "total_points_improved": 0,
-        "total_time_improved": 0
+        "total_time_improved": 0.0,
+        "tracks": {
+            "Turbo Track": {
+                "new_place": 8,
+                "old_place": 7,
+                "old_points": 211,
+                "place_improvement": -1,
+                "points": 191,
+                "time_improvement": 0.0
+            },
+            "Twilight Tour": {
+                "new_place": 15,
+                "old_place": 14,
+                "old_points": 92,
+                "place_improvement": -1,
+                "points": 79,
+                "time_improvement": 0.0
+            }
+        }
     },
     "Gustlyk1": {
-        "ranking": 0,
-        "total_points": 0,
-        "total_points_improved": 0,
-        "total_time_improved": 0
+        "old_total_points": 135,
+        "ranking": 722.92,
+        "total_places_improved": 4,
+        "total_points": 193,
+        "total_points_improved": 58,
+        "total_time_improved": 1.24,
+        "tracks": {
+            "Turbo Track": {
+                "new_place": 17,
+                "old_place": 17,
+                "old_points": 56,
+                "place_improvement": 0,
+                "points": 56,
+                "time_improvement": 0.0
+            },
+            "Twilight Tour": {
+                "new_place": 11,
+                "old_place": 15,
+                "old_points": 79,
+                "place_improvement": 4,
+                "points": 137,
+                "time_improvement": 1.24
+            }
+        }
     },
     "Jakub_Luk": {
-        "ranking": 0,
-        "total_points": 0,
+        "old_total_points": 408,
+        "ranking": 714.42,
+        "total_places_improved": 0,
+        "total_points": 386,
         "total_points_improved": 0,
-        "total_time_improved": 0
+        "total_time_improved": 1.47,
+        "tracks": {
+            "Turbo Track": {
+                "new_place": 6,
+                "old_place": 5,
+                "old_points": 254,
+                "place_improvement": -1,
+                "points": 232,
+                "time_improvement": 0.0
+            },
+            "Twilight Tour": {
+                "new_place": 10,
+                "old_place": 10,
+                "old_points": 154,
+                "place_improvement": 0,
+                "points": 154,
+                "time_improvement": 1.47
+            }
+        }
     },
     "JanneAhonen69": {
-        "ranking": 0,
-        "total_points": 0,
+        "old_total_points": 558,
+        "ranking": 0.0,
+        "total_places_improved": 0,
+        "total_points": 537,
         "total_points_improved": 0,
-        "total_time_improved": 0
+        "total_time_improved": 0.0,
+        "tracks": {
+            "Turbo Track": {
+                "new_place": 7,
+                "old_place": 6,
+                "old_points": 232,
+                "place_improvement": -1,
+                "points": 211,
+                "time_improvement": 0.0
+            },
+            "Twilight Tour": {
+                "new_place": 2,
+                "old_place": 2,
+                "old_points": 326,
+                "place_improvement": 0,
+                "points": 326,
+                "time_improvement": 0.0
+            }
+        }
     },
     "KalibeRaziel44": {
-        "ranking": 0,
-        "total_points": 0,
+        "old_total_points": 309,
+        "ranking": 736.2,
+        "total_places_improved": 0,
+        "total_points": 309,
         "total_points_improved": 0,
-        "total_time_improved": 0
+        "total_time_improved": 1.8,
+        "tracks": {
+            "Turbo Track": {
+                "new_place": 11,
+                "old_place": 11,
+                "old_points": 137,
+                "place_improvement": 0,
+                "points": 137,
+                "time_improvement": 0.0
+            },
+            "Twilight Tour": {
+                "new_place": 9,
+                "old_place": 9,
+                "old_points": 172,
+                "place_improvement": 0,
+                "points": 172,
+                "time_improvement": 1.8
+            }
+        }
     },
     "Kideu98": {
-        "ranking": 0,
-        "total_points": 0,
+        "old_total_points": 422,
+        "ranking": 0.0,
+        "total_places_improved": 0,
+        "total_points": 398,
         "total_points_improved": 0,
-        "total_time_improved": 0
+        "total_time_improved": 0.0,
+        "tracks": {
+            "Turbo Track": {
+                "new_place": 12,
+                "old_place": 12,
+                "old_points": 121,
+                "place_improvement": 0,
+                "points": 121,
+                "time_improvement": 0.0
+            },
+            "Twilight Tour": {
+                "new_place": 4,
+                "old_place": 3,
+                "old_points": 301,
+                "place_improvement": -1,
+                "points": 277,
+                "time_improvement": 0.0
+            }
+        }
     },
     "Kranczuu": {
-        "ranking": 0,
-        "total_points": 0,
+        "old_total_points": 47,
+        "ranking": 139.1,
+        "total_places_improved": 0,
+        "total_points": 30,
         "total_points_improved": 0,
-        "total_time_improved": 0
+        "total_time_improved": 1.07,
+        "tracks": {
+            "Turbo Track": {
+                "new_place": 27,
+                "old_place": 27,
+                "old_points": 1,
+                "place_improvement": 0,
+                "points": 1,
+                "time_improvement": 0.0
+            },
+            "Twilight Tour": {
+                "new_place": 20,
+                "old_place": 18,
+                "old_points": 46,
+                "place_improvement": -2,
+                "points": 29,
+                "time_improvement": 1.07
+            }
+        }
     },
     "Krisao_": {
-        "ranking": 0,
-        "total_points": 0,
+        "old_total_points": 116,
+        "ranking": 0.0,
+        "total_places_improved": 0,
+        "total_points": 101,
         "total_points_improved": 0,
-        "total_time_improved": 0
+        "total_time_improved": 0.0,
+        "tracks": {
+            "Turbo Track": {
+                "new_place": 15,
+                "old_place": 15,
+                "old_points": 79,
+                "place_improvement": 0,
+                "points": 79,
+                "time_improvement": 0.0
+            },
+            "Twilight Tour": {
+                "new_place": 21,
+                "old_place": 19,
+                "old_points": 37,
+                "place_improvement": -2,
+                "points": 22,
+                "time_improvement": 0.0
+            }
+        }
     },
     "MEDYK-POLSKA": {
-        "ranking": 0,
-        "total_points": 0,
-        "total_points_improved": 0,
-        "total_time_improved": 0
+        "old_total_points": 4,
+        "ranking": 1788.56,
+        "total_places_improved": 3,
+        "total_points": 13,
+        "total_points_improved": 9,
+        "total_time_improved": 11.32,
+        "tracks": {
+            "Turbo Track": {
+                "new_place": 26,
+                "old_place": 26,
+                "old_points": 2,
+                "place_improvement": 0,
+                "points": 2,
+                "time_improvement": 0.0
+            },
+            "Twilight Tour": {
+                "new_place": 23,
+                "old_place": 26,
+                "old_points": 2,
+                "place_improvement": 3,
+                "points": 11,
+                "time_improvement": 11.32
+            }
+        }
     },
     "Maties_Gamer": {
-        "ranking": 0,
-        "total_points": 0,
+        "old_total_points": 554,
+        "ranking": 0.0,
+        "total_places_improved": 0,
+        "total_points": 488,
         "total_points_improved": 0,
-        "total_time_improved": 0
+        "total_time_improved": 0.0,
+        "tracks": {
+            "Turbo Track": {
+                "new_place": 4,
+                "old_place": 4,
+                "old_points": 277,
+                "place_improvement": 0,
+                "points": 277,
+                "time_improvement": 0.0
+            },
+            "Twilight Tour": {
+                "new_place": 7,
+                "old_place": 4,
+                "old_points": 277,
+                "place_improvement": -3,
+                "points": 211,
+                "time_improvement": 0.0
+            }
+        }
     },
     "OFF23PL": {
-        "ranking": 0,
-        "total_points": 0,
+        "old_total_points": 1,
+        "ranking": 0.0,
+        "total_places_improved": 0,
+        "total_points": 1,
         "total_points_improved": 0,
-        "total_time_improved": 0
+        "total_time_improved": 0.0,
+        "tracks": {
+            "Turbo Track": {
+                "new_place": 28,
+                "old_place": 28,
+                "old_points": 0,
+                "place_improvement": 0,
+                "points": 0,
+                "time_improvement": 0.0
+            },
+            "Twilight Tour": {
+                "new_place": 27,
+                "old_place": 27,
+                "old_points": 1,
+                "place_improvement": 0,
+                "points": 1,
+                "time_improvement": 0.0
+            }
+        }
     },
     "Rc_FIVE": {
-        "ranking": 0,
-        "total_points": 0,
+        "old_total_points": 704,
+        "ranking": 112.56000000000002,
+        "total_places_improved": 0,
+        "total_points": 704,
         "total_points_improved": 0,
-        "total_time_improved": 0
+        "total_time_improved": 0.14,
+        "tracks": {
+            "Turbo Track": {
+                "new_place": 1,
+                "old_place": 1,
+                "old_points": 352,
+                "place_improvement": 0,
+                "points": 352,
+                "time_improvement": 0.0
+            },
+            "Twilight Tour": {
+                "new_place": 1,
+                "old_place": 1,
+                "old_points": 352,
+                "place_improvement": 0,
+                "points": 352,
+                "time_improvement": 0.14
+            }
+        }
     },
     "TyczekPL": {
-        "ranking": 0,
-        "total_points": 0,
-        "total_points_improved": 0,
-        "total_time_improved": 0
+        "old_total_points": 18,
+        "ranking": 2194.74,
+        "total_places_improved": 4,
+        "total_points": 44,
+        "total_points_improved": 26,
+        "total_time_improved": 8.01,
+        "tracks": {
+            "Turbo Track": {
+                "new_place": 24,
+                "old_place": 24,
+                "old_points": 7,
+                "place_improvement": 0,
+                "points": 7,
+                "time_improvement": 0.0
+            },
+            "Twilight Tour": {
+                "new_place": 19,
+                "old_place": 23,
+                "old_points": 11,
+                "place_improvement": 4,
+                "points": 37,
+                "time_improvement": 8.01
+            }
+        }
     },
     "Xenom435": {
-        "ranking": 0,
-        "total_points": 0,
+        "old_total_points": 59,
+        "ranking": 0.0,
+        "total_places_improved": 0,
+        "total_points": 44,
         "total_points_improved": 0,
-        "total_time_improved": 0
+        "total_time_improved": 0.0,
+        "tracks": {
+            "Turbo Track": {
+                "new_place": 19,
+                "old_place": 19,
+                "old_points": 37,
+                "place_improvement": 0,
+                "points": 37,
+                "time_improvement": 0.0
+            },
+            "Twilight Tour": {
+                "new_place": 24,
+                "old_place": 21,
+                "old_points": 22,
+                "place_improvement": -3,
+                "points": 7,
+                "time_improvement": 0.0
+            }
+        }
     },
     "Xerdzio": {
-        "ranking": 0,
-        "total_points": 0,
+        "old_total_points": 426,
+        "ranking": 231.44,
+        "total_places_improved": 0,
+        "total_points": 426,
         "total_points_improved": 0,
-        "total_time_improved": 0
+        "total_time_improved": 0.44,
+        "tracks": {
+            "Turbo Track": {
+                "new_place": 9,
+                "old_place": 9,
+                "old_points": 172,
+                "place_improvement": 0,
+                "points": 172,
+                "time_improvement": 0.0
+            },
+            "Twilight Tour": {
+                "new_place": 5,
+                "old_place": 5,
+                "old_points": 254,
+                "place_improvement": 0,
+                "points": 254,
+                "time_improvement": 0.44
+            }
+        }
     },
     "cthulhuburi": {
-        "ranking": 0,
-        "total_points": 0,
+        "old_total_points": 33,
+        "ranking": 0.0,
+        "total_places_improved": 0,
+        "total_points": 31,
         "total_points_improved": 0,
-        "total_time_improved": 0
+        "total_time_improved": 0.0,
+        "tracks": {
+            "Turbo Track": {
+                "new_place": 20,
+                "old_place": 20,
+                "old_points": 29,
+                "place_improvement": 0,
+                "points": 29,
+                "time_improvement": 0.0
+            },
+            "Twilight Tour": {
+                "new_place": 26,
+                "old_place": 25,
+                "old_points": 4,
+                "place_improvement": -1,
+                "points": 2,
+                "time_improvement": 0.0
+            }
+        }
     },
     "dnsgpa": {
-        "ranking": 0,
-        "total_points": 0,
+        "old_total_points": 45,
+        "ranking": 0.0,
+        "total_places_improved": 0,
+        "total_points": 32,
         "total_points_improved": 0,
-        "total_time_improved": 0
+        "total_time_improved": 0.0,
+        "tracks": {
+            "Turbo Track": {
+                "new_place": 22,
+                "old_place": 22,
+                "old_points": 16,
+                "place_improvement": 0,
+                "points": 16,
+                "time_improvement": 0.0
+            },
+            "Twilight Tour": {
+                "new_place": 22,
+                "old_place": 20,
+                "old_points": 29,
+                "place_improvement": -2,
+                "points": 16,
+                "time_improvement": 0.0
+            }
+        }
     },
     "kubalok25": {
-        "ranking": 0,
-        "total_points": 0,
+        "old_total_points": 243,
+        "ranking": 0.0,
+        "total_places_improved": 0,
+        "total_points": 227,
         "total_points_improved": 0,
-        "total_time_improved": 0
+        "total_time_improved": 0.0,
+        "tracks": {
+            "Turbo Track": {
+                "new_place": 13,
+                "old_place": 13,
+                "old_points": 106,
+                "place_improvement": 0,
+                "points": 106,
+                "time_improvement": 0.0
+            },
+            "Twilight Tour": {
+                "new_place": 12,
+                "old_place": 11,
+                "old_points": 137,
+                "place_improvement": -1,
+                "points": 121,
+                "time_improvement": 0.0
+            }
+        }
     },
     "marmero97": {
-        "ranking": 0,
-        "total_points": 0,
+        "old_total_points": 78,
+        "ranking": 0.0,
+        "total_places_improved": 0,
+        "total_points": 78,
         "total_points_improved": 0,
-        "total_time_improved": 0
+        "total_time_improved": 0.0,
+        "tracks": {
+            "Turbo Track": {
+                "new_place": 23,
+                "old_place": 23,
+                "old_points": 11,
+                "place_improvement": 0,
+                "points": 11,
+                "time_improvement": 0.0
+            },
+            "Twilight Tour": {
+                "new_place": 16,
+                "old_place": 16,
+                "old_points": 67,
+                "place_improvement": 0,
+                "points": 67,
+                "time_improvement": 0.0
+            }
+        }
     },
     "mati1212": {
-        "ranking": 0,
-        "total_points": 0,
-        "total_points_improved": 0,
-        "total_time_improved": 0
+        "old_total_points": 492,
+        "ranking": 2257.3559999999998,
+        "total_places_improved": 5,
+        "total_points": 602,
+        "total_points_improved": 110,
+        "total_time_improved": 1.803,
+        "tracks": {
+            "Turbo Track": {
+                "new_place": 3,
+                "old_place": 3,
+                "old_points": 301,
+                "place_improvement": 0,
+                "points": 301,
+                "time_improvement": 0.0
+            },
+            "Twilight Tour": {
+                "new_place": 3,
+                "old_place": 8,
+                "old_points": 191,
+                "place_improvement": 5,
+                "points": 301,
+                "time_improvement": 1.803
+            }
+        }
     },
     "myjniak": {
-        "ranking": 0,
-        "total_points": 0,
-        "total_points_improved": 0,
-        "total_time_improved": 0
+        "old_total_points": 423,
+        "ranking": 2175.7999999999997,
+        "total_places_improved": 3,
+        "total_points": 445,
+        "total_points_improved": 63,
+        "total_time_improved": 2.53,
+        "tracks": {
+            "Turbo Track": {
+                "new_place": 5,
+                "old_place": 8,
+                "old_points": 191,
+                "place_improvement": 3,
+                "points": 254,
+                "time_improvement": 2.23
+            },
+            "Twilight Tour": {
+                "new_place": 8,
+                "old_place": 6,
+                "old_points": 232,
+                "place_improvement": -2,
+                "points": 191,
+                "time_improvement": 0.3
+            }
+        }
     },
     "peteer_parker": {
-        "ranking": 0,
-        "total_points": 0,
+        "old_total_points": 4,
+        "ranking": 0.0,
+        "total_places_improved": 0,
+        "total_points": 4,
         "total_points_improved": 0,
-        "total_time_improved": 0
+        "total_time_improved": 0.0,
+        "tracks": {
+            "Turbo Track": {
+                "new_place": 25,
+                "old_place": 25,
+                "old_points": 4,
+                "place_improvement": 0,
+                "points": 4,
+                "time_improvement": 0.0
+            },
+            "Twilight Tour": {
+                "new_place": 28,
+                "old_place": 28,
+                "old_points": 0,
+                "place_improvement": 0,
+                "points": 0,
+                "time_improvement": 0.0
+            }
+        }
     },
     "platko90": {
-        "ranking": 0,
-        "total_points": 0,
-        "total_points_improved": 0,
-        "total_time_improved": 0
+        "old_total_points": 74,
+        "ranking": 3443.52,
+        "total_places_improved": 6,
+        "total_points": 113,
+        "total_points_improved": 39,
+        "total_time_improved": 8.44,
+        "tracks": {
+            "Turbo Track": {
+                "new_place": 16,
+                "old_place": 16,
+                "old_points": 67,
+                "place_improvement": 0,
+                "points": 67,
+                "time_improvement": 0.0
+            },
+            "Twilight Tour": {
+                "new_place": 18,
+                "old_place": 24,
+                "old_points": 7,
+                "place_improvement": 6,
+                "points": 46,
+                "time_improvement": 8.44
+            }
+        }
     },
     "poco_mi_kumpel": {
-        "ranking": 0,
-        "total_points": 0,
+        "old_total_points": 128,
+        "ranking": 0.0,
+        "total_places_improved": 0,
+        "total_points": 114,
         "total_points_improved": 0,
-        "total_time_improved": 0
+        "total_time_improved": 0.0,
+        "tracks": {
+            "Turbo Track": {
+                "new_place": 21,
+                "old_place": 21,
+                "old_points": 22,
+                "place_improvement": 0,
+                "points": 22,
+                "time_improvement": 0.0
+            },
+            "Twilight Tour": {
+                "new_place": 14,
+                "old_place": 13,
+                "old_points": 106,
+                "place_improvement": -1,
+                "points": 92,
+                "time_improvement": 0.0
+            }
+        }
     },
     "potbot0": {
-        "ranking": 0,
-        "total_points": 0,
+        "old_total_points": 213,
+        "ranking": 0.0,
+        "total_places_improved": 0,
+        "total_points": 198,
         "total_points_improved": 0,
-        "total_time_improved": 0
+        "total_time_improved": 0.0,
+        "tracks": {
+            "Turbo Track": {
+                "new_place": 14,
+                "old_place": 14,
+                "old_points": 92,
+                "place_improvement": 0,
+                "points": 92,
+                "time_improvement": 0.0
+            },
+            "Twilight Tour": {
+                "new_place": 13,
+                "old_place": 12,
+                "old_points": 121,
+                "place_improvement": -1,
+                "points": 106,
+                "time_improvement": 0.0
+            }
+        }
     },
     "przemekratchet89": {
-        "ranking": 0,
-        "total_points": 0,
+        "old_total_points": 210,
+        "ranking": 0.0,
+        "total_places_improved": 0,
+        "total_points": 210,
         "total_points_improved": 0,
-        "total_time_improved": 0
+        "total_time_improved": 0.0,
+        "tracks": {
+            "Turbo Track": {
+                "new_place": 10,
+                "old_place": 10,
+                "old_points": 154,
+                "place_improvement": 0,
+                "points": 154,
+                "time_improvement": 0.0
+            },
+            "Twilight Tour": {
+                "new_place": 17,
+                "old_place": 17,
+                "old_points": 56,
+                "place_improvement": 0,
+                "points": 56,
+                "time_improvement": 0.0
+            }
+        }
     },
     "silVersilVa89PL": {
-        "ranking": 0,
-        "total_points": 0,
-        "total_points_improved": 0,
-        "total_time_improved": 0
+        "old_total_points": 537,
+        "ranking": 763.0,
+        "total_places_improved": 1,
+        "total_points": 558,
+        "total_points_improved": 21,
+        "total_time_improved": 1.0,
+        "tracks": {
+            "Turbo Track": {
+                "new_place": 2,
+                "old_place": 2,
+                "old_points": 326,
+                "place_improvement": 0,
+                "points": 326,
+                "time_improvement": 0.0
+            },
+            "Twilight Tour": {
+                "new_place": 6,
+                "old_place": 7,
+                "old_points": 211,
+                "place_improvement": 1,
+                "points": 232,
+                "time_improvement": 1.0
+            }
+        }
     }
 }
