@@ -10,6 +10,7 @@ BLACK = "000000"
 RED = "FF0000"
 GREEN = "00FF00"
 WHITE = "FFFFFF"
+LIGHT_BLUE = "70A8D9"
 PLACE_COLORS = [GOLD, SILVER, BRONZE, WHITE, WHITE, WHITE, WHITE, 'F3FFF2']
 
 
@@ -61,7 +62,7 @@ class LeagueAsXlsx(LeagueAsCsv):
         time_formatting_matrix = list()
         players = league_csv[0][1:]
         for r, row in enumerate(league_csv[1:track_count+1]):
-            time_formatting_matrix.append([CellFormat(13, BLACK, GREEN)])
+            time_formatting_matrix.append([CellFormat(13, BLACK, LIGHT_BLUE)])
             for c in range(1, len(row)):
                 cell_format = self._evaluate_time_cell_format(players[c-1], row[0])
                 time_formatting_matrix[r].append(cell_format)
