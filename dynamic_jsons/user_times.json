@@ -6,7 +6,7 @@
             "gold": 1,
             "silver": 1
         },
-        "total_points": 72,
+        "total_points": 71,
         "total_points_in_upper_league": 1,
         "total_time": "89:51.806",
         "tracks": {
@@ -233,7 +233,7 @@
             "Turbo Track": {
                 "medal": null,
                 "place": 16708,
-                "points": 3.0,
+                "points": 2.0,
                 "time": "1:48.676"
             },
             "Twilight Tour": {
@@ -459,7 +459,7 @@
             "gold": 1,
             "silver": 0
         },
-        "total_points": 34,
+        "total_points": 32,
         "total_points_in_upper_league": 0,
         "total_time": "87:37.251",
         "tracks": {
@@ -662,7 +662,7 @@
             "Thunder Struck": {
                 "medal": null,
                 "place": 18575,
-                "points": 3.0,
+                "points": 1.0,
                 "time": "2:27.782"
             },
             "Tiger Temple": {
@@ -704,7 +704,7 @@
             "gold": 2,
             "silver": 0
         },
-        "total_points": 58,
+        "total_points": 56,
         "total_points_in_upper_league": 0,
         "total_time": "79:47.639",
         "tracks": {
@@ -875,7 +875,7 @@
             },
             "Thunder Struck": {
                 "medal": null,
-                "points": 4.0,
+                "points": 2.0,
                 "time": "2:25.410"
             },
             "Tiger Temple": {
@@ -908,11 +908,11 @@
     "Gojson": {
         "league": 3,
         "medals": {
-            "bronze": 5,
+            "bronze": 6,
             "gold": 6,
-            "silver": 4
+            "silver": 3
         },
-        "total_points": 148,
+        "total_points": 146,
         "total_points_in_upper_league": 1,
         "total_time": "89:54.368",
         "tracks": {
@@ -1137,9 +1137,9 @@
                 "time": "1:41.703"
             },
             "Turbo Track": {
-                "medal": "silver",
+                "medal": "bronze",
                 "place": 3229,
-                "points": 8.0,
+                "points": 6.0,
                 "time": "1:40.895"
             },
             "Twilight Tour": {
@@ -1153,11 +1153,11 @@
     "Gracki92": {
         "league": 4,
         "medals": {
-            "bronze": 6,
+            "bronze": 5,
             "gold": 3,
             "silver": 6
         },
-        "total_points": 152,
+        "total_points": 150,
         "total_points_in_upper_league": 11,
         "total_time": "88:46.234",
         "tracks": {
@@ -1360,7 +1360,7 @@
             "Thunder Struck": {
                 "medal": null,
                 "place": 24884,
-                "points": 5.0,
+                "points": 4.0,
                 "time": "2:38.661"
             },
             "Tiger Temple": {
@@ -1382,9 +1382,9 @@
                 "time": "1:47.542"
             },
             "Turbo Track": {
-                "medal": "bronze",
+                "medal": null,
                 "place": 12757,
-                "points": 6.0,
+                "points": 5.0,
                 "time": "1:46.909"
             },
             "Twilight Tour": {
@@ -1399,12 +1399,12 @@
         "league": 2,
         "medals": {
             "bronze": 7,
-            "gold": 9,
-            "silver": 13
+            "gold": 10,
+            "silver": 12
         },
-        "total_points": 270,
-        "total_points_in_upper_league": 6,
-        "total_time": "72:37.949",
+        "total_points": 276,
+        "total_points_in_upper_league": 5,
+        "total_time": "72:34.529",
         "tracks": {
             "Android Alley": {
                 "medal": "silver",
@@ -1592,25 +1592,25 @@
                 "time": "1:40.060"
             },
             "Turbo Track": {
-                "medal": "silver",
-                "points": 8.0,
+                "medal": null,
+                "points": 5.0,
                 "time": "1:32.860"
             },
             "Twilight Tour": {
-                "medal": null,
-                "points": 1.0,
-                "time": "2:14.260"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "2:10.840"
             }
         }
     },
     "Gustlyk1": {
         "league": 2,
         "medals": {
-            "bronze": 2,
+            "bronze": 1,
             "gold": 0,
             "silver": 1
         },
-        "total_points": 39,
+        "total_points": 37,
         "total_points_in_upper_league": 0,
         "total_time": "76:48.510",
         "tracks": {
@@ -1635,7 +1635,7 @@
             "Blizzard Bluff": {
                 "medal": null,
                 "place": 27628,
-                "points": 2.0,
+                "points": 1.0,
                 "time": "1:12.770"
             },
             "Clockwork Wumpa": {
@@ -1841,9 +1841,9 @@
                 "time": "1:43.670"
             },
             "Twilight Tour": {
-                "medal": "bronze",
+                "medal": null,
                 "place": 20147,
-                "points": 6.0,
+                "points": 5.0,
                 "time": "2:13.260"
             }
         }
@@ -1852,10 +1852,10 @@
         "league": 3,
         "medals": {
             "bronze": 0,
-            "gold": 1,
-            "silver": 1
+            "gold": 0,
+            "silver": 2
         },
-        "total_points": 31,
+        "total_points": 29,
         "total_points_in_upper_league": 4,
         "total_time": "88:24.375",
         "tracks": {
@@ -2026,9 +2026,9 @@
                 "time": "2:23.912"
             },
             "Prehistoric Playground": {
-                "medal": "gold",
+                "medal": "silver",
                 "place": 1855,
-                "points": 10.0,
+                "points": 8.0,
                 "time": "2:24.512"
             },
             "Roo's Tubes": {
@@ -2096,13 +2096,13 @@
     "Jakub_Luk": {
         "league": 2,
         "medals": {
-            "bronze": 6,
+            "bronze": 7,
             "gold": 9,
-            "silver": 9
+            "silver": 8
         },
-        "total_points": 263,
-        "total_points_in_upper_league": 16,
-        "total_time": "72:43.360",
+        "total_points": 261,
+        "total_points_in_upper_league": 13,
+        "total_time": "72:40.050",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -2301,10 +2301,10 @@
                 "time": "2:10.830"
             },
             "Thunder Struck": {
-                "medal": "silver",
+                "medal": "gold",
                 "place": 14590,
-                "points": 8.0,
-                "time": "1:57.150"
+                "points": 10.0,
+                "time": "1:53.980"
             },
             "Tiger Temple": {
                 "medal": "silver",
@@ -2325,15 +2325,15 @@
                 "time": "1:39.130"
             },
             "Turbo Track": {
-                "medal": "gold",
+                "medal": "silver",
                 "place": 3227,
-                "points": 10.0,
-                "time": "1:32.160"
+                "points": 8.0,
+                "time": "1:32.020"
             },
             "Twilight Tour": {
-                "medal": "silver",
+                "medal": "bronze",
                 "place": 4882,
-                "points": 8.0,
+                "points": 6.0,
                 "time": "2:11.660"
             }
         }
@@ -2345,7 +2345,7 @@
             "gold": 2,
             "silver": 10
         },
-        "total_points": 209,
+        "total_points": 206,
         "total_points_in_upper_league": 0,
         "total_time": "70:45.538",
         "tracks": {
@@ -2464,7 +2464,7 @@
             },
             "Megamix Mania": {
                 "medal": null,
-                "points": 5.0,
+                "points": 4.0,
                 "time": "2:02.250"
             },
             "Meteor Gorge": {
@@ -2572,7 +2572,7 @@
             "Turbo Track": {
                 "medal": null,
                 "place": 121,
-                "points": 3.0,
+                "points": 1.0,
                 "time": "1:32.420"
             },
             "Twilight Tour": {
@@ -2825,13 +2825,13 @@
     "KalibeRaziel44": {
         "league": 2,
         "medals": {
-            "bronze": 10,
+            "bronze": 9,
             "gold": 6,
-            "silver": 4
+            "silver": 6
         },
-        "total_points": 206,
-        "total_points_in_upper_league": 2,
-        "total_time": "72:59.480",
+        "total_points": 209,
+        "total_points_in_upper_league": 3,
+        "total_time": "72:55.470",
         "tracks": {
             "Android Alley": {
                 "medal": "bronze",
@@ -2850,7 +2850,7 @@
             },
             "Blizzard Bluff": {
                 "medal": null,
-                "points": 3.0,
+                "points": 2.0,
                 "time": "1:12.470"
             },
             "Clockwork Wumpa": {
@@ -2970,7 +2970,7 @@
             },
             "Polar Pass": {
                 "medal": null,
-                "points": 2.5,
+                "points": 1.5,
                 "time": "2:06.890"
             },
             "Prehistoric Playground": {
@@ -2999,9 +2999,9 @@
                 "time": "2:12.460"
             },
             "Thunder Struck": {
-                "medal": "bronze",
-                "points": 6.0,
-                "time": "1:57.280"
+                "medal": "silver",
+                "points": 8.0,
+                "time": "1:55.280"
             },
             "Tiger Temple": {
                 "medal": null,
@@ -3019,13 +3019,13 @@
                 "time": "1:40.100"
             },
             "Turbo Track": {
-                "medal": null,
-                "points": 5.0,
-                "time": "1:33.360"
-            },
-            "Twilight Tour": {
                 "medal": "gold",
                 "points": 10.0,
+                "time": "1:31.350"
+            },
+            "Twilight Tour": {
+                "medal": "silver",
+                "points": 8.0,
                 "time": "2:10.890"
             }
         }
@@ -3245,9 +3245,9 @@
             "gold": 2,
             "silver": 6
         },
-        "total_points": 161,
+        "total_points": 166,
         "total_points_in_upper_league": 0,
-        "total_time": "71:05.200",
+        "total_time": "70:59.260",
         "tracks": {
             "Android Alley": {
                 "medal": "silver",
@@ -3363,8 +3363,8 @@
                 "time": "1:38.130"
             },
             "Megamix Mania": {
-                "medal": "bronze",
-                "points": 6.0,
+                "medal": null,
+                "points": 5.0,
                 "time": "2:01.980"
             },
             "Meteor Gorge": {
@@ -3446,10 +3446,10 @@
                 "time": "2:08.760"
             },
             "Thunder Struck": {
-                "medal": null,
+                "medal": "bronze",
                 "place": 10640,
-                "points": 4.0,
-                "time": "1:52.770"
+                "points": 6.0,
+                "time": "1:50.500"
             },
             "Tiger Temple": {
                 "medal": null,
@@ -3472,8 +3472,8 @@
             "Turbo Track": {
                 "medal": null,
                 "place": 678,
-                "points": 1.0,
-                "time": "1:33.420"
+                "points": 5.0,
+                "time": "1:29.750"
             },
             "Twilight Tour": {
                 "medal": null,
@@ -3486,12 +3486,12 @@
     "Kr8osPL": {
         "league": 4,
         "medals": {
-            "bronze": 4,
-            "gold": 3,
-            "silver": 3
+            "bronze": 3,
+            "gold": 2,
+            "silver": 4
         },
-        "total_points": 103,
-        "total_points_in_upper_league": 4,
+        "total_points": 100,
+        "total_points_in_upper_league": 3,
         "total_time": "92:46.907",
         "tracks": {
             "Android Alley": {
@@ -3649,9 +3649,9 @@
                 "time": "3:26.171"
             },
             "Papu's Pyramid": {
-                "medal": "bronze",
+                "medal": null,
                 "place": 9970,
-                "points": 6.0,
+                "points": 5.0,
                 "time": "1:38.300"
             },
             "Polar Pass": {
@@ -3715,9 +3715,9 @@
                 "time": "1:46.374"
             },
             "Turbo Track": {
-                "medal": "gold",
+                "medal": "silver",
                 "place": 8063,
-                "points": 10.0,
+                "points": 8.0,
                 "time": "1:45.170"
             },
             "Twilight Tour": {
@@ -3735,7 +3735,7 @@
             "gold": 0,
             "silver": 0
         },
-        "total_points": 35,
+        "total_points": 33,
         "total_points_in_upper_league": 0,
         "total_time": "83:49.900",
         "tracks": {
@@ -3938,7 +3938,7 @@
             "Thunder Struck": {
                 "medal": null,
                 "place": 19845,
-                "points": 2.0,
+                "points": 0,
                 "time": "2:30.380"
             },
             "Tiger Temple": {
@@ -3980,7 +3980,7 @@
             "gold": 0,
             "silver": 1
         },
-        "total_points": 84,
+        "total_points": 83,
         "total_points_in_upper_league": 0,
         "total_time": "74:41.330",
         "tracks": {
@@ -4147,7 +4147,7 @@
             "Polar Pass": {
                 "medal": null,
                 "place": 2222,
-                "points": 4.0,
+                "points": 3.0,
                 "time": "2:05.920"
             },
             "Prehistoric Playground": {
@@ -4466,13 +4466,13 @@
     "MEDYK-POLSKA": {
         "league": 4,
         "medals": {
-            "bronze": 4,
+            "bronze": 7,
             "gold": 4,
             "silver": 2
         },
-        "total_points": 124,
-        "total_points_in_upper_league": 21,
-        "total_time": "84:26.228",
+        "total_points": 134,
+        "total_points_in_upper_league": 23,
+        "total_time": "84:07.967",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -4629,10 +4629,10 @@
                 "time": "3:21.368"
             },
             "Papu's Pyramid": {
-                "medal": null,
+                "medal": "bronze",
                 "place": 76745,
-                "points": 4.0,
-                "time": "1:39.130"
+                "points": 6.0,
+                "time": "1:38.230"
             },
             "Polar Pass": {
                 "medal": null,
@@ -4671,10 +4671,10 @@
                 "time": "2:19.800"
             },
             "Thunder Struck": {
-                "medal": null,
+                "medal": "bronze",
                 "place": 38237,
-                "points": 2.0,
-                "time": "2:47.669"
+                "points": 6.0,
+                "time": "2:36.020"
             },
             "Tiger Temple": {
                 "medal": "bronze",
@@ -4695,10 +4695,10 @@
                 "time": "1:46.640"
             },
             "Turbo Track": {
-                "medal": null,
+                "medal": "bronze",
                 "place": 23172,
-                "points": 2.0,
-                "time": "1:52.012"
+                "points": 6.0,
+                "time": "1:46.300"
             },
             "Twilight Tour": {
                 "medal": "silver",
@@ -5374,11 +5374,11 @@
         "medals": {
             "bronze": 6,
             "gold": 1,
-            "silver": 4
+            "silver": 6
         },
-        "total_points": 183,
+        "total_points": 191,
         "total_points_in_upper_league": 0,
-        "total_time": "70:55.968",
+        "total_time": "70:52.708",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -5414,7 +5414,7 @@
                 "medal": null,
                 "place": 3219,
                 "points": 5.0,
-                "time": "1:15.740"
+                "time": "1:15.440"
             },
             "Cortex Castle": {
                 "medal": null,
@@ -5494,9 +5494,9 @@
                 "time": "1:38.260"
             },
             "Megamix Mania": {
-                "medal": null,
-                "points": 1.0,
-                "time": "2:02.88"
+                "medal": "silver",
+                "points": 8.0,
+                "time": "2:01.720"
             },
             "Meteor Gorge": {
                 "medal": null,
@@ -5579,7 +5579,7 @@
             "Thunder Struck": {
                 "medal": null,
                 "place": 11187,
-                "points": 5.0,
+                "points": 3.0,
                 "time": "1:51.940"
             },
             "Tiger Temple": {
@@ -5601,10 +5601,10 @@
                 "time": "1:38.030"
             },
             "Turbo Track": {
-                "medal": null,
+                "medal": "silver",
                 "place": 500,
-                "points": 5.0,
-                "time": "1:30.650"
+                "points": 8.0,
+                "time": "1:28.850"
             },
             "Twilight Tour": {
                 "medal": null,
@@ -6070,11 +6070,11 @@
     "NadinWins": {
         "league": 3,
         "medals": {
-            "bronze": 4,
+            "bronze": 3,
             "gold": 2,
             "silver": 1
         },
-        "total_points": 120,
+        "total_points": 119,
         "total_points_in_upper_league": 4,
         "total_time": "84:01.727",
         "tracks": {
@@ -6275,9 +6275,9 @@
                 "time": "2:16.471"
             },
             "Thunder Struck": {
-                "medal": "bronze",
+                "medal": null,
                 "place": 16894,
-                "points": 6.0,
+                "points": 5.0,
                 "time": "2:23.478"
             },
             "Tiger Temple": {
@@ -6319,7 +6319,7 @@
             "gold": 1,
             "silver": 0
         },
-        "total_points": 40,
+        "total_points": 39,
         "total_points_in_upper_league": 2,
         "total_time": "82:56.350",
         "tracks": {
@@ -6522,7 +6522,7 @@
             "Thunder Struck": {
                 "medal": null,
                 "place": 71752,
-                "points": 5.0,
+                "points": 4.0,
                 "time": "2:23.740"
             },
             "Tiger Temple": {
@@ -6976,11 +6976,11 @@
     "R0G4L1CZ3K": {
         "league": 3,
         "medals": {
-            "bronze": 2,
+            "bronze": 3,
             "gold": 3,
-            "silver": 1
+            "silver": 0
         },
-        "total_points": 69,
+        "total_points": 67,
         "total_points_in_upper_league": 4,
         "total_time": "102:51.304",
         "tracks": {
@@ -7151,9 +7151,9 @@
                 "time": "2:30.186"
             },
             "Prehistoric Playground": {
-                "medal": "silver",
+                "medal": "bronze",
                 "place": 3634,
-                "points": 8.0,
+                "points": 6.0,
                 "time": "2:26.047"
             },
             "Roo's Tubes": {
@@ -7466,11 +7466,11 @@
     "StefekPizza": {
         "league": 4,
         "medals": {
-            "bronze": 3,
+            "bronze": 2,
             "gold": 2,
             "silver": 5
         },
-        "total_points": 107,
+        "total_points": 106,
         "total_points_in_upper_league": 11,
         "total_time": "91:47.154",
         "tracks": {
@@ -7701,9 +7701,9 @@
                 "time": "1:53.315"
             },
             "Twilight Tour": {
-                "medal": "bronze",
+                "medal": null,
                 "place": 10331,
-                "points": 6.0,
+                "points": 5.0,
                 "time": "2:20.379"
             }
         }
@@ -7957,12 +7957,12 @@
         "league": 3,
         "medals": {
             "bronze": 1,
-            "gold": 3,
+            "gold": 5,
             "silver": 4
         },
-        "total_points": 99,
-        "total_points_in_upper_league": 1,
-        "total_time": "79:51.753",
+        "total_points": 113,
+        "total_points_in_upper_league": 2,
+        "total_time": "79:30.183",
         "tracks": {
             "Android Alley": {
                 "medal": "gold",
@@ -8131,16 +8131,16 @@
                 "time": "2:30.510"
             },
             "Prehistoric Playground": {
-                "medal": null,
+                "medal": "gold",
                 "place": 24378,
-                "points": 5.0,
-                "time": "2:26.970"
+                "points": 10.0,
+                "time": "2:23.900"
             },
             "Roo's Tubes": {
                 "medal": "silver",
                 "place": 18692,
                 "points": 8.0,
-                "time": "1:16.230"
+                "time": "1:16.140"
             },
             "Sewer Speedway": {
                 "medal": null,
@@ -8161,10 +8161,10 @@
                 "time": "2:14.930"
             },
             "Thunder Struck": {
-                "medal": null,
+                "medal": "silver",
                 "place": 37533,
-                "points": 1.0,
-                "time": "2:33.780"
+                "points": 8.0,
+                "time": "2:19.200"
             },
             "Tiger Temple": {
                 "medal": null,
@@ -8188,13 +8188,13 @@
                 "medal": null,
                 "place": 23848,
                 "points": 0,
-                "time": "1:47.230"
+                "time": "1:44.930"
             },
             "Twilight Tour": {
-                "medal": "silver",
+                "medal": "gold",
                 "place": 34877,
-                "points": 8.0,
-                "time": "2:15.930"
+                "points": 10.0,
+                "time": "2:14.400"
             }
         }
     },
@@ -8409,11 +8409,11 @@
     "Velo": {
         "league": 4,
         "medals": {
-            "bronze": 4,
+            "bronze": 3,
             "gold": 6,
             "silver": 7
         },
-        "total_points": 217,
+        "total_points": 213,
         "total_points_in_upper_league": 14,
         "total_time": "81:09.300",
         "tracks": {
@@ -8549,7 +8549,7 @@
             },
             "Papu's Pyramid": {
                 "medal": null,
-                "points": 5.0,
+                "points": 4.0,
                 "time": "1:38.960"
             },
             "Polar Pass": {
@@ -8583,8 +8583,8 @@
                 "time": "2:17.000"
             },
             "Thunder Struck": {
-                "medal": "bronze",
-                "points": 6.0,
+                "medal": null,
+                "points": 5.0,
                 "time": "2:37.220"
             },
             "Tiger Temple": {
@@ -8604,12 +8604,12 @@
             },
             "Turbo Track": {
                 "medal": null,
-                "points": 4.0,
+                "points": 3.0,
                 "time": "1:47.640"
             },
             "Twilight Tour": {
                 "medal": null,
-                "points": 5.0,
+                "points": 4.0,
                 "time": "2:23.980"
             }
         }
@@ -8621,7 +8621,7 @@
             "gold": 0,
             "silver": 1
         },
-        "total_points": 47,
+        "total_points": 46,
         "total_points_in_upper_league": 0,
         "total_time": "80:46.332",
         "tracks": {
@@ -8854,7 +8854,7 @@
             "Twilight Tour": {
                 "medal": null,
                 "place": 877,
-                "points": 5.0,
+                "points": 4.0,
                 "time": "2:13.334"
             }
         }
@@ -8862,11 +8862,11 @@
     "VitzkyGG": {
         "league": 3,
         "medals": {
-            "bronze": 5,
+            "bronze": 4,
             "gold": 7,
             "silver": 12
         },
-        "total_points": 237,
+        "total_points": 236,
         "total_points_in_upper_league": 6,
         "total_time": "82:10.770",
         "tracks": {
@@ -9037,9 +9037,9 @@
                 "time": "2:16.637"
             },
             "Prehistoric Playground": {
-                "medal": "bronze",
+                "medal": null,
                 "place": 3648,
-                "points": 6.0,
+                "points": 5.0,
                 "time": "2:26.048"
             },
             "Roo's Tubes": {
@@ -9560,11 +9560,11 @@
     "Xenom435": {
         "league": 3,
         "medals": {
-            "bronze": 4,
+            "bronze": 5,
             "gold": 3,
-            "silver": 7
+            "silver": 6
         },
-        "total_points": 163,
+        "total_points": 161,
         "total_points_in_upper_league": 2,
         "total_time": "78:29.990",
         "tracks": {
@@ -9734,8 +9734,8 @@
                 "time": "2:15.530"
             },
             "Thunder Struck": {
-                "medal": "silver",
-                "points": 8.0,
+                "medal": "bronze",
+                "points": 6.0,
                 "time": "2:21.670"
             },
             "Tiger Temple": {
@@ -9768,13 +9768,13 @@
     "Xerdzio": {
         "league": 1,
         "medals": {
-            "bronze": 5,
+            "bronze": 6,
             "gold": 1,
-            "silver": 2
+            "silver": 1
         },
-        "total_points": 138,
+        "total_points": 136,
         "total_points_in_upper_league": 0,
-        "total_time": "71:15.700",
+        "total_time": "71:13.360",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -9890,8 +9890,8 @@
                 "time": "1:37.890"
             },
             "Megamix Mania": {
-                "medal": "silver",
-                "points": 8.0,
+                "medal": "bronze",
+                "points": 6.0,
                 "time": "2:01.820"
             },
             "Meteor Gorge": {
@@ -10000,7 +10000,7 @@
                 "medal": null,
                 "place": 258,
                 "points": 2.0,
-                "time": "1:33.19"
+                "time": "1:30.850"
             },
             "Twilight Tour": {
                 "medal": null,
@@ -10017,7 +10017,7 @@
             "gold": 0,
             "silver": 0
         },
-        "total_points": 64,
+        "total_points": 63,
         "total_points_in_upper_league": 0,
         "total_time": "90:47.518",
         "tracks": {
@@ -10220,7 +10220,7 @@
             "Thunder Struck": {
                 "medal": null,
                 "place": 30600,
-                "points": 3.0,
+                "points": 2.0,
                 "time": "2:44.030"
             },
             "Tiger Temple": {
@@ -10262,8 +10262,8 @@
             "gold": 8,
             "silver": 3
         },
-        "total_points": 179,
-        "total_points_in_upper_league": 17,
+        "total_points": 178,
+        "total_points_in_upper_league": 16,
         "total_time": "87:39.076",
         "tracks": {
             "Android Alley": {
@@ -10495,7 +10495,7 @@
             "Twilight Tour": {
                 "medal": null,
                 "place": 17061,
-                "points": 4.0,
+                "points": 3.0,
                 "time": "2:25.779"
             }
         }
@@ -10507,7 +10507,7 @@
             "gold": 0,
             "silver": 0
         },
-        "total_points": 33,
+        "total_points": 32,
         "total_points_in_upper_league": 0,
         "total_time": "92:35.856",
         "tracks": {
@@ -10710,7 +10710,7 @@
             "Thunder Struck": {
                 "medal": null,
                 "place": 25280,
-                "points": 4.0,
+                "points": 3.0,
                 "time": "2:39.326"
             },
             "Tiger Temple": {
@@ -10748,13 +10748,13 @@
     "cthulhuburi": {
         "league": 4,
         "medals": {
-            "bronze": 6,
-            "gold": 1,
-            "silver": 4
+            "bronze": 7,
+            "gold": 2,
+            "silver": 3
         },
-        "total_points": 112,
-        "total_points_in_upper_league": 4,
-        "total_time": "85:34.920",
+        "total_points": 118,
+        "total_points_in_upper_league": 10,
+        "total_time": "85:21.010",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -10942,14 +10942,14 @@
                 "time": "1:46.040"
             },
             "Turbo Track": {
-                "medal": "silver",
-                "points": 8.0,
-                "time": "1:45.200"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "1:41.800"
             },
             "Twilight Tour": {
-                "medal": null,
-                "points": 2.0,
-                "time": "2:28.680"
+                "medal": "bronze",
+                "points": 6.0,
+                "time": "2:18.170"
             }
         }
     },
@@ -11201,11 +11201,11 @@
     "kubalok25": {
         "league": 2,
         "medals": {
-            "bronze": 9,
-            "gold": 14,
+            "bronze": 10,
+            "gold": 13,
             "silver": 7
         },
-        "total_points": 287,
+        "total_points": 282,
         "total_points_in_upper_league": 13,
         "total_time": "72:18.980",
         "tracks": {
@@ -11406,9 +11406,9 @@
                 "time": "2:12.600"
             },
             "Thunder Struck": {
-                "medal": "gold",
+                "medal": "bronze",
                 "place": 999999,
-                "points": 10.0,
+                "points": 6.0,
                 "time": "1:55.480"
             },
             "Tiger Temple": {
@@ -11438,7 +11438,7 @@
             "Twilight Tour": {
                 "medal": null,
                 "place": 1115,
-                "points": 4.0,
+                "points": 3.0,
                 "time": "2:13.630"
             }
         }
@@ -11450,7 +11450,7 @@
             "gold": 0,
             "silver": 1
         },
-        "total_points": 43,
+        "total_points": 42,
         "total_points_in_upper_league": 0,
         "total_time": "77:26.133",
         "tracks": {
@@ -11617,7 +11617,7 @@
             "Polar Pass": {
                 "medal": null,
                 "place": 14411,
-                "points": 5.0,
+                "points": 4.0,
                 "time": "2:05.720"
             },
             "Prehistoric Playground": {
@@ -11691,11 +11691,11 @@
     "mati1212": {
         "league": 1,
         "medals": {
-            "bronze": 8,
+            "bronze": 7,
             "gold": 0,
             "silver": 4
         },
-        "total_points": 119,
+        "total_points": 115,
         "total_points_in_upper_league": 0,
         "total_time": "71:28.865",
         "tracks": {
@@ -11814,7 +11814,7 @@
             },
             "Megamix Mania": {
                 "medal": null,
-                "points": 4.0,
+                "points": 3.0,
                 "time": "2:02.320"
             },
             "Meteor Gorge": {
@@ -11898,7 +11898,7 @@
             "Thunder Struck": {
                 "medal": null,
                 "place": 11413,
-                "points": 3.0,
+                "points": 2.0,
                 "time": "1:53.210"
             },
             "Tiger Temple": {
@@ -11920,9 +11920,9 @@
                 "time": "1:37.760"
             },
             "Turbo Track": {
-                "medal": "bronze",
+                "medal": null,
                 "place": 215,
-                "points": 6.0,
+                "points": 4.0,
                 "time": "1:29.824"
             },
             "Twilight Tour": {
@@ -11942,7 +11942,7 @@
         },
         "total_points": 129,
         "total_points_in_upper_league": 0,
-        "total_time": "71:16.029",
+        "total_time": "71:14.329",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -12059,7 +12059,7 @@
             },
             "Megamix Mania": {
                 "medal": null,
-                "points": 2.0,
+                "points": 1.0,
                 "time": "2:02.650"
             },
             "Meteor Gorge": {
@@ -12143,8 +12143,8 @@
             "Thunder Struck": {
                 "medal": null,
                 "place": 11064,
-                "points": 2.0,
-                "time": "1:53.510"
+                "points": 4.0,
+                "time": "1:51.810"
             },
             "Tiger Temple": {
                 "medal": null,
@@ -12167,7 +12167,7 @@
             "Turbo Track": {
                 "medal": null,
                 "place": 688,
-                "points": 4.0,
+                "points": 3.0,
                 "time": "1:30.820"
             },
             "Twilight Tour": {
@@ -12185,7 +12185,7 @@
             "gold": 6,
             "silver": 5
         },
-        "total_points": 176,
+        "total_points": 174,
         "total_points_in_upper_league": 12,
         "total_time": "97:42.324",
         "tracks": {
@@ -12412,13 +12412,13 @@
             "Turbo Track": {
                 "medal": null,
                 "place": 14741,
-                "points": 5.0,
+                "points": 4.0,
                 "time": "1:47.473"
             },
             "Twilight Tour": {
                 "medal": null,
                 "place": 20309,
-                "points": 3.0,
+                "points": 2.0,
                 "time": "2:28.017"
             }
         }
@@ -12430,7 +12430,7 @@
             "gold": 2,
             "silver": 1
         },
-        "total_points": 70,
+        "total_points": 69,
         "total_points_in_upper_league": 5,
         "total_time": "84:56.040",
         "tracks": {
@@ -12603,7 +12603,7 @@
             "Prehistoric Playground": {
                 "medal": null,
                 "place": 10775,
-                "points": 1.0,
+                "points": 0,
                 "time": "2:29.980"
             },
             "Roo's Tubes": {
@@ -12671,13 +12671,13 @@
     "platko90": {
         "league": 3,
         "medals": {
-            "bronze": 5,
-            "gold": 2,
-            "silver": 0
+            "bronze": 4,
+            "gold": 1,
+            "silver": 2
         },
-        "total_points": 73,
+        "total_points": 77,
         "total_points_in_upper_league": 0,
-        "total_time": "83:02.330",
+        "total_time": "82:25.900",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -12848,8 +12848,8 @@
             "Prehistoric Playground": {
                 "medal": null,
                 "place": 15475,
-                "points": 0,
-                "time": "2:32.980"
+                "points": 1.0,
+                "time": "2:27.610"
             },
             "Roo's Tubes": {
                 "medal": null,
@@ -12878,8 +12878,8 @@
             "Thunder Struck": {
                 "medal": null,
                 "place": 60542,
-                "points": 0,
-                "time": "2:53.300"
+                "points": 3.0,
+                "time": "2:24.680"
             },
             "Tiger Temple": {
                 "medal": "bronze",
@@ -12900,16 +12900,16 @@
                 "time": "1:46.550"
             },
             "Turbo Track": {
-                "medal": "bronze",
+                "medal": "silver",
                 "place": 39284,
-                "points": 6.0,
-                "time": "1:41.200"
+                "points": 8.0,
+                "time": "1:39.730"
             },
             "Twilight Tour": {
-                "medal": "gold",
+                "medal": "silver",
                 "place": 15317,
-                "points": 10.0,
-                "time": "2:15.870"
+                "points": 8.0,
+                "time": "2:14.900"
             }
         }
     },
@@ -12920,7 +12920,7 @@
             "gold": 1,
             "silver": 0
         },
-        "total_points": 62,
+        "total_points": 60,
         "total_points_in_upper_league": 8,
         "total_time": "76:22.490",
         "tracks": {
@@ -13061,7 +13061,7 @@
             },
             "Polar Pass": {
                 "medal": null,
-                "points": 1.0,
+                "points": 0,
                 "time": "2:08.890"
             },
             "Prehistoric Playground": {
@@ -13116,7 +13116,7 @@
             },
             "Twilight Tour": {
                 "medal": null,
-                "points": 2.0,
+                "points": 1.0,
                 "time": "2:14.030"
             }
         }
@@ -13128,9 +13128,9 @@
             "gold": 1,
             "silver": 1
         },
-        "total_points": 111,
+        "total_points": 112,
         "total_points_in_upper_league": 3,
-        "total_time": "74:11.030",
+        "total_time": "74:01.020",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -13153,8 +13153,8 @@
             "Blizzard Bluff": {
                 "medal": null,
                 "place": 4205,
-                "points": 0,
-                "time": "1:13.240"
+                "points": 3.0,
+                "time": "1:11.870"
             },
             "Clockwork Wumpa": {
                 "medal": null,
@@ -13201,7 +13201,7 @@
             "Drive-Thru Danger": {
                 "medal": null,
                 "points": 0,
-                "time": "2:00.620"
+                "time": "1:54.380"
             },
             "Electron Avenue": {
                 "medal": null,
@@ -13231,7 +13231,7 @@
                 "medal": null,
                 "place": 3414,
                 "points": 1.0,
-                "time": "1:34.920"
+                "time": "1:34.890"
             },
             "Jungle Boogie": {
                 "medal": null,
@@ -13248,7 +13248,7 @@
             "Megamix Mania": {
                 "medal": null,
                 "points": 0,
-                "time": "2:08.860"
+                "time": "2:06.490"
             },
             "Meteor Gorge": {
                 "medal": "gold",
@@ -13295,7 +13295,7 @@
             "Polar Pass": {
                 "medal": null,
                 "place": 14356,
-                "points": 2.5,
+                "points": 1.5,
                 "time": "2:06.890"
             },
             "Prehistoric Playground": {
@@ -13361,7 +13361,7 @@
             "Twilight Tour": {
                 "medal": null,
                 "place": 11535,
-                "points": 3.0,
+                "points": 2.0,
                 "time": "2:14.000"
             }
         }
@@ -13373,9 +13373,9 @@
             "gold": 0,
             "silver": 0
         },
-        "total_points": 74,
+        "total_points": 78,
         "total_points_in_upper_league": 0,
-        "total_time": "73:50.460",
+        "total_time": "73:45.400",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -13398,7 +13398,7 @@
             "Blizzard Bluff": {
                 "medal": null,
                 "place": 2696,
-                "points": 1.0,
+                "points": 0,
                 "time": "1:12.830"
             },
             "Clockwork Wumpa": {
@@ -13540,8 +13540,8 @@
             "Polar Pass": {
                 "medal": null,
                 "place": 9487,
-                "points": 0,
-                "time": "2:09.420"
+                "points": 5.0,
+                "time": "2:04.990"
             },
             "Prehistoric Playground": {
                 "medal": null,
@@ -13601,7 +13601,7 @@
                 "medal": "bronze",
                 "place": 3350,
                 "points": 6.0,
-                "time": "1:33.190"
+                "time": "1:32.560"
             },
             "Twilight Tour": {
                 "medal": null,
@@ -13861,11 +13861,11 @@
         "medals": {
             "bronze": 4,
             "gold": 0,
-            "silver": 3
+            "silver": 2
         },
-        "total_points": 131,
+        "total_points": 127,
         "total_points_in_upper_league": 0,
-        "total_time": "71:20.832",
+        "total_time": "71:20.272",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -13982,7 +13982,7 @@
             },
             "Megamix Mania": {
                 "medal": null,
-                "points": 3.0,
+                "points": 2.0,
                 "time": "2:02.520"
             },
             "Meteor Gorge": {
@@ -14064,9 +14064,9 @@
                 "time": "2:10.860"
             },
             "Thunder Struck": {
-                "medal": "bronze",
+                "medal": null,
                 "place": 999999,
-                "points": 6.0,
+                "points": 5.0,
                 "time": "1:51.610"
             },
             "Tiger Temple": {
@@ -14088,16 +14088,16 @@
                 "time": "1:38.500"
             },
             "Turbo Track": {
-                "medal": "silver",
+                "medal": "bronze",
                 "place": 999999,
-                "points": 8.0,
-                "time": "1:29.650"
+                "points": 6.0,
+                "time": "1:29.150"
             },
             "Twilight Tour": {
                 "medal": null,
                 "place": 415,
                 "points": 3.0,
-                "time": "2:10.490"
+                "time": "2:10.430"
             }
         }
     },
