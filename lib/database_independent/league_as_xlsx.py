@@ -41,20 +41,36 @@ class LeagueAsXlsx(LeagueAsCsv):
         formatting_matrix.append([CellFormat(16, BLACK, BRONZE)] * row_len)
         formatting_matrix.append([CellFormat(20, RED, 'F5F5F5')] * row_len)
         formatting_matrix.append([CellFormat(13, RED, 'F5F5F5')] * row_len)
-        formatting_matrix.append([CellFormat(13, BLACK, 'F5F5F5')] * row_len)
+        formatting_matrix.append(self._evaluate_formatting_for_total_time_row(league_csv))
         formatting_matrix.append([])
         for legend_and_announcements_formatting in self._evaluate_formatting_for_legend_and_announcements():
             formatting_matrix.append(legend_and_announcements_formatting)
         return formatting_matrix
 
+    def _evaluate_formatting_for_total_time_row(self, league_csv):
+        formatting_row = list()
+        total_time_row = len(self.track_list) + 6
+        for col, cell in enumerate(league_csv[total_time_row]):
+            if col != 0 and int(cell.split(":")[0]) < 70:
+                formatting_row.append(CellFormat(13, WHITE, BLACK))
+            else:
+                formatting_row.append(CellFormat(13, BLACK, 'F5F5F5'))
+        return formatting_row
+
     def _evaluate_formatting_for_player_row(self, league_csv):
         formatting_row = list()
-        for cell in league_csv[0]:
+        total_time_row = len(self.track_list) + 6
+        for col, cell in enumerate(league_csv[0]):
             if cell in self.bots_list:
                 background_color = RED
+                font_color = BLACK
+            elif col != 0 and int(league_csv[total_time_row][col].split(":")[0]) < 70:
+                background_color = BLACK
+                font_color = GOLD
             else:
                 background_color = ORANGE
-            formatting_row.append(CellFormat(font_size=11, background_color=background_color))
+                font_color = BLACK
+            formatting_row.append(CellFormat(font_size=11, font_color=font_color, background_color=background_color))
         return formatting_row
 
     def _evaluate_formatting_for_time_records(self, league_csv):
@@ -64,6 +80,18 @@ class LeagueAsXlsx(LeagueAsCsv):
         for r, row in enumerate(league_csv[1:track_count+1]):
             time_formatting_matrix.append([CellFormat(13, BLACK, LIGHT_BLUE)])
             for c in range(1, len(row)):
+                # if c % 6 == 1:
+                #     league_csv[r][c] = "FIVE"
+                # if c % 6 == 2:
+                #     league_csv[r][c] = "ma"
+                # if c % 6 == 3:
+                #     league_csv[r][c] = "sub"
+                # if c % 6 == 4:
+                #     league_csv[r][c] = "70min"
+                # if c % 6 == 5:
+                #     league_csv[r][c] = "o ja"
+                # if c % 6 == 0:
+                #     league_csv[r][c] = "nie moge"
                 cell_format = self._evaluate_time_cell_format(players[c-1], row[0])
                 time_formatting_matrix[r].append(cell_format)
         return time_formatting_matrix
