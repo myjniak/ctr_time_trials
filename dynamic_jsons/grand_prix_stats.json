@@ -1,18 +1,26 @@
 {
     "Dejwidgakure": {
-        "old_total_points": 99,
+        "old_total_points": 103,
         "ranking": 0.0,
         "total_places_improved": 0,
-        "total_points": 61,
+        "total_points": 59,
         "total_points_improved": 0,
         "total_time_improved": 0.0,
         "tracks": {
+            "Sewer Speedway": {
+                "new_place": 25,
+                "old_place": 25,
+                "old_points": 4,
+                "place_improvement": 0,
+                "points": 4,
+                "time_improvement": 0.0
+            },
             "Thunder Struck": {
-                "new_place": 21,
+                "new_place": 22,
                 "old_place": 19,
                 "old_points": 37,
-                "place_improvement": -2,
-                "points": 22,
+                "place_improvement": -3,
+                "points": 16,
                 "time_improvement": 0.0
             },
             "Turbo Track": {
@@ -34,28 +42,36 @@
         }
     },
     "Greg": {
-        "old_total_points": 424,
-        "ranking": 3125.88,
+        "old_total_points": 578,
+        "ranking": 9142.08,
         "total_places_improved": 5,
-        "total_points": 414,
+        "total_points": 568,
         "total_points_improved": 80,
-        "total_time_improved": 3.42,
+        "total_time_improved": 8.56,
         "tracks": {
+            "Sewer Speedway": {
+                "new_place": 12,
+                "old_place": 10,
+                "old_points": 154,
+                "place_improvement": -2,
+                "points": 121,
+                "time_improvement": 0.0
+            },
             "Thunder Struck": {
                 "new_place": 12,
                 "old_place": 12,
                 "old_points": 121,
                 "place_improvement": 0,
                 "points": 121,
-                "time_improvement": 0.0
+                "time_improvement": 4.57
             },
             "Turbo Track": {
-                "new_place": 12,
+                "new_place": 10,
                 "old_place": 7,
                 "old_points": 211,
-                "place_improvement": -5,
-                "points": 121,
-                "time_improvement": 0.0
+                "place_improvement": -3,
+                "points": 154,
+                "time_improvement": 0.57
             },
             "Twilight Tour": {
                 "new_place": 9,
@@ -68,28 +84,36 @@
         }
     },
     "Gustlyk1": {
-        "old_total_points": 157,
-        "ranking": 605.12,
-        "total_places_improved": 3,
-        "total_points": 178,
-        "total_points_improved": 42,
-        "total_time_improved": 1.24,
+        "old_total_points": 249,
+        "ranking": 32481.839999999997,
+        "total_places_improved": 10,
+        "total_points": 334,
+        "total_points_improved": 110,
+        "total_time_improved": 33.01,
         "tracks": {
-            "Thunder Struck": {
-                "new_place": 23,
-                "old_place": 21,
-                "old_points": 22,
+            "Sewer Speedway": {
+                "new_place": 16,
+                "old_place": 14,
+                "old_points": 92,
                 "place_improvement": -2,
-                "points": 11,
+                "points": 67,
                 "time_improvement": 0.0
             },
+            "Thunder Struck": {
+                "new_place": 16,
+                "old_place": 21,
+                "old_points": 22,
+                "place_improvement": 5,
+                "points": 67,
+                "time_improvement": 24.79
+            },
             "Turbo Track": {
-                "new_place": 18,
+                "new_place": 15,
                 "old_place": 17,
                 "old_points": 56,
-                "place_improvement": -1,
-                "points": 46,
-                "time_improvement": 0.0
+                "place_improvement": 2,
+                "points": 79,
+                "time_improvement": 6.98
             },
             "Twilight Tour": {
                 "new_place": 12,
@@ -102,19 +126,27 @@
         }
     },
     "Jakub_Luk": {
-        "old_total_points": 562,
-        "ranking": 3207.3799999999997,
-        "total_places_improved": 1,
-        "total_points": 481,
-        "total_points_improved": 18,
-        "total_time_improved": 4.779999999999999,
+        "old_total_points": 608,
+        "ranking": 7449.749999999999,
+        "total_places_improved": 7,
+        "total_points": 600,
+        "total_points_improved": 91,
+        "total_time_improved": 6.449999999999999,
         "tracks": {
+            "Sewer Speedway": {
+                "new_place": 11,
+                "old_place": 18,
+                "old_points": 46,
+                "place_improvement": 7,
+                "points": 137,
+                "time_improvement": 1.67
+            },
             "Thunder Struck": {
-                "new_place": 9,
+                "new_place": 10,
                 "old_place": 10,
                 "old_points": 154,
-                "place_improvement": 1,
-                "points": 172,
+                "place_improvement": 0,
+                "points": 154,
                 "time_improvement": 3.17
             },
             "Turbo Track": {
@@ -136,13 +168,21 @@
         }
     },
     "JanneAhonen69": {
-        "old_total_points": 884,
+        "old_total_points": 1210,
         "ranking": 0.0,
         "total_places_improved": 0,
-        "total_points": 806,
+        "total_points": 1115,
         "total_points_improved": 0,
         "total_time_improved": 0.0,
         "tracks": {
+            "Sewer Speedway": {
+                "new_place": 2,
+                "old_place": 2,
+                "old_points": 326,
+                "place_improvement": 0,
+                "points": 326,
+                "time_improvement": 0.0
+            },
             "Thunder Struck": {
                 "new_place": 2,
                 "old_place": 2,
@@ -152,11 +192,11 @@
                 "time_improvement": 0.0
             },
             "Turbo Track": {
-                "new_place": 10,
+                "new_place": 11,
                 "old_place": 6,
                 "old_points": 232,
-                "place_improvement": -4,
-                "points": 154,
+                "place_improvement": -5,
+                "points": 137,
                 "time_improvement": 0.0
             },
             "Twilight Tour": {
@@ -170,20 +210,28 @@
         }
     },
     "KalibeRaziel44": {
-        "old_total_points": 446,
-        "ranking": 5542.74,
-        "total_places_improved": 4,
-        "total_points": 499,
-        "total_points_improved": 71,
-        "total_time_improved": 5.81,
+        "old_total_points": 583,
+        "ranking": 12823.66,
+        "total_places_improved": 8,
+        "total_points": 708,
+        "total_points_improved": 143,
+        "total_time_improved": 8.42,
         "tracks": {
-            "Thunder Struck": {
-                "new_place": 10,
+            "Sewer Speedway": {
+                "new_place": 9,
                 "old_place": 11,
                 "old_points": 137,
-                "place_improvement": 1,
-                "points": 154,
-                "time_improvement": 2.0
+                "place_improvement": 2,
+                "points": 172,
+                "time_improvement": 0.57
+            },
+            "Thunder Struck": {
+                "new_place": 8,
+                "old_place": 11,
+                "old_points": 137,
+                "place_improvement": 3,
+                "points": 191,
+                "time_improvement": 4.04
             },
             "Turbo Track": {
                 "new_place": 8,
@@ -204,13 +252,21 @@
         }
     },
     "Kideu98": {
-        "old_total_points": 676,
-        "ranking": 11701.8,
+        "old_total_points": 930,
+        "ranking": 13210.56,
         "total_places_improved": 10,
-        "total_points": 855,
+        "total_points": 1109,
         "total_points_improved": 203,
         "total_time_improved": 5.9399999999999995,
         "tracks": {
+            "Sewer Speedway": {
+                "new_place": 5,
+                "old_place": 5,
+                "old_points": 254,
+                "place_improvement": 0,
+                "points": 254,
+                "time_improvement": 0.0
+            },
             "Thunder Struck": {
                 "new_place": 3,
                 "old_place": 5,
@@ -245,6 +301,14 @@
         "total_points_improved": 0,
         "total_time_improved": 1.07,
         "tracks": {
+            "Sewer Speedway": {
+                "new_place": 28,
+                "old_place": 28,
+                "old_points": 0,
+                "place_improvement": 0,
+                "points": 0,
+                "time_improvement": 0.0
+            },
             "Thunder Struck": {
                 "new_place": 24,
                 "old_place": 22,
@@ -272,27 +336,35 @@
         }
     },
     "Krisao_": {
-        "old_total_points": 172,
+        "old_total_points": 293,
         "ranking": 0.0,
         "total_places_improved": 0,
-        "total_points": 135,
+        "total_points": 221,
         "total_points_improved": 0,
         "total_time_improved": 0.0,
         "tracks": {
+            "Sewer Speedway": {
+                "new_place": 13,
+                "old_place": 12,
+                "old_points": 121,
+                "place_improvement": -1,
+                "points": 106,
+                "time_improvement": 0.0
+            },
             "Thunder Struck": {
-                "new_place": 18,
+                "new_place": 19,
                 "old_place": 17,
                 "old_points": 56,
-                "place_improvement": -1,
-                "points": 46,
+                "place_improvement": -2,
+                "points": 37,
                 "time_improvement": 0.0
             },
             "Turbo Track": {
-                "new_place": 16,
+                "new_place": 17,
                 "old_place": 15,
                 "old_points": 79,
-                "place_improvement": -1,
-                "points": 67,
+                "place_improvement": -2,
+                "points": 56,
                 "time_improvement": 0.0
             },
             "Twilight Tour": {
@@ -306,13 +378,21 @@
         }
     },
     "MEDYK-POLSKA": {
-        "old_total_points": 8,
-        "ranking": 5506.7519999999995,
+        "old_total_points": 10,
+        "ranking": 5564.114,
         "total_places_improved": 5,
-        "total_points": 22,
+        "total_points": 24,
         "total_points_improved": 14,
         "total_time_improved": 28.680999999999997,
         "tracks": {
+            "Sewer Speedway": {
+                "new_place": 26,
+                "old_place": 26,
+                "old_points": 2,
+                "place_improvement": 0,
+                "points": 2,
+                "time_improvement": 0.0
+            },
             "Thunder Struck": {
                 "new_place": 25,
                 "old_place": 25,
@@ -340,13 +420,21 @@
         }
     },
     "Maties_Gamer": {
-        "old_total_points": 831,
-        "ranking": 2005.2,
+        "old_total_points": 1042,
+        "ranking": 2385.0,
         "total_places_improved": 2,
-        "total_points": 769,
+        "total_points": 980,
         "total_points_improved": 49,
         "total_time_improved": 1.8,
         "tracks": {
+            "Sewer Speedway": {
+                "new_place": 7,
+                "old_place": 7,
+                "old_points": 211,
+                "place_improvement": 0,
+                "points": 211,
+                "time_improvement": 0.0
+            },
             "Thunder Struck": {
                 "new_place": 6,
                 "old_place": 4,
@@ -374,19 +462,27 @@
         }
     },
     "OFF23PL": {
-        "old_total_points": 47,
+        "old_total_points": 69,
         "ranking": 0.0,
         "total_places_improved": 0,
-        "total_points": 38,
+        "total_points": 46,
         "total_points_improved": 0,
         "total_time_improved": 0.0,
         "tracks": {
+            "Sewer Speedway": {
+                "new_place": 22,
+                "old_place": 21,
+                "old_points": 22,
+                "place_improvement": -1,
+                "points": 16,
+                "time_improvement": 0.0
+            },
             "Thunder Struck": {
-                "new_place": 19,
+                "new_place": 20,
                 "old_place": 18,
                 "old_points": 46,
-                "place_improvement": -1,
-                "points": 37,
+                "place_improvement": -2,
+                "points": 29,
                 "time_improvement": 0.0
             },
             "Turbo Track": {
@@ -408,13 +504,21 @@
         }
     },
     "Rc_FIVE": {
-        "old_total_points": 1056,
-        "ranking": 161.84,
+        "old_total_points": 1408,
+        "ranking": 512.72,
         "total_places_improved": 0,
-        "total_points": 1056,
+        "total_points": 1408,
         "total_points_improved": 0,
-        "total_time_improved": 0.14,
+        "total_time_improved": 0.34,
         "tracks": {
+            "Sewer Speedway": {
+                "new_place": 1,
+                "old_place": 1,
+                "old_points": 352,
+                "place_improvement": 0,
+                "points": 352,
+                "time_improvement": 0.0
+            },
             "Thunder Struck": {
                 "new_place": 1,
                 "old_place": 1,
@@ -429,7 +533,7 @@
                 "old_points": 352,
                 "place_improvement": 0,
                 "points": 352,
-                "time_improvement": 0.0
+                "time_improvement": 0.2
             },
             "Twilight Tour": {
                 "new_place": 1,
@@ -442,20 +546,28 @@
         }
     },
     "TyczekPL": {
-        "old_total_points": 29,
-        "ranking": 23540.22,
-        "total_places_improved": 17,
-        "total_points": 156,
+        "old_total_points": 36,
+        "ranking": 32601.89,
+        "total_places_improved": 19,
+        "total_points": 163,
         "total_points_improved": 127,
-        "total_time_improved": 26.42,
+        "total_time_improved": 36.305,
         "tracks": {
+            "Sewer Speedway": {
+                "new_place": 20,
+                "old_place": 24,
+                "old_points": 7,
+                "place_improvement": 4,
+                "points": 29,
+                "time_improvement": 2.445
+            },
             "Thunder Struck": {
-                "new_place": 16,
+                "new_place": 17,
                 "old_place": 23,
                 "old_points": 11,
-                "place_improvement": 7,
-                "points": 67,
-                "time_improvement": 14.58
+                "place_improvement": 6,
+                "points": 56,
+                "time_improvement": 22.02
             },
             "Turbo Track": {
                 "new_place": 21,
@@ -466,29 +578,37 @@
                 "time_improvement": 2.3
             },
             "Twilight Tour": {
-                "new_place": 16,
+                "new_place": 17,
                 "old_place": 23,
                 "old_points": 11,
-                "place_improvement": 7,
-                "points": 67,
+                "place_improvement": 6,
+                "points": 56,
                 "time_improvement": 9.54
             }
         }
     },
     "Xenom435": {
-        "old_total_points": 126,
+        "old_total_points": 193,
         "ranking": 0.0,
         "total_places_improved": 0,
-        "total_points": 89,
+        "total_points": 125,
         "total_points_improved": 0,
         "total_time_improved": 0.0,
         "tracks": {
-            "Thunder Struck": {
-                "new_place": 17,
+            "Sewer Speedway": {
+                "new_place": 18,
                 "old_place": 16,
                 "old_points": 67,
-                "place_improvement": -1,
-                "points": 56,
+                "place_improvement": -2,
+                "points": 46,
+                "time_improvement": 0.0
+            },
+            "Thunder Struck": {
+                "new_place": 18,
+                "old_place": 16,
+                "old_points": 67,
+                "place_improvement": -2,
+                "points": 46,
                 "time_improvement": 0.0
             },
             "Turbo Track": {
@@ -510,19 +630,27 @@
         }
     },
     "Xerdzio": {
-        "old_total_points": 617,
-        "ranking": 2643.7799999999997,
+        "old_total_points": 789,
+        "ranking": 3019.08,
         "total_places_improved": 2,
-        "total_points": 656,
+        "total_points": 791,
         "total_points_improved": 39,
         "total_time_improved": 2.78,
         "tracks": {
+            "Sewer Speedway": {
+                "new_place": 10,
+                "old_place": 9,
+                "old_points": 172,
+                "place_improvement": -1,
+                "points": 154,
+                "time_improvement": 0.0
+            },
             "Thunder Struck": {
-                "new_place": 8,
+                "new_place": 9,
                 "old_place": 8,
                 "old_points": 191,
-                "place_improvement": 0,
-                "points": 191,
+                "place_improvement": -1,
+                "points": 172,
                 "time_improvement": 0.0
             },
             "Turbo Track": {
@@ -544,13 +672,21 @@
         }
     },
     "cthulhuburi": {
-        "old_total_points": 33,
-        "ranking": 4353.83,
-        "total_places_improved": 4,
-        "total_points": 63,
-        "total_points_improved": 30,
+        "old_total_points": 44,
+        "ranking": 3616.6,
+        "total_places_improved": 3,
+        "total_points": 60,
+        "total_points_improved": 20,
         "total_time_improved": 13.91,
         "tracks": {
+            "Sewer Speedway": {
+                "new_place": 24,
+                "old_place": 23,
+                "old_points": 11,
+                "place_improvement": -1,
+                "points": 7,
+                "time_improvement": 0.0
+            },
             "Thunder Struck": {
                 "new_place": 28,
                 "old_place": 28,
@@ -560,11 +696,11 @@
                 "time_improvement": 0.0
             },
             "Turbo Track": {
-                "new_place": 17,
+                "new_place": 18,
                 "old_place": 20,
                 "old_points": 29,
-                "place_improvement": 3,
-                "points": 56,
+                "place_improvement": 2,
+                "points": 46,
                 "time_improvement": 3.4
             },
             "Twilight Tour": {
@@ -578,13 +714,21 @@
         }
     },
     "dnsgpa": {
-        "old_total_points": 52,
+        "old_total_points": 68,
         "ranking": 0.0,
         "total_places_improved": 0,
-        "total_points": 29,
+        "total_points": 40,
         "total_points_improved": 0,
         "total_time_improved": 0.0,
         "tracks": {
+            "Sewer Speedway": {
+                "new_place": 23,
+                "old_place": 22,
+                "old_points": 16,
+                "place_improvement": -1,
+                "points": 11,
+                "time_improvement": 0.0
+            },
             "Thunder Struck": {
                 "new_place": 26,
                 "old_place": 24,
@@ -612,13 +756,21 @@
         }
     },
     "kubalok25": {
-        "old_total_points": 415,
+        "old_total_points": 647,
         "ranking": 0.0,
         "total_places_improved": 0,
-        "total_points": 349,
+        "total_points": 567,
         "total_points_improved": 0,
         "total_time_improved": 0.0,
         "tracks": {
+            "Sewer Speedway": {
+                "new_place": 6,
+                "old_place": 6,
+                "old_points": 232,
+                "place_improvement": 0,
+                "points": 232,
+                "time_improvement": 0.0
+            },
             "Thunder Struck": {
                 "new_place": 11,
                 "old_place": 9,
@@ -636,23 +788,31 @@
                 "time_improvement": 0.0
             },
             "Twilight Tour": {
-                "new_place": 13,
+                "new_place": 14,
                 "old_place": 11,
                 "old_points": 137,
-                "place_improvement": -2,
-                "points": 106,
+                "place_improvement": -3,
+                "points": 92,
                 "time_improvement": 0.0
             }
         }
     },
     "marmero97": {
-        "old_total_points": 157,
+        "old_total_points": 186,
         "ranking": 0.0,
         "total_places_improved": 0,
-        "total_points": 139,
+        "total_points": 151,
         "total_points_improved": 0,
         "total_time_improved": 0.0,
         "tracks": {
+            "Sewer Speedway": {
+                "new_place": 21,
+                "old_place": 20,
+                "old_points": 29,
+                "place_improvement": -1,
+                "points": 22,
+                "time_improvement": 0.0
+            },
             "Thunder Struck": {
                 "new_place": 15,
                 "old_place": 15,
@@ -670,23 +830,31 @@
                 "time_improvement": 0.0
             },
             "Twilight Tour": {
-                "new_place": 17,
+                "new_place": 18,
                 "old_place": 16,
                 "old_points": 67,
-                "place_improvement": -1,
-                "points": 56,
+                "place_improvement": -2,
+                "points": 46,
                 "time_improvement": 0.0
             }
         }
     },
     "mati1212": {
-        "old_total_points": 724,
-        "ranking": 2553.048,
+        "old_total_points": 1001,
+        "ranking": 3052.479,
         "total_places_improved": 5,
-        "total_points": 766,
+        "total_points": 1043,
         "total_points_improved": 110,
         "total_time_improved": 1.803,
         "tracks": {
+            "Sewer Speedway": {
+                "new_place": 4,
+                "old_place": 4,
+                "old_points": 277,
+                "place_improvement": 0,
+                "points": 277,
+                "time_improvement": 0.0
+            },
             "Thunder Struck": {
                 "new_place": 7,
                 "old_place": 6,
@@ -714,13 +882,21 @@
         }
     },
     "myjniak": {
-        "old_total_points": 634,
-        "ranking": 5063.3099999999995,
+        "old_total_points": 825,
+        "ranking": 5871.24,
         "total_places_improved": 4,
-        "total_points": 677,
+        "total_points": 868,
         "total_points_improved": 84,
         "total_time_improved": 4.2299999999999995,
         "tracks": {
+            "Sewer Speedway": {
+                "new_place": 8,
+                "old_place": 8,
+                "old_points": 191,
+                "place_improvement": 0,
+                "points": 191,
+                "time_improvement": 0.0
+            },
             "Thunder Struck": {
                 "new_place": 5,
                 "old_place": 7,
@@ -748,13 +924,21 @@
         }
     },
     "peteer_parker": {
-        "old_total_points": 6,
+        "old_total_points": 112,
         "ranking": 0.0,
         "total_places_improved": 0,
-        "total_points": 3,
+        "total_points": 95,
         "total_points_improved": 0,
         "total_time_improved": 0.0,
         "tracks": {
+            "Sewer Speedway": {
+                "new_place": 14,
+                "old_place": 13,
+                "old_points": 106,
+                "place_improvement": -1,
+                "points": 92,
+                "time_improvement": 0.0
+            },
             "Thunder Struck": {
                 "new_place": 27,
                 "old_place": 26,
@@ -782,27 +966,35 @@
         }
     },
     "platko90": {
-        "old_total_points": 75,
-        "ranking": 23502.5,
-        "total_places_improved": 13,
-        "total_points": 145,
-        "total_points_improved": 70,
+        "old_total_points": 76,
+        "ranking": 19039.0,
+        "total_places_improved": 11,
+        "total_points": 127,
+        "total_points_improved": 51,
         "total_time_improved": 39.5,
         "tracks": {
-            "Thunder Struck": {
-                "new_place": 20,
+            "Sewer Speedway": {
+                "new_place": 27,
                 "old_place": 27,
                 "old_points": 1,
-                "place_improvement": 7,
-                "points": 29,
+                "place_improvement": 0,
+                "points": 1,
+                "time_improvement": 0.0
+            },
+            "Thunder Struck": {
+                "new_place": 21,
+                "old_place": 27,
+                "old_points": 1,
+                "place_improvement": 6,
+                "points": 22,
                 "time_improvement": 28.62
             },
             "Turbo Track": {
-                "new_place": 15,
+                "new_place": 16,
                 "old_place": 16,
                 "old_points": 67,
-                "place_improvement": 1,
-                "points": 79,
+                "place_improvement": 0,
+                "points": 67,
                 "time_improvement": 1.47
             },
             "Twilight Tour": {
@@ -816,19 +1008,27 @@
         }
     },
     "poco_mi_kumpel": {
-        "old_total_points": 157,
+        "old_total_points": 236,
         "ranking": 0.0,
         "total_places_improved": 0,
-        "total_points": 111,
+        "total_points": 150,
         "total_points_improved": 0,
         "total_time_improved": 0.0,
         "tracks": {
+            "Sewer Speedway": {
+                "new_place": 17,
+                "old_place": 15,
+                "old_points": 79,
+                "place_improvement": -2,
+                "points": 56,
+                "time_improvement": 0.0
+            },
             "Thunder Struck": {
-                "new_place": 22,
+                "new_place": 23,
                 "old_place": 20,
                 "old_points": 29,
-                "place_improvement": -2,
-                "points": 16,
+                "place_improvement": -3,
+                "points": 11,
                 "time_improvement": 0.0
             },
             "Turbo Track": {
@@ -840,23 +1040,31 @@
                 "time_improvement": 0.0
             },
             "Twilight Tour": {
-                "new_place": 15,
+                "new_place": 16,
                 "old_place": 13,
                 "old_points": 106,
-                "place_improvement": -2,
-                "points": 79,
+                "place_improvement": -3,
+                "points": 67,
                 "time_improvement": 0.0
             }
         }
     },
     "potbot0": {
-        "old_total_points": 305,
+        "old_total_points": 361,
         "ranking": 0.0,
         "total_places_improved": 0,
-        "total_points": 276,
+        "total_points": 300,
         "total_points_improved": 0,
         "total_time_improved": 0.0,
         "tracks": {
+            "Sewer Speedway": {
+                "new_place": 19,
+                "old_place": 17,
+                "old_points": 56,
+                "place_improvement": -2,
+                "points": 37,
+                "time_improvement": 0.0
+            },
             "Thunder Struck": {
                 "new_place": 14,
                 "old_place": 14,
@@ -874,57 +1082,73 @@
                 "time_improvement": 0.0
             },
             "Twilight Tour": {
-                "new_place": 14,
+                "new_place": 15,
                 "old_place": 12,
                 "old_points": 121,
-                "place_improvement": -2,
-                "points": 92,
+                "place_improvement": -3,
+                "points": 79,
                 "time_improvement": 0.0
             }
         }
     },
     "przemekratchet89": {
-        "old_total_points": 316,
-        "ranking": 245.07,
-        "total_places_improved": 0,
-        "total_points": 289,
-        "total_points_improved": 0,
-        "total_time_improved": 0.63,
+        "old_total_points": 353,
+        "ranking": 6580.44,
+        "total_places_improved": 8,
+        "total_points": 412,
+        "total_points_improved": 92,
+        "total_time_improved": 6.77,
         "tracks": {
+            "Sewer Speedway": {
+                "new_place": 15,
+                "old_place": 19,
+                "old_points": 37,
+                "place_improvement": 4,
+                "points": 79,
+                "time_improvement": 0.66
+            },
             "Thunder Struck": {
                 "new_place": 13,
                 "old_place": 13,
                 "old_points": 106,
                 "place_improvement": 0,
                 "points": 106,
-                "time_improvement": 0.0
+                "time_improvement": 4.18
             },
             "Turbo Track": {
-                "new_place": 11,
+                "new_place": 12,
                 "old_place": 10,
                 "old_points": 154,
-                "place_improvement": -1,
-                "points": 137,
+                "place_improvement": -2,
+                "points": 121,
                 "time_improvement": 0.63
             },
             "Twilight Tour": {
-                "new_place": 18,
+                "new_place": 13,
                 "old_place": 17,
                 "old_points": 56,
-                "place_improvement": -1,
-                "points": 46,
-                "time_improvement": 0.0
+                "place_improvement": 4,
+                "points": 106,
+                "time_improvement": 1.3
             }
         }
     },
     "silVersilVa89PL": {
-        "old_total_points": 838,
-        "ranking": 1583.4,
+        "old_total_points": 1139,
+        "ranking": 2052.96,
         "total_places_improved": 1,
-        "total_points": 810,
+        "total_points": 1111,
         "total_points_improved": 21,
         "total_time_improved": 1.56,
         "tracks": {
+            "Sewer Speedway": {
+                "new_place": 3,
+                "old_place": 3,
+                "old_points": 301,
+                "place_improvement": 0,
+                "points": 301,
+                "time_improvement": 0.0
+            },
             "Thunder Struck": {
                 "new_place": 4,
                 "old_place": 3,
