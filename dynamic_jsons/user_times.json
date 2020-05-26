@@ -1154,11 +1154,11 @@
         "league": 4,
         "medals": {
             "bronze": 5,
-            "gold": 3,
-            "silver": 6
+            "gold": 2,
+            "silver": 7
         },
-        "total_points": 148,
-        "total_points_in_upper_league": 10,
+        "total_points": 146,
+        "total_points_in_upper_league": 6,
         "total_time": "88:46.234",
         "tracks": {
             "Android Alley": {
@@ -1388,9 +1388,9 @@
                 "time": "1:46.909"
             },
             "Twilight Tour": {
-                "medal": "gold",
+                "medal": "silver",
                 "place": 6436,
-                "points": 10.0,
+                "points": 8.0,
                 "time": "2:18.010"
             }
         }
@@ -1402,7 +1402,7 @@
             "gold": 10,
             "silver": 10
         },
-        "total_points": 273,
+        "total_points": 272,
         "total_points_in_upper_league": 5,
         "total_time": "72:29.389",
         "tracks": {
@@ -1568,7 +1568,7 @@
             },
             "Spyro Circuit": {
                 "medal": null,
-                "points": 5.0,
+                "points": 4.0,
                 "time": "2:12.490"
             },
             "Thunder Struck": {
@@ -1610,9 +1610,9 @@
             "gold": 0,
             "silver": 1
         },
-        "total_points": 45,
+        "total_points": 46,
         "total_points_in_upper_league": 0,
-        "total_time": "75:51.180",
+        "total_time": "75:51.140",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -1807,8 +1807,8 @@
             "Spyro Circuit": {
                 "medal": null,
                 "place": 16480,
-                "points": 4.0,
-                "time": "2:12.500"
+                "points": 5.0,
+                "time": "2:12.460"
             },
             "Thunder Struck": {
                 "medal": null,
@@ -1855,7 +1855,7 @@
             "gold": 0,
             "silver": 2
         },
-        "total_points": 29,
+        "total_points": 28,
         "total_points_in_upper_league": 4,
         "total_time": "88:24.375",
         "tracks": {
@@ -1904,7 +1904,7 @@
             "Crash Cove": {
                 "medal": null,
                 "place": 6080,
-                "points": 1.0,
+                "points": 0,
                 "time": "1:22.049"
             },
             "Deep Sea Driving": {
@@ -2101,7 +2101,7 @@
             "silver": 9
         },
         "total_points": 264,
-        "total_points_in_upper_league": 14,
+        "total_points_in_upper_league": 13,
         "total_time": "72:37.340",
         "tracks": {
             "Android Alley": {
@@ -2341,11 +2341,11 @@
     "JanneAhonen69": {
         "league": 1,
         "medals": {
-            "bronze": 7,
+            "bronze": 6,
             "gold": 2,
             "silver": 9
         },
-        "total_points": 208,
+        "total_points": 206,
         "total_points_in_upper_league": 0,
         "total_time": "70:43.558",
         "tracks": {
@@ -2528,9 +2528,9 @@
                 "time": "1:14.54"
             },
             "Sewer Speedway": {
-                "medal": "bronze",
+                "medal": null,
                 "place": 68,
-                "points": 5.5,
+                "points": 4.5,
                 "time": "1:44.230"
             },
             "Slide Coliseum": {
@@ -2542,7 +2542,7 @@
             "Spyro Circuit": {
                 "medal": null,
                 "place": 379,
-                "points": 4.0,
+                "points": 3.0,
                 "time": "2:09.960"
             },
             "Thunder Struck": {
@@ -2830,8 +2830,8 @@
             "silver": 8
         },
         "total_points": 217,
-        "total_points_in_upper_league": 5,
-        "total_time": "72:49.030",
+        "total_points_in_upper_league": 4,
+        "total_time": "72:48.330",
         "tracks": {
             "Android Alley": {
                 "medal": "bronze",
@@ -2996,7 +2996,7 @@
             "Spyro Circuit": {
                 "medal": "silver",
                 "points": 8.0,
-                "time": "2:10.690"
+                "time": "2:09.990"
             },
             "Thunder Struck": {
                 "medal": "gold",
@@ -3735,9 +3735,9 @@
             "gold": 0,
             "silver": 0
         },
-        "total_points": 33,
+        "total_points": 36,
         "total_points_in_upper_league": 0,
-        "total_time": "83:49.900",
+        "total_time": "83:19.590",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -3779,7 +3779,7 @@
                 "medal": null,
                 "place": 62379,
                 "points": 0,
-                "time": "2:32.580"
+                "time": "2:17.830"
             },
             "Crash Cove": {
                 "medal": null,
@@ -3909,7 +3909,7 @@
                 "medal": null,
                 "place": 21337,
                 "points": 0,
-                "time": "2:37.120"
+                "time": "2:34.720"
             },
             "Roo's Tubes": {
                 "medal": null,
@@ -3921,7 +3921,7 @@
                 "medal": null,
                 "place": 39472,
                 "points": 0,
-                "time": "1:54.250"
+                "time": "1:52.170"
             },
             "Slide Coliseum": {
                 "medal": null,
@@ -3932,8 +3932,8 @@
             "Spyro Circuit": {
                 "medal": null,
                 "place": 14074,
-                "points": 0,
-                "time": "2:17.500"
+                "points": 3.0,
+                "time": "2:16.030"
             },
             "Thunder Struck": {
                 "medal": null,
@@ -3963,7 +3963,7 @@
                 "medal": null,
                 "place": 29948,
                 "points": 0,
-                "time": "1:54.410"
+                "time": "1:44.800"
             },
             "Twilight Tour": {
                 "medal": "bronze",
@@ -4222,10 +4222,10 @@
         "league": 4,
         "medals": {
             "bronze": 1,
-            "gold": 2,
-            "silver": 2
+            "gold": 1,
+            "silver": 3
         },
-        "total_points": 52,
+        "total_points": 50,
         "total_points_in_upper_league": 3,
         "total_time": "101:12.200",
         "tracks": {
@@ -4408,9 +4408,9 @@
                 "time": "1:19.579"
             },
             "Sewer Speedway": {
-                "medal": "gold",
+                "medal": "silver",
                 "place": 1756,
-                "points": 10.0,
+                "points": 8.0,
                 "time": "1:51.744"
             },
             "Slide Coliseum": {
@@ -4466,13 +4466,13 @@
     "MEDYK-POLSKA": {
         "league": 4,
         "medals": {
-            "bronze": 6,
-            "gold": 5,
-            "silver": 3
+            "bronze": 5,
+            "gold": 8,
+            "silver": 1
         },
-        "total_points": 143,
-        "total_points_in_upper_league": 24,
-        "total_time": "83:58.157",
+        "total_points": 151,
+        "total_points_in_upper_league": 32,
+        "total_time": "83:45.548",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -4653,10 +4653,10 @@
                 "time": "1:16.800"
             },
             "Sewer Speedway": {
-                "medal": "bronze",
+                "medal": "gold",
                 "place": 14997,
-                "points": 6.0,
-                "time": "1:52.379"
+                "points": 10.0,
+                "time": "1:50.410"
             },
             "Slide Coliseum": {
                 "medal": null,
@@ -4668,13 +4668,13 @@
                 "medal": "gold",
                 "place": 34443,
                 "points": 10.0,
-                "time": "2:16.770"
+                "time": "2:16.130"
             },
             "Thunder Struck": {
-                "medal": "silver",
+                "medal": "gold",
                 "place": 38237,
-                "points": 8.0,
-                "time": "2:31.410"
+                "points": 10.0,
+                "time": "2:22.940"
             },
             "Tiger Temple": {
                 "medal": "bronze",
@@ -4701,10 +4701,10 @@
                 "time": "1:46.300"
             },
             "Twilight Tour": {
-                "medal": "silver",
+                "medal": "gold",
                 "place": 50948,
-                "points": 8.0,
-                "time": "2:18.130"
+                "points": 10.0,
+                "time": "2:16.600"
             }
         }
     },
@@ -5372,13 +5372,13 @@
     "Maties_Gamer": {
         "league": 1,
         "medals": {
-            "bronze": 8,
+            "bronze": 9,
             "gold": 1,
             "silver": 5
         },
-        "total_points": 190,
+        "total_points": 198,
         "total_points_in_upper_league": 0,
-        "total_time": "70:49.808",
+        "total_time": "70:47.230",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -5559,10 +5559,10 @@
                 "time": "1:13.900"
             },
             "Sewer Speedway": {
-                "medal": null,
+                "medal": "bronze",
                 "place": 470,
-                "points": 2.0,
-                "time": "1:45.40"
+                "points": 6.0,
+                "time": "1:44.070"
             },
             "Slide Coliseum": {
                 "medal": "silver",
@@ -5573,8 +5573,8 @@
             "Spyro Circuit": {
                 "medal": null,
                 "place": 868,
-                "points": 3.0,
-                "time": "2:10.229"
+                "points": 5.0,
+                "time": "2:09.520"
             },
             "Thunder Struck": {
                 "medal": "bronze",
@@ -5609,8 +5609,8 @@
             "Twilight Tour": {
                 "medal": null,
                 "place": 585,
-                "points": 2.0,
-                "time": "2:10.759"
+                "points": 4.0,
+                "time": "2:10.220"
             }
         }
     },
@@ -5622,7 +5622,7 @@
             "silver": 7
         },
         "total_points": 212,
-        "total_points_in_upper_league": 8,
+        "total_points_in_upper_league": 6,
         "total_time": "97:12.610",
         "tracks": {
             "Android Alley": {
@@ -5830,7 +5830,7 @@
             "silver": 1
         },
         "total_points": 69,
-        "total_points_in_upper_league": 13,
+        "total_points_in_upper_league": 12,
         "total_time": "92:06.595",
         "tracks": {
             "Android Alley": {
@@ -6074,7 +6074,7 @@
             "gold": 2,
             "silver": 1
         },
-        "total_points": 117,
+        "total_points": 116,
         "total_points_in_upper_league": 4,
         "total_time": "84:01.727",
         "tracks": {
@@ -6271,7 +6271,7 @@
             "Spyro Circuit": {
                 "medal": null,
                 "place": 7982,
-                "points": 3.0,
+                "points": 2.0,
                 "time": "2:16.471"
             },
             "Thunder Struck": {
@@ -6561,207 +6561,207 @@
         "league": 6,
         "medals": {
             "bronze": 0,
-            "gold": 0,
+            "gold": 39,
             "silver": 0
         },
-        "total_points": 0,
-        "total_points_in_upper_league": 0,
-        "total_time": "195:00.000",
+        "total_points": 390,
+        "total_points_in_upper_league": 380,
+        "total_time": "82:03.210",
         "tracks": {
             "Android Alley": {
-                "medal": null,
-                "points": 0,
-                "time": "NO TIME"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "2:47.430"
             },
             "Assembly Lane": {
-                "medal": null,
-                "points": 0,
-                "time": "NO TIME"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "2:31.920"
             },
             "Barin Ruins": {
-                "medal": null,
-                "points": 0,
-                "time": "NO TIME"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "1:46.500"
             },
             "Blizzard Bluff": {
-                "medal": null,
-                "points": 0,
-                "time": "NO TIME"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "1:27.480"
             },
             "Clockwork Wumpa": {
-                "medal": null,
-                "points": 0,
-                "time": "NO TIME"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "1:59.580"
             },
             "Coco Park": {
-                "medal": null,
-                "points": 0,
-                "time": "NO TIME"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "1:22.410"
             },
             "Cortex Castle": {
-                "medal": null,
-                "points": 0,
-                "time": "NO TIME"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "2:29.950"
             },
             "Crash Cove": {
-                "medal": null,
-                "points": 0,
-                "time": "NO TIME"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "1:22.640"
             },
             "Deep Sea Driving": {
-                "medal": null,
-                "points": 0,
-                "time": "NO TIME"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "1:49.570"
             },
             "Dingo Canyon": {
-                "medal": null,
-                "points": 0,
-                "time": "NO TIME"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "1:36.320"
             },
             "Dragon Mines": {
-                "medal": null,
-                "points": 0,
-                "time": "NO TIME"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "1:33.420"
             },
             "Drive-Thru Danger": {
-                "medal": null,
-                "points": 0,
-                "time": "NO TIME"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "2:07.420"
             },
             "Electron Avenue": {
-                "medal": null,
-                "points": 0,
-                "time": "NO TIME"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "3:41.280"
             },
             "Gingerbread Joyride": {
-                "medal": null,
-                "points": 0,
-                "time": "NO TIME"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "1:56.780"
             },
             "Hot Air Skyway": {
-                "medal": null,
-                "points": 0,
-                "time": "NO TIME"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "3:06.920"
             },
             "Hyper Spaceway": {
-                "medal": null,
-                "points": 0,
-                "time": "NO TIME"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "1:54.940"
             },
             "Inferno Island": {
-                "medal": null,
-                "points": 0,
-                "time": "NO TIME"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "1:35.650"
             },
             "Jungle Boogie": {
-                "medal": null,
-                "points": 0,
-                "time": "NO TIME"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "1:15.640"
             },
             "Koala Carnival": {
-                "medal": null,
-                "points": 0,
-                "time": "NO TIME"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "1:43.930"
             },
             "Megamix Mania": {
-                "medal": null,
-                "points": 0,
-                "time": "NO TIME"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "2:10.960"
             },
             "Meteor Gorge": {
-                "medal": null,
-                "points": 0,
-                "time": "NO TIME"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "1:32.620"
             },
             "Mystery Caves": {
-                "medal": null,
-                "points": 0,
-                "time": "NO TIME"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "2:08.290"
             },
             "N.Gin Labs": {
-                "medal": null,
-                "points": 0,
-                "time": "NO TIME"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "2:37.190"
             },
             "Nina's Nightmare": {
-                "medal": null,
-                "points": 0,
-                "time": "NO TIME"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "1:52.770"
             },
             "Out of Time": {
-                "medal": null,
-                "points": 0,
-                "time": "NO TIME"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "2:34.320"
             },
             "Oxide Station": {
-                "medal": null,
-                "points": 0,
-                "time": "NO TIME"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "3:17.890"
             },
             "Papu's Pyramid": {
-                "medal": null,
-                "points": 0,
-                "time": "NO TIME"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "1:38.190"
             },
             "Polar Pass": {
-                "medal": null,
-                "points": 0,
-                "time": "NO TIME"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "2:30.750"
             },
             "Prehistoric Playground": {
-                "medal": null,
-                "points": 0,
-                "time": "NO TIME"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "2:27.710"
             },
             "Roo's Tubes": {
-                "medal": null,
-                "points": 0,
-                "time": "NO TIME"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "1:19.000"
             },
             "Sewer Speedway": {
-                "medal": null,
-                "points": 0,
-                "time": "NO TIME"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "1:51.940"
             },
             "Slide Coliseum": {
-                "medal": null,
-                "points": 0,
-                "time": "NO TIME"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "1:51.940"
             },
             "Spyro Circuit": {
-                "medal": null,
-                "points": 0,
-                "time": "NO TIME"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "2:16.200"
             },
             "Thunder Struck": {
-                "medal": null,
-                "points": 0,
-                "time": "NO TIME"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "2:50.500"
             },
             "Tiger Temple": {
-                "medal": null,
-                "points": 0,
-                "time": "NO TIME"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "1:42.100"
             },
             "Tiny Arena": {
-                "medal": null,
-                "points": 0,
-                "time": "NO TIME"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "3:24.130"
             },
             "Tiny Temple": {
-                "medal": null,
-                "points": 0,
-                "time": "NO TIME"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "1:43.200"
             },
             "Turbo Track": {
-                "medal": null,
-                "points": 0,
-                "time": "NO TIME"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "1:45.830"
             },
             "Twilight Tour": {
-                "medal": null,
-                "points": 0,
-                "time": "NO TIME"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "2:17.900"
             }
         }
     },
@@ -6773,7 +6773,7 @@
             "silver": 23
         },
         "total_points": 312,
-        "total_points_in_upper_league": 12,
+        "total_points_in_upper_league": 8,
         "total_time": "88:53.820",
         "tracks": {
             "Android Alley": {
@@ -7960,9 +7960,9 @@
             "gold": 6,
             "silver": 2
         },
-        "total_points": 119,
-        "total_points_in_upper_league": 2,
-        "total_time": "79:16.208",
+        "total_points": 120,
+        "total_points_in_upper_league": 7,
+        "total_time": "79:13.978",
         "tracks": {
             "Android Alley": {
                 "medal": "gold",
@@ -8009,8 +8009,8 @@
             "Crash Cove": {
                 "medal": null,
                 "place": 10853,
-                "points": 0,
-                "time": "1:22.780"
+                "points": 1.5,
+                "time": "1:21.810"
             },
             "Deep Sea Driving": {
                 "medal": null,
@@ -8158,7 +8158,7 @@
                 "medal": "gold",
                 "place": 11766,
                 "points": 10.0,
-                "time": "2:13.560"
+                "time": "2:12.300"
             },
             "Thunder Struck": {
                 "medal": "bronze",
@@ -8414,7 +8414,7 @@
             "silver": 8
         },
         "total_points": 210,
-        "total_points_in_upper_league": 13,
+        "total_points_in_upper_league": 8,
         "total_time": "81:09.300",
         "tracks": {
             "Android Alley": {
@@ -8866,7 +8866,7 @@
             "gold": 6,
             "silver": 13
         },
-        "total_points": 231,
+        "total_points": 230,
         "total_points_in_upper_league": 3,
         "total_time": "82:10.770",
         "tracks": {
@@ -9063,7 +9063,7 @@
             "Spyro Circuit": {
                 "medal": null,
                 "place": 10118,
-                "points": 1.0,
+                "points": 0,
                 "time": "2:16.972"
             },
             "Thunder Struck": {
@@ -9772,7 +9772,7 @@
             "gold": 1,
             "silver": 1
         },
-        "total_points": 145,
+        "total_points": 142,
         "total_points_in_upper_league": 0,
         "total_time": "71:08.390",
         "tracks": {
@@ -9957,7 +9957,7 @@
             "Sewer Speedway": {
                 "medal": null,
                 "place": 103,
-                "points": 3.0,
+                "points": 2.0,
                 "time": "1:44.950"
             },
             "Slide Coliseum": {
@@ -9969,7 +9969,7 @@
             "Spyro Circuit": {
                 "medal": null,
                 "place": 176,
-                "points": 5.0,
+                "points": 4.0,
                 "time": "2:09.720"
             },
             "Thunder Struck": {
@@ -10005,7 +10005,7 @@
             "Twilight Tour": {
                 "medal": null,
                 "place": 82,
-                "points": 4.0,
+                "points": 3.0,
                 "time": "2:10.390"
             }
         }
@@ -10263,7 +10263,7 @@
             "silver": 3
         },
         "total_points": 173,
-        "total_points_in_upper_league": 16,
+        "total_points_in_upper_league": 13,
         "total_time": "87:39.076",
         "tracks": {
             "Android Alley": {
@@ -10748,12 +10748,12 @@
     "cthulhuburi": {
         "league": 4,
         "medals": {
-            "bronze": 7,
-            "gold": 3,
+            "bronze": 8,
+            "gold": 2,
             "silver": 3
         },
-        "total_points": 128,
-        "total_points_in_upper_league": 10,
+        "total_points": 124,
+        "total_points_in_upper_league": 8,
         "total_time": "84:51.910",
         "tracks": {
             "Android Alley": {
@@ -10907,8 +10907,8 @@
                 "time": "1:19.000"
             },
             "Sewer Speedway": {
-                "medal": "silver",
-                "points": 8.0,
+                "medal": "bronze",
+                "points": 6.0,
                 "time": "1:52.040"
             },
             "Slide Coliseum": {
@@ -10922,8 +10922,8 @@
                 "time": "2:19.930"
             },
             "Thunder Struck": {
-                "medal": "gold",
-                "points": 10.0,
+                "medal": "silver",
+                "points": 8.0,
                 "time": "2:27.270"
             },
             "Tiger Temple": {
@@ -11206,7 +11206,7 @@
             "silver": 7
         },
         "total_points": 280,
-        "total_points_in_upper_league": 13,
+        "total_points_in_upper_league": 12,
         "total_time": "72:18.980",
         "tracks": {
             "Android Alley": {
@@ -11695,7 +11695,7 @@
             "gold": 0,
             "silver": 4
         },
-        "total_points": 114,
+        "total_points": 113,
         "total_points_in_upper_league": 0,
         "total_time": "71:27.921",
         "tracks": {
@@ -11880,7 +11880,7 @@
             "Sewer Speedway": {
                 "medal": null,
                 "place": 186,
-                "points": 4.0,
+                "points": 3.0,
                 "time": "1:44.33"
             },
             "Slide Coliseum": {
@@ -12430,7 +12430,7 @@
             "gold": 2,
             "silver": 2
         },
-        "total_points": 82,
+        "total_points": 81,
         "total_points_in_upper_league": 4,
         "total_time": "84:14.870",
         "tracks": {
@@ -12479,7 +12479,7 @@
             "Crash Cove": {
                 "medal": null,
                 "place": 33475,
-                "points": 2.0,
+                "points": 1.5,
                 "time": "1:21.810"
             },
             "Deep Sea Driving": {
@@ -12675,7 +12675,7 @@
             "gold": 1,
             "silver": 2
         },
-        "total_points": 76,
+        "total_points": 75,
         "total_points_in_upper_league": 0,
         "total_time": "82:25.900",
         "tracks": {
@@ -12872,7 +12872,7 @@
             "Spyro Circuit": {
                 "medal": null,
                 "place": 11984,
-                "points": 2.0,
+                "points": 1.0,
                 "time": "2:16.800"
             },
             "Thunder Struck": {
@@ -13619,7 +13619,7 @@
             "silver": 5
         },
         "total_points": 336,
-        "total_points_in_upper_league": 16,
+        "total_points_in_upper_league": 11,
         "total_time": "96:22.526",
         "tracks": {
             "Android Alley": {
@@ -13859,11 +13859,11 @@
     "silVersilVa89PL": {
         "league": 1,
         "medals": {
-            "bronze": 4,
+            "bronze": 3,
             "gold": 0,
             "silver": 2
         },
-        "total_points": 122,
+        "total_points": 120,
         "total_points_in_upper_league": 0,
         "total_time": "71:19.242",
         "tracks": {
@@ -14046,9 +14046,9 @@
                 "time": "1:14.800"
             },
             "Sewer Speedway": {
-                "medal": "bronze",
+                "medal": null,
                 "place": 378,
-                "points": 5.5,
+                "points": 4.5,
                 "time": "1:44.230"
             },
             "Slide Coliseum": {
@@ -14096,7 +14096,7 @@
             "Twilight Tour": {
                 "medal": null,
                 "place": 415,
-                "points": 3.0,
+                "points": 2.0,
                 "time": "2:10.430"
             }
         }
