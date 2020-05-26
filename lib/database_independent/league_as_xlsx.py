@@ -80,18 +80,6 @@ class LeagueAsXlsx(LeagueAsCsv):
         for r, row in enumerate(league_csv[1:track_count+1]):
             time_formatting_matrix.append([CellFormat(13, BLACK, LIGHT_BLUE)])
             for c in range(1, len(row)):
-                if c % 6 == 1:
-                    league_csv[r][c] = "FIVE"
-                if c % 6 == 2:
-                    league_csv[r][c] = "ma"
-                if c % 6 == 3:
-                    league_csv[r][c] = "sub"
-                if c % 6 == 4:
-                    league_csv[r][c] = "70min"
-                if c % 6 == 5:
-                    league_csv[r][c] = "o ja"
-                if c % 6 == 0:
-                    league_csv[r][c] = "nie moge"
                 cell_format = self._evaluate_time_cell_format(players[c-1], row[0])
                 time_formatting_matrix[r].append(cell_format)
         return time_formatting_matrix
