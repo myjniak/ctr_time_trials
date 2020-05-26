@@ -69,7 +69,10 @@ class GrandPrix(Database):
                 self.ranking_json[player]["tracks"][track]["new_place"] = place + 1
                 self.ranking_json[player]["tracks"][track]["points"] = point_system[place]
                 self.ranking_json[player].setdefault("total_points", 0)
-                self.ranking_json[player]["total_points"] += point_system[place]
+                if place == 0:
+                    self.ranking_json[player]["total_points"] += point_system[place] * 10
+                else:
+                    self.ranking_json[player]["total_points"] += point_system[place]
                 self.ranking_json[player].setdefault("total_time_improved", 0)
                 self.ranking_json[player]["total_time_improved"] += time_improvement
             players_sorted = sorted(players, key=lambda player: self.get_time(player, track, True))
