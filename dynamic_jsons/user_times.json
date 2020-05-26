@@ -4,9 +4,9 @@
         "medals": {
             "bronze": 0,
             "gold": 1,
-            "silver": 1
+            "silver": 0
         },
-        "total_points": 71,
+        "total_points": 68,
         "total_points_in_upper_league": 1,
         "total_time": "89:51.806",
         "tracks": {
@@ -207,9 +207,9 @@
                 "time": "2:21.109"
             },
             "Thunder Struck": {
-                "medal": "silver",
+                "medal": null,
                 "place": 23041,
-                "points": 8.0,
+                "points": 5.0,
                 "time": "2:35.689"
             },
             "Tiger Temple": {
@@ -251,7 +251,7 @@
             "gold": 0,
             "silver": 0
         },
-        "total_points": 23,
+        "total_points": 22,
         "total_points_in_upper_league": 0,
         "total_time": "74:07.940",
         "tracks": {
@@ -287,7 +287,7 @@
             },
             "Cortex Castle": {
                 "medal": null,
-                "points": 1.0,
+                "points": 0,
                 "time": "1:57.440"
             },
             "Crash Cove": {
@@ -1157,7 +1157,7 @@
             "gold": 3,
             "silver": 6
         },
-        "total_points": 150,
+        "total_points": 148,
         "total_points_in_upper_league": 10,
         "total_time": "88:46.234",
         "tracks": {
@@ -1354,13 +1354,13 @@
             "Spyro Circuit": {
                 "medal": null,
                 "place": 18030,
-                "points": 4.0,
+                "points": 3.0,
                 "time": "2:19.776"
             },
             "Thunder Struck": {
                 "medal": null,
                 "place": 24884,
-                "points": 4.0,
+                "points": 3.0,
                 "time": "2:38.661"
             },
             "Tiger Temple": {
@@ -1610,9 +1610,9 @@
             "gold": 0,
             "silver": 1
         },
-        "total_points": 43,
+        "total_points": 45,
         "total_points_in_upper_league": 0,
-        "total_time": "76:06.500",
+        "total_time": "75:51.180",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -1653,14 +1653,14 @@
             "Cortex Castle": {
                 "medal": null,
                 "place": 33024,
-                "points": 0,
-                "time": "2:10.860"
+                "points": 2.0,
+                "time": "1:56.780"
             },
             "Crash Cove": {
                 "medal": null,
                 "place": 6066,
                 "points": 0,
-                "time": "1:21.080"
+                "time": "1:19.840"
             },
             "Deep Sea Driving": {
                 "medal": null,
@@ -2347,7 +2347,7 @@
         },
         "total_points": 208,
         "total_points_in_upper_league": 0,
-        "total_time": "70:44.858",
+        "total_time": "70:43.558",
         "tracks": {
             "Android Alley": {
                 "medal": "bronze",
@@ -2573,7 +2573,7 @@
                 "medal": null,
                 "place": 121,
                 "points": 1.0,
-                "time": "1:32.420"
+                "time": "1:31.120"
             },
             "Twilight Tour": {
                 "medal": "silver",
@@ -2831,7 +2831,7 @@
         },
         "total_points": 217,
         "total_points_in_upper_league": 5,
-        "total_time": "72:49.460",
+        "total_time": "72:49.030",
         "tracks": {
             "Android Alley": {
                 "medal": "bronze",
@@ -2976,7 +2976,7 @@
             "Prehistoric Playground": {
                 "medal": "gold",
                 "points": 10.0,
-                "time": "2:20.630"
+                "time": "2:20.200"
             },
             "Roo's Tubes": {
                 "medal": "silver",
@@ -3241,11 +3241,11 @@
     "Kideu98": {
         "league": 1,
         "medals": {
-            "bronze": 5,
-            "gold": 3,
-            "silver": 6
+            "bronze": 4,
+            "gold": 2,
+            "silver": 7
         },
-        "total_points": 169,
+        "total_points": 167,
         "total_points_in_upper_league": 0,
         "total_time": "70:58.690",
         "tracks": {
@@ -3440,15 +3440,15 @@
                 "time": "1:36.060"
             },
             "Spyro Circuit": {
-                "medal": "gold",
+                "medal": "silver",
                 "place": 220,
-                "points": 9.0,
+                "points": 8.0,
                 "time": "2:08.690"
             },
             "Thunder Struck": {
-                "medal": "bronze",
+                "medal": null,
                 "place": 10640,
-                "points": 6.0,
+                "points": 5.0,
                 "time": "1:50.500"
             },
             "Tiger Temple": {
@@ -4466,13 +4466,13 @@
     "MEDYK-POLSKA": {
         "league": 4,
         "medals": {
-            "bronze": 7,
-            "gold": 4,
-            "silver": 2
+            "bronze": 6,
+            "gold": 5,
+            "silver": 3
         },
-        "total_points": 134,
-        "total_points_in_upper_league": 22,
-        "total_time": "84:05.797",
+        "total_points": 143,
+        "total_points_in_upper_league": 24,
+        "total_time": "83:58.157",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -4665,16 +4665,16 @@
                 "time": "1:52.179"
             },
             "Spyro Circuit": {
-                "medal": null,
+                "medal": "gold",
                 "place": 34443,
-                "points": 3.0,
-                "time": "2:19.800"
+                "points": 10.0,
+                "time": "2:16.770"
             },
             "Thunder Struck": {
-                "medal": "bronze",
+                "medal": "silver",
                 "place": 38237,
-                "points": 6.0,
-                "time": "2:36.020"
+                "points": 8.0,
+                "time": "2:31.410"
             },
             "Tiger Temple": {
                 "medal": "bronze",
@@ -5372,13 +5372,13 @@
     "Maties_Gamer": {
         "league": 1,
         "medals": {
-            "bronze": 7,
+            "bronze": 8,
             "gold": 1,
             "silver": 5
         },
-        "total_points": 186,
+        "total_points": 190,
         "total_points_in_upper_league": 0,
-        "total_time": "70:52.708",
+        "total_time": "70:49.808",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -5577,10 +5577,10 @@
                 "time": "2:10.229"
             },
             "Thunder Struck": {
-                "medal": null,
+                "medal": "bronze",
                 "place": 11187,
-                "points": 2.0,
-                "time": "1:51.940"
+                "points": 6.0,
+                "time": "1:49.040"
             },
             "Tiger Temple": {
                 "medal": "bronze",
@@ -7225,9 +7225,9 @@
             "gold": 34,
             "silver": 5
         },
-        "total_points": 378,
+        "total_points": 379,
         "total_points_in_upper_league": 0,
-        "total_time": "69:58.854",
+        "total_time": "69:58.724",
         "tracks": {
             "Android Alley": {
                 "medal": "gold",
@@ -7422,8 +7422,8 @@
             "Spyro Circuit": {
                 "medal": "gold",
                 "place": 107,
-                "points": 9.0,
-                "time": "2:08.690"
+                "points": 10.0,
+                "time": "2:08.560"
             },
             "Thunder Struck": {
                 "medal": "gold",
@@ -8410,10 +8410,10 @@
         "league": 4,
         "medals": {
             "bronze": 3,
-            "gold": 6,
-            "silver": 7
+            "gold": 5,
+            "silver": 8
         },
-        "total_points": 213,
+        "total_points": 210,
         "total_points_in_upper_league": 13,
         "total_time": "81:09.300",
         "tracks": {
@@ -8578,13 +8578,13 @@
                 "time": "1:52.640"
             },
             "Spyro Circuit": {
-                "medal": "gold",
-                "points": 10.0,
+                "medal": "silver",
+                "points": 8.0,
                 "time": "2:17.000"
             },
             "Thunder Struck": {
                 "medal": null,
-                "points": 5.0,
+                "points": 4.0,
                 "time": "2:37.220"
             },
             "Tiger Temple": {
@@ -8621,7 +8621,7 @@
             "gold": 0,
             "silver": 1
         },
-        "total_points": 44,
+        "total_points": 43,
         "total_points_in_upper_league": 0,
         "total_time": "80:46.332",
         "tracks": {
@@ -8824,7 +8824,7 @@
             "Thunder Struck": {
                 "medal": null,
                 "place": 11690,
-                "points": 4.0,
+                "points": 3.0,
                 "time": "1:58.418"
             },
             "Tiger Temple": {
@@ -9772,7 +9772,7 @@
             "gold": 1,
             "silver": 1
         },
-        "total_points": 146,
+        "total_points": 145,
         "total_points_in_upper_league": 0,
         "total_time": "71:08.390",
         "tracks": {
@@ -9975,7 +9975,7 @@
             "Thunder Struck": {
                 "medal": null,
                 "place": 2351,
-                "points": 5.0,
+                "points": 4.0,
                 "time": "1:50.970"
             },
             "Tiger Temple": {
@@ -10013,11 +10013,11 @@
     "ZajebistyMarcin": {
         "league": 4,
         "medals": {
-            "bronze": 3,
+            "bronze": 2,
             "gold": 0,
             "silver": 0
         },
-        "total_points": 63,
+        "total_points": 61,
         "total_points_in_upper_league": 0,
         "total_time": "90:47.518",
         "tracks": {
@@ -10212,15 +10212,15 @@
                 "time": "1:53.279"
             },
             "Spyro Circuit": {
-                "medal": "bronze",
+                "medal": null,
                 "place": 13023,
-                "points": 6.0,
+                "points": 5.0,
                 "time": "2:18.170"
             },
             "Thunder Struck": {
                 "medal": null,
                 "place": 30600,
-                "points": 2.0,
+                "points": 1.0,
                 "time": "2:44.030"
             },
             "Tiger Temple": {
@@ -10258,11 +10258,11 @@
     "ZenQMeister": {
         "league": 4,
         "medals": {
-            "bronze": 4,
-            "gold": 8,
+            "bronze": 5,
+            "gold": 7,
             "silver": 3
         },
-        "total_points": 178,
+        "total_points": 173,
         "total_points_in_upper_league": 16,
         "total_time": "87:39.076",
         "tracks": {
@@ -10459,13 +10459,13 @@
             "Spyro Circuit": {
                 "medal": null,
                 "place": 15240,
-                "points": 5.0,
+                "points": 4.0,
                 "time": "2:18.874"
             },
             "Thunder Struck": {
-                "medal": "gold",
+                "medal": "bronze",
                 "place": 999999,
-                "points": 10.0,
+                "points": 6.0,
                 "time": "2:35.22"
             },
             "Tiger Temple": {
@@ -10507,7 +10507,7 @@
             "gold": 0,
             "silver": 0
         },
-        "total_points": 32,
+        "total_points": 31,
         "total_points_in_upper_league": 0,
         "total_time": "92:35.856",
         "tracks": {
@@ -10710,7 +10710,7 @@
             "Thunder Struck": {
                 "medal": null,
                 "place": 25280,
-                "points": 3.0,
+                "points": 2.0,
                 "time": "2:39.326"
             },
             "Tiger Temple": {
@@ -10749,12 +10749,12 @@
         "league": 4,
         "medals": {
             "bronze": 7,
-            "gold": 2,
+            "gold": 3,
             "silver": 3
         },
-        "total_points": 118,
-        "total_points_in_upper_league": 9,
-        "total_time": "85:21.010",
+        "total_points": 128,
+        "total_points_in_upper_league": 10,
+        "total_time": "84:51.910",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -10922,9 +10922,9 @@
                 "time": "2:19.930"
             },
             "Thunder Struck": {
-                "medal": null,
-                "points": 0,
-                "time": "2:56.370"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "2:27.270"
             },
             "Tiger Temple": {
                 "medal": null,
@@ -11450,9 +11450,9 @@
             "gold": 0,
             "silver": 1
         },
-        "total_points": 43,
+        "total_points": 45,
         "total_points_in_upper_league": 0,
-        "total_time": "77:21.783",
+        "total_time": "77:19.813",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -11653,8 +11653,8 @@
             "Thunder Struck": {
                 "medal": null,
                 "place": 999999,
-                "points": 2.0,
-                "time": "1:59.350"
+                "points": 4.0,
+                "time": "1:57.380"
             },
             "Tiger Temple": {
                 "medal": null,
@@ -11940,7 +11940,7 @@
             "gold": 0,
             "silver": 3
         },
-        "total_points": 126,
+        "total_points": 125,
         "total_points_in_upper_league": 0,
         "total_time": "71:14.329",
         "tracks": {
@@ -12143,7 +12143,7 @@
             "Thunder Struck": {
                 "medal": null,
                 "place": 11064,
-                "points": 3.0,
+                "points": 2.0,
                 "time": "1:51.810"
             },
             "Tiger Temple": {
@@ -12181,11 +12181,11 @@
     "naruciak1234": {
         "league": 4,
         "medals": {
-            "bronze": 1,
+            "bronze": 2,
             "gold": 6,
-            "silver": 5
+            "silver": 4
         },
-        "total_points": 174,
+        "total_points": 171,
         "total_points_in_upper_league": 12,
         "total_time": "97:42.324",
         "tracks": {
@@ -12380,15 +12380,15 @@
                 "time": "1:51.947"
             },
             "Spyro Circuit": {
-                "medal": "silver",
+                "medal": "bronze",
                 "place": 12072,
-                "points": 8.0,
+                "points": 6.0,
                 "time": "2:17.807"
             },
             "Thunder Struck": {
                 "medal": null,
                 "place": 48945,
-                "points": 1.0,
+                "points": 0,
                 "time": "2:50.902"
             },
             "Tiger Temple": {
@@ -13373,7 +13373,7 @@
             "gold": 0,
             "silver": 0
         },
-        "total_points": 80,
+        "total_points": 78,
         "total_points_in_upper_league": 0,
         "total_time": "73:39.260",
         "tracks": {
@@ -13416,7 +13416,7 @@
             "Cortex Castle": {
                 "medal": null,
                 "place": 5702,
-                "points": 2.0,
+                "points": 1.0,
                 "time": "1:56.980"
             },
             "Crash Cove": {
@@ -13576,7 +13576,7 @@
             "Thunder Struck": {
                 "medal": null,
                 "place": 21775,
-                "points": 3.0,
+                "points": 2.0,
                 "time": "1:58.610"
             },
             "Tiger Temple": {
@@ -13863,7 +13863,7 @@
             "gold": 0,
             "silver": 2
         },
-        "total_points": 123,
+        "total_points": 122,
         "total_points_in_upper_league": 0,
         "total_time": "71:19.242",
         "tracks": {
@@ -14066,7 +14066,7 @@
             "Thunder Struck": {
                 "medal": null,
                 "place": 999999,
-                "points": 4.0,
+                "points": 3.0,
                 "time": "1:51.610"
             },
             "Tiger Temple": {
