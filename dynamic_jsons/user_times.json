@@ -1157,7 +1157,7 @@
             "gold": 2,
             "silver": 7
         },
-        "total_points": 145,
+        "total_points": 143,
         "total_points_in_upper_league": 5,
         "total_time": "88:46.234",
         "tracks": {
@@ -1194,7 +1194,7 @@
             "Coco Park": {
                 "medal": null,
                 "place": 18040,
-                "points": 2.0,
+                "points": 1.0,
                 "time": "1:22.551"
             },
             "Cortex Castle": {
@@ -1218,7 +1218,7 @@
             "Dingo Canyon": {
                 "medal": null,
                 "place": 17978,
-                "points": 4.0,
+                "points": 3.0,
                 "time": "1:39.301"
             },
             "Dragon Mines": {
@@ -1402,8 +1402,8 @@
             "gold": 11,
             "silver": 8
         },
-        "total_points": 272,
-        "total_points_in_upper_league": 7,
+        "total_points": 271,
+        "total_points_in_upper_league": 6,
         "total_time": "72:26.299",
         "tracks": {
             "Android Alley": {
@@ -1433,7 +1433,7 @@
             },
             "Coco Park": {
                 "medal": null,
-                "points": 5.0,
+                "points": 4.0,
                 "time": "1:16.660"
             },
             "Cortex Castle": {
@@ -1610,9 +1610,9 @@
             "gold": 0,
             "silver": 1
         },
-        "total_points": 46,
+        "total_points": 50,
         "total_points_in_upper_league": 0,
-        "total_time": "75:21.880",
+        "total_time": "74:40.760",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -1629,8 +1629,8 @@
             "Barin Ruins": {
                 "medal": null,
                 "place": 20724,
-                "points": 0,
-                "time": "1:49.140"
+                "points": 3.0,
+                "time": "1:43.850"
             },
             "Blizzard Bluff": {
                 "medal": null,
@@ -1642,12 +1642,12 @@
                 "medal": null,
                 "place": 33702,
                 "points": 0,
-                "time": "2:05.390"
+                "time": "1:56.550"
             },
             "Coco Park": {
                 "medal": null,
                 "place": 4323,
-                "points": 3.0,
+                "points": 2.0,
                 "time": "1:17.470"
             },
             "Cortex Castle": {
@@ -1713,13 +1713,13 @@
                 "medal": null,
                 "place": 29072,
                 "points": 0,
-                "time": "1:37.900"
+                "time": "1:35.700"
             },
             "Jungle Boogie": {
                 "medal": null,
                 "place": 61360,
                 "points": 0,
-                "time": "1:18.110"
+                "time": "1:16.070"
             },
             "Koala Carnival": {
                 "medal": null,
@@ -1742,7 +1742,7 @@
                 "medal": null,
                 "place": 13220,
                 "points": 0,
-                "time": "2:07.190"
+                "time": "2:00.520"
             },
             "N.Gin Labs": {
                 "medal": null,
@@ -1777,8 +1777,8 @@
             "Polar Pass": {
                 "medal": null,
                 "place": 17127,
-                "points": 0,
-                "time": "2:07.960"
+                "points": 2.0,
+                "time": "2:06.460"
             },
             "Prehistoric Playground": {
                 "medal": null,
@@ -1826,7 +1826,7 @@
                 "medal": null,
                 "place": 41850,
                 "points": 0,
-                "time": "3:23.470"
+                "time": "3:08.890"
             },
             "Tiny Temple": {
                 "medal": null,
@@ -2096,12 +2096,12 @@
     "Jakub_Luk": {
         "league": 2,
         "medals": {
-            "bronze": 6,
+            "bronze": 7,
             "gold": 8,
-            "silver": 11
+            "silver": 10
         },
-        "total_points": 267,
-        "total_points_in_upper_league": 11,
+        "total_points": 265,
+        "total_points_in_upper_league": 9,
         "total_time": "72:33.370",
         "tracks": {
             "Android Alley": {
@@ -2135,9 +2135,9 @@
                 "time": "1:55.180"
             },
             "Coco Park": {
-                "medal": "silver",
+                "medal": "bronze",
                 "place": 1067,
-                "points": 7.0,
+                "points": 5.5,
                 "time": "1:16.540"
             },
             "Cortex Castle": {
@@ -2341,11 +2341,11 @@
     "JanneAhonen69": {
         "league": 1,
         "medals": {
-            "bronze": 6,
-            "gold": 3,
+            "bronze": 7,
+            "gold": 2,
             "silver": 8
         },
-        "total_points": 201,
+        "total_points": 196,
         "total_points_in_upper_league": 0,
         "total_time": "70:43.388",
         "tracks": {
@@ -2394,7 +2394,7 @@
             "Crash Cove": {
                 "medal": null,
                 "place": 185,
-                "points": 3.0,
+                "points": 2.0,
                 "time": "1:18.570"
             },
             "Deep Sea Driving": {
@@ -2510,15 +2510,15 @@
                 "time": "1:22.940"
             },
             "Polar Pass": {
-                "medal": "silver",
+                "medal": "bronze",
                 "place": 50,
-                "points": 8.0,
+                "points": 6.0,
                 "time": "1:58.610"
             },
             "Prehistoric Playground": {
                 "medal": "bronze",
                 "place": 85,
-                "points": 6.0,
+                "points": 5.5,
                 "time": "2:18.630"
             },
             "Roo's Tubes": {
@@ -2558,9 +2558,9 @@
                 "time": "1:26.580"
             },
             "Tiny Arena": {
-                "medal": "gold",
+                "medal": "silver",
                 "place": 62,
-                "points": 9.0,
+                "points": 8.0,
                 "time": "2:51.100"
             },
             "Tiny Temple": {
@@ -2826,11 +2826,11 @@
         "league": 2,
         "medals": {
             "bronze": 6,
-            "gold": 7,
-            "silver": 8
+            "gold": 6,
+            "silver": 9
         },
-        "total_points": 219,
-        "total_points_in_upper_league": 3,
+        "total_points": 216,
+        "total_points_in_upper_league": 1,
         "total_time": "72:44.370",
         "tracks": {
             "Android Alley": {
@@ -2845,7 +2845,7 @@
             },
             "Barin Ruins": {
                 "medal": null,
-                "points": 2.5,
+                "points": 1.5,
                 "time": "1:43.900"
             },
             "Blizzard Bluff": {
@@ -2859,8 +2859,8 @@
                 "time": "1:55.010"
             },
             "Coco Park": {
-                "medal": "gold",
-                "points": 10.0,
+                "medal": "silver",
+                "points": 8.0,
                 "time": "1:16.090"
             },
             "Cortex Castle": {
@@ -2970,7 +2970,7 @@
             },
             "Polar Pass": {
                 "medal": null,
-                "points": 1.5,
+                "points": 1.0,
                 "time": "2:06.890"
             },
             "Prehistoric Playground": {
@@ -3243,11 +3243,11 @@
         "medals": {
             "bronze": 3,
             "gold": 3,
-            "silver": 6
+            "silver": 7
         },
-        "total_points": 168,
+        "total_points": 171,
         "total_points_in_upper_league": 0,
-        "total_time": "70:57.320",
+        "total_time": "70:56.510",
         "tracks": {
             "Android Alley": {
                 "medal": "silver",
@@ -3286,16 +3286,16 @@
                 "time": "1:16.070"
             },
             "Cortex Castle": {
-                "medal": null,
+                "medal": "silver",
                 "place": 1011,
-                "points": 4.0,
-                "time": "1:49.040"
+                "points": 7.0,
+                "time": "1:48.400"
             },
             "Crash Cove": {
                 "medal": null,
                 "place": 1106,
-                "points": 2.0,
-                "time": "1:18.640"
+                "points": 3.0,
+                "time": "1:18.470"
             },
             "Deep Sea Driving": {
                 "medal": "bronze",
@@ -3418,7 +3418,7 @@
             "Prehistoric Playground": {
                 "medal": null,
                 "place": 446,
-                "points": 5.0,
+                "points": 4.0,
                 "time": "2:19.300"
             },
             "Roo's Tubes": {
@@ -3980,7 +3980,7 @@
             "gold": 0,
             "silver": 1
         },
-        "total_points": 78,
+        "total_points": 76,
         "total_points_in_upper_league": 0,
         "total_time": "74:41.330",
         "tracks": {
@@ -3999,7 +3999,7 @@
             "Barin Ruins": {
                 "medal": null,
                 "place": 4287,
-                "points": 2.5,
+                "points": 1.5,
                 "time": "1:43.900"
             },
             "Blizzard Bluff": {
@@ -4017,7 +4017,7 @@
             "Coco Park": {
                 "medal": null,
                 "place": 1290,
-                "points": 2.0,
+                "points": 1.0,
                 "time": "1:17.610"
             },
             "Cortex Castle": {
@@ -4466,13 +4466,13 @@
     "MEDYK-POLSKA": {
         "league": 4,
         "medals": {
-            "bronze": 5,
+            "bronze": 7,
             "gold": 8,
-            "silver": 2
+            "silver": 3
         },
-        "total_points": 159,
+        "total_points": 170,
         "total_points_in_upper_league": 28,
-        "total_time": "83:23.456",
+        "total_time": "82:59.886",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -4507,8 +4507,8 @@
             "Coco Park": {
                 "medal": null,
                 "place": 42593,
-                "points": 0,
-                "time": "1:26.952"
+                "points": 2.5,
+                "time": "1:22.510"
             },
             "Cortex Castle": {
                 "medal": "gold",
@@ -4529,10 +4529,10 @@
                 "time": "1:56.151"
             },
             "Dingo Canyon": {
-                "medal": null,
+                "medal": "bronze",
                 "place": 28037,
-                "points": 2.0,
-                "time": "1:41.235"
+                "points": 6.0,
+                "time": "1:36.260"
             },
             "Dragon Mines": {
                 "medal": null,
@@ -4635,10 +4635,10 @@
                 "time": "1:38.230"
             },
             "Polar Pass": {
-                "medal": null,
+                "medal": "silver",
                 "place": 36821,
-                "points": 4.0,
-                "time": "2:40.662"
+                "points": 8.0,
+                "time": "2:30.150"
             },
             "Prehistoric Playground": {
                 "medal": "silver",
@@ -4683,10 +4683,10 @@
                 "time": "1:41.700"
             },
             "Tiny Arena": {
-                "medal": null,
+                "medal": "bronze",
                 "place": 19071,
-                "points": 5.0,
-                "time": "3:27.541"
+                "points": 6.0,
+                "time": "3:23.900"
             },
             "Tiny Temple": {
                 "medal": null,
@@ -5132,7 +5132,7 @@
             "silver": 3
         },
         "total_points": 88,
-        "total_points_in_upper_league": 15,
+        "total_points_in_upper_league": 14,
         "total_time": "90:13.738",
         "tracks": {
             "Android Alley": {
@@ -5374,11 +5374,11 @@
         "medals": {
             "bronze": 8,
             "gold": 1,
-            "silver": 6
+            "silver": 7
         },
-        "total_points": 203,
+        "total_points": 207,
         "total_points_in_upper_league": 0,
-        "total_time": "70:45.190",
+        "total_time": "70:42.520",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -5419,7 +5419,7 @@
             "Cortex Castle": {
                 "medal": "silver",
                 "place": 874,
-                "points": 8.0,
+                "points": 7.0,
                 "time": "1:48.400"
             },
             "Crash Cove": {
@@ -5541,16 +5541,16 @@
                 "time": "1:21.850"
             },
             "Polar Pass": {
-                "medal": "bronze",
+                "medal": "silver",
                 "place": 1135,
-                "points": 6.0,
-                "time": "1:58.710"
+                "points": 8.0,
+                "time": "1:58.480"
             },
             "Prehistoric Playground": {
-                "medal": null,
+                "medal": "bronze",
                 "place": 542,
-                "points": 2.0,
-                "time": "2:21.07"
+                "points": 5.5,
+                "time": "2:18.630"
             },
             "Roo's Tubes": {
                 "medal": "bronze",
@@ -7225,9 +7225,9 @@
             "gold": 34,
             "silver": 5
         },
-        "total_points": 377,
+        "total_points": 378,
         "total_points_in_upper_league": 0,
-        "total_time": "69:58.224",
+        "total_time": "69:56.994",
         "tracks": {
             "Android Alley": {
                 "medal": "gold",
@@ -7269,7 +7269,7 @@
                 "medal": "gold",
                 "place": 137,
                 "points": 10.0,
-                "time": "1:47.270"
+                "time": "1:46.970"
             },
             "Crash Cove": {
                 "medal": "gold",
@@ -7393,7 +7393,7 @@
                 "medal": "gold",
                 "place": 247,
                 "points": 10.0,
-                "time": "1:58.010"
+                "time": "1:57.910"
             },
             "Prehistoric Playground": {
                 "medal": "silver",
@@ -7440,8 +7440,8 @@
             "Tiny Arena": {
                 "medal": "gold",
                 "place": 217,
-                "points": 9.0,
-                "time": "2:51.100"
+                "points": 10.0,
+                "time": "2:50.270"
             },
             "Tiny Temple": {
                 "medal": "gold",
@@ -7466,11 +7466,11 @@
     "StefekPizza": {
         "league": 4,
         "medals": {
-            "bronze": 2,
+            "bronze": 1,
             "gold": 2,
             "silver": 5
         },
-        "total_points": 106,
+        "total_points": 104,
         "total_points_in_upper_league": 10,
         "total_time": "91:47.154",
         "tracks": {
@@ -7531,7 +7531,7 @@
             "Dingo Canyon": {
                 "medal": null,
                 "place": 25211,
-                "points": 3.0,
+                "points": 2.0,
                 "time": "1:40.870"
             },
             "Dragon Mines": {
@@ -7635,9 +7635,9 @@
                 "time": "1:45.243"
             },
             "Polar Pass": {
-                "medal": "bronze",
+                "medal": null,
                 "place": 18752,
-                "points": 6.0,
+                "points": 5.0,
                 "time": "2:33.524"
             },
             "Prehistoric Playground": {
@@ -7711,11 +7711,11 @@
     "TendoFic": {
         "league": 4,
         "medals": {
-            "bronze": 2,
+            "bronze": 1,
             "gold": 0,
             "silver": 0
         },
-        "total_points": 29,
+        "total_points": 28,
         "total_points_in_upper_league": 0,
         "total_time": "96:15.633",
         "tracks": {
@@ -7774,9 +7774,9 @@
                 "time": "2:04.458"
             },
             "Dingo Canyon": {
-                "medal": "bronze",
+                "medal": null,
                 "place": 12605,
-                "points": 6.0,
+                "points": 5.0,
                 "time": "1:36.896"
             },
             "Dragon Mines": {
@@ -8411,9 +8411,9 @@
         "medals": {
             "bronze": 3,
             "gold": 4,
-            "silver": 9
+            "silver": 8
         },
-        "total_points": 208,
+        "total_points": 203,
         "total_points_in_upper_league": 5,
         "total_time": "81:09.300",
         "tracks": {
@@ -8444,7 +8444,7 @@
             },
             "Coco Park": {
                 "medal": null,
-                "points": 3.0,
+                "points": 2.5,
                 "time": "1:22.510"
             },
             "Cortex Castle": {
@@ -8464,7 +8464,7 @@
             },
             "Dingo Canyon": {
                 "medal": null,
-                "points": 5.0,
+                "points": 4.0,
                 "time": "1:37.530"
             },
             "Dragon Mines": {
@@ -8553,8 +8553,8 @@
                 "time": "1:38.960"
             },
             "Polar Pass": {
-                "medal": "silver",
-                "points": 8.0,
+                "medal": "bronze",
+                "points": 6.0,
                 "time": "2:30.950"
             },
             "Prehistoric Playground": {
@@ -8593,8 +8593,8 @@
                 "time": "1:45.340"
             },
             "Tiny Arena": {
-                "medal": "bronze",
-                "points": 6.0,
+                "medal": null,
+                "points": 5.0,
                 "time": "3:24.400"
             },
             "Tiny Temple": {
@@ -9111,7 +9111,7 @@
             "gold": 0,
             "silver": 2
         },
-        "total_points": 61,
+        "total_points": 60,
         "total_points_in_upper_league": 0,
         "total_time": "78:09.778",
         "tracks": {
@@ -9278,7 +9278,7 @@
             "Polar Pass": {
                 "medal": null,
                 "place": 343,
-                "points": 1.0,
+                "points": 0,
                 "time": "2:01.120"
             },
             "Prehistoric Playground": {
@@ -9772,7 +9772,7 @@
             "gold": 1,
             "silver": 1
         },
-        "total_points": 141,
+        "total_points": 140,
         "total_points_in_upper_league": 0,
         "total_time": "71:07.350",
         "tracks": {
@@ -9939,7 +9939,7 @@
             "Polar Pass": {
                 "medal": null,
                 "place": 101,
-                "points": 2.0,
+                "points": 1.0,
                 "time": "1:59.980"
             },
             "Prehistoric Playground": {
@@ -10017,7 +10017,7 @@
             "gold": 0,
             "silver": 0
         },
-        "total_points": 59,
+        "total_points": 58,
         "total_points_in_upper_league": 0,
         "total_time": "90:47.518",
         "tracks": {
@@ -10184,7 +10184,7 @@
             "Polar Pass": {
                 "medal": null,
                 "place": 34496,
-                "points": 5.0,
+                "points": 4.0,
                 "time": "2:40.157"
             },
             "Prehistoric Playground": {
@@ -10507,7 +10507,7 @@
             "gold": 0,
             "silver": 0
         },
-        "total_points": 29,
+        "total_points": 28,
         "total_points_in_upper_league": 0,
         "total_time": "92:35.856",
         "tracks": {
@@ -10544,7 +10544,7 @@
             "Coco Park": {
                 "medal": null,
                 "place": 19424,
-                "points": 1.0,
+                "points": 0,
                 "time": "1:23.117"
             },
             "Cortex Castle": {
@@ -11201,11 +11201,11 @@
     "kubalok25": {
         "league": 2,
         "medals": {
-            "bronze": 9,
+            "bronze": 10,
             "gold": 12,
-            "silver": 8
+            "silver": 7
         },
-        "total_points": 272,
+        "total_points": 270,
         "total_points_in_upper_league": 10,
         "total_time": "72:18.980",
         "tracks": {
@@ -11240,9 +11240,9 @@
                 "time": "1:53.880"
             },
             "Coco Park": {
-                "medal": "silver",
+                "medal": "bronze",
                 "place": 2528,
-                "points": 7.0,
+                "points": 5.5,
                 "time": "1:16.540"
             },
             "Cortex Castle": {
@@ -11936,11 +11936,11 @@
     "myjniak": {
         "league": 1,
         "medals": {
-            "bronze": 6,
+            "bronze": 5,
             "gold": 0,
             "silver": 2
         },
-        "total_points": 127,
+        "total_points": 125,
         "total_points_in_upper_league": 0,
         "total_time": "71:12.859",
         "tracks": {
@@ -11981,9 +11981,9 @@
                 "time": "1:15.940"
             },
             "Cortex Castle": {
-                "medal": "bronze",
+                "medal": null,
                 "place": 441,
-                "points": 6.0,
+                "points": 5.0,
                 "time": "1:48.470"
             },
             "Crash Cove": {
@@ -12113,7 +12113,7 @@
             "Prehistoric Playground": {
                 "medal": null,
                 "place": 346,
-                "points": 4.0,
+                "points": 3.0,
                 "time": "2:19.900"
             },
             "Roo's Tubes": {
@@ -12676,7 +12676,7 @@
             "silver": 4
         },
         "total_points": 105,
-        "total_points_in_upper_league": 2,
+        "total_points_in_upper_league": 1,
         "total_time": "81:20.310",
         "tracks": {
             "Android Alley": {
@@ -12917,12 +12917,12 @@
         "league": 2,
         "medals": {
             "bronze": 2,
-            "gold": 1,
+            "gold": 2,
             "silver": 0
         },
-        "total_points": 66,
-        "total_points_in_upper_league": 8,
-        "total_time": "75:30.590",
+        "total_points": 73,
+        "total_points_in_upper_league": 13,
+        "total_time": "75:25.100",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -12942,7 +12942,7 @@
             "Blizzard Bluff": {
                 "medal": "gold",
                 "points": 10.0,
-                "time": "1:08.530"
+                "time": "1:08.430"
             },
             "Clockwork Wumpa": {
                 "medal": null,
@@ -12950,9 +12950,9 @@
                 "time": "1:55.480"
             },
             "Coco Park": {
-                "medal": null,
-                "points": 4.0,
-                "time": "1:17.210"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "1:15.870"
             },
             "Cortex Castle": {
                 "medal": null,
@@ -13066,8 +13066,8 @@
             },
             "Prehistoric Playground": {
                 "medal": null,
-                "points": 2.0,
-                "time": "2:22.570"
+                "points": 3.0,
+                "time": "2:22.390"
             },
             "Roo's Tubes": {
                 "medal": null,
@@ -13112,7 +13112,7 @@
             "Turbo Track": {
                 "medal": null,
                 "points": 0,
-                "time": "1:37.620"
+                "time": "1:33.750"
             },
             "Twilight Tour": {
                 "medal": null,
@@ -13128,9 +13128,9 @@
             "gold": 1,
             "silver": 0
         },
-        "total_points": 104,
+        "total_points": 105,
         "total_points_in_upper_league": 3,
-        "total_time": "73:59.310",
+        "total_time": "73:58.760",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -13165,8 +13165,8 @@
             "Coco Park": {
                 "medal": null,
                 "place": 4249,
-                "points": 1.0,
-                "time": "1:17.860"
+                "points": 3.0,
+                "time": "1:17.310"
             },
             "Cortex Castle": {
                 "medal": null,
@@ -13295,7 +13295,7 @@
             "Polar Pass": {
                 "medal": null,
                 "place": 14356,
-                "points": 1.5,
+                "points": 0,
                 "time": "2:06.890"
             },
             "Prehistoric Playground": {
@@ -13373,7 +13373,7 @@
             "gold": 0,
             "silver": 0
         },
-        "total_points": 75,
+        "total_points": 73,
         "total_points_in_upper_league": 0,
         "total_time": "73:39.260",
         "tracks": {
@@ -13392,7 +13392,7 @@
             "Barin Ruins": {
                 "medal": null,
                 "place": 9814,
-                "points": 1.0,
+                "points": 0,
                 "time": "1:44.000"
             },
             "Blizzard Bluff": {
@@ -13546,7 +13546,7 @@
             "Prehistoric Playground": {
                 "medal": null,
                 "place": 10457,
-                "points": 3.0,
+                "points": 2.0,
                 "time": "2:22.440"
             },
             "Roo's Tubes": {
@@ -13865,7 +13865,7 @@
         },
         "total_points": 123,
         "total_points_in_upper_league": 0,
-        "total_time": "71:15.542",
+        "total_time": "71:12.642",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -13906,7 +13906,7 @@
             "Cortex Castle": {
                 "medal": null,
                 "place": 593,
-                "points": 5.0,
+                "points": 4.0,
                 "time": "1:48.870"
             },
             "Crash Cove": {
@@ -14030,14 +14030,14 @@
             "Polar Pass": {
                 "medal": null,
                 "place": 606,
-                "points": 0,
-                "time": "2:02.35"
+                "points": 2.0,
+                "time": "1:59.820"
             },
             "Prehistoric Playground": {
                 "medal": null,
                 "place": 421,
-                "points": 3.0,
-                "time": "2:20.340"
+                "points": 2.0,
+                "time": "2:19.970"
             },
             "Roo's Tubes": {
                 "medal": null,
