@@ -93,6 +93,6 @@ class RankingCreator(Database):
                     elif points_granted > cls.point_system[3]:
                         data[player]['medals']['bronze'] += 1
                         data[player]['tracks'][track]['medal'] = 'bronze'
-            for i, player in enumerate(players_sorted):
-                data[player]['total_points'] = int(data[player]['total_points'])
+        for i, player in enumerate(players_sorted):
+            data[player]['total_points'] = int(data[player]['total_points'])
         cls.time_trials.save()
