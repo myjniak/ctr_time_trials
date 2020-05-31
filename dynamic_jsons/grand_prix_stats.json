@@ -1,26 +1,26 @@
 {
     "Dejwidgakure": {
-        "old_total_points": 147,
-        "ranking": 7001.04,
-        "total_places_improved": 5,
-        "total_points": 102,
-        "total_points_improved": 34,
+        "old_total_points": 193,
+        "ranking": 6737.56,
+        "total_places_improved": 4,
+        "total_points": 128,
+        "total_points_improved": 26,
         "total_time_improved": 18.82,
         "tracks": {
             "Coco Park": {
-                "new_place": 24,
+                "new_place": 25,
                 "old_place": 24,
                 "old_points": 7,
-                "place_improvement": 0,
-                "points": 7,
+                "place_improvement": -1,
+                "points": 4,
                 "time_improvement": 0.0
             },
             "Cortex Castle": {
-                "new_place": 19,
+                "new_place": 20,
                 "old_place": 22,
                 "old_points": 16,
-                "place_improvement": 3,
-                "points": 37,
+                "place_improvement": 2,
+                "points": 29,
                 "time_improvement": 10.28
             },
             "Crash Cove": {
@@ -29,6 +29,14 @@
                 "old_points": 1,
                 "place_improvement": 0,
                 "points": 1,
+                "time_improvement": 0.0
+            },
+            "Polar Pass": {
+                "new_place": 19,
+                "old_place": 18,
+                "old_points": 46,
+                "place_improvement": -1,
+                "points": 37,
                 "time_improvement": 0.0
             },
             "Prehistoric Playground": {
@@ -82,12 +90,12 @@
         }
     },
     "Greg": {
-        "old_total_points": 1268,
-        "ranking": 23183.499999999996,
+        "old_total_points": 1405,
+        "ranking": 25461.649999999998,
         "total_places_improved": 8,
-        "total_points": 1230,
+        "total_points": 1353,
         "total_points_improved": 132,
-        "total_time_improved": 11.649999999999999,
+        "total_time_improved": 12.049999999999999,
         "tracks": {
             "Coco Park": {
                 "new_place": 13,
@@ -112,6 +120,14 @@
                 "place_improvement": 1,
                 "points": 191,
                 "time_improvement": 0.2
+            },
+            "Polar Pass": {
+                "new_place": 13,
+                "old_place": 11,
+                "old_points": 137,
+                "place_improvement": -2,
+                "points": 106,
+                "time_improvement": 0.0
             },
             "Prehistoric Playground": {
                 "new_place": 13,
@@ -146,12 +162,12 @@
                 "time_improvement": 4.57
             },
             "Turbo Track": {
-                "new_place": 11,
+                "new_place": 10,
                 "old_place": 7,
                 "old_points": 211,
-                "place_improvement": -4,
-                "points": 137,
-                "time_improvement": 0.57
+                "place_improvement": -3,
+                "points": 154,
+                "time_improvement": 0.97
             },
             "Twilight Tour": {
                 "new_place": 9,
@@ -164,12 +180,12 @@
         }
     },
     "Gustlyk1": {
-        "old_total_points": 448,
-        "ranking": 150948.15999999997,
-        "total_places_improved": 28,
-        "total_points": 713,
-        "total_points_improved": 301,
-        "total_time_improved": 65.11999999999999,
+        "old_total_points": 459,
+        "ranking": 272417.45999999996,
+        "total_places_improved": 39,
+        "total_points": 834,
+        "total_points_improved": 411,
+        "total_time_improved": 91.13999999999999,
         "tracks": {
             "Coco Park": {
                 "new_place": 16,
@@ -194,6 +210,14 @@
                 "place_improvement": 2,
                 "points": 46,
                 "time_improvement": 1.37
+            },
+            "Polar Pass": {
+                "new_place": 12,
+                "old_place": 23,
+                "old_points": 11,
+                "place_improvement": 11,
+                "points": 121,
+                "time_improvement": 26.02
             },
             "Prehistoric Playground": {
                 "new_place": 16,
@@ -246,12 +270,12 @@
         }
     },
     "Jakub_Luk": {
-        "old_total_points": 1543,
-        "ranking": 26060.04,
+        "old_total_points": 1715,
+        "ranking": 33835.97,
         "total_places_improved": 10,
-        "total_points": 1449,
+        "total_points": 1604,
         "total_points_improved": 145,
-        "total_time_improved": 11.46,
+        "total_time_improved": 13.930000000000001,
         "tracks": {
             "Coco Park": {
                 "new_place": 11,
@@ -276,6 +300,14 @@
                 "place_improvement": -4,
                 "points": 172,
                 "time_improvement": 0.0
+            },
+            "Polar Pass": {
+                "new_place": 9,
+                "old_place": 9,
+                "old_points": 172,
+                "place_improvement": 0,
+                "points": 172,
+                "time_improvement": 2.47
             },
             "Prehistoric Playground": {
                 "new_place": 9,
@@ -310,11 +342,11 @@
                 "time_improvement": 3.17
             },
             "Turbo Track": {
-                "new_place": 10,
+                "new_place": 11,
                 "old_place": 5,
                 "old_points": 254,
-                "place_improvement": -5,
-                "points": 154,
+                "place_improvement": -6,
+                "points": 137,
                 "time_improvement": 0.14
             },
             "Twilight Tour": {
@@ -328,19 +360,19 @@
         }
     },
     "JanneAhonen69": {
-        "old_total_points": 2533,
-        "ranking": 3822.0,
-        "total_places_improved": 2,
-        "total_points": 2243,
-        "total_points_improved": 41,
+        "old_total_points": 2859,
+        "ranking": 4084.5,
+        "total_places_improved": 1,
+        "total_points": 2523,
+        "total_points_improved": 20,
         "total_time_improved": 1.5,
         "tracks": {
             "Coco Park": {
-                "new_place": 6,
+                "new_place": 7,
                 "old_place": 8,
                 "old_points": 191,
-                "place_improvement": 2,
-                "points": 232,
+                "place_improvement": 1,
+                "points": 211,
                 "time_improvement": 0.2
             },
             "Cortex Castle": {
@@ -357,6 +389,14 @@
                 "old_points": 277,
                 "place_improvement": -3,
                 "points": 211,
+                "time_improvement": 0.0
+            },
+            "Polar Pass": {
+                "new_place": 3,
+                "old_place": 2,
+                "old_points": 326,
+                "place_improvement": -1,
+                "points": 301,
                 "time_improvement": 0.0
             },
             "Prehistoric Playground": {
@@ -410,10 +450,10 @@
         }
     },
     "KalibeRaziel44": {
-        "old_total_points": 1388,
-        "ranking": 37650.28,
+        "old_total_points": 1480,
+        "ranking": 38383.52,
         "total_places_improved": 10,
-        "total_points": 1427,
+        "total_points": 1473,
         "total_points_improved": 167,
         "total_time_improved": 15.94,
         "tracks": {
@@ -439,6 +479,14 @@
                 "old_points": 154,
                 "place_improvement": -2,
                 "points": 121,
+                "time_improvement": 0.0
+            },
+            "Polar Pass": {
+                "new_place": 18,
+                "old_place": 14,
+                "old_points": 92,
+                "place_improvement": -4,
+                "points": 46,
                 "time_improvement": 0.0
             },
             "Prehistoric Playground": {
@@ -492,20 +540,20 @@
         }
     },
     "Kideu98": {
-        "old_total_points": 2203,
-        "ranking": 53878.0,
-        "total_places_improved": 18,
-        "total_points": 4230,
-        "total_points_improved": 374,
-        "total_time_improved": 8.69,
+        "old_total_points": 2457,
+        "ranking": 44050.14,
+        "total_places_improved": 19,
+        "total_points": 2781,
+        "total_points_improved": 393,
+        "total_time_improved": 9.09,
         "tracks": {
             "Coco Park": {
-                "new_place": 9,
+                "new_place": 4,
                 "old_place": 6,
                 "old_points": 232,
-                "place_improvement": -3,
-                "points": 172,
-                "time_improvement": 0.0
+                "place_improvement": 2,
+                "points": 277,
+                "time_improvement": 0.4
             },
             "Cortex Castle": {
                 "new_place": 2,
@@ -522,6 +570,14 @@
                 "place_improvement": 5,
                 "points": 232,
                 "time_improvement": 0.74
+            },
+            "Polar Pass": {
+                "new_place": 6,
+                "old_place": 5,
+                "old_points": 254,
+                "place_improvement": -1,
+                "points": 232,
+                "time_improvement": 0.0
             },
             "Prehistoric Playground": {
                 "new_place": 5,
@@ -540,11 +596,11 @@
                 "time_improvement": 1.17
             },
             "Spyro Circuit": {
-                "new_place": 1,
+                "new_place": 2,
                 "old_place": 2,
                 "old_points": 326,
-                "place_improvement": 1,
-                "points": 352,
+                "place_improvement": 0,
+                "points": 326,
                 "time_improvement": 0.2
             },
             "Thunder Struck": {
@@ -574,20 +630,20 @@
         }
     },
     "Kranczuu": {
-        "old_total_points": 96,
-        "ranking": 42642.0,
-        "total_places_improved": 26,
-        "total_points": 185,
-        "total_points_improved": 127,
-        "total_time_improved": 46.35,
+        "old_total_points": 125,
+        "ranking": 67589.81,
+        "total_places_improved": 31,
+        "total_points": 216,
+        "total_points_improved": 147,
+        "total_time_improved": 64.31,
         "tracks": {
             "Coco Park": {
-                "new_place": 22,
+                "new_place": 23,
                 "old_place": 22,
                 "old_points": 16,
-                "place_improvement": 0,
-                "points": 16,
-                "time_improvement": 0.0
+                "place_improvement": -1,
+                "points": 11,
+                "time_improvement": 2.24
             },
             "Cortex Castle": {
                 "new_place": 25,
@@ -605,13 +661,21 @@
                 "points": 4,
                 "time_improvement": 0.0
             },
+            "Polar Pass": {
+                "new_place": 22,
+                "old_place": 20,
+                "old_points": 29,
+                "place_improvement": -2,
+                "points": 16,
+                "time_improvement": 7.71
+            },
             "Prehistoric Playground": {
-                "new_place": 26,
+                "new_place": 21,
                 "old_place": 27,
                 "old_points": 1,
-                "place_improvement": 1,
-                "points": 2,
-                "time_improvement": 2.4
+                "place_improvement": 6,
+                "points": 22,
+                "time_improvement": 10.41
             },
             "Sewer Speedway": {
                 "new_place": 21,
@@ -656,10 +720,10 @@
         }
     },
     "Krisao_": {
-        "old_total_points": 735,
+        "old_total_points": 841,
         "ranking": 0.0,
         "total_places_improved": 0,
-        "total_points": 518,
+        "total_points": 577,
         "total_points_improved": 0,
         "total_time_improved": 0.0,
         "tracks": {
@@ -687,6 +751,14 @@
                 "points": 56,
                 "time_improvement": 0.0
             },
+            "Polar Pass": {
+                "new_place": 16,
+                "old_place": 13,
+                "old_points": 106,
+                "place_improvement": -3,
+                "points": 67,
+                "time_improvement": 0.0
+            },
             "Prehistoric Playground": {
                 "new_place": 12,
                 "old_place": 12,
@@ -704,11 +776,11 @@
                 "time_improvement": 0.0
             },
             "Spyro Circuit": {
-                "new_place": 19,
+                "new_place": 20,
                 "old_place": 16,
                 "old_points": 67,
-                "place_improvement": -3,
-                "points": 37,
+                "place_improvement": -4,
+                "points": 29,
                 "time_improvement": 0.0
             },
             "Thunder Struck": {
@@ -738,12 +810,12 @@
         }
     },
     "MEDYK-POLSKA": {
-        "old_total_points": 30,
-        "ranking": 33848.424,
-        "total_places_improved": 14,
-        "total_points": 81,
-        "total_points_improved": 51,
-        "total_time_improved": 77.634,
+        "old_total_points": 34,
+        "ranking": 35963.568,
+        "total_places_improved": 13,
+        "total_points": 78,
+        "total_points_improved": 46,
+        "total_time_improved": 88.146,
         "tracks": {
             "Coco Park": {
                 "new_place": 28,
@@ -769,12 +841,20 @@
                 "points": 0,
                 "time_improvement": 0.0
             },
+            "Polar Pass": {
+                "new_place": 26,
+                "old_place": 25,
+                "old_points": 4,
+                "place_improvement": -1,
+                "points": 2,
+                "time_improvement": 10.512
+            },
             "Prehistoric Playground": {
-                "new_place": 22,
+                "new_place": 23,
                 "old_place": 23,
                 "old_points": 11,
-                "place_improvement": 1,
-                "points": 16,
+                "place_improvement": 0,
+                "points": 11,
                 "time_improvement": 2.17
             },
             "Sewer Speedway": {
@@ -820,20 +900,20 @@
         }
     },
     "Maties_Gamer": {
-        "old_total_points": 2085,
-        "ranking": 65281.367999999995,
-        "total_places_improved": 23,
-        "total_points": 2566,
-        "total_points_improved": 504,
-        "total_time_improved": 12.588,
+        "old_total_points": 2386,
+        "ranking": 76897.656,
+        "total_places_improved": 25,
+        "total_points": 2917,
+        "total_points_improved": 554,
+        "total_time_improved": 13.288,
         "tracks": {
             "Coco Park": {
-                "new_place": 3,
+                "new_place": 2,
                 "old_place": 9,
                 "old_points": 172,
-                "place_improvement": 6,
-                "points": 301,
-                "time_improvement": 0.83
+                "place_improvement": 7,
+                "points": 326,
+                "time_improvement": 1.3
             },
             "Cortex Castle": {
                 "new_place": 3,
@@ -850,6 +930,14 @@
                 "place_improvement": 4,
                 "points": 277,
                 "time_improvement": 0.43
+            },
+            "Polar Pass": {
+                "new_place": 2,
+                "old_place": 3,
+                "old_points": 301,
+                "place_improvement": 1,
+                "points": 326,
+                "time_improvement": 0.23
             },
             "Prehistoric Playground": {
                 "new_place": 4,
@@ -902,19 +990,19 @@
         }
     },
     "OFF23PL": {
-        "old_total_points": 127,
+        "old_total_points": 149,
         "ranking": 0.0,
         "total_places_improved": 0,
-        "total_points": 41,
+        "total_points": 44,
         "total_points_improved": 0,
         "total_time_improved": 0.0,
         "tracks": {
             "Coco Park": {
-                "new_place": 23,
+                "new_place": 24,
                 "old_place": 23,
                 "old_points": 11,
-                "place_improvement": 0,
-                "points": 11,
+                "place_improvement": -1,
+                "points": 7,
                 "time_improvement": 0.0
             },
             "Cortex Castle": {
@@ -930,6 +1018,14 @@
                 "old_place": 24,
                 "old_points": 7,
                 "place_improvement": 0,
+                "points": 7,
+                "time_improvement": 0.0
+            },
+            "Polar Pass": {
+                "new_place": 24,
+                "old_place": 21,
+                "old_points": 22,
+                "place_improvement": -3,
                 "points": 7,
                 "time_improvement": 0.0
             },
@@ -984,12 +1080,12 @@
         }
     },
     "Rc_FIVE": {
-        "old_total_points": 3142,
-        "ranking": 36898.0,
-        "total_places_improved": 0,
-        "total_points": 15436,
-        "total_points_improved": 0,
-        "total_time_improved": 2.375,
+        "old_total_points": 3494,
+        "ranking": 79123.1,
+        "total_places_improved": 1,
+        "total_points": 21120,
+        "total_points_improved": 26,
+        "total_time_improved": 3.706,
         "tracks": {
             "Coco Park": {
                 "new_place": 1,
@@ -997,7 +1093,7 @@
                 "old_points": 352,
                 "place_improvement": 0,
                 "points": 352,
-                "time_improvement": 0.0
+                "time_improvement": 0.241
             },
             "Cortex Castle": {
                 "new_place": 1,
@@ -1015,13 +1111,21 @@
                 "points": 352,
                 "time_improvement": 0.06
             },
+            "Polar Pass": {
+                "new_place": 1,
+                "old_place": 1,
+                "old_points": 352,
+                "place_improvement": 0,
+                "points": 352,
+                "time_improvement": 0.1
+            },
             "Prehistoric Playground": {
-                "new_place": 2,
+                "new_place": 1,
                 "old_place": 2,
                 "old_points": 326,
-                "place_improvement": 0,
-                "points": 326,
-                "time_improvement": 0.0
+                "place_improvement": 1,
+                "points": 352,
+                "time_improvement": 0.76
             },
             "Sewer Speedway": {
                 "new_place": 1,
@@ -1032,12 +1136,12 @@
                 "time_improvement": 0.44
             },
             "Spyro Circuit": {
-                "new_place": 2,
+                "new_place": 1,
                 "old_place": 1,
                 "old_points": 352,
-                "place_improvement": -1,
-                "points": 326,
-                "time_improvement": 0.13
+                "place_improvement": 0,
+                "points": 352,
+                "time_improvement": 0.23
             },
             "Thunder Struck": {
                 "new_place": 1,
@@ -1061,32 +1165,32 @@
                 "old_points": 352,
                 "place_improvement": 0,
                 "points": 352,
-                "time_improvement": 0.14
+                "time_improvement": 0.27
             }
         }
     },
     "TyczekPL": {
-        "old_total_points": 199,
-        "ranking": 65854.465,
-        "total_places_improved": 21,
-        "total_points": 341,
-        "total_points_improved": 142,
-        "total_time_improved": 57.214999999999996,
+        "old_total_points": 206,
+        "ranking": 99975.924,
+        "total_places_improved": 28,
+        "total_points": 362,
+        "total_points_improved": 174,
+        "total_time_improved": 75.057,
         "tracks": {
             "Coco Park": {
-                "new_place": 25,
+                "new_place": 20,
                 "old_place": 25,
                 "old_points": 4,
-                "place_improvement": 0,
-                "points": 4,
-                "time_improvement": 0.0
+                "place_improvement": 5,
+                "points": 29,
+                "time_improvement": 3.902
             },
             "Cortex Castle": {
-                "new_place": 18,
+                "new_place": 19,
                 "old_place": 18,
                 "old_points": 46,
-                "place_improvement": 0,
-                "points": 46,
+                "place_improvement": -1,
+                "points": 37,
                 "time_improvement": 7.91
             },
             "Crash Cove": {
@@ -1097,12 +1201,20 @@
                 "points": 22,
                 "time_improvement": 1.97
             },
+            "Polar Pass": {
+                "new_place": 21,
+                "old_place": 24,
+                "old_points": 7,
+                "place_improvement": 3,
+                "points": 22,
+                "time_improvement": 13.94
+            },
             "Prehistoric Playground": {
-                "new_place": 18,
+                "new_place": 19,
                 "old_place": 18,
                 "old_points": 46,
-                "place_improvement": 0,
-                "points": 46,
+                "place_improvement": -1,
+                "points": 37,
                 "time_improvement": 3.07
             },
             "Sewer Speedway": {
@@ -1122,11 +1234,11 @@
                 "time_improvement": 2.63
             },
             "Thunder Struck": {
-                "new_place": 19,
+                "new_place": 20,
                 "old_place": 23,
                 "old_points": 11,
-                "place_improvement": 4,
-                "points": 37,
+                "place_improvement": 3,
+                "points": 29,
                 "time_improvement": 22.02
             },
             "Turbo Track": {
@@ -1148,10 +1260,10 @@
         }
     },
     "Xenom435": {
-        "old_total_points": 432,
-        "ranking": 6858.32,
+        "old_total_points": 469,
+        "ranking": 7024.08,
         "total_places_improved": 0,
-        "total_points": 231,
+        "total_points": 239,
         "total_points_improved": 0,
         "total_time_improved": 20.72,
         "tracks": {
@@ -1179,12 +1291,20 @@
                 "points": 37,
                 "time_improvement": 0.0
             },
+            "Polar Pass": {
+                "new_place": 23,
+                "old_place": 19,
+                "old_points": 37,
+                "place_improvement": -4,
+                "points": 11,
+                "time_improvement": 0.0
+            },
             "Prehistoric Playground": {
-                "new_place": 24,
+                "new_place": 25,
                 "old_place": 21,
                 "old_points": 22,
-                "place_improvement": -3,
-                "points": 7,
+                "place_improvement": -4,
+                "points": 4,
                 "time_improvement": 0.0
             },
             "Sewer Speedway": {
@@ -1230,19 +1350,19 @@
         }
     },
     "Xerdzio": {
-        "old_total_points": 2076,
-        "ranking": 46043.08,
-        "total_places_improved": 10,
-        "total_points": 4001,
-        "total_points_improved": 211,
-        "total_time_improved": 8.93,
+        "old_total_points": 2287,
+        "ranking": 39304.8,
+        "total_places_improved": 12,
+        "total_points": 2446,
+        "total_points_improved": 254,
+        "total_time_improved": 10.3,
         "tracks": {
             "Coco Park": {
-                "new_place": 4,
+                "new_place": 5,
                 "old_place": 3,
                 "old_points": 301,
-                "place_improvement": -1,
-                "points": 277,
+                "place_improvement": -2,
+                "points": 254,
                 "time_improvement": 0.0
             },
             "Cortex Castle": {
@@ -1261,13 +1381,21 @@
                 "points": 301,
                 "time_improvement": 0.44
             },
+            "Polar Pass": {
+                "new_place": 5,
+                "old_place": 7,
+                "old_points": 211,
+                "place_improvement": 2,
+                "points": 254,
+                "time_improvement": 1.07
+            },
             "Prehistoric Playground": {
-                "new_place": 1,
+                "new_place": 2,
                 "old_place": 1,
                 "old_points": 352,
-                "place_improvement": 0,
-                "points": 352,
-                "time_improvement": 0.0
+                "place_improvement": -1,
+                "points": 326,
+                "time_improvement": 0.3
             },
             "Sewer Speedway": {
                 "new_place": 9,
@@ -1313,9 +1441,9 @@
     },
     "cthulhuburi": {
         "old_total_points": 56,
-        "ranking": 10960.400000000001,
+        "ranking": 10843.800000000001,
         "total_places_improved": 5,
-        "total_points": 58,
+        "total_points": 56,
         "total_points_improved": 6,
         "total_time_improved": 58.300000000000004,
         "tracks": {
@@ -1343,12 +1471,20 @@
                 "points": 2,
                 "time_improvement": 0.0
             },
+            "Polar Pass": {
+                "new_place": 28,
+                "old_place": 28,
+                "old_points": 0,
+                "place_improvement": 0,
+                "points": 0,
+                "time_improvement": 0.0
+            },
             "Prehistoric Playground": {
-                "new_place": 25,
+                "new_place": 26,
                 "old_place": 24,
                 "old_points": 7,
-                "place_improvement": -1,
-                "points": 4,
+                "place_improvement": -2,
+                "points": 2,
                 "time_improvement": 0.0
             },
             "Sewer Speedway": {
@@ -1394,19 +1530,19 @@
         }
     },
     "dnsgpa": {
-        "old_total_points": 138,
+        "old_total_points": 154,
         "ranking": 0.0,
         "total_places_improved": 0,
-        "total_points": 52,
+        "total_points": 50,
         "total_points_improved": 0,
         "total_time_improved": 0.0,
         "tracks": {
             "Coco Park": {
-                "new_place": 21,
+                "new_place": 22,
                 "old_place": 21,
                 "old_points": 22,
-                "place_improvement": 0,
-                "points": 22,
+                "place_improvement": -1,
+                "points": 16,
                 "time_improvement": 0.0
             },
             "Cortex Castle": {
@@ -1423,6 +1559,14 @@
                 "old_points": 37,
                 "place_improvement": -3,
                 "points": 16,
+                "time_improvement": 0.0
+            },
+            "Polar Pass": {
+                "new_place": 25,
+                "old_place": 22,
+                "old_points": 16,
+                "place_improvement": -3,
+                "points": 4,
                 "time_improvement": 0.0
             },
             "Prehistoric Playground": {
@@ -1476,10 +1620,10 @@
         }
     },
     "kubalok25": {
-        "old_total_points": 1373,
+        "old_total_points": 1527,
         "ranking": 0.0,
         "total_places_improved": 0,
-        "total_points": 1092,
+        "total_points": 1229,
         "total_points_improved": 0,
         "total_time_improved": 0.0,
         "tracks": {
@@ -1505,6 +1649,14 @@
                 "old_points": 121,
                 "place_improvement": -1,
                 "points": 106,
+                "time_improvement": 0.0
+            },
+            "Polar Pass": {
+                "new_place": 11,
+                "old_place": 10,
+                "old_points": 154,
+                "place_improvement": -1,
+                "points": 137,
                 "time_improvement": 0.0
             },
             "Prehistoric Playground": {
@@ -1558,10 +1710,10 @@
         }
     },
     "marmero97": {
-        "old_total_points": 419,
-        "ranking": 6876.03,
+        "old_total_points": 540,
+        "ranking": 7576.099999999999,
         "total_places_improved": 4,
-        "total_points": 327,
+        "total_points": 400,
         "total_points_improved": 58,
         "total_time_improved": 9.59,
         "tracks": {
@@ -1589,12 +1741,20 @@
                 "points": 92,
                 "time_improvement": 0.0
             },
+            "Polar Pass": {
+                "new_place": 15,
+                "old_place": 12,
+                "old_points": 121,
+                "place_improvement": -3,
+                "points": 79,
+                "time_improvement": 0.0
+            },
             "Prehistoric Playground": {
-                "new_place": 21,
+                "new_place": 22,
                 "old_place": 19,
                 "old_points": 37,
-                "place_improvement": -2,
-                "points": 22,
+                "place_improvement": -3,
+                "points": 16,
                 "time_improvement": 0.0
             },
             "Sewer Speedway": {
@@ -1640,19 +1800,19 @@
         }
     },
     "mati1212": {
-        "old_total_points": 2134,
-        "ranking": 7823.77,
+        "old_total_points": 2366,
+        "ranking": 8360.752,
         "total_places_improved": 5,
-        "total_points": 2060,
+        "total_points": 2246,
         "total_points_improved": 110,
         "total_time_improved": 2.887,
         "tracks": {
             "Coco Park": {
-                "new_place": 2,
+                "new_place": 3,
                 "old_place": 2,
                 "old_points": 326,
-                "place_improvement": 0,
-                "points": 326,
+                "place_improvement": -1,
+                "points": 301,
                 "time_improvement": 0.0
             },
             "Cortex Castle": {
@@ -1670,6 +1830,14 @@
                 "place_improvement": 0,
                 "points": 326,
                 "time_improvement": 0.14
+            },
+            "Polar Pass": {
+                "new_place": 7,
+                "old_place": 6,
+                "old_points": 232,
+                "place_improvement": -1,
+                "points": 211,
+                "time_improvement": 0.0
             },
             "Prehistoric Playground": {
                 "new_place": 11,
@@ -1722,19 +1890,19 @@
         }
     },
     "myjniak": {
-        "old_total_points": 2215,
-        "ranking": 16574.35,
+        "old_total_points": 2492,
+        "ranking": 18010.979999999996,
         "total_places_improved": 7,
-        "total_points": 2110,
+        "total_points": 2367,
         "total_points_improved": 151,
         "total_time_improved": 5.589999999999999,
         "tracks": {
             "Coco Park": {
-                "new_place": 7,
+                "new_place": 8,
                 "old_place": 4,
                 "old_points": 277,
-                "place_improvement": -3,
-                "points": 211,
+                "place_improvement": -4,
+                "points": 191,
                 "time_improvement": 0.0
             },
             "Cortex Castle": {
@@ -1752,6 +1920,14 @@
                 "place_improvement": -4,
                 "points": 154,
                 "time_improvement": -0.11
+            },
+            "Polar Pass": {
+                "new_place": 4,
+                "old_place": 4,
+                "old_points": 277,
+                "place_improvement": 0,
+                "points": 277,
+                "time_improvement": 0.0
             },
             "Prehistoric Playground": {
                 "new_place": 6,
@@ -1804,11 +1980,11 @@
         }
     },
     "peteer_parker": {
-        "old_total_points": 244,
-        "ranking": 28986.0,
-        "total_places_improved": 16,
-        "total_points": 200,
-        "total_points_improved": 60,
+        "old_total_points": 245,
+        "ranking": 26812.050000000003,
+        "total_places_improved": 15,
+        "total_points": 190,
+        "total_points_improved": 53,
         "total_time_improved": 48.31,
         "tracks": {
             "Coco Park": {
@@ -1835,12 +2011,20 @@
                 "points": 11,
                 "time_improvement": 0.0
             },
+            "Polar Pass": {
+                "new_place": 27,
+                "old_place": 27,
+                "old_points": 1,
+                "place_improvement": 0,
+                "points": 1,
+                "time_improvement": 0.0
+            },
             "Prehistoric Playground": {
-                "new_place": 23,
+                "new_place": 24,
                 "old_place": 20,
                 "old_points": 29,
-                "place_improvement": -3,
-                "points": 11,
+                "place_improvement": -4,
+                "points": 7,
                 "time_improvement": 0.0
             },
             "Sewer Speedway": {
@@ -1852,11 +2036,11 @@
                 "time_improvement": 0.0
             },
             "Spyro Circuit": {
-                "new_place": 20,
+                "new_place": 21,
                 "old_place": 27,
                 "old_points": 1,
-                "place_improvement": 7,
-                "points": 29,
+                "place_improvement": 6,
+                "points": 22,
                 "time_improvement": 16.68
             },
             "Thunder Struck": {
@@ -1886,12 +2070,12 @@
         }
     },
     "platko90": {
-        "old_total_points": 157,
-        "ranking": 131172.6,
-        "total_places_improved": 36,
-        "total_points": 356,
-        "total_points_improved": 210,
-        "total_time_improved": 87.10000000000001,
+        "old_total_points": 159,
+        "ranking": 259071.24000000005,
+        "total_places_improved": 48,
+        "total_points": 434,
+        "total_points_improved": 286,
+        "total_time_improved": 131.91000000000003,
         "tracks": {
             "Coco Park": {
                 "new_place": 14,
@@ -1902,12 +2086,12 @@
                 "time_improvement": 1.18
             },
             "Cortex Castle": {
-                "new_place": 20,
+                "new_place": 18,
                 "old_place": 25,
                 "old_points": 4,
-                "place_improvement": 5,
-                "points": 29,
-                "time_improvement": 23.24
+                "place_improvement": 7,
+                "points": 46,
+                "time_improvement": 32.71
             },
             "Crash Cove": {
                 "new_place": 20,
@@ -1915,15 +2099,23 @@
                 "old_points": 22,
                 "place_improvement": 1,
                 "points": 29,
-                "time_improvement": 1.33
+                "time_improvement": 1.77
+            },
+            "Polar Pass": {
+                "new_place": 20,
+                "old_place": 26,
+                "old_points": 2,
+                "place_improvement": 6,
+                "points": 29,
+                "time_improvement": 25.66
             },
             "Prehistoric Playground": {
-                "new_place": 19,
+                "new_place": 18,
                 "old_place": 25,
                 "old_points": 4,
-                "place_improvement": 6,
-                "points": 37,
-                "time_improvement": 8.34
+                "place_improvement": 7,
+                "points": 46,
+                "time_improvement": 9.34
             },
             "Sewer Speedway": {
                 "new_place": 22,
@@ -1934,20 +2126,20 @@
                 "time_improvement": 4.3
             },
             "Spyro Circuit": {
-                "new_place": 21,
+                "new_place": 19,
                 "old_place": 21,
                 "old_points": 22,
-                "place_improvement": 0,
-                "points": 22,
-                "time_improvement": 2.97
+                "place_improvement": 2,
+                "points": 37,
+                "time_improvement": 4.04
             },
             "Thunder Struck": {
-                "new_place": 20,
+                "new_place": 19,
                 "old_place": 27,
                 "old_points": 1,
-                "place_improvement": 7,
-                "points": 29,
-                "time_improvement": 34.43
+                "place_improvement": 8,
+                "points": 37,
+                "time_improvement": 41.6
             },
             "Turbo Track": {
                 "new_place": 17,
@@ -1968,19 +2160,19 @@
         }
     },
     "poco_mi_kumpel": {
-        "old_total_points": 656,
-        "ranking": 161385.93000000002,
-        "total_places_improved": 26,
-        "total_points": 967,
-        "total_points_improved": 350,
-        "total_time_improved": 57.290000000000006,
+        "old_total_points": 723,
+        "ranking": 208848.46000000002,
+        "total_places_improved": 31,
+        "total_points": 1099,
+        "total_points_improved": 415,
+        "total_time_improved": 63.790000000000006,
         "tracks": {
             "Coco Park": {
-                "new_place": 5,
+                "new_place": 6,
                 "old_place": 13,
                 "old_points": 106,
-                "place_improvement": 8,
-                "points": 254,
+                "place_improvement": 7,
+                "points": 232,
                 "time_improvement": 1.57
             },
             "Cortex Castle": {
@@ -1998,6 +2190,14 @@
                 "place_improvement": 2,
                 "points": 137,
                 "time_improvement": 0.67
+            },
+            "Polar Pass": {
+                "new_place": 10,
+                "old_place": 16,
+                "old_points": 67,
+                "place_improvement": 6,
+                "points": 154,
+                "time_improvement": 6.5
             },
             "Prehistoric Playground": {
                 "new_place": 14,
@@ -2050,12 +2250,12 @@
         }
     },
     "potbot0": {
-        "old_total_points": 828,
-        "ranking": 2490.52,
+        "old_total_points": 907,
+        "ranking": 3115.02,
         "total_places_improved": 5,
-        "total_points": 722,
+        "total_points": 778,
         "total_points_improved": 56,
-        "total_time_improved": 2.26,
+        "total_time_improved": 2.69,
         "tracks": {
             "Coco Park": {
                 "new_place": 15,
@@ -2080,6 +2280,14 @@
                 "place_improvement": 0,
                 "points": 79,
                 "time_improvement": 0.0
+            },
+            "Polar Pass": {
+                "new_place": 17,
+                "old_place": 15,
+                "old_points": 79,
+                "place_improvement": -2,
+                "points": 56,
+                "time_improvement": 0.43
             },
             "Prehistoric Playground": {
                 "new_place": 17,
@@ -2132,19 +2340,19 @@
         }
     },
     "przemekratchet89": {
-        "old_total_points": 707,
-        "ranking": 7020.49,
-        "total_places_improved": 5,
-        "total_points": 642,
-        "total_points_improved": 59,
-        "total_time_improved": 6.77,
+        "old_total_points": 763,
+        "ranking": 14582.4,
+        "total_places_improved": 8,
+        "total_points": 727,
+        "total_points_improved": 95,
+        "total_time_improved": 11.2,
         "tracks": {
             "Coco Park": {
-                "new_place": 20,
+                "new_place": 21,
                 "old_place": 19,
                 "old_points": 37,
-                "place_improvement": -1,
-                "points": 29,
+                "place_improvement": -2,
+                "points": 22,
                 "time_improvement": 0.0
             },
             "Cortex Castle": {
@@ -2162,6 +2370,14 @@
                 "place_improvement": 0,
                 "points": 67,
                 "time_improvement": 0.0
+            },
+            "Polar Pass": {
+                "new_place": 14,
+                "old_place": 17,
+                "old_points": 56,
+                "place_improvement": 3,
+                "points": 92,
+                "time_improvement": 4.43
             },
             "Prehistoric Playground": {
                 "new_place": 15,
@@ -2214,19 +2430,19 @@
         }
     },
     "silVersilVa89PL": {
-        "old_total_points": 2348,
-        "ranking": 18095.219999999998,
+        "old_total_points": 2539,
+        "ranking": 26549.91,
         "total_places_improved": 4,
-        "total_points": 2187,
+        "total_points": 2359,
         "total_points_improved": 86,
-        "total_time_improved": 6.659999999999999,
+        "total_time_improved": 9.19,
         "tracks": {
             "Coco Park": {
-                "new_place": 8,
+                "new_place": 9,
                 "old_place": 5,
                 "old_points": 254,
-                "place_improvement": -3,
-                "points": 191,
+                "place_improvement": -4,
+                "points": 172,
                 "time_improvement": 0.0
             },
             "Cortex Castle": {
@@ -2244,6 +2460,14 @@
                 "place_improvement": -2,
                 "points": 254,
                 "time_improvement": 0.13
+            },
+            "Polar Pass": {
+                "new_place": 8,
+                "old_place": 8,
+                "old_points": 191,
+                "place_improvement": 0,
+                "points": 191,
+                "time_improvement": 2.53
             },
             "Prehistoric Playground": {
                 "new_place": 7,
