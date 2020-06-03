@@ -1399,11 +1399,11 @@
         "league": 2,
         "medals": {
             "bronze": 6,
-            "gold": 11,
-            "silver": 8
+            "gold": 10,
+            "silver": 9
         },
-        "total_points": 263,
-        "total_points_in_upper_league": 6,
+        "total_points": 261,
+        "total_points_in_upper_league": 5,
         "total_time": "72:25.899",
         "tracks": {
             "Android Alley": {
@@ -1457,8 +1457,8 @@
                 "time": "1:28.690"
             },
             "Dragon Mines": {
-                "medal": "gold",
-                "points": 10.0,
+                "medal": "silver",
+                "points": 8.0,
                 "time": "1:16.660"
             },
             "Drive-Thru Danger": {
@@ -2096,11 +2096,11 @@
     "Jakub_Luk": {
         "league": 2,
         "medals": {
-            "bronze": 9,
+            "bronze": 10,
             "gold": 8,
-            "silver": 6
+            "silver": 5
         },
-        "total_points": 253,
+        "total_points": 251,
         "total_points_in_upper_league": 9,
         "total_time": "72:30.900",
         "tracks": {
@@ -2165,9 +2165,9 @@
                 "time": "1:29.850"
             },
             "Dragon Mines": {
-                "medal": "silver",
+                "medal": "bronze",
                 "place": 4733,
-                "points": 8.0,
+                "points": 6.0,
                 "time": "1:18.180"
             },
             "Drive-Thru Danger": {
@@ -2825,13 +2825,13 @@
     "KalibeRaziel44": {
         "league": 2,
         "medals": {
-            "bronze": 5,
-            "gold": 5,
+            "bronze": 4,
+            "gold": 6,
             "silver": 9
         },
-        "total_points": 206,
-        "total_points_in_upper_league": 2,
-        "total_time": "72:44.370",
+        "total_points": 210,
+        "total_points_in_upper_league": 4,
+        "total_time": "72:42.670",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -2884,9 +2884,9 @@
                 "time": "1:30.320"
             },
             "Dragon Mines": {
-                "medal": "bronze",
-                "points": 6.0,
-                "time": "1:18.270"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "1:16.570"
             },
             "Drive-Thru Danger": {
                 "medal": null,
@@ -3245,7 +3245,7 @@
             "gold": 3,
             "silver": 7
         },
-        "total_points": 176,
+        "total_points": 175,
         "total_points_in_upper_league": 0,
         "total_time": "70:55.610",
         "tracks": {
@@ -3436,7 +3436,7 @@
             "Slide Coliseum": {
                 "medal": null,
                 "place": 325,
-                "points": 4.5,
+                "points": 3.5,
                 "time": "1:36.060"
             },
             "Spyro Circuit": {
@@ -7222,10 +7222,10 @@
         "league": 1,
         "medals": {
             "bronze": 0,
-            "gold": 34,
-            "silver": 5
+            "gold": 33,
+            "silver": 6
         },
-        "total_points": 379,
+        "total_points": 377,
         "total_points_in_upper_league": 0,
         "total_time": "69:55.763",
         "tracks": {
@@ -7396,9 +7396,9 @@
                 "time": "1:57.910"
             },
             "Prehistoric Playground": {
-                "medal": "gold",
+                "medal": "silver",
                 "place": 152,
-                "points": 10.0,
+                "points": 8.0,
                 "time": "2:17.370"
             },
             "Roo's Tubes": {
@@ -9769,12 +9769,12 @@
         "league": 1,
         "medals": {
             "bronze": 7,
-            "gold": 0,
-            "silver": 2
+            "gold": 1,
+            "silver": 1
         },
-        "total_points": 141,
+        "total_points": 142,
         "total_points_in_upper_league": 0,
-        "total_time": "71:05.980",
+        "total_time": "71:05.610",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -9943,10 +9943,10 @@
                 "time": "1:58.910"
             },
             "Prehistoric Playground": {
-                "medal": "silver",
+                "medal": "gold",
                 "place": 69,
-                "points": 8.0,
-                "time": "2:17.500"
+                "points": 10.0,
+                "time": "2:17.130"
             },
             "Roo's Tubes": {
                 "medal": null,
@@ -9963,7 +9963,7 @@
             "Slide Coliseum": {
                 "medal": null,
                 "place": 124,
-                "points": 4.5,
+                "points": 3.5,
                 "time": "1:36.06"
             },
             "Spyro Circuit": {
@@ -11206,7 +11206,7 @@
             "silver": 4
         },
         "total_points": 263,
-        "total_points_in_upper_league": 10,
+        "total_points_in_upper_league": 9,
         "total_time": "72:18.980",
         "tracks": {
             "Android Alley": {
@@ -11942,7 +11942,7 @@
         },
         "total_points": 126,
         "total_points_in_upper_league": 0,
-        "total_time": "71:12.859",
+        "total_time": "71:12.869",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -11990,7 +11990,7 @@
                 "medal": null,
                 "place": 389,
                 "points": 1.0,
-                "time": "1:18.760"
+                "time": "1:18.770"
             },
             "Deep Sea Driving": {
                 "medal": null,
@@ -13863,9 +13863,9 @@
             "gold": 0,
             "silver": 2
         },
-        "total_points": 122,
+        "total_points": 124,
         "total_points_in_upper_league": 0,
-        "total_time": "71:12.642",
+        "total_time": "71:11.502",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -14054,8 +14054,8 @@
             "Slide Coliseum": {
                 "medal": null,
                 "place": 362,
-                "points": 3.0,
-                "time": "1:37.130"
+                "points": 5.0,
+                "time": "1:35.990"
             },
             "Spyro Circuit": {
                 "medal": null,
