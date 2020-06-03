@@ -100,7 +100,7 @@ def main(static=None, frozen=None, gp_start=None, gp=None):
     if static:
         main_loop_static(rankingowaczka, gp)
     else:
-        for i in range(1):
+        for i in range(3):
             try:
                 serwis = GoogleRequests(GOOGLE_DRIVE_CREDENTIALS_PATH,
                                         GOOGLE_DRIVE_TOKEN_PATH,

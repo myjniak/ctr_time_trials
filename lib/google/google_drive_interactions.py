@@ -33,6 +33,8 @@ def try_request_until_success(func):
                 LOGGER.warning(f"Oops, it's a httplib2 connection error")
             except socket.timeout:
                 LOGGER.warning(f"Oops, it's a socket timeout")
+            except BrokenPipeError:
+                LOGGER.warning(f"Oops, it's a broken pipe error")
     return wrapper
 
 
