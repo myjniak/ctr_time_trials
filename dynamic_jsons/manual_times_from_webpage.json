@@ -1,8 +1,122 @@
 {
-    "KalibeRaziel44": {
+    "FelixPL": {
         "tracks": {
+            "Android Alley": {
+                "time": "2:47:60"
+            },
+            "Assembly Lane": {
+                "time": "2:54.76"
+            },
+            "Barin Ruins": {
+                "time": "1:55.16"
+            },
+            "Blizzard Bluff": {
+                "time": "1:27.73"
+            },
+            "Clockwork Wumpa": {
+                "time": "2:21.96"
+            },
+            "Coco Park": {
+                "time": "1:26.93"
+            },
+            "Cortex Castle": {
+                "time": "2:31:16"
+            },
+            "Crash Cove": {
+                "time": "1:23.93"
+            },
+            "Deep Sea Driving": {
+                "time": "2:01.93"
+            },
+            "Dingo Canyon": {
+                "time": "1:44.00"
+            },
             "Dragon Mines": {
-                "time": "1:15:97"
+                "time": "1:33.96"
+            },
+            "Drive-Thru Danger": {
+                "time": "2:14.06"
+            },
+            "Electron Avenue": {
+                "time": "3:44.19"
+            },
+            "Gingerbread Joyride": {
+                "time": "2:03.36"
+            },
+            "Hot Air Skyway": {
+                "time": "2:48.70"
+            },
+            "Hyper Spaceway": {
+                "time": "2:55.66"
+            },
+            "Inferno Island": {
+                "time": "1:45.53"
+            },
+            "Jungle Boogie": {
+                "time": "1:27.16"
+            },
+            "Koala Carnival": {
+                "time": "1:47:83"
+            },
+            "Megamix Mania": {
+                "time": "2:17.09"
+            },
+            "Meteor Gorge": {
+                "time": "1:34.66"
+            },
+            "Mystery Caves": {
+                "time": "2:11.83"
+            },
+            "N.Gin Labs": {
+                "time": "2:33.43"
+            },
+            "Nina's Nightmare": {
+                "time": "1:57.30"
+            },
+            "Out of Time": {
+                "time": "2:37.66"
+            },
+            "Oxide Station": {
+                "time": "3:24.03"
+            },
+            "Papu's Pyramid": {
+                "time": "1:43.43"
+            },
+            "Polar Pass": {
+                "time": "2:44.30"
+            },
+            "Prehistoric Playground": {
+                "time": "2:38.76"
+            },
+            "Roo's Tubes": {
+                "time": "1:22.83"
+            },
+            "Sewer Speedway": {
+                "time": "1:55.93"
+            },
+            "Slide Coliseum": {
+                "time": "1:58.93"
+            },
+            "Spyro Circuit": {
+                "time": "2:18.00"
+            },
+            "Thunder Struck": {
+                "time": "2:50.36"
+            },
+            "Tiger Temple": {
+                "time": "1:15.99"
+            },
+            "Tiny Arena": {
+                "time": "3:34.03"
+            },
+            "Tiny Temple": {
+                "time": "1:43.16"
+            },
+            "Turbo Track": {
+                "time": "2:06.00"
+            },
+            "Twilight Tour": {
+                "time": "2:33.76"
             }
         }
     }
