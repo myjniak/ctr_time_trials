@@ -3177,7 +3177,7 @@
             "gold": 1,
             "silver": 2
         },
-        "total_points": 91,
+        "total_points": 90,
         "total_points_in_upper_league": 0,
         "total_time": "70:28.888",
         "tracks": {
@@ -3255,7 +3255,7 @@
             "Electron Avenue": {
                 "medal": null,
                 "place": 102,
-                "points": 2.0,
+                "points": 1.0,
                 "time": "2:58.310"
             },
             "Gingerbread Joyride": {
@@ -3657,11 +3657,11 @@
     "KalibeRaziel44": {
         "league": 1,
         "medals": {
-            "bronze": 3,
+            "bronze": 2,
             "gold": 1,
             "silver": 1
         },
-        "total_points": 97,
+        "total_points": 96,
         "total_points_in_upper_league": 0,
         "total_time": "70:33.400",
         "tracks": {
@@ -3726,8 +3726,8 @@
                 "time": "1:44.770"
             },
             "Electron Avenue": {
-                "medal": "bronze",
-                "points": 5.5,
+                "medal": null,
+                "points": 4.5,
                 "time": "2:55.240"
             },
             "Gingerbread Joyride": {
@@ -6204,18 +6204,18 @@
     "Maties_Gamer": {
         "league": 1,
         "medals": {
-            "bronze": 10,
+            "bronze": 9,
             "gold": 1,
             "silver": 3
         },
-        "total_points": 174,
+        "total_points": 172,
         "total_points_in_upper_league": 0,
         "total_time": "70:06.140",
         "tracks": {
             "Android Alley": {
                 "medal": null,
                 "place": 654,
-                "points": 4.0,
+                "points": 3.5,
                 "time": "2:26.640"
             },
             "Assembly Lane": {
@@ -6284,9 +6284,9 @@
                 "time": "1:44.670"
             },
             "Electron Avenue": {
-                "medal": "bronze",
+                "medal": null,
                 "place": 1146,
-                "points": 5.5,
+                "points": 4.5,
                 "time": "2:55.240"
             },
             "Gingerbread Joyride": {
@@ -8262,10 +8262,10 @@
         "league": 1,
         "medals": {
             "bronze": 7,
-            "gold": 18,
-            "silver": 9
+            "gold": 17,
+            "silver": 10
         },
-        "total_points": 310,
+        "total_points": 308,
         "total_points_in_upper_league": 0,
         "total_time": "69:48.203",
         "tracks": {
@@ -8341,9 +8341,9 @@
                 "time": "1:43.900"
             },
             "Electron Avenue": {
-                "medal": "gold",
+                "medal": "silver",
                 "place": 306,
-                "points": 10.0,
+                "points": 8.0,
                 "time": "2:52.430"
             },
             "Gingerbread Joyride": {
@@ -10812,7 +10812,7 @@
             "gold": 0,
             "silver": 3
         },
-        "total_points": 114,
+        "total_points": 113,
         "total_points_in_upper_league": 0,
         "total_time": "70:33.130",
         "tracks": {
@@ -10890,7 +10890,7 @@
             "Electron Avenue": {
                 "medal": null,
                 "place": 192,
-                "points": 1.0,
+                "points": 0,
                 "time": "2:59.040"
             },
             "Gingerbread Joyride": {
@@ -13151,7 +13151,7 @@
             "gold": 1,
             "silver": 2
         },
-        "total_points": 84,
+        "total_points": 83,
         "total_points_in_upper_league": 0,
         "total_time": "70:42.450",
         "tracks": {
@@ -13229,7 +13229,7 @@
             "Electron Avenue": {
                 "medal": null,
                 "place": 734,
-                "points": 4.0,
+                "points": 3.0,
                 "time": "2:55.670"
             },
             "Gingerbread Joyride": {
@@ -13396,15 +13396,15 @@
             "gold": 6,
             "silver": 11
         },
-        "total_points": 230,
+        "total_points": 229,
         "total_points_in_upper_league": 0,
-        "total_time": "70:02.940",
+        "total_time": "70:02.840",
         "tracks": {
             "Android Alley": {
                 "medal": null,
                 "place": 206,
-                "points": 3.0,
-                "time": "2:26.740"
+                "points": 3.5,
+                "time": "2:26.640"
             },
             "Assembly Lane": {
                 "medal": "silver",
@@ -13474,7 +13474,7 @@
             "Electron Avenue": {
                 "medal": null,
                 "place": 936,
-                "points": 3.0,
+                "points": 2.0,
                 "time": "2:55.910"
             },
             "Gingerbread Joyride": {
@@ -14373,12 +14373,12 @@
         "league": 1,
         "medals": {
             "bronze": 4,
-            "gold": 14,
+            "gold": 15,
             "silver": 0
         },
-        "total_points": 236,
+        "total_points": 246,
         "total_points_in_upper_league": 0,
-        "total_time": "71:45.590",
+        "total_time": "69:33.490",
         "tracks": {
             "Android Alley": {
                 "medal": null,
@@ -14441,9 +14441,9 @@
                 "time": "1:44.730"
             },
             "Electron Avenue": {
-                "medal": null,
-                "points": 0,
-                "time": "CHEATER"
+                "medal": "gold",
+                "points": 10.0,
+                "time": "2:47.900"
             },
             "Gingerbread Joyride": {
                 "medal": null,
@@ -15315,11 +15315,11 @@
     "silVersilVa89PL": {
         "league": 1,
         "medals": {
-            "bronze": 4,
+            "bronze": 5,
             "gold": 0,
-            "silver": 1
+            "silver": 0
         },
-        "total_points": 57,
+        "total_points": 55,
         "total_points_in_upper_league": 0,
         "total_time": "70:32.151",
         "tracks": {
@@ -15395,9 +15395,9 @@
                 "time": "1:45.840"
             },
             "Electron Avenue": {
-                "medal": "silver",
+                "medal": "bronze",
                 "place": 484,
-                "points": 8.0,
+                "points": 6.0,
                 "time": "2:52.700"
             },
             "Gingerbread Joyride": {
