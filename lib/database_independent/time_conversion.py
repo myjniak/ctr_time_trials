@@ -1,43 +1,47 @@
+from datetime import timedelta
 import re
 
 
-class TimeConversion:
+class Time:
 
-    def __init__(self, time_record, value_on_error=300, decimals=3):
-        self.value_on_error = value_on_error
+    def __init__(self, time_record, value_on_error="5:00.00", decimals=2):
         self.decimals = decimals
-        if isinstance(time_record, int) or isinstance(time_record, float):
-            self.number_as_float = float(time_record)
-            self.number_as_str = self.float_to_str(time_record)
+        self.value_on_error = value_on_error
+        if isinstance(time_record, str):
+            self.time_record = self.timedelta(time_record)
+        elif isinstance(time_record, timedelta):
+            self.time_record = time_record
         else:
-            self.number_as_float = self.str_to_float(time_record)
-            self.number_as_str = self.float_to_str(self.as_float)
+            raise TypeError("Time class supports str or timedelta only")
 
-    @property
-    def as_float(self):
-        return self.number_as_float
-
-    @property
-    def as_str(self):
-        return self.number_as_str
-
-    @staticmethod
-    def str_to_float(time_record, value_on_error=300):
+    def timedelta(self, time_record):
         pattern = re.compile("(\d+)\D+(\d+)\D+(\d+)")
         regex_match = pattern.match(time_record)
         if regex_match is None:
-            return value_on_error
-        else:
-            minutes, seconds, miliseconds = regex_match.groups()
-            return 60*float(minutes) + float(seconds) + round(float(miliseconds)/10**len(miliseconds), 3)
+            regex_match = pattern.match(self.value_on_error)
+        minutes, seconds, decimals = regex_match.groups()
+        zeros_to_add = 6 - len(decimals)
+        decimals += zeros_to_add * "0"
+        return timedelta(minutes=int(minutes), seconds=int(seconds), microseconds=int(decimals))
 
-    @staticmethod
-    def float_to_str(time_in_seconds, decimals=3):
-        minutes = int(time_in_seconds / 60)
-        seconds = int(time_in_seconds) - minutes * 60
-        seconds_as_str = ('0' if seconds <= 9 else '') + str(seconds)
-        miliseconds = int(1000*round((time_in_seconds - int(time_in_seconds)), 3))
-        ms_len = len(str(miliseconds))
-        zeros_to_add = decimals - ms_len
-        miliseconds_as_str = zeros_to_add*'0' + str(miliseconds)
-        return str(minutes) + ":" + seconds_as_str + "." + miliseconds_as_str
+    def __str__(self):
+        # minute times only
+        h, m, s_ms = str(self.time_record).rsplit(":")
+        m = str(int(m) + 60*int(h))
+        if "." not in s_ms:
+            decimals = self.decimals*"0"
+            s_dec = ".".join([s_ms, decimals])
+        else:
+            s, ms = s_ms.split(".")
+            decimals = ms[:self.decimals]
+            s_dec = ".".join([s, decimals])
+        time_as_str = ":".join([m, s_dec])
+        return time_as_str
+
+    def __float__(self):
+        return self.time_record.total_seconds()
+
+    def __add__(self, other):
+        return Time(self.time_record + other.time_record,
+                    value_on_error=self.value_on_error,
+                    decimals=self.decimals)

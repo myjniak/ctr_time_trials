@@ -1,6 +1,6 @@
 from .database_independent.league_as_xlsx import LeagueAsXlsx
 from .database_independent.jsoner import Jsoner
-from .database_independent.time_conversion import TimeConversion
+from .database_independent.time_conversion import Time
 
 
 class Database:
@@ -21,7 +21,6 @@ class Database:
     time_zone_diff = int()
     bots_list = list()
     sheets_raw = list()
-    freeze_leagues = bool()
     
     @classmethod
     def reload(cls):
@@ -74,7 +73,7 @@ class Database:
                 data[player]['tracks'][track]['points'] = 0
                 data[player]['tracks'][track].setdefault('time', "NO TIME")
                 data[player]['tracks'][track].setdefault('medal', None)
-                if TimeConversion(data[player]['tracks'][track]["time"]).as_float < cls.cheat_thresholds[track]:
+                if float(Time(data[player]['tracks'][track]["time"])) < cls.cheat_thresholds[track]:
                     data[player]['tracks'][track]["time"] = "CHEATER"
         for player in list(data.keys()):
             if player not in [*cls.player_list, *cls.bots_list]:

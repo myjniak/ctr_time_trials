@@ -16,7 +16,6 @@ from lib.database_independent.grand_prix_as_csv import GrandPrixAsCsv
 from confidential.variables import *
 
 
-FREEZE_LEAGUES = False
 USER_TIMES_SNAPSHOT_FILE_PATH = "dynamic_jsons/GP1_start.json"
 LOGS_PATH = 'logs/'
 BOTS_LIST = ["N. Tropy", "Oxide", "Velo", "Beenox"]
@@ -24,7 +23,7 @@ POINT_SYSTEM = [10, 8, 6, 5, 4, 3, 2, 1]
 LEAGUE_POINTS_MINIMUM = 20
 LEAGUE_PLAYERS_MINIMUM = 5
 SHEET_IDS_FILE_PATH = "config/sheet_ids.json"
-LOG_RESET_INTERVAL = 10000
+LOG_RESET_INTERVAL = 100000
 TIMES_FROM_WEBPAGE_JSON_FILE_PATH = "dynamic_jsons/manual_times_from_webpage.json"
 LEAGUE_NAMES = ["Nitro Tier", "Platinum Tier", "Gold Tier", "Sapphire Tier", "Wumpa Tier", "Armadillo Tier",
                 "Tier 7", "Tier 8", "Tier 9"]
@@ -43,7 +42,6 @@ INPUT_EXCEL_FILE_PATH = "output/times_from_webpage.xlsx"
 INPUT_TEMPLATE_EXCEL_FILE_PATH = "config/CTR TT INPUT template.xlsx"
 PLATFORMS = ['psn', 'xbl', 'switch']
 GAMER_SEARCH_BAN_TIME = 800
-PAGE_SEARCH_UNTIL_BORED_TIME = 5
 SLEEP_BETWEEN_ITERATIONS = 5
 TIME_ZONE_DIFF = 7
 logging.basicConfig(filename=f"{LOGS_PATH}logs.txt",
@@ -63,7 +61,6 @@ def prepare_database():
     Database.league_names = LEAGUE_NAMES
     Database.league_points_minimum = LEAGUE_POINTS_MINIMUM
     Database.time_zone_diff = TIME_ZONE_DIFF
-    Database.freeze_leagues = FREEZE_LEAGUES
     Database.league_players_minimum = LEAGUE_PLAYERS_MINIMUM
 
 
@@ -100,19 +97,11 @@ def main(static=None, frozen=None, gp_start=None, gp=None):
     if static:
         main_loop_static(rankingowaczka, gp)
     else:
-        for i in range(3):
-            try:
-                serwis = GoogleRequests(GOOGLE_DRIVE_CREDENTIALS_PATH,
-                                        GOOGLE_DRIVE_TOKEN_PATH,
-                                        GOOGLE_SHEETS_API_KEY)
-                main_loop(serwis, rankingowaczka, gp)
-            except:
-                formatted_lines = traceback.format_exc().splitlines()
-                for line in formatted_lines:
-                    LOGGER.error(line)
-                prepare_database()
-        else:
-            LOGGER.error("FATAL ERROR - CRASHED 3 TIMES")
+        serwis = GoogleRequests(GOOGLE_DRIVE_CREDENTIALS_PATH,
+                                GOOGLE_DRIVE_TOKEN_PATH,
+                                GOOGLE_SHEETS_API_KEY)
+        main_loop(serwis, rankingowaczka, gp)
+
 
 
 def main_loop_static(rankingowaczka, gp):
@@ -196,25 +185,3 @@ if __name__ == "__main__":
     parser.add_argument("--gp", help="Obliczaj dodatkowo rankingi Grand Prix", action="store_true")
     args = parser.parse_args()
     main(args.static, args.frozen, args.gp_start, args.gp)
-
-
-# def establish_player_list_to_do(gamer_list, do_everyone=None):
-#     gamers = []
-#     if do_everyone:
-#         gamers = gamer_list
-#     elif do_everyone is None:
-#         print("Dej nicki, których time triale chcesz sciagnac. Jak skonczysz wpisywac"
-#               " nicki, kliknij Enter dwa razy. Wpisz nicki poprawnie, bo bede szukal w nieskonczonosc!\n"
-#               "Wpisz 'all' zeby zaaktualizowac wszystkich graczy w bazie config/user_list.json.")
-#         while True:
-#             gamer = input("Dej nick: ")
-#             if not gamer:
-#                 break
-#             elif gamer == "all":
-#                 gamers = gamer_list
-#                 break
-#             elif gamer in gamer_list:
-#                 gamers.append(gamer)
-#             else:
-#                 print(f"Nie ma takiego gracza w bazie! Tu masz do wyboru:\n{gamer_list}")
-#     return gamers

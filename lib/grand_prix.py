@@ -1,6 +1,6 @@
 from .database_independent.jsoner import Jsoner
 from .database import Database
-from .database_independent.time_conversion import TimeConversion
+from .database_independent.time_conversion import Time
 from . import LOGGER
 
 
@@ -51,9 +51,9 @@ class GrandPrix(Database):
 
     def get_time(self, player, track, from_snapshot=False):
         if from_snapshot:
-            return TimeConversion(self.gp_start_snapshot[player]['tracks'][track]['time']).as_float
+            return float(Time(self.gp_start_snapshot[player]['tracks'][track]['time']))
         else:
-            return TimeConversion(self.time_trials.json[player]['tracks'][track]['time']).as_float
+            return float(Time(self.time_trials.json[player]['tracks'][track]['time']))
 
     def calc_gp_json(self):
         players = self.settings["players"]

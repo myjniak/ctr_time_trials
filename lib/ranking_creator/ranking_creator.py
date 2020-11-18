@@ -1,4 +1,4 @@
-from lib.database_independent.time_conversion import TimeConversion
+from lib.database_independent.time_conversion import Time
 from lib.database_independent.announcements import Announcements
 from lib.database import Database
 
@@ -8,11 +8,11 @@ class RankingCreator(Database):
     @classmethod
     def calc_total_time(cls):
         for player, player_info in cls.time_trials.json.items():
-            total_time = 0
+            total_time = Time("0:00:00")
             for track in player_info['tracks']:
-                track_time = TimeConversion(player_info['tracks'][track]['time']).as_float
+                track_time = Time(player_info['tracks'][track]['time'])
                 total_time += track_time
-            player_info['total_time'] = TimeConversion(total_time).as_str
+            player_info['total_time'] = str(total_time)
         cls.time_trials.save()
 
     @classmethod
@@ -66,7 +66,8 @@ class RankingCreator(Database):
                 data[player]['tracks'][track]['points'] = 0
                 data[player]['tracks'][track].setdefault('time', "NO TIME")
                 data[player]['tracks'][track]['medal'] = None
-            players_times_dict = {player: TimeConversion(data[player]['tracks'][track]['time']).as_float
+                # data[player]['tracks'][track]['time'] = str(Time(data[player]['tracks'][track]['time']))
+            players_times_dict = {player: float(Time(data[player]['tracks'][track]['time']))
                                   for player in players_in_league}
             players_times_filtered = dict(filter(lambda item: item[1] < 300, players_times_dict.items()))
             players_sorted = sorted(list(players_times_filtered.keys()), key=lambda player: players_times_dict[player])
